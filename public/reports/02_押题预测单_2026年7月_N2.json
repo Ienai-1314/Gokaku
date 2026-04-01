@@ -1,0 +1,316 @@
+{
+  "title": "N2 押题预测单 — 2026年7月",
+  "exam_date": "2026年7月",
+  "generated_at": "2026-04",
+  "grammar_high": [
+    {
+      "pattern": "～あげくに（の）",
+      "star": 3,
+      "gap_years": 99,
+      "meaning_summary": "～的结果；最后～（多用于后果不好或 消极的场吅）;",
+      "example_sentence": "さんざん迷ったあげく、やめにした — 犹豫了一顿，最后决定作罢．"
+    },
+    {
+      "pattern": "～か～ないかのうちに",
+      "star": 3,
+      "gap_years": 99,
+      "meaning_summary": "刚要～就～；刚一～就～ 2、彼は汽車が止まるか止まらないうちに飛び下りた。／火车刚一停，他就跳 下车了．",
+      "example_sentence": "彼女はそういったかいわないかのうちに泣き出した — 她刚要说就哭起来"
+    },
+    {
+      "pattern": "～そばから",
+      "star": 3,
+      "gap_years": 99,
+      "meaning_summary": "随～随～；刚～就～（不用于一次性的事情）",
+      "example_sentence": "聞いたそばから忘れる — 随听随忘．"
+    },
+    {
+      "pattern": "～たとえ（い）～ても（であれば）",
+      "star": 3,
+      "gap_years": 4,
+      "meaning_summary": "即使～也～（前接不定词时）不管～也～（五段动词有音变．前接形容动词词干， 体言时，则为＂でも＂）;",
+      "example_sentence": "たとえどんな困難があっても計画は実行しなければならない — 不管有什"
+    },
+    {
+      "pattern": "～うちに",
+      "star": 3,
+      "gap_years": 99,
+      "meaning_summary": "",
+      "example_sentence": ""
+    },
+    {
+      "pattern": "～くせに",
+      "star": 3,
+      "gap_years": 99,
+      "meaning_summary": "",
+      "example_sentence": ""
+    },
+    {
+      "pattern": "～ずにはいられない",
+      "star": 3,
+      "gap_years": 99,
+      "meaning_summary": "",
+      "example_sentence": ""
+    },
+    {
+      "pattern": "～いかんによっては",
+      "star": 2,
+      "gap_years": 99,
+      "meaning_summary": "根据实验结 果如何，也于可能中止研究．",
+      "example_sentence": "やり方いかんによっては結果も違ってくる — 由于做法不同．．．结果也不"
+    },
+    {
+      "pattern": "～以上は",
+      "star": 2,
+      "gap_years": 11,
+      "meaning_summary": "既然～（当然）就～;",
+      "example_sentence": "参加する以上は優勝したい。 — 既然参加，当然就想得冠军．"
+    },
+    {
+      "pattern": "～かけだ",
+      "star": 2,
+      "gap_years": 13,
+      "meaning_summary": "表示动作刚开始，动作未完而中断，动作即将发生等． 18～かけの ［动词连用形］＋かけの／表示动作刚开始，动作未完而中断，",
+      "example_sentence": "もう出勤の時間なのにまだ御飯が食べかけだ — 已经到了上班时间，"
+    },
+    {
+      "pattern": "～がたい",
+      "star": 2,
+      "gap_years": 4,
+      "meaning_summary": "难于～；不容易～;",
+      "example_sentence": "あんなに元気だった山田さんが亡くなったとは信じがたいことだ — 说那"
+    },
+    {
+      "pattern": "～かと思うと（思ったら）",
+      "star": 2,
+      "gap_years": 4,
+      "meaning_summary": "刚一～（马上）就～；本以为～不料想～；忽而～忽而～;",
+      "example_sentence": "学生はベルが鳴ったかと思うと飛び出した — 刚一响铃，学生就跑出去了．"
+    }
+  ],
+  "grammar_mid": [],
+  "must_memorize": [
+    {
+      "pattern": "～あげくに（の）",
+      "gap_years": 99,
+      "meaning_summary": "～的结果；最后～（多用于后果不好或 消极的场吅）;",
+      "example_sentence": "さんざん迷ったあげく、やめにした — 犹豫了一顿，最后决定作罢．"
+    },
+    {
+      "pattern": "～か～ないかのうちに",
+      "gap_years": 99,
+      "meaning_summary": "刚要～就～；刚一～就～ 2、彼は汽車が止まるか止まらないうちに飛び下りた。／火车刚一停，他就跳 下车了．",
+      "example_sentence": "彼女はそういったかいわないかのうちに泣き出した — 她刚要说就哭起来"
+    },
+    {
+      "pattern": "～そばから",
+      "gap_years": 99,
+      "meaning_summary": "随～随～；刚～就～（不用于一次性的事情）",
+      "example_sentence": "聞いたそばから忘れる — 随听随忘．"
+    },
+    {
+      "pattern": "～うちに",
+      "gap_years": 99,
+      "meaning_summary": "",
+      "example_sentence": ""
+    },
+    {
+      "pattern": "～くせに",
+      "gap_years": 99,
+      "meaning_summary": "",
+      "example_sentence": ""
+    },
+    {
+      "pattern": "～ずにはいられない",
+      "gap_years": 99,
+      "meaning_summary": "",
+      "example_sentence": ""
+    },
+    {
+      "pattern": "～たとえ（い）～ても（であれば）",
+      "gap_years": 4,
+      "meaning_summary": "即使～也～（前接不定词时）不管～也～（五段动词有音变．前接形容动词词干， 体言时，则为＂でも＂）;",
+      "example_sentence": "たとえどんな困難があっても計画は実行しなければならない — 不管有什"
+    },
+    {
+      "pattern": "～いかんによっては",
+      "gap_years": 99,
+      "meaning_summary": "根据实验结 果如何，也于可能中止研究．",
+      "example_sentence": "やり方いかんによっては結果も違ってくる — 由于做法不同．．．结果也不"
+    },
+    {
+      "pattern": "～からすれば",
+      "gap_years": 99,
+      "meaning_summary": "就～来说",
+      "example_sentence": "ある意味からすれば彼の考え方も間違いだとは言えない — 就某种意义来"
+    },
+    {
+      "pattern": "～くせして（くせに）",
+      "gap_years": 99,
+      "meaning_summary": "（本来）～可是（却，竟）～； （尽管）～可是～；虽然～可是～（含有责难或不满之意）;",
+      "example_sentence": "知らないくせに知ったふりをしている — 本来不知道，却假装知道．"
+    },
+    {
+      "pattern": "～たるものは",
+      "gap_years": 99,
+      "meaning_summary": "具有～身份，地位等 的；作为～的 2、内閣の首長たる内閣総理大臣は国民の利益を第一にすべきものだ。／作为 内阁首领的内阁",
+      "example_sentence": "1 教育者たるものは何よりもまず厳しく己れを律すべきだ。／作为教育人的人"
+    },
+    {
+      "pattern": "～ても始まらない",
+      "gap_years": 99,
+      "meaning_summary": "",
+      "example_sentence": ""
+    },
+    {
+      "pattern": "～からして",
+      "gap_years": 15,
+      "meaning_summary": "仍～来看；仍～就～；不用说别的，就仍～ 2、この子は顔つきからして利口そうだ。／这孩子仍模样看就很聪明． 3、結婚するに",
+      "example_sentence": "発言の内容は別として彼の態度からして許せない — 发言内容先不谈，仍"
+    },
+    {
+      "pattern": "～かけだ",
+      "gap_years": 13,
+      "meaning_summary": "表示动作刚开始，动作未完而中断，动作即将发生等． 18～かけの ［动词连用形］＋かけの／表示动作刚开始，动作未完而中断，",
+      "example_sentence": "もう出勤の時間なのにまだ御飯が食べかけだ — 已经到了上班时间，"
+    },
+    {
+      "pattern": "～以上は",
+      "gap_years": 11,
+      "meaning_summary": "既然～（当然）就～;",
+      "example_sentence": "参加する以上は優勝したい。 — 既然参加，当然就想得冠军．"
+    },
+    {
+      "pattern": "～つつある",
+      "gap_years": 11,
+      "meaning_summary": "正在～",
+      "example_sentence": "住民の連帯意識は向上しつつある — 居民的集体意识正在提高．"
+    },
+    {
+      "pattern": "～てみる",
+      "gap_years": 11,
+      "meaning_summary": "～试试看；试一试～（表示对某种动作，行为的尝试， 灵活翻译）",
+      "example_sentence": "できるかどうかやってみる — 能不能做成试试看．"
+    },
+    {
+      "pattern": "～といっても",
+      "gap_years": 11,
+      "meaning_summary": "虽说（是）～可是也～；就说～也是～;",
+      "example_sentence": "ビルと言っても、三階建ての小さなものだ — 虽说是大楼，也是三层建筑"
+    },
+    {
+      "pattern": "～にしたら",
+      "gap_years": 11,
+      "meaning_summary": "（若是）把～定为～（的话）；假定 ～（的话） 2、誕生日のパーティーは土曜日にすればみんな参加できる。／若把生日晚会 定",
+      "example_sentence": "あの人の身にしたら、そうするよりほかなかったと思う — 我认为若是（处"
+    },
+    {
+      "pattern": "～がたい",
+      "gap_years": 4,
+      "meaning_summary": "难于～；不容易～;",
+      "example_sentence": "あんなに元気だった山田さんが亡くなったとは信じがたいことだ — 说那"
+    }
+  ],
+  "traps": [
+    {
+      "trap": "うちに vs 間に",
+      "why": "时间范围",
+      "fix": "うちに强调状态变化前；間中强调整个期间"
+    },
+    {
+      "trap": "かけだ vs かける",
+      "why": "词性不同",
+      "fix": "かけだ是补助动词/形容；かける是他动词"
+    },
+    {
+      "trap": "がたい vs にくい",
+      "why": "难易表达",
+      "fix": "がたい书面主观；にくい口语客观"
+    },
+    {
+      "trap": "かねる vs かねない",
+      "why": "方向相反",
+      "fix": "かねる→难以做到；かねない→说不定发生"
+    },
+    {
+      "trap": "くせに vs のに",
+      "why": "语气强弱",
+      "fix": "くせに责备语气更重"
+    },
+    {
+      "trap": "せいで vs おかげで",
+      "why": "情感色彩",
+      "fix": "せいで消极；おかげで积极"
+    },
+    {
+      "trap": "だけ vs ばかり",
+      "why": "限定语感",
+      "fix": "だけ中性限定；ばかり带感情（不满/惊讶）"
+    },
+    {
+      "trap": "たら vs ば",
+      "why": "条件侧重点",
+      "fix": "たら发现/契机；ば假设/恒常"
+    },
+    {
+      "trap": "ても vs でも",
+      "why": "接续不同",
+      "fix": "てモ前接动词/形容词；でも前接名词/形容动词"
+    },
+    {
+      "trap": "ところに vs ところへ",
+      "why": "意外闯入",
+      "fix": "に状态被打断；へ人到来"
+    },
+    {
+      "trap": "に対して vs にとって",
+      "why": "对象vs立场",
+      "fix": "に対して→针对某对象；にとって→从某立场看"
+    },
+    {
+      "trap": "について vs によって",
+      "why": "关于vs根据",
+      "fix": "について→关于；によって→根据/由于"
+    },
+    {
+      "trap": "おそれがある vs かもしれない",
+      "why": "推测语气",
+      "fix": "おそれがある书面且偏负面；かもしれない口语中性"
+    },
+    {
+      "trap": "わけではない vs はずがない",
+      "why": "否定范围",
+      "fix": "わけではない→并非完全如此；はずがない→绝对不可能"
+    },
+    {
+      "trap": "はずだ vs に違いない",
+      "why": "肯定语气",
+      "fix": "はずだ→据推断应该；に違いない→肯定没错"
+    },
+    {
+      "trap": "らしい vs ようだ",
+      "why": "传闻vs样态",
+      "fix": "らしい→传闻/有某种气质；ようだ→样态推测/比喻"
+    },
+    {
+      "trap": "そうだ（传闻） vs そうだ（样态）",
+      "why": "接续不同",
+      "fix": "传闻そうだ前接简体；样态そうだ前接连用形"
+    },
+    {
+      "trap": "直後 vs 以内",
+      "why": "时间范围",
+      "fix": "直後→刚…之后；以内→在…之内"
+    },
+    {
+      "trap": "一方で vs 他方",
+      "why": "并列vs转折",
+      "fix": "一方で→一方面（并列）；他方→另一方面"
+    },
+    {
+      "trap": "ついでに vs がてら",
+      "why": "顺便",
+      "fix": "ついでに口语日常；がてら书面且动作先后"
+    }
+  ]
+}

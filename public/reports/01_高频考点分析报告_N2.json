@@ -1,0 +1,986 @@
+{
+  "title": "N2 AI 高频考点分析报告（深度版）",
+  "generated_at": "2026-04",
+  "grammar_top": [
+    {
+      "rank": 1,
+      "pattern": "～たとえ（い）～ても（であれば）",
+      "star": 3,
+      "exam_hits": 9,
+      "last_appeared": 2021,
+      "gap_years": 4,
+      "feature": "即使～也～（前接不定词时）不管～也～（五段动词有音变．前接形容动词词干， 体言时，则为＂でも＂）;",
+      "meaning_summary": "即使～也～（前接不定词时）不管～也～（五段动词有音变．前接形容动词词干， 体言时，则为＂でも＂）;",
+      "example_sentence": "たとえどんな困難があっても計画は実行しなければならない — 不管有什"
+    },
+    {
+      "rank": 2,
+      "pattern": "～あげくに（の）",
+      "star": 3,
+      "exam_hits": 0,
+      "last_appeared": 0,
+      "gap_years": 99,
+      "feature": "～的结果；最后～（多用于后果不好或 消极的场吅）;",
+      "meaning_summary": "～的结果；最后～（多用于后果不好或 消极的场吅）;",
+      "example_sentence": "さんざん迷ったあげく、やめにした — 犹豫了一顿，最后决定作罢．"
+    },
+    {
+      "rank": 3,
+      "pattern": "～か～ないかのうちに",
+      "star": 3,
+      "exam_hits": 0,
+      "last_appeared": 0,
+      "gap_years": 99,
+      "feature": "刚要～就～；刚一～就～ 2、彼は汽車が止まるか止まらないうちに飛び下りた。／火车刚一停，他就跳 下车了．",
+      "meaning_summary": "刚要～就～；刚一～就～ 2、彼は汽車が止まるか止まらないうちに飛び下りた。／火车刚一停，他就跳 下车了．",
+      "example_sentence": "彼女はそういったかいわないかのうちに泣き出した — 她刚要说就哭起来"
+    },
+    {
+      "rank": 4,
+      "pattern": "～そばから",
+      "star": 3,
+      "exam_hits": 0,
+      "last_appeared": 0,
+      "gap_years": 99,
+      "feature": "随～随～；刚～就～（不用于一次性的事情）",
+      "meaning_summary": "随～随～；刚～就～（不用于一次性的事情）",
+      "example_sentence": "聞いたそばから忘れる — 随听随忘．"
+    },
+    {
+      "rank": 5,
+      "pattern": "～うちに",
+      "star": 3,
+      "exam_hits": 0,
+      "last_appeared": 0,
+      "gap_years": 99,
+      "feature": "趁着…（期间）",
+      "meaning_summary": "",
+      "example_sentence": ""
+    },
+    {
+      "rank": 6,
+      "pattern": "～くせに",
+      "star": 3,
+      "exam_hits": 0,
+      "last_appeared": 0,
+      "gap_years": 99,
+      "feature": "明明…却…（责备）",
+      "meaning_summary": "",
+      "example_sentence": ""
+    },
+    {
+      "rank": 7,
+      "pattern": "～ずにはいられない",
+      "star": 3,
+      "exam_hits": 0,
+      "last_appeared": 0,
+      "gap_years": 99,
+      "feature": "忍不住…",
+      "meaning_summary": "",
+      "example_sentence": ""
+    },
+    {
+      "rank": 8,
+      "pattern": "～がたい",
+      "star": 2,
+      "exam_hits": 7,
+      "last_appeared": 2021,
+      "gap_years": 4,
+      "feature": "难于～；不容易～;",
+      "meaning_summary": "难于～；不容易～;",
+      "example_sentence": "あんなに元気だった山田さんが亡くなったとは信じがたいことだ — 说那"
+    },
+    {
+      "rank": 9,
+      "pattern": "～てみる",
+      "star": 2,
+      "exam_hits": 7,
+      "last_appeared": 2014,
+      "gap_years": 11,
+      "feature": "～试试看；试一试～（表示对某种动作，行为的尝试， 灵活翻译）",
+      "meaning_summary": "～试试看；试一试～（表示对某种动作，行为的尝试， 灵活翻译）",
+      "example_sentence": "できるかどうかやってみる — 能不能做成试试看．"
+    },
+    {
+      "rank": 10,
+      "pattern": "～というと",
+      "star": 2,
+      "exam_hits": 7,
+      "last_appeared": 2021,
+      "gap_years": 4,
+      "feature": "听说～；据说～;",
+      "meaning_summary": "听说～；据说～;",
+      "example_sentence": "1.先生は三月でこの大学を辞めになるという。／听说老师三月份就辞去这所大"
+    },
+    {
+      "rank": 11,
+      "pattern": "～しかない",
+      "star": 2,
+      "exam_hits": 6,
+      "last_appeared": 2021,
+      "gap_years": 4,
+      "feature": "只有～；只能～；只好～;",
+      "meaning_summary": "只有～；只能～；只好～;",
+      "example_sentence": "こうなったらやるしかない — 已经这样了，只好干了（别无他法）．"
+    },
+    {
+      "rank": 12,
+      "pattern": "～といっても",
+      "star": 2,
+      "exam_hits": 5,
+      "last_appeared": 2014,
+      "gap_years": 11,
+      "feature": "虽说（是）～可是也～；就说～也是～;",
+      "meaning_summary": "虽说（是）～可是也～；就说～也是～;",
+      "example_sentence": "ビルと言っても、三階建ての小さなものだ — 虽说是大楼，也是三层建筑"
+    },
+    {
+      "rank": 13,
+      "pattern": "～ところを",
+      "star": 2,
+      "exam_hits": 5,
+      "last_appeared": 2021,
+      "gap_years": 4,
+      "feature": "～的时候（意外地）却～(表示正处于一种状态时， 意外地或突然地出现另一状态，使前者受到影响） 2、危ないところを助けて頂",
+      "meaning_summary": "～的时候（意外地）却～(表示正处于一种状态时， 意外地或突然地出现另一状态，使前者受到影响） 2、危ないところを助けて頂",
+      "example_sentence": "お忙しいところをお邪魔してすみません — 正忙的时候来打扰您，非常抱"
+    },
+    {
+      "rank": 14,
+      "pattern": "～にしたら",
+      "star": 2,
+      "exam_hits": 5,
+      "last_appeared": 2014,
+      "gap_years": 11,
+      "feature": "（若是）把～定为～（的话）；假定 ～（的话） 2、誕生日のパーティーは土曜日にすればみんな参加できる。／若把生日晚会 定",
+      "meaning_summary": "（若是）把～定为～（的话）；假定 ～（的话） 2、誕生日のパーティーは土曜日にすればみんな参加できる。／若把生日晚会 定",
+      "example_sentence": "あの人の身にしたら、そうするよりほかなかったと思う — 我认为若是（处"
+    },
+    {
+      "rank": 15,
+      "pattern": "～にしても",
+      "star": 2,
+      "exam_hits": 5,
+      "last_appeared": 2021,
+      "gap_years": 4,
+      "feature": "即使～也～；作为～来说也～；（前接不 定词时）无论～都～；尽管～但是～;",
+      "meaning_summary": "即使～也～；作为～来说也～；（前接不 定词时）无论～都～；尽管～但是～;",
+      "example_sentence": "私にしても同じ気持ちだ — 作为我来说也是同样的心情．"
+    },
+    {
+      "rank": 16,
+      "pattern": "～からは",
+      "star": 2,
+      "exam_hits": 4,
+      "last_appeared": 2021,
+      "gap_years": 4,
+      "feature": "［动词终止形］＋からは・既然～就（要）～",
+      "meaning_summary": "［动词终止形］＋からは・既然～就（要）～",
+      "example_sentence": "こうなったからは何でもやりぬくつもりだ — 既然如此，就无论如何也要"
+    },
+    {
+      "rank": 17,
+      "pattern": "～としても",
+      "star": 2,
+      "exam_hits": 4,
+      "last_appeared": 2021,
+      "gap_years": 4,
+      "feature": "作为～的话； 以～的身份（或姿格）～;",
+      "meaning_summary": "作为～的话； 以～的身份（或姿格）～;",
+      "example_sentence": "彼は友達としてとても信頼できる人です — 他作为朊友是完全可以信赖的"
+    },
+    {
+      "rank": 18,
+      "pattern": "～以上は",
+      "star": 2,
+      "exam_hits": 2,
+      "last_appeared": 2014,
+      "gap_years": 11,
+      "feature": "既然～（当然）就～;",
+      "meaning_summary": "既然～（当然）就～;",
+      "example_sentence": "参加する以上は優勝したい。 — 既然参加，当然就想得冠军．"
+    },
+    {
+      "rank": 19,
+      "pattern": "～かねる（～かねない）",
+      "star": 2,
+      "exam_hits": 2,
+      "last_appeared": 2021,
+      "gap_years": 4,
+      "feature": "难以～；不便～；不能～；不好意思～;",
+      "meaning_summary": "难以～；不便～；不能～；不好意思～;",
+      "example_sentence": "申しかねますが10万円ほど貸していただけないでしょうか — 不好意思开"
+    },
+    {
+      "rank": 20,
+      "pattern": "～つつある",
+      "star": 2,
+      "exam_hits": 2,
+      "last_appeared": 2014,
+      "gap_years": 11,
+      "feature": "正在～",
+      "meaning_summary": "正在～",
+      "example_sentence": "住民の連帯意識は向上しつつある — 居民的集体意识正在提高．"
+    },
+    {
+      "rank": 21,
+      "pattern": "～でなければ",
+      "star": 2,
+      "exam_hits": 2,
+      "last_appeared": 2021,
+      "gap_years": 4,
+      "feature": "",
+      "meaning_summary": "",
+      "example_sentence": ""
+    },
+    {
+      "rank": 22,
+      "pattern": "～かけだ",
+      "star": 2,
+      "exam_hits": 1,
+      "last_appeared": 2012,
+      "gap_years": 13,
+      "feature": "表示动作刚开始，动作未完而中断，动作即将发生等． 18～かけの ［动词连用形］＋かけの／表示动作刚开始，动作未完而中断，",
+      "meaning_summary": "表示动作刚开始，动作未完而中断，动作即将发生等． 18～かけの ［动词连用形］＋かけの／表示动作刚开始，动作未完而中断，",
+      "example_sentence": "もう出勤の時間なのにまだ御飯が食べかけだ — 已经到了上班时间，"
+    },
+    {
+      "rank": 23,
+      "pattern": "～かと思うと（思ったら）",
+      "star": 2,
+      "exam_hits": 1,
+      "last_appeared": 2021,
+      "gap_years": 4,
+      "feature": "刚一～（马上）就～；本以为～不料想～；忽而～忽而～;",
+      "meaning_summary": "刚一～（马上）就～；本以为～不料想～；忽而～忽而～;",
+      "example_sentence": "学生はベルが鳴ったかと思うと飛び出した — 刚一响铃，学生就跑出去了．"
+    },
+    {
+      "rank": 24,
+      "pattern": "～からして",
+      "star": 2,
+      "exam_hits": 1,
+      "last_appeared": 2010,
+      "gap_years": 15,
+      "feature": "仍～来看；仍～就～；不用说别的，就仍～ 2、この子は顔つきからして利口そうだ。／这孩子仍模样看就很聪明． 3、結婚するに",
+      "meaning_summary": "仍～来看；仍～就～；不用说别的，就仍～ 2、この子は顔つきからして利口そうだ。／这孩子仍模样看就很聪明． 3、結婚するに",
+      "example_sentence": "発言の内容は別として彼の態度からして許せない — 发言内容先不谈，仍"
+    },
+    {
+      "rank": 25,
+      "pattern": "～たとたんに",
+      "star": 2,
+      "exam_hits": 1,
+      "last_appeared": 2021,
+      "gap_years": 4,
+      "feature": "正当～的时候，就～；刚一～的时候,就～;",
+      "meaning_summary": "正当～的时候，就～；刚一～的时候,就～;",
+      "example_sentence": "立ち上がったとたん、頭をぶつけた — 刚一站起来，就把头撞上了．"
+    }
+  ],
+  "grammar_contrasts": [
+    {
+      "a": "～うちに",
+      "b": "～間に",
+      "diff": "两者均表趁着某段时间做某事，「うちに」强调状态变化前",
+      "a_example": "",
+      "b_example": ""
+    },
+    {
+      "a": "～かけだ",
+      "b": "～かける",
+      "diff": "「かけだ」表动作刚开始/中断；「かける」是他动词，表悬挂/覆盖",
+      "a_example": "もう出勤の時間なのにまだ御飯が食べかけだ — 已经到了上班时间，",
+      "b_example": ""
+    },
+    {
+      "a": "～がたい",
+      "b": "～にくい",
+      "diff": "两者均表难以～，「がたい」更书面且主观感情强",
+      "a_example": "あんなに元気だった山田さんが亡くなったとは信じがたいことだ — 说那",
+      "b_example": ""
+    },
+    {
+      "a": "～かねる",
+      "b": "～かねない",
+      "diff": "「かねる」表难以做到；「かねない」表可能负面发生，方向相反",
+      "a_example": "申しかねますが10万円ほど貸していただけないでしょうか — 不好意思开",
+      "b_example": ""
+    },
+    {
+      "a": "～きらいがある",
+      "b": "～気味",
+      "diff": "两者均表某种倾向，「きらいがある」偏负面批评，「気味」偏轻微感受",
+      "a_example": "",
+      "b_example": ""
+    },
+    {
+      "a": "～くせに",
+      "b": "～のに",
+      "diff": "两者均表不满转折，「くせに」语气更强烈，带有责备",
+      "a_example": "",
+      "b_example": ""
+    },
+    {
+      "a": "～せいで",
+      "b": "～おかげで",
+      "diff": "「せいで」表消极原因；「おかげで」表积极原因",
+      "a_example": "",
+      "b_example": ""
+    },
+    {
+      "a": "～だけ",
+      "b": "～ばかり",
+      "diff": "两者均表限定，「だけ」中性；「ばかり」带感情色彩（多不满）",
+      "a_example": "",
+      "b_example": ""
+    },
+    {
+      "a": "～たら",
+      "b": "～ば",
+      "diff": "两者均表条件，「たら」侧重发现/契机，「ば」侧重假设/恒常",
+      "a_example": "",
+      "b_example": ""
+    },
+    {
+      "a": "～ても",
+      "b": "～でも",
+      "diff": "两者均表让步，「ても」前接动词/形容词，「でも」前接名词/形容动词",
+      "a_example": "",
+      "b_example": ""
+    },
+    {
+      "a": "～ところに",
+      "b": "～ところへ",
+      "diff": "两者均表时间点，「に」侧重状态被惊讶打断，「へ」侧重某人到来",
+      "a_example": "",
+      "b_example": ""
+    },
+    {
+      "a": "～ばかりに",
+      "b": "～だけに",
+      "diff": "「ばかりに」多带后悔消极情绪；「だけに」表正因为所以",
+      "a_example": "",
+      "b_example": ""
+    }
+  ],
+  "vocab_business": [
+    {
+      "word": "需要",
+      "reading": "じゅよう",
+      "_difficulty": 7
+    },
+    {
+      "word": "上司",
+      "reading": "じょうし",
+      "_difficulty": 7
+    },
+    {
+      "word": "請求",
+      "reading": "せいきゅう",
+      "_difficulty": 7
+    },
+    {
+      "word": "同僚",
+      "reading": "どうりょう",
+      "_difficulty": 7
+    },
+    {
+      "word": "役職",
+      "reading": "やくしょく",
+      "_difficulty": 7
+    },
+    {
+      "word": "出張",
+      "reading": "しゅっちょう",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "契約",
+      "reading": "けいやく",
+      "_difficulty": 6
+    },
+    {
+      "word": "交渉",
+      "reading": "こうしょう",
+      "_difficulty": 6
+    },
+    {
+      "word": "不況",
+      "reading": "ふきょう",
+      "_difficulty": 6
+    },
+    {
+      "word": "担当",
+      "reading": "たんとう",
+      "_difficulty": 5.5
+    },
+    {
+      "word": "賃金",
+      "reading": "ちんぎん",
+      "_difficulty": 5.5
+    },
+    {
+      "word": "給与",
+      "reading": "きゅうよ",
+      "_difficulty": 5
+    },
+    {
+      "word": "供給",
+      "reading": "きょうきゅう",
+      "_difficulty": 5
+    },
+    {
+      "word": "採用",
+      "reading": "さいよう",
+      "_difficulty": 5
+    },
+    {
+      "word": "報告",
+      "reading": "ほうこく",
+      "_difficulty": 5
+    },
+    {
+      "word": "合併",
+      "reading": "がっぺい",
+      "_difficulty": 4.5
+    },
+    {
+      "word": "採算",
+      "reading": "さいさん",
+      "_difficulty": 4.5
+    },
+    {
+      "word": "独占",
+      "reading": "どくせん",
+      "_difficulty": 4.5
+    },
+    {
+      "word": "販売",
+      "reading": "はんばい",
+      "_difficulty": 4.5
+    },
+    {
+      "word": "営業",
+      "reading": "えいぎょう",
+      "_difficulty": 4
+    },
+    {
+      "word": "競争",
+      "reading": "きょうそう",
+      "_difficulty": 4
+    },
+    {
+      "word": "企画",
+      "reading": "きかく",
+      "_difficulty": 4
+    },
+    {
+      "word": "好況",
+      "reading": "こうきょう",
+      "_difficulty": 4
+    },
+    {
+      "word": "失業",
+      "reading": "しつぎょう",
+      "_difficulty": 4
+    },
+    {
+      "word": "収支",
+      "reading": "しゅうし",
+      "_difficulty": 4
+    },
+    {
+      "word": "損失",
+      "reading": "そんしつ",
+      "_difficulty": 3.5
+    },
+    {
+      "word": "倒産",
+      "reading": "とうさん",
+      "_difficulty": 3.5
+    },
+    {
+      "word": "黒字",
+      "reading": "くろじ",
+      "_difficulty": 3
+    },
+    {
+      "word": "会議",
+      "reading": "かいぎ",
+      "_difficulty": 3
+    },
+    {
+      "word": "回復",
+      "reading": "かいふく",
+      "_difficulty": 3
+    },
+    {
+      "word": "景気",
+      "reading": "けいき",
+      "_difficulty": 3
+    },
+    {
+      "word": "停滞",
+      "reading": "ていたい",
+      "_difficulty": 3
+    },
+    {
+      "word": "投資",
+      "reading": "とうし",
+      "_difficulty": 3
+    },
+    {
+      "word": "人事",
+      "reading": "じんじ",
+      "_difficulty": 2.5
+    },
+    {
+      "word": "利益",
+      "reading": "りえき",
+      "_difficulty": 2
+    }
+  ],
+  "vocab_academic": [
+    {
+      "word": "助教授",
+      "reading": "じょきょうじゅ",
+      "_difficulty": 9
+    },
+    {
+      "word": "教授",
+      "reading": "きょうじゅ",
+      "_difficulty": 8
+    },
+    {
+      "word": "著書",
+      "reading": "ちょしょ",
+      "_difficulty": 8
+    },
+    {
+      "word": "実験",
+      "reading": "じっけん",
+      "_difficulty": 7.5
+    },
+    {
+      "word": "文献",
+      "reading": "ぶんけん",
+      "_difficulty": 7.5
+    },
+    {
+      "word": "分析",
+      "reading": "ぶんせき",
+      "_difficulty": 7.5
+    },
+    {
+      "word": "論文",
+      "reading": "ろんぶん",
+      "_difficulty": 7.5
+    },
+    {
+      "word": "批評",
+      "reading": "ひひょう",
+      "_difficulty": 7
+    },
+    {
+      "word": "研究",
+      "reading": "けんきゅう",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "学術",
+      "reading": "がくじゅつ",
+      "_difficulty": 6
+    },
+    {
+      "word": "学説",
+      "reading": "がくせつ",
+      "_difficulty": 6
+    },
+    {
+      "word": "卒業",
+      "reading": "そつぎょう",
+      "_difficulty": 6
+    },
+    {
+      "word": "統計",
+      "reading": "とうけい",
+      "_difficulty": 6
+    },
+    {
+      "word": "雑誌",
+      "reading": "ざっし",
+      "_difficulty": 4.5
+    },
+    {
+      "word": "理論",
+      "reading": "りろん",
+      "_difficulty": 4.5
+    },
+    {
+      "word": "修士",
+      "reading": "しゅうし",
+      "_difficulty": 4
+    },
+    {
+      "word": "学問",
+      "reading": "がくもん",
+      "_difficulty": 3.5
+    },
+    {
+      "word": "学会",
+      "reading": "がっかい",
+      "_difficulty": 3.5
+    },
+    {
+      "word": "哲学",
+      "reading": "てつがく",
+      "_difficulty": 3
+    },
+    {
+      "word": "論理",
+      "reading": "ろんり",
+      "_difficulty": 2.5
+    },
+    {
+      "word": "博士",
+      "reading": "はかせ",
+      "_difficulty": 1
+    },
+    {
+      "word": "学士",
+      "reading": "がくし",
+      "_difficulty": 1
+    }
+  ],
+  "vocab_attitude": [
+    {
+      "word": "客観",
+      "reading": "きゃくかん",
+      "_difficulty": 7.5
+    },
+    {
+      "word": "主観",
+      "reading": "しゅかん",
+      "_difficulty": 7.5
+    },
+    {
+      "word": "積極",
+      "reading": "せっきょく",
+      "_difficulty": 7.5
+    },
+    {
+      "word": "楽観",
+      "reading": "らっかん",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "倹約",
+      "reading": "けんやく",
+      "_difficulty": 4.5
+    },
+    {
+      "word": "悲観",
+      "reading": "ひかん",
+      "_difficulty": 4.5
+    },
+    {
+      "word": "温厚",
+      "reading": "おんこう",
+      "_difficulty": 3.5
+    }
+  ],
+  "vocab_society": [
+    {
+      "word": "文化財",
+      "reading": "ぶんかざい",
+      "_difficulty": 8.5
+    },
+    {
+      "word": "技術",
+      "reading": "ぎじゅつ",
+      "_difficulty": 8
+    },
+    {
+      "word": "影響",
+      "reading": "えいきょう",
+      "_difficulty": 7
+    },
+    {
+      "word": "協調",
+      "reading": "きょうちょう",
+      "_difficulty": 7
+    },
+    {
+      "word": "社会",
+      "reading": "しゃかい",
+      "_difficulty": 7
+    },
+    {
+      "word": "環境",
+      "reading": "かんきょう",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "関係",
+      "reading": "かんけい",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "現象",
+      "reading": "げんしょう",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "対立",
+      "reading": "たいりつ",
+      "_difficulty": 6
+    },
+    {
+      "word": "動向",
+      "reading": "どうこう",
+      "_difficulty": 6
+    },
+    {
+      "word": "背景",
+      "reading": "はいけい",
+      "_difficulty": 6
+    },
+    {
+      "word": "共存",
+      "reading": "きょうぞん",
+      "_difficulty": 5.5
+    },
+    {
+      "word": "結果",
+      "reading": "けっか",
+      "_difficulty": 5.5
+    },
+    {
+      "word": "原因",
+      "reading": "げんいん",
+      "_difficulty": 5.5
+    },
+    {
+      "word": "転換",
+      "reading": "てんかん",
+      "_difficulty": 5.5
+    },
+    {
+      "word": "文化",
+      "reading": "ぶんか",
+      "_difficulty": 5.5
+    },
+    {
+      "word": "改革",
+      "reading": "かいかく",
+      "_difficulty": 5
+    },
+    {
+      "word": "傾向",
+      "reading": "けいこう",
+      "_difficulty": 5
+    },
+    {
+      "word": "国際",
+      "reading": "こくさい",
+      "_difficulty": 5
+    },
+    {
+      "word": "調和",
+      "reading": "ちょうわ",
+      "_difficulty": 5
+    },
+    {
+      "word": "没落",
+      "reading": "ぼつらく",
+      "_difficulty": 5
+    },
+    {
+      "word": "繁栄",
+      "reading": "はんえい",
+      "_difficulty": 4.5
+    },
+    {
+      "word": "変革",
+      "reading": "へんかく",
+      "_difficulty": 4.5
+    },
+    {
+      "word": "問題",
+      "reading": "もんだい",
+      "_difficulty": 4.5
+    },
+    {
+      "word": "革命",
+      "reading": "かくめい",
+      "_difficulty": 4
+    },
+    {
+      "word": "移行",
+      "reading": "いこう",
+      "_difficulty": 3
+    },
+    {
+      "word": "格差",
+      "reading": "かくさ",
+      "_difficulty": 3
+    },
+    {
+      "word": "摩擦",
+      "reading": "まさつ",
+      "_difficulty": 3
+    }
+  ],
+  "reading_themes": [
+    {
+      "rank": 1,
+      "theme": "日常生活",
+      "keywords": "買い物、食事、料理、家計、趣味"
+    },
+    {
+      "rank": 2,
+      "theme": "社会文化",
+      "keywords": "祭り、習慣、礼儀、年中行事、伝統工芸"
+    },
+    {
+      "rank": 3,
+      "theme": "環境問題",
+      "keywords": "ごみ問題、リサイクル、節約、自然保護"
+    },
+    {
+      "rank": 4,
+      "theme": "健康医療",
+      "keywords": "病気、予防、運動、食生活、ストレス"
+    },
+    {
+      "rank": 5,
+      "theme": "人間関係",
+      "keywords": "友人、職場、家族、コミュニケーション、マナー"
+    },
+    {
+      "rank": 6,
+      "theme": "仕事・就職",
+      "keywords": "アルバイト、就職活動、面接、職場の人間関係"
+    },
+    {
+      "rank": 7,
+      "theme": "旅行・交通",
+      "keywords": "国内旅行、海外旅行、予約、トラブル、アナウンス"
+    },
+    {
+      "rank": 8,
+      "theme": "教育・学習",
+      "keywords": "学校生活、受験、外国語勉強、生涯学習"
+    }
+  ],
+  "attitude_phrases": [
+    "～と言える",
+    "～が分かる",
+    "～ことが多い",
+    "～べきだ",
+    "～はずだ",
+    "～に違いない",
+    "～わけではない",
+    "～わけにはいかない",
+    "～に越したことはない",
+    "～とは限らない",
+    "～反面",
+    "～一方で",
+    "～だけでなく",
+    "～ばかりでなく",
+    "～として",
+    "～から始まる",
+    "～を目的として",
+    "～につれて",
+    "～に応じて",
+    "～に伴って"
+  ],
+  "listening_scenes": [
+    {
+      "rank": 1,
+      "scene": "購物",
+      "keywords": "セール、割引、ポイント、特売、返品、交換、レシート"
+    },
+    {
+      "rank": 2,
+      "scene": "飲食",
+      "keywords": "定食、予約、コース、メニュー変更、アレルギー"
+    },
+    {
+      "rank": 3,
+      "scene": "職場・アルバイト",
+      "keywords": "面接、シフト、給料、残業、休み、引き継ぎ"
+    },
+    {
+      "rank": 4,
+      "scene": "旅行・宿泊",
+      "keywords": "予約、キャンセル、荷物、チェックイン、アップグレード"
+    },
+    {
+      "rank": 5,
+      "scene": "学校生活",
+      "keywords": "ゼミ、発表、レポート、単位、成績、図書館"
+    },
+    {
+      "rank": 6,
+      "scene": "病院",
+      "keywords": "予約、症状、薬、再診、健康診断、予防接種"
+    },
+    {
+      "rank": 7,
+      "scene": "住まい",
+      "keywords": "引っ越し、家賃、契約、内覧、修繕、ゴミ出し"
+    }
+  ],
+  "lock_words": [
+    {
+      "word": "実は",
+      "action": "真相在后面"
+    },
+    {
+      "word": "でも",
+      "action": "口语转折，常引出新信息"
+    },
+    {
+      "word": "つまり",
+      "action": "总结/结论"
+    },
+    {
+      "word": "要するに",
+      "action": "简而言之，结论将至"
+    },
+    {
+      "word": "だから",
+      "action": "因果关系，后面是结果"
+    },
+    {
+      "word": "しかし",
+      "action": "转折，注意后面 often 是考点"
+    },
+    {
+      "word": "なので",
+      "action": "原因结果，后面是结论"
+    },
+    {
+      "word": "特に",
+      "action": "强调最重要的部分"
+    },
+    {
+      "word": "一番",
+      "action": "最高级，常跟核心信息"
+    },
+    {
+      "word": "例えば",
+      "action": "例子，用来说明前面的观点"
+    },
+    {
+      "word": "つまり",
+      "action": "同义替换即将出现"
+    },
+    {
+      "word": "それで",
+      "action": "承上启下，后接结果"
+    }
+  ]
+}

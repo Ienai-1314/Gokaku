@@ -1,0 +1,1547 @@
+{
+  "title": "N2 高频词汇表",
+  "markdown_preview_words": 310,
+  "total_kanji_nouns": 2922,
+  "total_idioms": 699,
+  "kanji_nouns": [
+    {
+      "word": "自然科学",
+      "reading": "しぜんかがく",
+      "_difficulty": 10.5
+    },
+    {
+      "word": "総理大臣",
+      "reading": "そうりだいじん",
+      "_difficulty": 10.5
+    },
+    {
+      "word": "百科事典",
+      "reading": "ひゃっかじてん",
+      "_difficulty": 10.5
+    },
+    {
+      "word": "生年月日",
+      "reading": "せいねんがっぴ",
+      "_difficulty": 9.5
+    },
+    {
+      "word": "望遠鏡",
+      "reading": "ぼうえんきょう",
+      "_difficulty": 9.5
+    },
+    {
+      "word": "助教授",
+      "reading": "じょきょうじゅ",
+      "_difficulty": 9
+    },
+    {
+      "word": "交通機関",
+      "reading": "こうつうきかん",
+      "_difficulty": 8.5
+    },
+    {
+      "word": "産婦人科",
+      "reading": "さんふじんか",
+      "_difficulty": 8.5
+    },
+    {
+      "word": "顕微鏡",
+      "reading": "けんびきょう",
+      "_difficulty": 8.5
+    },
+    {
+      "word": "文化財",
+      "reading": "ぶんかざい",
+      "_difficulty": 8.5
+    },
+    {
+      "word": "衣食住",
+      "reading": "いしょくじゅう",
+      "_difficulty": 8
+    },
+    {
+      "word": "大統領",
+      "reading": "だいとうりょう",
+      "_difficulty": 8
+    },
+    {
+      "word": "飛行場",
+      "reading": "ひこうじょう",
+      "_difficulty": 8
+    },
+    {
+      "word": "技術",
+      "reading": "ぎじゅつ",
+      "_difficulty": 8
+    },
+    {
+      "word": "教授",
+      "reading": "きょうじゅ",
+      "_difficulty": 8
+    },
+    {
+      "word": "著書",
+      "reading": "ちょしょ",
+      "_difficulty": 8
+    },
+    {
+      "word": "融通",
+      "reading": "ゆうずう",
+      "_difficulty": 8
+    },
+    {
+      "word": "留守番",
+      "reading": "るすばん",
+      "_difficulty": 7.5
+    },
+    {
+      "word": "感無量",
+      "reading": "かんむりょう",
+      "_difficulty": 7.5
+    },
+    {
+      "word": "機関車",
+      "reading": "きかんしゃ",
+      "_difficulty": 7.5
+    },
+    {
+      "word": "香辛料",
+      "reading": "こうしんりょう",
+      "_difficulty": 7.5
+    },
+    {
+      "word": "衆議院",
+      "reading": "しゅうぎいん",
+      "_difficulty": 7.5
+    },
+    {
+      "word": "博物館",
+      "reading": "はくぶつかん",
+      "_difficulty": 7.5
+    },
+    {
+      "word": "看病",
+      "reading": "かんびょう",
+      "_difficulty": 7.5
+    },
+    {
+      "word": "客観",
+      "reading": "きゃくかん",
+      "_difficulty": 7.5
+    },
+    {
+      "word": "実験",
+      "reading": "じっけん",
+      "_difficulty": 7.5
+    },
+    {
+      "word": "順番",
+      "reading": "じゅんばん",
+      "_difficulty": 7.5
+    },
+    {
+      "word": "神社",
+      "reading": "じんじゃ",
+      "_difficulty": 7.5
+    },
+    {
+      "word": "主観",
+      "reading": "しゅかん",
+      "_difficulty": 7.5
+    },
+    {
+      "word": "積極",
+      "reading": "せっきょく",
+      "_difficulty": 7.5
+    },
+    {
+      "word": "電柱",
+      "reading": "でんちゅう",
+      "_difficulty": 7.5
+    },
+    {
+      "word": "伝統",
+      "reading": "でんとう",
+      "_difficulty": 7.5
+    },
+    {
+      "word": "繁盛",
+      "reading": "はんじょう",
+      "_difficulty": 7.5
+    },
+    {
+      "word": "表現",
+      "reading": "ひょうげん",
+      "_difficulty": 7.5
+    },
+    {
+      "word": "文献",
+      "reading": "ぶんけん",
+      "_difficulty": 7.5
+    },
+    {
+      "word": "分析",
+      "reading": "ぶんせき",
+      "_difficulty": 7.5
+    },
+    {
+      "word": "文書",
+      "reading": "ぶんしょ",
+      "_difficulty": 7.5
+    },
+    {
+      "word": "矛盾",
+      "reading": "むじゅん",
+      "_difficulty": 7.5
+    },
+    {
+      "word": "論文",
+      "reading": "ろんぶん",
+      "_difficulty": 7.5
+    },
+    {
+      "word": "四捨五入",
+      "reading": "ししゃごにゅう",
+      "_difficulty": 7
+    },
+    {
+      "word": "言葉遣",
+      "reading": "ことばづか",
+      "_difficulty": 7
+    },
+    {
+      "word": "出来物",
+      "reading": "できぶつ",
+      "_difficulty": 7
+    },
+    {
+      "word": "三日月",
+      "reading": "みかづき",
+      "_difficulty": 7
+    },
+    {
+      "word": "再来週",
+      "reading": "さらいしゅう",
+      "_difficulty": 7
+    },
+    {
+      "word": "受話器",
+      "reading": "じゅわき",
+      "_difficulty": 7
+    },
+    {
+      "word": "消防署",
+      "reading": "しょうぼうしょ",
+      "_difficulty": 7
+    },
+    {
+      "word": "時刻表",
+      "reading": "じこくひょう",
+      "_difficulty": 7
+    },
+    {
+      "word": "水蒸気",
+      "reading": "すいじょうき",
+      "_difficulty": 7
+    },
+    {
+      "word": "税務署",
+      "reading": "ぜいむしょ",
+      "_difficulty": 7
+    },
+    {
+      "word": "長方形",
+      "reading": "ちょうほうけい",
+      "_difficulty": 7
+    },
+    {
+      "word": "調味料",
+      "reading": "ちょうみりょう",
+      "_difficulty": 7
+    },
+    {
+      "word": "定休日",
+      "reading": "ていきゅうび",
+      "_difficulty": 7
+    },
+    {
+      "word": "停留所",
+      "reading": "ていりゅうじょ",
+      "_difficulty": 7
+    },
+    {
+      "word": "配偶者",
+      "reading": "はいぐうしゃ",
+      "_difficulty": 7
+    },
+    {
+      "word": "影響",
+      "reading": "えいきょう",
+      "_difficulty": 7
+    },
+    {
+      "word": "怪獣",
+      "reading": "かいじゅう",
+      "_difficulty": 7
+    },
+    {
+      "word": "解除",
+      "reading": "かいじょ",
+      "_difficulty": 7
+    },
+    {
+      "word": "教材",
+      "reading": "きょうざい",
+      "_difficulty": 7
+    },
+    {
+      "word": "協調",
+      "reading": "きょうちょう",
+      "_difficulty": 7
+    },
+    {
+      "word": "芸術",
+      "reading": "げいじゅつ",
+      "_difficulty": 7
+    },
+    {
+      "word": "材料",
+      "reading": "ざいりょう",
+      "_difficulty": 7
+    },
+    {
+      "word": "磁石",
+      "reading": "じしゃく",
+      "_difficulty": 7
+    },
+    {
+      "word": "社会",
+      "reading": "しゃかい",
+      "_difficulty": 7
+    },
+    {
+      "word": "重視",
+      "reading": "じゅうし",
+      "_difficulty": 7
+    },
+    {
+      "word": "重量",
+      "reading": "じゅうりょう",
+      "_difficulty": 7
+    },
+    {
+      "word": "祝日",
+      "reading": "しゅくじつ",
+      "_difficulty": 7
+    },
+    {
+      "word": "需要",
+      "reading": "じゅよう",
+      "_difficulty": 7
+    },
+    {
+      "word": "症状",
+      "reading": "しょうじょう",
+      "_difficulty": 7
+    },
+    {
+      "word": "蒸発",
+      "reading": "じょうはつ",
+      "_difficulty": 7
+    },
+    {
+      "word": "植物",
+      "reading": "しょくぶつ",
+      "_difficulty": 7
+    },
+    {
+      "word": "辞職",
+      "reading": "じしょく",
+      "_difficulty": 7
+    },
+    {
+      "word": "重複",
+      "reading": "じゅうふく",
+      "_difficulty": 7
+    },
+    {
+      "word": "上司",
+      "reading": "じょうし",
+      "_difficulty": 7
+    },
+    {
+      "word": "条約",
+      "reading": "じょうやく",
+      "_difficulty": 7
+    },
+    {
+      "word": "蒸留",
+      "reading": "じょうりゅう",
+      "_difficulty": 7
+    },
+    {
+      "word": "請求",
+      "reading": "せいきゅう",
+      "_difficulty": 7
+    },
+    {
+      "word": "蔵相",
+      "reading": "ぞうしょう",
+      "_difficulty": 7
+    },
+    {
+      "word": "同僚",
+      "reading": "どうりょう",
+      "_difficulty": 7
+    },
+    {
+      "word": "白状",
+      "reading": "はくじょう",
+      "_difficulty": 7
+    },
+    {
+      "word": "発病",
+      "reading": "はつびょう",
+      "_difficulty": 7
+    },
+    {
+      "word": "批評",
+      "reading": "ひひょう",
+      "_difficulty": 7
+    },
+    {
+      "word": "役職",
+      "reading": "やくしょく",
+      "_difficulty": 7
+    },
+    {
+      "word": "一部分",
+      "reading": "いちぶぶん",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "過半数",
+      "reading": "かはんすう",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "看護婦",
+      "reading": "かんごふ",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "乾電池",
+      "reading": "かんでんち",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "座談会",
+      "reading": "ざだんかい",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "奨学金",
+      "reading": "しょうがくきん",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "自尊心",
+      "reading": "じそんしん",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "従業員",
+      "reading": "じゅうぎょういん",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "主人公",
+      "reading": "しゅじんこう",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "植民地",
+      "reading": "しょくみんち",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "青少年",
+      "reading": "せいしょうねん",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "扇風機",
+      "reading": "せんぷうき",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "大学院",
+      "reading": "だいがくいん",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "蛋白質",
+      "reading": "たんぱくしつ",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "聴診器",
+      "reading": "ちょうしんき",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "農産物",
+      "reading": "のうさんぶつ",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "文房具",
+      "reading": "ぶんぼうぐ",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "手順",
+      "reading": "てじゅん",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "暗算",
+      "reading": "あんざん",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "運搬",
+      "reading": "うんぱん",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "英文",
+      "reading": "えいぶん",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "援助",
+      "reading": "えんじょ",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "縁談",
+      "reading": "えんだん",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "遠方",
+      "reading": "えんぽう",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "環境",
+      "reading": "かんきょう",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "関係",
+      "reading": "かんけい",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "患者",
+      "reading": "かんじゃ",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "看板",
+      "reading": "かんばん",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "革新",
+      "reading": "かくしん",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "観衆",
+      "reading": "かんしゅう",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "願書",
+      "reading": "がんしょ",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "関税",
+      "reading": "かんぜい",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "脚本",
+      "reading": "きゃくほん",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "救援",
+      "reading": "きゅうえん",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "教訓",
+      "reading": "きょうくん",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "下旬",
+      "reading": "げじゅん",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "月給",
+      "reading": "げっきゅう",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "研究",
+      "reading": "けんきゅう",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "現象",
+      "reading": "げんしょう",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "現状",
+      "reading": "げんじょう",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "結晶",
+      "reading": "けっしょう",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "黒板",
+      "reading": "こくばん",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "昆虫",
+      "reading": "こんちゅう",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "雑談",
+      "reading": "ざつだん",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "週間",
+      "reading": "しゅうかん",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "重点",
+      "reading": "じゅうてん",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "受験",
+      "reading": "じゅけん",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "出張",
+      "reading": "しゅっちょう",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "出版",
+      "reading": "しゅっぱん",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "巡査",
+      "reading": "じゅんさ",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "順序",
+      "reading": "じゅんじょ",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "賞金",
+      "reading": "しょうきん",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "条件",
+      "reading": "じょうけん",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "上旬",
+      "reading": "じょうじゅん",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "冗談",
+      "reading": "じょうだん",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "初旬",
+      "reading": "しょじゅん",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "人種",
+      "reading": "じんしゅ",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "主権",
+      "reading": "しゅけん",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "証言",
+      "reading": "しょうげん",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "助言",
+      "reading": "じょげん",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "信者",
+      "reading": "しんじゃ",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "税関",
+      "reading": "ぜいかん",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "前者",
+      "reading": "ぜんしゃ",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "青春",
+      "reading": "せいしゅん",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "絶版",
+      "reading": "ぜっぱん",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "戦術",
+      "reading": "せんじゅつ",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "造船",
+      "reading": "ぞうせん",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "相談",
+      "reading": "そうだん",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "短編",
+      "reading": "たんぺん",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "脱出",
+      "reading": "だっしゅつ",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "短縮",
+      "reading": "たんしゅく",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "中旬",
+      "reading": "ちゅうじゅん",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "長男",
+      "reading": "ちょうなん",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "直前",
+      "reading": "ちょくぜん",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "直角",
+      "reading": "ちょっかく",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "長編",
+      "reading": "ちょうへん",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "電球",
+      "reading": "でんきゅう",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "電流",
+      "reading": "でんりゅう",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "電力",
+      "reading": "でんりょく",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "発車",
+      "reading": "はっしゃ",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "発電",
+      "reading": "はつでん",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "筆者",
+      "reading": "ひっしゃ",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "評判",
+      "reading": "ひょうばん",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "文芸",
+      "reading": "ぶんげい",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "文章",
+      "reading": "ぶんしょう",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "文脈",
+      "reading": "ぶんみゃく",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "分量",
+      "reading": "ぶんりょう",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "本文",
+      "reading": "ほんぶん",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "免除",
+      "reading": "めんじょ",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "楽観",
+      "reading": "らっかん",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "旅館",
+      "reading": "りょかん",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "立方",
+      "reading": "りっぽう",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "連日",
+      "reading": "れんじつ",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "連邦",
+      "reading": "れんぽう",
+      "_difficulty": 6.5
+    },
+    {
+      "word": "風呂敷",
+      "reading": "ふろしき",
+      "_difficulty": 6
+    },
+    {
+      "word": "加速度",
+      "reading": "かそくど",
+      "_difficulty": 6
+    },
+    {
+      "word": "再来月",
+      "reading": "さらいげつ",
+      "_difficulty": 6
+    },
+    {
+      "word": "実業家",
+      "reading": "じつぎょうか",
+      "_difficulty": 6
+    },
+    {
+      "word": "十字路",
+      "reading": "じゅうじろ",
+      "_difficulty": 6
+    },
+    {
+      "word": "代名詞",
+      "reading": "だいめいし",
+      "_difficulty": 6
+    },
+    {
+      "word": "方程式",
+      "reading": "ほうていしき",
+      "_difficulty": 6
+    },
+    {
+      "word": "放射能",
+      "reading": "ほうしゃのう",
+      "_difficulty": 6
+    },
+    {
+      "word": "手錠",
+      "reading": "てじょう",
+      "_difficulty": 6
+    },
+    {
+      "word": "医療",
+      "reading": "いりょう",
+      "_difficulty": 6
+    },
+    {
+      "word": "移住",
+      "reading": "いじゅう",
+      "_difficulty": 6
+    },
+    {
+      "word": "衣料",
+      "reading": "いりょう",
+      "_difficulty": 6
+    },
+    {
+      "word": "王女",
+      "reading": "おうじょ",
+      "_difficulty": 6
+    },
+    {
+      "word": "改造",
+      "reading": "かいぞう",
+      "_difficulty": 6
+    },
+    {
+      "word": "学術",
+      "reading": "がくじゅつ",
+      "_difficulty": 6
+    },
+    {
+      "word": "階級",
+      "reading": "かいきゅう",
+      "_difficulty": 6
+    },
+    {
+      "word": "改良",
+      "reading": "かいりょう",
+      "_difficulty": 6
+    },
+    {
+      "word": "隔週",
+      "reading": "かくしゅう",
+      "_difficulty": 6
+    },
+    {
+      "word": "学説",
+      "reading": "がくせつ",
+      "_difficulty": 6
+    },
+    {
+      "word": "企業",
+      "reading": "きぎょう",
+      "_difficulty": 6
+    },
+    {
+      "word": "救助",
+      "reading": "きゅうじょ",
+      "_difficulty": 6
+    },
+    {
+      "word": "給料",
+      "reading": "きゅうりょう",
+      "_difficulty": 6
+    },
+    {
+      "word": "教養",
+      "reading": "きょうよう",
+      "_difficulty": 6
+    },
+    {
+      "word": "記述",
+      "reading": "きじゅつ",
+      "_difficulty": 6
+    }
+  ],
+  "idioms": [
+    {
+      "number": 1,
+      "idiom": "ああ言えばこう言う",
+      "meaning": "强词夺理。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 2,
+      "idiom": "あがきがとれない",
+      "meaning": "动弹不得。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 3,
+      "idiom": "あぐらをかく",
+      "meaning": "盘腿坐。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 4,
+      "idiom": "あけに染まる",
+      "meaning": "浑身沾满鲜血。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 5,
+      "idiom": "あごが落ちる",
+      "meaning": "非常好吃(形容食品味道极佳)。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 6,
+      "idiom": "あごが干上(が)る",
+      "meaning": "穷困潦倒。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 7,
+      "idiom": "あごで使う",
+      "meaning": "居高临下，支使别人。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 8,
+      "idiom": "あごを出す",
+      "meaning": "极度疲劳。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 9,
+      "idiom": "あごをなでる",
+      "meaning": "自鸣得意。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 10,
+      "idiom": "あごを外す",
+      "meaning": "大笑。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 11,
+      "idiom": "あさっての方を向く",
+      "meaning": "走错了方向。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 12,
+      "idiom": "あずさにのぼす",
+      "meaning": "付梓，出版。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 13,
+      "idiom": "あずま男に京女(きょうおんな)",
+      "meaning": "关东男配京都女(理想的夫妻)。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 14,
+      "idiom": "恩をあだで返す",
+      "meaning": "恩将仇报。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 15,
+      "idiom": "あつものに懲(こ)りて膾(なます)を吹く",
+      "meaning": "惩羹吹齑。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 16,
+      "idiom": "あばたもえくぼ",
+      "meaning": "情人眼里出西施。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 17,
+      "idiom": "あぶはち取らず",
+      "meaning": "逐两兔则一兔不得,贪多嚼不烂。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 18,
+      "idiom": "あめをなめさせる(しゃぶらせる)",
+      "meaning": "投其所好。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 19,
+      "idiom": "あわびの片思(かたおも)い",
+      "meaning": "单相思，剃头挑子一头儿热。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 20,
+      "idiom": "アンテナが高い",
+      "meaning": "消息灵通。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 21,
+      "idiom": "いざというとき",
+      "meaning": "万一的时候，一旦有什幺事。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 22,
+      "idiom": "いすかの嘴(はし)(の食い違い)",
+      "meaning": "事与愿违，不如意。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 23,
+      "idiom": "いたち最後っぺ",
+      "meaning": "最后一招儿，最后的绝招。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 24,
+      "idiom": "かえるの子はかえる",
+      "meaning": "有其父必有其子。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 25,
+      "idiom": "かえるの面(つら)に水",
+      "meaning": "满不在乎。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 26,
+      "idiom": "かえるは口から呑まれる",
+      "meaning": "祸从口出。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 27,
+      "idiom": "かえるの願立て",
+      "meaning": "顾前不顾后。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 28,
+      "idiom": "かぎゅう角上(かくじょう)の争い",
+      "meaning": "无谓之争。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 29,
+      "idiom": "かごの鳥",
+      "meaning": "笼中鸟。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 30,
+      "idiom": "かさに着る",
+      "meaning": "日语N1 惯用语699 句",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 31,
+      "idiom": "かさにかかる",
+      "meaning": "盛气凌人。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 32,
+      "idiom": "かじをとる",
+      "meaning": "掌舵。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 33,
+      "idiom": "親のすねをかじる",
+      "meaning": "靠父母养活。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 34,
+      "idiom": "かすみを食って生きる",
+      "meaning": "喝西北风过活。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 35,
+      "idiom": "かっぱの川流れ",
+      "meaning": "淹死会水的。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 36,
+      "idiom": "かっぱの屁",
+      "meaning": "易如反掌。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 37,
+      "idiom": "かなえの軽重を問う",
+      "meaning": "问鼎之轻重，谁主沉浮。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 38,
+      "idiom": "かには甲羅に似せて穴を掘る",
+      "meaning": "量力而行。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 39,
+      "idiom": "かぶとを脱ぐ",
+      "meaning": "投降，认输。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 40,
+      "idiom": "かまをかける",
+      "meaning": "用话套话。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 41,
+      "idiom": "かみそりの刃を渡る",
+      "meaning": "冒险。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 42,
+      "idiom": "かむんで含めるように教える",
+      "meaning": "谆谆教诲。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 43,
+      "idiom": "かむませて呑む",
+      "meaning": "吃现成的。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 44,
+      "idiom": "かむ馬はしまいまでかむ",
+      "meaning": "本性难移。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 45,
+      "idiom": "かめの甲(こう)より年の功(こう)",
+      "meaning": "姜是老的辣。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 46,
+      "idiom": "かもがねぎをしょって来る",
+      "meaning": "好事送上门来。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 47,
+      "idiom": "かゆいところに手が届く",
+      "meaning": "体贴入微，照顾得无微不至。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 48,
+      "idiom": "からすの行水(ぎょうずい)",
+      "meaning": "(洗澡)泡一泡就出来。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 49,
+      "idiom": "からすの雌雄(しゆう)",
+      "meaning": "难以区别。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 50,
+      "idiom": "からすのぬれば色",
+      "meaning": "黑油油的头发。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 51,
+      "idiom": "鵜(う)のまねをするからす",
+      "meaning": "东施效颦。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 52,
+      "idiom": "さじを投げる",
+      "meaning": "(医生认为无法医治)撒手不管。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 53,
+      "idiom": "さたの限り",
+      "meaning": "岂有此理。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 54,
+      "idiom": "地獄のさたも金次第",
+      "meaning": "有钱能使鬼推磨。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 55,
+      "idiom": "さばを読む",
+      "meaning": "谎报数量，在数量上搞鬼骗人。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 56,
+      "idiom": "しかを追う者は山を見ず",
+      "meaning": "逐鹿者不见山。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 57,
+      "idiom": "しがにもかけない",
+      "meaning": "置之不理。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 58,
+      "idiom": "しがにかけるに足らず",
+      "meaning": "不足挂齿。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 59,
+      "idiom": "しし身中の虫",
+      "meaning": "败坏佛门的佛家弟子。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 60,
+      "idiom": "地獄の沙汰(さた)も金しだい",
+      "meaning": "日语N1 惯用语699 句",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 61,
+      "idiom": "しっぽを出す",
+      "meaning": "露出马脚。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 62,
+      "idiom": "しっぽをつかむ",
+      "meaning": "抓住把柄。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 63,
+      "idiom": "しっぽを巻く",
+      "meaning": "夹着尾巴逃跑。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 64,
+      "idiom": "しゃくにさわる",
+      "meaning": "气人，发怒。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 65,
+      "idiom": "しゃくの種(たね)",
+      "meaning": "令人生气的原因。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 66,
+      "idiom": "シャッポをぬぐ",
+      "meaning": "认输投降。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 67,
+      "idiom": "しりが重い",
+      "meaning": "懒惰，不爱动，屁股沉。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 68,
+      "idiom": "しりが軽い",
+      "meaning": "动作敏捷。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 69,
+      "idiom": "しりに敷く",
+      "meaning": "妻子欺压丈夫。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 70,
+      "idiom": "たいの尾よりいわしの頭",
+      "meaning": "宁为鸡口，不为牛后。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 71,
+      "idiom": "たががゆるむ",
+      "meaning": "箍松了。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 72,
+      "idiom": "タクトを取る",
+      "meaning": "指挥(演奏)。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 73,
+      "idiom": "帯に短したすきに長し",
+      "meaning": "高不成低不就。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 74,
+      "idiom": "たで食う虫もすきずき",
+      "meaning": "人各有所好。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 75,
+      "idiom": "たなからぼたもち",
+      "meaning": "福从天降。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 76,
+      "idiom": "たなにあげる",
+      "meaning": "束之高阁。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 77,
+      "idiom": "だめを押す",
+      "meaning": "一再叮嘱。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 78,
+      "idiom": "たもとをわかつ",
+      "meaning": "离别。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 79,
+      "idiom": "ちょうちんに釣(つ)り鍾(がね)",
+      "meaning": "无法比拟，相差甚远。",
+      "source": "699句惯用语"
+    },
+    {
+      "number": 80,
+      "idiom": "ちょうちん持(も)ち",
+      "meaning": "打灯笼的人。",
+      "source": "699句惯用语"
+    }
+  ],
+  "listening_scenes": [
+    {
+      "scene": "购物",
+      "words": [
+        "セール",
+        "割引",
+        "ポイント",
+        "特売",
+        "返品",
+        "交換",
+        "レシート"
+      ]
+    },
+    {
+      "scene": "打工",
+      "words": [
+        "面接",
+        "シフト",
+        "給料",
+        "残業",
+        "休み",
+        "引き継ぎ"
+      ]
+    },
+    {
+      "scene": "饮食",
+      "words": [
+        "定食",
+        "予約",
+        "コース",
+        "メニュー",
+        "アレルギー",
+        "惣菜"
+      ]
+    },
+    {
+      "scene": "旅行",
+      "words": [
+        "予約",
+        "キャンセル",
+        "荷物",
+        "チェックイン",
+        "時刻表"
+      ]
+    },
+    {
+      "scene": "学校",
+      "words": [
+        "ゼミ",
+        "発表",
+        "レポート",
+        "単位",
+        "成績",
+        "図書館"
+      ]
+    }
+  ]
+}
