@@ -26,8 +26,8 @@ export function Pricing({}: PricingProps) {
   const deliverables = [
     {
       icon: FileText,
-      title: "AI 高频考点分析报告",
-      desc: "语法TOP30（含出现次数+轮空年数+例句）、近义辨析15组、读解高频主题+作者态度句式、听力场景词",
+      title: "真题高频考点分析报告",
+      desc: "基于59套真题统计：语法TOP30（含出现次数+轮空年数+例句）、近义辨析15组、读解高频主题+作者态度句式、听力场景词",
     },
     {
       icon: Sparkles,
@@ -36,8 +36,8 @@ export function Pricing({}: PricingProps) {
     },
     {
       icon: BookText,
-      title: "高频词汇表 + 增值资料包",
-      desc: "200核心名词+100惯用语+听力场景速查，另含语法大全/近6000词Excel/699惯用语/1992-2025真题库等 176 份文件",
+      title: "高频词汇表 + 全料资料包",
+      desc: "200核心名词+100惯用语+听力场景速查，另含语法大全/近6000词Excel/699惯用语/1992-2025真题库等 176 份文件。人工整理，到手即用",
     },
   ];
 
@@ -52,7 +52,7 @@ export function Pricing({}: PricingProps) {
     {
       icon: Package,
       title: "产品和权益",
-      desc: "主权益：3 份 AI 深度 PDF。赠权益：20+ 份语法/听力/词汇/惯用句/真题资料（txt/pdf/excel）。",
+      desc: "主权益：3 份真题统计 PDF。赠权益：20+ 份语法/听力/词汇/惯用句/真题资料（txt/pdf/excel）。",
     },
     {
       icon: Smartphone,
@@ -100,7 +100,7 @@ export function Pricing({}: PricingProps) {
         {/* Value Prop Grid */}
         <div className="grid md:grid-cols-3 gap-4 mb-12 max-w-5xl mx-auto">
           {[
-            { num: "01", title: "考点怎么抓？", answer: "AI 报告用数据告诉你，哪些语法轮空 3 年以上、今年反弹概率最高，并配真题例句。" },
+            { num: "01", title: "考点怎么抓？", answer: "真题数据统计告诉你，哪些语法轮空 3 年以上、今年反弹概率最高，并配真题例句。" },
             { num: "02", title: "考前押什么？", answer: "预测单从真题规律出发，给你高押中概率语法 + 考前 1 晚必背 20 条，直击 7 月考点。" },
             { num: "03", title: "资料够不够？", answer: "不止 3 份 PDF，还打包了 699 惯用语、近 6000 词表、语法大全、1992–2025 真题库等 176 份文件。" },
           ].map((item, idx) => (
@@ -171,11 +171,26 @@ export function Pricing({}: PricingProps) {
                 className="w-full bg-[#C75B3B] hover:bg-[#A84A2F] text-white py-4 rounded-2xl font-semibold text-base transition-all duration-200 shadow-[0_4px_20px_rgba(199,91,59,0.25)] hover:shadow-[0_6px_24px_rgba(199,91,59,0.35)] flex items-center justify-center gap-2 cursor-pointer"
               >
                 <ShoppingBag className="w-4 h-4" />
-                <span>在小红书购买</span>
+                <span>立即购买 ¥29.9</span>
               </a>
 
+              {/* Payment methods & channels */}
+              <div className="mt-4 flex flex-col items-center gap-2">
+                <div className="flex items-center gap-3">
+                  <span className="px-2 py-1 rounded bg-[#1677FF]/10 text-[#1677FF] text-xs font-medium">
+                    支付宝
+                  </span>
+                  <span className="px-2 py-1 rounded bg-[#07C160]/10 text-[#07C160] text-xs font-medium">
+                    微信支付
+                  </span>
+                </div>
+                <p className="text-[10px] text-[#6B5E55]/70 text-center">
+                  可在小红书 / 微信公众号 / 闲鱼购买，资料通用
+                </p>
+              </div>
+
               {/* Secondary link */}
-              <div className="mt-3 text-center">
+              <div className="mt-4 text-center">
                 <a
                   href="/download"
                   className="inline-flex items-center gap-1 text-xs text-[#C75B3B] hover:underline"

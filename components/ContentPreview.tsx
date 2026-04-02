@@ -68,7 +68,7 @@ export function ContentPreview({ activeLevel }: ContentPreviewProps) {
             全料包内容预览
           </h2>
           <p className="text-[#6B5E55] max-w-md mx-auto text-sm">
-            不止 3 份 AI 报告，还有语法/听力/词汇/惯用语/真题库等 176 份资料。以下为主报告前 20% 免费预览。
+            3 份报告基于 59 套真题数据人工统计整理，另有语法/听力/词汇/惯用语/真题库等 176 份资料。以下为主报告前 20% 免费预览。
           </p>
         </div>
 
@@ -145,7 +145,7 @@ export function ContentPreview({ activeLevel }: ContentPreviewProps) {
                     className="bg-[#C75B3B] hover:bg-[#A84A2F] text-white px-8 py-3 rounded-2xl font-semibold text-sm transition-all duration-200 shadow-[0_4px_20px_rgba(199,91,59,0.25)] hover:shadow-[0_6px_24px_rgba(199,91,59,0.35)] cursor-pointer flex items-center gap-2"
                   >
                     <ShoppingBag className="w-4 h-4" />
-                    在小红书解锁完整资料 · ¥29.9
+                    解锁完整资料 · ¥29.9
                   </a>
                   <a
                     href="/download"
