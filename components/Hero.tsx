@@ -70,7 +70,7 @@ export function Hero({ activeLevel }: HeroProps) {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-base md:text-lg text-[#6B5E55] mb-8 max-w-2xl mx-auto leading-relaxed font-noto-jp"
           >
-            我们用 AI 量化模型分析 <span className="text-[#2D2420] font-semibold">2010-2025 年 59 套真题</span>，
+            我们用 AI 量化模型分析 <span className="text-[#2D2420] font-semibold">2010-2025 年 30+ 套完整真题</span>，
             建立语法/词汇/听力考点的频率数据库和轮空周期模型。
             不是经验帖，是数据结论。¥29.9 买断这套可复用的量化资产。
           </motion.p>

@@ -27,7 +27,7 @@ export function Pricing({}: PricingProps) {
     {
       icon: FileText,
       title: "N1 量化考点分析报告",
-      desc: "基于59套真题数据：语法TOP30（含出现次数+轮空年数+例句）、近义辨析15组、读解高频主题+作者态度句式、听力场景词量化统计",
+      desc: "基于30+套完整真题数据：语法TOP30（含出现次数+轮空年数+例句）、近义辨析15组、读解高频主题+作者态度句式、听力场景词量化统计",
     },
     {
       icon: Sparkles,
@@ -100,7 +100,7 @@ export function Pricing({}: PricingProps) {
         {/* Value Prop Grid */}
         <div className="grid md:grid-cols-3 gap-4 mb-12 max-w-5xl mx-auto">
           {[
-            { num: "01", title: "考点怎么抓？", answer: "用量化模型统计近15年真题，告诉你哪些语法轮空 3 年以上、今年反弹概率最高，并配真题例句。" },
+            { num: "01", title: "考点怎么抓？", answer: "用量化模型统计30+套完整真题数据，告诉你哪些语法轮空 3 年以上、今年反弹概率最高，并配真题例句。" },
             { num: "02", title: "考前押什么？", answer: "基于轮空周期和出现频率的押题预测单，给你高概率考点 + 考前 1 晚必背 20 条，直击 7 月考点。" },
             { num: "03", title: "资料够不够？", answer: "不止 3 份量化报告，还打包了 699 惯用语、近 6000 词表、语法大全、1992–2025 真题库等 176 份文件。" },
           ].map((item, idx) => (

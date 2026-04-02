@@ -68,7 +68,7 @@ export function ContentPreview({ activeLevel }: ContentPreviewProps) {
             全料包内容预览
           </h2>
           <p className="text-[#6B5E55] max-w-md mx-auto text-sm">
-            基于 59 套真题构建的量化分析数据库，另有语法/听力/词汇/惯用语/真题库等 176 份原始资料。以下为主报告前 20% 免费预览。
+            基于 30+ 套完整真题构建的量化分析数据库，另有语法/听力/词汇/惯用语/真题库等 176 份原始资料。以下为主报告前 20% 免费预览。
           </p>
         </div>
 
