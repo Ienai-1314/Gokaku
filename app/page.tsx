@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
+import { ToolShowcase } from "@/components/ToolShowcase";
+import { ResourcePack } from "@/components/ResourcePack";
 import { ContentPreview } from "@/components/ContentPreview";
 import { Pricing } from "@/components/Pricing";
 import { Footer } from "@/components/Footer";
@@ -15,6 +17,8 @@ export default function Home() {
       <Navbar activeLevel={activeLevel} onLevelChange={setActiveLevel} />
       <main className="flex-1">
         <Hero activeLevel={activeLevel} />
+        <ToolShowcase />
+        <ResourcePack />
         <ContentPreview activeLevel={activeLevel} />
         <Pricing />
       </main>
@@ -22,3 +26,4 @@ export default function Home() {
     </div>
   );
 }
+

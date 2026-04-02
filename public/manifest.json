@@ -1,0 +1,40 @@
+{
+  "name": "合格道 Gokaku",
+  "short_name": "合格道",
+  "description": "JLPT N1/N2 AI 备考工具 · 语法查询 · 错题分析",
+  "start_url": "/tool",
+  "display": "standalone",
+  "background_color": "#FAF6F0",
+  "theme_color": "#C75B3B",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "语法查询",
+      "short_name": "语法",
+      "description": "查询 JLPT N1/N2 语法用法",
+      "url": "/tool?tab=query",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "错题分析",
+      "short_name": "错题",
+      "description": "拍照或粘贴错题，AI 帮你分析",
+      "url": "/tool?tab=analyze",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}

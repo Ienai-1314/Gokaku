@@ -15,6 +15,7 @@ import {
   RefreshCw,
   Package,
   Headphones,
+  Brain,
 } from "lucide-react";
 
 // TODO: 替换为你的小红书店铺/笔记链接
@@ -25,26 +26,31 @@ interface PricingProps {}
 export function Pricing({}: PricingProps) {
   const deliverables = [
     {
+      icon: Brain,
+      title: "AI 工具无限使用（考季最核心权益）",
+      desc: "语法查询：输入任意语法，返回真题例句+易混淆对比+接续规则。错题分析：粘贴/拍照题目，AI 拆解陷阱逻辑。购买后无限使用，直至 2026 年 7 月考试结束。",
+    },
+    {
       icon: FileText,
-      title: "N1 量化考点分析报告",
-      desc: "基于30+套完整真题数据：语法TOP30（含出现次数+轮空年数+例句）、近义辨析15组、读解高频主题+作者态度句式、听力场景词量化统计",
+      title: "N1 真题频率分析报告",
+      desc: "基于18套完整真题（含题目+听力+解析）逐项统计：语法TOP30（出现次数+轮空年数+例句）、近义辨析15组、读解高频主题+听力场景词量化排序。",
     },
     {
       icon: Sparkles,
-      title: "2026年7月量化押题预测单",
-      desc: "用量化模型预测高/中押中概率语法考点、文字词汇/读解/听力方向，考前1晚必背20条、必错陷阱点TOP20",
+      title: "2026年7月参考押题预测单",
+      desc: "结合轮空周期和出现频率给出高/中参考概率语法点（仅供参考，不代表必然出现）、考前1晚重点复习20条、常见陷阱点TOP20。",
     },
     {
       icon: BookText,
       title: "高频词汇量化库 + 全料资料包",
-      desc: "200核心名词+100惯用语+听力场景速查量化表，另含语法大全/近6000词Excel/699惯用语/1992-2025真题库等 176 份文件",
+      desc: "200核心名词+100惯用语+听力场景速查表，另含语法大全/近6000词Excel/699惯用语/1992-2025真题库等176份文件。",
     },
   ];
 
   const guarantees = [
-    "一次购买，永久回看",
-    "预测模型持续更新至考前",
-    "176 份量化资料一次给齐",
+    "AI 工具用到考试结束",
+    "一次购买，考季内永久使用",
+    "押题参考持续更新至考前",
     "N1/N2 双版本通用",
   ];
 
@@ -52,7 +58,7 @@ export function Pricing({}: PricingProps) {
     {
       icon: Package,
       title: "产品和权益",
-      desc: "主权益：3 份基于59套真题的量化分析报告。赠权益：20+ 份语法/听力/词汇/惯用句/真题原始资料（txt/pdf/excel）。",
+      desc: "主权益：3份基于18套完整真题的频率分析报告。赠权益：20+份语法/听力/词汇/惯用句/真题原始资料（txt/pdf/excel）。押题内容为参考性预测，不构成考试结果保证。",
     },
     {
       icon: Smartphone,
@@ -72,7 +78,7 @@ export function Pricing({}: PricingProps) {
     {
       icon: Shield,
       title: "退款政策",
-      desc: "支持支付后 12 小时内的无条件退款。超过 12 小时或已领取网盘链接后不再接受退款。",
+      desc: "支持支付后12小时内的无条件退款。数字商品一经领取网盘链接后不再退款，12小时内未领取可退款。",
     },
     {
       icon: Headphones,
@@ -90,19 +96,19 @@ export function Pricing({}: PricingProps) {
             Pricing
           </span>
           <h2 className="font-bebas text-5xl md:text-6xl text-[#2D2420] mb-3">
-            ¥29.9 能买到什么？
+            ¥39 能买到什么？
           </h2>
           <p className="text-[#6B5E55] max-w-lg mx-auto text-sm leading-relaxed">
-            不是经验帖，是<b>基于59套真题数据的量化结论</b>。一次买断，整整 1 套 N1 备考资产库：
+            不是经验帖，是<b>基于18套完整真题的频率统计结论</b>。一次买断，整整1套N1备考资产库：
           </p>
         </div>
 
         {/* Value Prop Grid */}
         <div className="grid md:grid-cols-3 gap-4 mb-12 max-w-5xl mx-auto">
           {[
-            { num: "01", title: "考点怎么抓？", answer: "用量化模型统计30+套完整真题数据，告诉你哪些语法轮空 3 年以上、今年反弹概率最高，并配真题例句。" },
-            { num: "02", title: "考前押什么？", answer: "基于轮空周期和出现频率的押题预测单，给你高概率考点 + 考前 1 晚必背 20 条，直击 7 月考点。" },
-            { num: "03", title: "资料够不够？", answer: "不止 3 份量化报告，还打包了 699 惯用语、近 6000 词表、语法大全、1992–2025 真题库等 176 份文件。" },
+            { num: "01", title: "做错了题怎么办？", answer: "粘贴或拍照上传题目，AI 拆解干扰选项的逻辑陷阱，找出你的思维盲区，下次不再犯同类错误。购买后无限使用。" },
+            { num: "02", title: "语法搞混怎么查？", answer: "输入任意语法，立刻返回真题例句、接续规则、近义辨析。不是教科书解释，是 18 套真题视角的考试用法。" },
+            { num: "03", title: "备考重点怎么定？", answer: "18套完整真题逐项统计频率+轮空周期，告诉你哪些语法今年参考概率最高，考前1晚重点复习20条。" },
           ].map((item, idx) => (
             <div key={idx} className="bg-white rounded-2xl p-6 border border-[#E8E0D5] shadow-sm">
               <div className="text-[#C75B3B] font-bebas text-3xl mb-2">{item.num}</div>
@@ -124,15 +130,16 @@ export function Pricing({}: PricingProps) {
             <div className="px-8 py-8 text-center border-b border-[#E8E0D5] bg-[#FDF8F3]">
               <div className="inline-flex items-center gap-2 border border-[#F0A500]/40 bg-[#F0A500]/10 text-[#C75B3B] px-3 py-1 rounded-full text-xs font-semibold mb-5">
                 <Zap className="w-3 h-3" />
-                <span>限时早鸟价</span>
+                <span>早鸟价 · 5月1日起恢复¥49</span>
               </div>
               <div className="flex items-baseline justify-center gap-3">
-                <span className="font-bebas text-7xl text-[#2D2420]">¥29.9</span>
+                <span className="font-bebas text-7xl text-[#2D2420]">¥39</span>
                 <div className="flex flex-col items-start">
                   <span className="text-[#6B5E55] line-through text-lg">¥99</span>
-                  <span className="text-[#6B5E55] text-xs">买断制 · 无二次付费</span>
+                  <span className="text-[#6B5E55] text-xs">买断制 · 考季内有效</span>
                 </div>
               </div>
+              <p className="text-xs text-[#C75B3B] mt-2">5月1日后恢复¥49，现在是最低价</p>
             </div>
 
             {/* Deliverables */}
@@ -171,7 +178,7 @@ export function Pricing({}: PricingProps) {
                 className="w-full bg-[#C75B3B] hover:bg-[#A84A2F] text-white py-4 rounded-2xl font-semibold text-base transition-all duration-200 shadow-[0_4px_20px_rgba(199,91,59,0.25)] hover:shadow-[0_6px_24px_rgba(199,91,59,0.35)] flex items-center justify-center gap-2 cursor-pointer"
               >
                 <ShoppingBag className="w-4 h-4" />
-                <span>立即购买 ¥29.9</span>
+                <span>立即购买 ¥39</span>
               </a>
 
               {/* Payment methods & channels */}

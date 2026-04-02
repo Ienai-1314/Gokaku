@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Bebas_Neue, DM_Sans, Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
 
@@ -22,9 +22,22 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
-  title: "量化 N1 · 合格道 Gokaku | 基于59套真题数据的考点预测系统",
-  description: "像量化股票一样分析 JLPT 真题。基于59套真题数据建立考点频率模型和轮空周期预测。2026年7月考前必看。",
+  title: "合格道 Gokaku | 基于18套完整真题的JLPT N1备考资料",
+  description: "基于18套含题目+听力+解析的完整N1真题逐题统计，提供语法频率分析、参考押题预测、AI语法查询工具。2026年7月考前必看。",
   keywords: "JLPT, N1, N2, 日语能力考, 量化N1, 真题统计, 押题预测, 高频词汇",
+  manifest: "/manifest.json",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "合格道",
+  },
+  icons: {
+    apple: "/icons/icon-192.png",
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#C75B3B",
 };
 
 export default function RootLayout({
