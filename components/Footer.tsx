@@ -21,7 +21,7 @@ export function Footer() {
               </div>
             </div>
             <p className="text-[#6B5E55] text-sm leading-relaxed">
-              基于 59 套真题统计的 JLPT N1/N2 备考资料库，<br />助你高效冲刺合格。
+              基于 59 套真题数据的量化 N1/N2 备考分析系统，<br />助你高效冲刺合格。
             </p>
           </div>
 

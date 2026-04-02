@@ -59,7 +59,7 @@ export function Hero({ activeLevel }: HeroProps) {
               GOKAKU
             </h1>
             <div className="font-noto-jp text-2xl md:text-3xl text-[#6B5E55] mt-2 leading-relaxed">
-              <span className="text-[#C75B3B] font-bold">{activeLevel}</span> 冲刺全料包 · 3份真题统计报告+176份备考资料
+              量化 <span className="text-[#C75B3B] font-bold">{activeLevel}</span> · 基于59套真题数据的考点预测系统
             </div>
           </motion.div>
 
@@ -70,9 +70,9 @@ export function Hero({ activeLevel }: HeroProps) {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-base md:text-lg text-[#6B5E55] mb-8 max-w-2xl mx-auto leading-relaxed font-noto-jp"
           >
-            基于 <span className="text-[#2D2420] font-semibold">2010-2025 年 59 套真题</span> 耗时3个月人工整理统计，
-            包含 3 份深度报告 + 语法/听力/词汇/惯用语/真题全套资料 176 个文件。
-            不是零散资料拼盘，是帮你省掉200+小时的完整备考资产库，¥29.9 一次买断。
+            我们用 AI 量化模型分析 <span className="text-[#2D2420] font-semibold">2010-2025 年 59 套真题</span>，
+            建立语法/词汇/听力考点的频率数据库和轮空周期模型。
+            不是经验帖，是数据结论。¥29.9 买断这套可复用的量化资产。
           </motion.p>
 
           {/* Feature Pills */}
@@ -110,7 +110,7 @@ export function Hero({ activeLevel }: HeroProps) {
               className="w-full sm:w-auto bg-[#C75B3B] hover:bg-[#A84A2F] text-white px-8 py-4 rounded-2xl font-semibold text-base transition-all duration-200 shadow-[0_4px_20px_rgba(199,91,59,0.25)] hover:shadow-[0_6px_24px_rgba(199,91,59,0.35)] cursor-pointer flex items-center justify-center gap-2"
             >
               <ShoppingBag className="w-4 h-4" />
-              ¥29.9 立即购买
+              ¥29.9 获取量化分析系统
             </a>
             <a
               href="/download"

@@ -22,9 +22,9 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
-  title: "合格道 Gokaku | JLPT N1/N2 真题统计备考资料库",
-  description: "基于59套真题数据人工整理统计，精准定位高频考点。2026年7月 JLPT 考前必看资料，含押题预测 + 高频词汇表。",
-  keywords: "JLPT, N1, N2, 日语能力考, 真题统计, 押题预测, 高频词汇",
+  title: "量化 N1 · 合格道 Gokaku | 基于59套真题数据的考点预测系统",
+  description: "像量化股票一样分析 JLPT 真题。基于59套真题数据建立考点频率模型和轮空周期预测。2026年7月考前必看。",
+  keywords: "JLPT, N1, N2, 日语能力考, 量化N1, 真题统计, 押题预测, 高频词汇",
 };
 
 export default function RootLayout({
