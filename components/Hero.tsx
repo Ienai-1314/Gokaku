@@ -64,12 +64,10 @@ export function Hero({ activeLevel }: HeroProps) {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-base md:text-lg text-[#6B5E55] mb-10 max-w-xl mx-auto leading-relaxed font-noto-jp"
           >
-            做错了哪道题、卡在哪条语法——
-            <span className="text-[#2D2420] font-semibold">查一下，答案就在真题里</span>。
-            <br className="hidden sm:block" />
-            两个 AI 工具专为备考痛点设计，配套
-            <span className="text-[#2D2420] font-semibold"> 231 条语法库</span>和
-            <span className="text-[#2D2420] font-semibold"> 176 份 {activeLevel} 备考资料</span>。
+            语法随时可查，错题拍照就分析。<br />
+            <span className="text-[#2D2420] font-semibold">两个 AI 工具</span>背后，是{" "}
+            <span className="text-[#2D2420] font-semibold">231 条语法库</span>与{" "}
+            <span className="text-[#2D2420] font-semibold">176 份 {activeLevel} 备考资料</span>的支撑。
           </motion.p>
 
           {/* CTA 按钮 */}
