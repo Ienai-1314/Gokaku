@@ -64,9 +64,12 @@ export function Hero({ activeLevel }: HeroProps) {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-base md:text-lg text-[#6B5E55] mb-10 max-w-xl mx-auto leading-relaxed font-noto-jp"
           >
-            Gokaku 用 AI 告诉你<span className="text-[#2D2420] font-semibold">这道题为什么设这个陷阱</span>、
-            <span className="text-[#2D2420] font-semibold">这条语法在真题里到底怎么考</span>。
-            基于 {activeLevel} 18 套完整真题。
+            做错了哪道题、卡在哪条语法——
+            <span className="text-[#2D2420] font-semibold">查一下，答案就在真题里</span>。
+            <br className="hidden sm:block" />
+            两个 AI 工具专为备考痛点设计，配套
+            <span className="text-[#2D2420] font-semibold"> 231 条语法库</span>和
+            <span className="text-[#2D2420] font-semibold"> 176 份 {activeLevel} 备考资料</span>。
           </motion.p>
 
           {/* CTA 按钮 */}

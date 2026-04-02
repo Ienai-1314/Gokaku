@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { ToolShowcase } from "@/components/ToolShowcase";
+import { BlessingWidget } from "@/components/BlessingWidget";
 import { ResourcePack } from "@/components/ResourcePack";
 import { ContentPreview } from "@/components/ContentPreview";
 import { Pricing } from "@/components/Pricing";
@@ -18,6 +19,7 @@ export default function Home() {
       <main className="flex-1">
         <Hero activeLevel={activeLevel} />
         <ToolShowcase />
+        <BlessingWidget />
         <ResourcePack />
         <ContentPreview activeLevel={activeLevel} />
         <Pricing />
