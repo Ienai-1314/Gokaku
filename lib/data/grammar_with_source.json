@@ -1,0 +1,2949 @@
+[
+  {
+    "number": 1,
+    "pattern": "～あげくに（の）",
+    "search": "あげくに",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 2,
+    "pattern": "～あっての",
+    "search": "あっての",
+    "total_hits": 1,
+    "occurrences": [
+      {
+        "exam": "2010-12",
+        "count": 1
+      }
+    ],
+    "last_appeared": 2010,
+    "gap_years": 15,
+    "recent_hits": 0,
+    "star": 1
+  },
+  {
+    "number": 3,
+    "pattern": "～いかんだ",
+    "search": "いかんだ",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 4,
+    "pattern": "～いかんで",
+    "search": "いかんで",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 5,
+    "pattern": "～いかんにかかわらず",
+    "search": "いかんにかかわらず",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 6,
+    "pattern": "～いかんによっては",
+    "search": "いかんによっては",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 7,
+    "pattern": "～いかんによらず",
+    "search": "いかんによらず",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 8,
+    "pattern": "～以上は",
+    "search": "以上は",
+    "total_hits": 1,
+    "occurrences": [
+      {
+        "exam": "2014-12",
+        "count": 1
+      }
+    ],
+    "last_appeared": 2014,
+    "gap_years": 11,
+    "recent_hits": 0,
+    "star": 1
+  },
+  {
+    "number": 16,
+    "pattern": "～おそれがある",
+    "search": "おそれがある",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 17,
+    "pattern": "～かけだ",
+    "search": "かけだ",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 19,
+    "pattern": "～がたい",
+    "search": "がたい",
+    "total_hits": 3,
+    "occurrences": [
+      {
+        "exam": "2014-12",
+        "count": 2
+      },
+      {
+        "exam": "2021-07",
+        "count": 1
+      }
+    ],
+    "last_appeared": 2021,
+    "gap_years": 4,
+    "recent_hits": 1,
+    "star": 1
+  },
+  {
+    "number": 20,
+    "pattern": "～かたがた",
+    "search": "かたがた",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 22,
+    "pattern": "～がてら",
+    "search": "がてら",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 23,
+    "pattern": "～かと思うと（思ったら）",
+    "search": "かと思うと",
+    "total_hits": 1,
+    "occurrences": [
+      {
+        "exam": "2021-07",
+        "count": 1
+      }
+    ],
+    "last_appeared": 2021,
+    "gap_years": 4,
+    "recent_hits": 1,
+    "star": 1
+  },
+  {
+    "number": 24,
+    "pattern": "～か～ないかのうちに",
+    "search": "か～ないかのうちに",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 25,
+    "pattern": "～かねる（～かねない）",
+    "search": "かねる",
+    "total_hits": 2,
+    "occurrences": [
+      {
+        "exam": "2010-12",
+        "count": 1
+      },
+      {
+        "exam": "2021-07",
+        "count": 1
+      }
+    ],
+    "last_appeared": 2021,
+    "gap_years": 4,
+    "recent_hits": 1,
+    "star": 1
+  },
+  {
+    "number": 26,
+    "pattern": "～が早いか",
+    "search": "が早いか",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 27,
+    "pattern": "～からある（からの）",
+    "search": "からある",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 28,
+    "pattern": "～からして",
+    "search": "からして",
+    "total_hits": 1,
+    "occurrences": [
+      {
+        "exam": "2010-12",
+        "count": 1
+      }
+    ],
+    "last_appeared": 2010,
+    "gap_years": 15,
+    "recent_hits": 0,
+    "star": 1
+  },
+  {
+    "number": 29,
+    "pattern": "～からすると",
+    "search": "からすると",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 30,
+    "pattern": "～からすれば",
+    "search": "からすれば",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 31,
+    "pattern": "～からといって",
+    "search": "からといって",
+    "total_hits": 2,
+    "occurrences": [
+      {
+        "exam": "2014-12",
+        "count": 2
+      }
+    ],
+    "last_appeared": 2014,
+    "gap_years": 11,
+    "recent_hits": 0,
+    "star": 1
+  },
+  {
+    "number": 32,
+    "pattern": "～からには",
+    "search": "からには",
+    "total_hits": 2,
+    "occurrences": [
+      {
+        "exam": "2010-12",
+        "count": 1
+      },
+      {
+        "exam": "2021-07",
+        "count": 1
+      }
+    ],
+    "last_appeared": 2021,
+    "gap_years": 4,
+    "recent_hits": 1,
+    "star": 1
+  },
+  {
+    "number": 33,
+    "pattern": "～からは",
+    "search": "からは",
+    "total_hits": 3,
+    "occurrences": [
+      {
+        "exam": "2014-12",
+        "count": 2
+      },
+      {
+        "exam": "2021-07",
+        "count": 1
+      }
+    ],
+    "last_appeared": 2021,
+    "gap_years": 4,
+    "recent_hits": 1,
+    "star": 1
+  },
+  {
+    "number": 34,
+    "pattern": "～きらいがある",
+    "search": "きらいがある",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 35,
+    "pattern": "～きる（～切れる、切れない）",
+    "search": "きる",
+    "total_hits": 26,
+    "occurrences": [
+      {
+        "exam": "2010-12",
+        "count": 1
+      },
+      {
+        "exam": "2012-07",
+        "count": 1
+      },
+      {
+        "exam": "2012-12",
+        "count": 5
+      },
+      {
+        "exam": "2014-12",
+        "count": 9
+      },
+      {
+        "exam": "2021-07",
+        "count": 8
+      },
+      {
+        "exam": "2023-07",
+        "count": 2
+      }
+    ],
+    "last_appeared": 2023,
+    "gap_years": 2,
+    "recent_hits": 10,
+    "star": 3
+  },
+  {
+    "number": 37,
+    "pattern": "～極まる",
+    "search": "極まる",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 39,
+    "pattern": "～くせして（くせに）",
+    "search": "くせして",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 40,
+    "pattern": "～ぐらい",
+    "search": "ぐらい",
+    "total_hits": 6,
+    "occurrences": [
+      {
+        "exam": "2012-12",
+        "count": 2
+      },
+      {
+        "exam": "2014-12",
+        "count": 4
+      }
+    ],
+    "last_appeared": 2014,
+    "gap_years": 11,
+    "recent_hits": 0,
+    "star": 2
+  },
+  {
+    "number": 42,
+    "pattern": "～ごとき",
+    "search": "ごとき",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 43,
+    "pattern": "～こととて",
+    "search": "こととて",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 45,
+    "pattern": "～ざるを得ない",
+    "search": "ざるを得ない",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 46,
+    "pattern": "～しかない",
+    "search": "しかない",
+    "total_hits": 2,
+    "occurrences": [
+      {
+        "exam": "2012-12",
+        "count": 1
+      },
+      {
+        "exam": "2021-07",
+        "count": 1
+      }
+    ],
+    "last_appeared": 2021,
+    "gap_years": 4,
+    "recent_hits": 1,
+    "star": 1
+  },
+  {
+    "number": 47,
+    "pattern": "～次第（次第だ、次第では）",
+    "search": "次第",
+    "total_hits": 7,
+    "occurrences": [
+      {
+        "exam": "2013-07",
+        "count": 1
+      },
+      {
+        "exam": "2021-07",
+        "count": 1
+      },
+      {
+        "exam": "2024-07",
+        "count": 1
+      },
+      {
+        "exam": "2024-12",
+        "count": 3
+      },
+      {
+        "exam": "2025-07",
+        "count": 1
+      }
+    ],
+    "last_appeared": 2025,
+    "gap_years": 0,
+    "recent_hits": 6,
+    "star": 3
+  },
+  {
+    "number": 48,
+    "pattern": "～始末だ",
+    "search": "始末だ",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 50,
+    "pattern": "～の末（に、の）",
+    "search": "の末",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 51,
+    "pattern": "～ずくめ",
+    "search": "ずくめ",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 52,
+    "pattern": "～ずにはいられない",
+    "search": "ずにはいられない",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 53,
+    "pattern": "～ずにはおかない",
+    "search": "ずにはおかない",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 54,
+    "pattern": "～ずにはすまない",
+    "search": "ずにはすまない",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 55,
+    "pattern": "～そばから",
+    "search": "そばから",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 56,
+    "pattern": "～たが最後",
+    "search": "たが最後",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 57,
+    "pattern": "～たら最後/一旦～可就（见56）",
+    "search": "たら最後/一旦～可就",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 58,
+    "pattern": "～た末に（た末の）（见49）",
+    "search": "た末に",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 59,
+    "pattern": "～ただ～のみ",
+    "search": "ただ～のみ",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 60,
+    "pattern": "～ただ～のみならず",
+    "search": "ただ～のみならず",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 61,
+    "pattern": "～たといっても",
+    "search": "たといっても",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 62,
+    "pattern": "～たとえ（い）～ても（であれば）",
+    "search": "たとえ",
+    "total_hits": 6,
+    "occurrences": [
+      {
+        "exam": "2012-07",
+        "count": 2
+      },
+      {
+        "exam": "2012-12",
+        "count": 1
+      },
+      {
+        "exam": "2014-12",
+        "count": 1
+      },
+      {
+        "exam": "2021-07",
+        "count": 2
+      }
+    ],
+    "last_appeared": 2021,
+    "gap_years": 4,
+    "recent_hits": 2,
+    "star": 2
+  },
+  {
+    "number": 63,
+    "pattern": "～たところ",
+    "search": "たところ",
+    "total_hits": 7,
+    "occurrences": [
+      {
+        "exam": "2012-12",
+        "count": 3
+      },
+      {
+        "exam": "2014-12",
+        "count": 2
+      },
+      {
+        "exam": "2021-07",
+        "count": 2
+      }
+    ],
+    "last_appeared": 2021,
+    "gap_years": 4,
+    "recent_hits": 2,
+    "star": 2
+  },
+  {
+    "number": 64,
+    "pattern": "～たところで",
+    "search": "たところで",
+    "total_hits": 2,
+    "occurrences": [
+      {
+        "exam": "2012-12",
+        "count": 2
+      }
+    ],
+    "last_appeared": 2012,
+    "gap_years": 13,
+    "recent_hits": 0,
+    "star": 1
+  },
+  {
+    "number": 65,
+    "pattern": "～たとたんに",
+    "search": "たとたんに",
+    "total_hits": 1,
+    "occurrences": [
+      {
+        "exam": "2021-07",
+        "count": 1
+      }
+    ],
+    "last_appeared": 2021,
+    "gap_years": 4,
+    "recent_hits": 1,
+    "star": 1
+  },
+  {
+    "number": 66,
+    "pattern": "～だに",
+    "search": "だに",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 68,
+    "pattern": "～ために（の）",
+    "search": "ために",
+    "total_hits": 24,
+    "occurrences": [
+      {
+        "exam": "2012-07",
+        "count": 2
+      },
+      {
+        "exam": "2012-12",
+        "count": 7
+      },
+      {
+        "exam": "2014-12",
+        "count": 2
+      },
+      {
+        "exam": "2021-07",
+        "count": 13
+      }
+    ],
+    "last_appeared": 2021,
+    "gap_years": 4,
+    "recent_hits": 13,
+    "star": 3
+  },
+  {
+    "number": 69,
+    "pattern": "～たりとも",
+    "search": "たりとも",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 70,
+    "pattern": "～たるものは",
+    "search": "たるものは",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 71,
+    "pattern": "～つ～つ",
+    "search": "つ～つ",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 72,
+    "pattern": "～ついでに",
+    "search": "ついでに",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 73,
+    "pattern": "～っこない",
+    "search": "っこない",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 74,
+    "pattern": "～っぱなし",
+    "search": "っぱなし",
+    "total_hits": 4,
+    "occurrences": [
+      {
+        "exam": "2014-12",
+        "count": 4
+      }
+    ],
+    "last_appeared": 2014,
+    "gap_years": 11,
+    "recent_hits": 0,
+    "star": 2
+  },
+  {
+    "number": 75,
+    "pattern": "～つつも",
+    "search": "つつも",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 76,
+    "pattern": "～つつある",
+    "search": "つつある",
+    "total_hits": 2,
+    "occurrences": [
+      {
+        "exam": "2010-12",
+        "count": 1
+      },
+      {
+        "exam": "2014-12",
+        "count": 1
+      }
+    ],
+    "last_appeared": 2014,
+    "gap_years": 11,
+    "recent_hits": 0,
+    "star": 1
+  },
+  {
+    "number": 77,
+    "pattern": "～であれ",
+    "search": "であれ",
+    "total_hits": 2,
+    "occurrences": [
+      {
+        "exam": "2012-07",
+        "count": 1
+      },
+      {
+        "exam": "2021-07",
+        "count": 1
+      }
+    ],
+    "last_appeared": 2021,
+    "gap_years": 4,
+    "recent_hits": 1,
+    "star": 1
+  },
+  {
+    "number": 78,
+    "pattern": "～であれ、～であれ",
+    "search": "であれ、～であれ",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 79,
+    "pattern": "～てからでないと（てからでなければ）",
+    "search": "てからでないと",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 80,
+    "pattern": "～てからというもの",
+    "search": "てからというもの",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 81,
+    "pattern": "～てしようがない",
+    "search": "てしようがない",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 82,
+    "pattern": "～ですら（すら）",
+    "search": "ですら",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 83,
+    "pattern": "～てたまらない",
+    "search": "てたまらない",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 84,
+    "pattern": "～でないと",
+    "search": "でないと",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 85,
+    "pattern": "～でなくてなんだろう",
+    "search": "でなくてなんだろう",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 86,
+    "pattern": "～でなければ",
+    "search": "でなければ",
+    "total_hits": 2,
+    "occurrences": [
+      {
+        "exam": "2021-07",
+        "count": 2
+      }
+    ],
+    "last_appeared": 2021,
+    "gap_years": 4,
+    "recent_hits": 2,
+    "star": 1
+  },
+  {
+    "number": 87,
+    "pattern": "～ではあるまいし",
+    "search": "ではあるまいし",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 88,
+    "pattern": "～てでも",
+    "search": "てでも",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 89,
+    "pattern": "～てまで",
+    "search": "てまで",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 90,
+    "pattern": "～てみる",
+    "search": "てみる",
+    "total_hits": 2,
+    "occurrences": [
+      {
+        "exam": "2012-12",
+        "count": 1
+      },
+      {
+        "exam": "2014-12",
+        "count": 1
+      }
+    ],
+    "last_appeared": 2014,
+    "gap_years": 11,
+    "recent_hits": 0,
+    "star": 1
+  },
+  {
+    "number": 91,
+    "pattern": "～ても始まらない",
+    "search": "ても始まらない",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 92,
+    "pattern": "～てやまない",
+    "search": "てやまない",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 93,
+    "pattern": "～とあいまって",
+    "search": "とあいまって",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 94,
+    "pattern": "～とあって",
+    "search": "とあって",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 95,
+    "pattern": "～とあれば",
+    "search": "とあれば",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 96,
+    "pattern": "～といい～といい",
+    "search": "といい～といい",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 97,
+    "pattern": "～というと",
+    "search": "というと",
+    "total_hits": 6,
+    "occurrences": [
+      {
+        "exam": "2014-12",
+        "count": 2
+      },
+      {
+        "exam": "2021-07",
+        "count": 4
+      }
+    ],
+    "last_appeared": 2021,
+    "gap_years": 4,
+    "recent_hits": 4,
+    "star": 3
+  },
+  {
+    "number": 98,
+    "pattern": "～というところだ",
+    "search": "というところだ",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 99,
+    "pattern": "～といったところだ",
+    "search": "といったところだ",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 100,
+    "pattern": "～といえども",
+    "search": "といえども",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 101,
+    "pattern": "～といえば（といったら）",
+    "search": "といえば",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 102,
+    "pattern": "～といったらありはしない",
+    "search": "といったらありはしない",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 103,
+    "pattern": "～といったらない",
+    "search": "といったらない",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 104,
+    "pattern": "～といったらありゃしない",
+    "search": "といったらありゃしない",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 105,
+    "pattern": "～といっても",
+    "search": "といっても",
+    "total_hits": 3,
+    "occurrences": [
+      {
+        "exam": "2012-12",
+        "count": 1
+      },
+      {
+        "exam": "2014-12",
+        "count": 2
+      }
+    ],
+    "last_appeared": 2014,
+    "gap_years": 11,
+    "recent_hits": 0,
+    "star": 1
+  },
+  {
+    "number": 106,
+    "pattern": "～とおもいきや",
+    "search": "とおもいきや",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 107,
+    "pattern": "～と思うと（と思ったら）",
+    "search": "と思うと",
+    "total_hits": 1,
+    "occurrences": [
+      {
+        "exam": "2021-07",
+        "count": 1
+      }
+    ],
+    "last_appeared": 2021,
+    "gap_years": 4,
+    "recent_hits": 1,
+    "star": 1
+  },
+  {
+    "number": 108,
+    "pattern": "～とか",
+    "search": "とか",
+    "total_hits": 27,
+    "occurrences": [
+      {
+        "exam": "2010-12",
+        "count": 1
+      },
+      {
+        "exam": "2012-07",
+        "count": 1
+      },
+      {
+        "exam": "2012-12",
+        "count": 6
+      },
+      {
+        "exam": "2014-12",
+        "count": 9
+      },
+      {
+        "exam": "2021-07",
+        "count": 10
+      }
+    ],
+    "last_appeared": 2021,
+    "gap_years": 4,
+    "recent_hits": 10,
+    "star": 3
+  },
+  {
+    "number": 109,
+    "pattern": "～ときたら（ときては）",
+    "search": "ときたら",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 110,
+    "pattern": "～ところ",
+    "search": "ところ",
+    "total_hits": 32,
+    "occurrences": [
+      {
+        "exam": "2010-12",
+        "count": 2
+      },
+      {
+        "exam": "2012-12",
+        "count": 10
+      },
+      {
+        "exam": "2014-12",
+        "count": 13
+      },
+      {
+        "exam": "2021-07",
+        "count": 7
+      }
+    ],
+    "last_appeared": 2021,
+    "gap_years": 4,
+    "recent_hits": 7,
+    "star": 3
+  },
+  {
+    "number": 111,
+    "pattern": "～どころか",
+    "search": "どころか",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 112,
+    "pattern": "～ところを",
+    "search": "ところを",
+    "total_hits": 1,
+    "occurrences": [
+      {
+        "exam": "2021-07",
+        "count": 1
+      }
+    ],
+    "last_appeared": 2021,
+    "gap_years": 4,
+    "recent_hits": 1,
+    "star": 1
+  },
+  {
+    "number": 113,
+    "pattern": "～としたって",
+    "search": "としたって",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 114,
+    "pattern": "～としたところで",
+    "search": "としたところで",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 115,
+    "pattern": "～としたら",
+    "search": "としたら",
+    "total_hits": 1,
+    "occurrences": [
+      {
+        "exam": "2021-07",
+        "count": 1
+      }
+    ],
+    "last_appeared": 2021,
+    "gap_years": 4,
+    "recent_hits": 1,
+    "star": 1
+  },
+  {
+    "number": 116,
+    "pattern": "～としても",
+    "search": "としても",
+    "total_hits": 4,
+    "occurrences": [
+      {
+        "exam": "2012-12",
+        "count": 2
+      },
+      {
+        "exam": "2014-12",
+        "count": 1
+      },
+      {
+        "exam": "2021-07",
+        "count": 1
+      }
+    ],
+    "last_appeared": 2021,
+    "gap_years": 4,
+    "recent_hits": 1,
+    "star": 2
+  },
+  {
+    "number": 117,
+    "pattern": "～とすれば",
+    "search": "とすれば",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 118,
+    "pattern": "～とたん",
+    "search": "とたん",
+    "total_hits": 1,
+    "occurrences": [
+      {
+        "exam": "2021-07",
+        "count": 1
+      }
+    ],
+    "last_appeared": 2021,
+    "gap_years": 4,
+    "recent_hits": 1,
+    "star": 1
+  },
+  {
+    "number": 119,
+    "pattern": "～とて",
+    "search": "とて",
+    "total_hits": 7,
+    "occurrences": [
+      {
+        "exam": "2012-12",
+        "count": 1
+      },
+      {
+        "exam": "2021-07",
+        "count": 6
+      }
+    ],
+    "last_appeared": 2021,
+    "gap_years": 4,
+    "recent_hits": 6,
+    "star": 3
+  },
+  {
+    "number": 120,
+    "pattern": "～とは",
+    "search": "とは",
+    "total_hits": 50,
+    "occurrences": [
+      {
+        "exam": "2010-12",
+        "count": 4
+      },
+      {
+        "exam": "2012-07",
+        "count": 1
+      },
+      {
+        "exam": "2012-12",
+        "count": 4
+      },
+      {
+        "exam": "2014-12",
+        "count": 9
+      },
+      {
+        "exam": "2021-07",
+        "count": 32
+      }
+    ],
+    "last_appeared": 2021,
+    "gap_years": 4,
+    "recent_hits": 32,
+    "star": 3
+  },
+  {
+    "number": 121,
+    "pattern": "～たばかりに",
+    "search": "たばかりに",
+    "total_hits": 2,
+    "occurrences": [
+      {
+        "exam": "2021-07",
+        "count": 2
+      }
+    ],
+    "last_appeared": 2021,
+    "gap_years": 4,
+    "recent_hits": 2,
+    "star": 1
+  },
+  {
+    "number": 122,
+    "pattern": "～にひきかえ（に）",
+    "search": "にひきかえ",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 123,
+    "pattern": "～ともなく（ともなれば）",
+    "search": "ともなく",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 124,
+    "pattern": "～ないではいられない",
+    "search": "ないではいられない",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 125,
+    "pattern": "～ないではおかない",
+    "search": "ないではおかない",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 126,
+    "pattern": "～ないではすまない",
+    "search": "ないではすまない",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 127,
+    "pattern": "～ないまでも",
+    "search": "ないまでも",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 128,
+    "pattern": "～ないものでもない",
+    "search": "ないものでもない",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 129,
+    "pattern": "～ながら（ながらも）",
+    "search": "ながら",
+    "total_hits": 14,
+    "occurrences": [
+      {
+        "exam": "2012-12",
+        "count": 4
+      },
+      {
+        "exam": "2014-12",
+        "count": 6
+      },
+      {
+        "exam": "2021-07",
+        "count": 4
+      }
+    ],
+    "last_appeared": 2021,
+    "gap_years": 4,
+    "recent_hits": 4,
+    "star": 3
+  },
+  {
+    "number": 130,
+    "pattern": "～なくして（なくしては、なくとも）",
+    "search": "なくして",
+    "total_hits": 2,
+    "occurrences": [
+      {
+        "exam": "2014-12",
+        "count": 2
+      }
+    ],
+    "last_appeared": 2014,
+    "gap_years": 11,
+    "recent_hits": 0,
+    "star": 1
+  },
+  {
+    "number": 131,
+    "pattern": "～ならそれまでだ",
+    "search": "ならそれまでだ",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 132,
+    "pattern": "～ならでは（の）",
+    "search": "ならでは",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 133,
+    "pattern": "～なり（なりの、なりに）",
+    "search": "なり",
+    "total_hits": 48,
+    "occurrences": [
+      {
+        "exam": "2010-12",
+        "count": 1
+      },
+      {
+        "exam": "2012-12",
+        "count": 11
+      },
+      {
+        "exam": "2014-12",
+        "count": 23
+      },
+      {
+        "exam": "2021-07",
+        "count": 13
+      }
+    ],
+    "last_appeared": 2021,
+    "gap_years": 4,
+    "recent_hits": 13,
+    "star": 3
+  },
+  {
+    "number": 134,
+    "pattern": "～にあたって（にあたり）",
+    "search": "にあたって",
+    "total_hits": 1,
+    "occurrences": [
+      {
+        "exam": "2021-07",
+        "count": 1
+      }
+    ],
+    "last_appeared": 2021,
+    "gap_years": 4,
+    "recent_hits": 1,
+    "star": 1
+  },
+  {
+    "number": 135,
+    "pattern": "～なあって",
+    "search": "なあって",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 136,
+    "pattern": "～に至って（は、も）",
+    "search": "に至って",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 137,
+    "pattern": "～に至る",
+    "search": "に至る",
+    "total_hits": 1,
+    "occurrences": [
+      {
+        "exam": "2012-12",
+        "count": 1
+      }
+    ],
+    "last_appeared": 2012,
+    "gap_years": 13,
+    "recent_hits": 0,
+    "star": 1
+  },
+  {
+    "number": 138,
+    "pattern": "～に至るまで(の）",
+    "search": "に至るまで(の）",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 139,
+    "pattern": "～に応じた",
+    "search": "に応じた",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 140,
+    "pattern": "～に応じて",
+    "search": "に応じて",
+    "total_hits": 2,
+    "occurrences": [
+      {
+        "exam": "2012-12",
+        "count": 1
+      },
+      {
+        "exam": "2014-12",
+        "count": 1
+      }
+    ],
+    "last_appeared": 2014,
+    "gap_years": 11,
+    "recent_hits": 0,
+    "star": 1
+  },
+  {
+    "number": 141,
+    "pattern": "～にかかわらず(にかかわりなく)",
+    "search": "にかかわらず(にかかわりなく)",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 142,
+    "pattern": "～に限って",
+    "search": "に限って",
+    "total_hits": 3,
+    "occurrences": [
+      {
+        "exam": "2014-12",
+        "count": 3
+      }
+    ],
+    "last_appeared": 2014,
+    "gap_years": 11,
+    "recent_hits": 0,
+    "star": 1
+  },
+  {
+    "number": 143,
+    "pattern": "～に限らず",
+    "search": "に限らず",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 144,
+    "pattern": "～に限り",
+    "search": "に限り",
+    "total_hits": 1,
+    "occurrences": [
+      {
+        "exam": "2012-12",
+        "count": 1
+      }
+    ],
+    "last_appeared": 2012,
+    "gap_years": 13,
+    "recent_hits": 0,
+    "star": 1
+  },
+  {
+    "number": 145,
+    "pattern": "～にかけては（にかけても）",
+    "search": "にかけては",
+    "total_hits": 1,
+    "occurrences": [
+      {
+        "exam": "2014-12",
+        "count": 1
+      }
+    ],
+    "last_appeared": 2014,
+    "gap_years": 11,
+    "recent_hits": 0,
+    "star": 1
+  },
+  {
+    "number": 146,
+    "pattern": "～にかたくない",
+    "search": "にかたくない",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 147,
+    "pattern": "～に関して(に関しても）",
+    "search": "に関して(に関しても）",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 148,
+    "pattern": "～に関する",
+    "search": "に関する",
+    "total_hits": 1,
+    "occurrences": [
+      {
+        "exam": "2012-12",
+        "count": 1
+      }
+    ],
+    "last_appeared": 2012,
+    "gap_years": 13,
+    "recent_hits": 0,
+    "star": 1
+  },
+  {
+    "number": 149,
+    "pattern": "～に際し(にさいして、に際しての）",
+    "search": "に際し(にさいして、に際しての）",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 150,
+    "pattern": "～にしたところで",
+    "search": "にしたところで",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 151,
+    "pattern": "～にしたら",
+    "search": "にしたら",
+    "total_hits": 2,
+    "occurrences": [
+      {
+        "exam": "2012-12",
+        "count": 1
+      },
+      {
+        "exam": "2014-12",
+        "count": 1
+      }
+    ],
+    "last_appeared": 2014,
+    "gap_years": 11,
+    "recent_hits": 0,
+    "star": 1
+  },
+  {
+    "number": 152,
+    "pattern": "～にして（にしては）",
+    "search": "にして",
+    "total_hits": 22,
+    "occurrences": [
+      {
+        "exam": "2012-12",
+        "count": 4
+      },
+      {
+        "exam": "2014-12",
+        "count": 11
+      },
+      {
+        "exam": "2021-07",
+        "count": 7
+      }
+    ],
+    "last_appeared": 2021,
+    "gap_years": 4,
+    "recent_hits": 7,
+    "star": 3
+  },
+  {
+    "number": 153,
+    "pattern": "～にしても",
+    "search": "にしても",
+    "total_hits": 4,
+    "occurrences": [
+      {
+        "exam": "2014-12",
+        "count": 2
+      },
+      {
+        "exam": "2021-07",
+        "count": 2
+      }
+    ],
+    "last_appeared": 2021,
+    "gap_years": 4,
+    "recent_hits": 2,
+    "star": 2
+  },
+  {
+    "number": 154,
+    "pattern": "～にしろ",
+    "search": "にしろ",
+    "total_hits": 1,
+    "occurrences": [
+      {
+        "exam": "2012-12",
+        "count": 1
+      }
+    ],
+    "last_appeared": 2012,
+    "gap_years": 13,
+    "recent_hits": 0,
+    "star": 1
+  },
+  {
+    "number": 155,
+    "pattern": "～に過ぎない",
+    "search": "に過ぎない",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 156,
+    "pattern": "～にせよ",
+    "search": "にせよ",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 157,
+    "pattern": "～に相違ない",
+    "search": "に相違ない",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 158,
+    "pattern": "～即した（に即して）",
+    "search": "即した",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 159,
+    "pattern": "～にたえる（にたえない）",
+    "search": "にたえる",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 160,
+    "pattern": "～に足る",
+    "search": "に足る",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 161,
+    "pattern": "～につけ（につけて、つけても）",
+    "search": "につけ",
+    "total_hits": 3,
+    "occurrences": [
+      {
+        "exam": "2010-12",
+        "count": 1
+      },
+      {
+        "exam": "2012-12",
+        "count": 1
+      },
+      {
+        "exam": "2021-07",
+        "count": 1
+      }
+    ],
+    "last_appeared": 2021,
+    "gap_years": 4,
+    "recent_hits": 1,
+    "star": 1
+  },
+  {
+    "number": 162,
+    "pattern": "～にはあたらない",
+    "search": "にはあたらない",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 163,
+    "pattern": "～にはかかわりなく",
+    "search": "にはかかわりなく",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 164,
+    "pattern": "～にひきかえ",
+    "search": "にひきかえ",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 165,
+    "pattern": "～にほかならない",
+    "search": "にほかならない",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 166,
+    "pattern": "～にあるまじき",
+    "search": "にあるまじき",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 167,
+    "pattern": "～にもかかわらず",
+    "search": "にもかかわらず",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 168,
+    "pattern": "～にもまして",
+    "search": "にもまして",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 169,
+    "pattern": "～によっては",
+    "search": "によっては",
+    "total_hits": 1,
+    "occurrences": [
+      {
+        "exam": "2012-12",
+        "count": 1
+      }
+    ],
+    "last_appeared": 2012,
+    "gap_years": 13,
+    "recent_hits": 0,
+    "star": 1
+  },
+  {
+    "number": 170,
+    "pattern": "～によらず",
+    "search": "によらず",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 171,
+    "pattern": "～ぬきで（ぬきでは）",
+    "search": "ぬきで",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 172,
+    "pattern": "～ぬきに（ぬきには）",
+    "search": "ぬきに",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 173,
+    "pattern": "～ぬきの",
+    "search": "ぬきの",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 174,
+    "pattern": "～に至り",
+    "search": "に至り",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 175,
+    "pattern": "～に極み",
+    "search": "に極み",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 176,
+    "pattern": "～の末に",
+    "search": "の末に",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 177,
+    "pattern": "～のみ",
+    "search": "のみ",
+    "total_hits": 2,
+    "occurrences": [
+      {
+        "exam": "2021-07",
+        "count": 2
+      }
+    ],
+    "last_appeared": 2021,
+    "gap_years": 4,
+    "recent_hits": 2,
+    "star": 1
+  },
+  {
+    "number": 178,
+    "pattern": "～のみならず",
+    "search": "のみならず",
+    "total_hits": 1,
+    "occurrences": [
+      {
+        "exam": "2021-07",
+        "count": 1
+      }
+    ],
+    "last_appeared": 2021,
+    "gap_years": 4,
+    "recent_hits": 1,
+    "star": 1
+  },
+  {
+    "number": 179,
+    "pattern": "～のわりには",
+    "search": "のわりには",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 180,
+    "pattern": "～はおろか",
+    "search": "はおろか",
+    "total_hits": 1,
+    "occurrences": [
+      {
+        "exam": "2021-07",
+        "count": 1
+      }
+    ],
+    "last_appeared": 2021,
+    "gap_years": 4,
+    "recent_hits": 1,
+    "star": 1
+  },
+  {
+    "number": 181,
+    "pattern": "～ばかりか（ばかりでなく）",
+    "search": "ばかりか",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 182,
+    "pattern": "～ばそれまでだ",
+    "search": "ばそれまでだ",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 183,
+    "pattern": "～ば～ほど",
+    "search": "ば～ほど",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 184,
+    "pattern": "～はもとより",
+    "search": "はもとより",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 187,
+    "pattern": "～べからざる",
+    "search": "べからざる",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 188,
+    "pattern": "～べからず",
+    "search": "べからず",
+    "total_hits": 1,
+    "occurrences": [
+      {
+        "exam": "2012-12",
+        "count": 1
+      }
+    ],
+    "last_appeared": 2012,
+    "gap_years": 13,
+    "recent_hits": 0,
+    "star": 1
+  },
+  {
+    "number": 189,
+    "pattern": "～べく",
+    "search": "べく",
+    "total_hits": 5,
+    "occurrences": [
+      {
+        "exam": "2012-12",
+        "count": 4
+      },
+      {
+        "exam": "2023-07",
+        "count": 1
+      }
+    ],
+    "last_appeared": 2023,
+    "gap_years": 2,
+    "recent_hits": 1,
+    "star": 2
+  },
+  {
+    "number": 190,
+    "pattern": "～ほかしかたがない",
+    "search": "ほかしかたがない",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 192,
+    "pattern": "～まい",
+    "search": "まい",
+    "total_hits": 21,
+    "occurrences": [
+      {
+        "exam": "2012-07",
+        "count": 1
+      },
+      {
+        "exam": "2012-12",
+        "count": 3
+      },
+      {
+        "exam": "2014-12",
+        "count": 5
+      },
+      {
+        "exam": "2021-07",
+        "count": 9
+      },
+      {
+        "exam": "2023-07",
+        "count": 1
+      },
+      {
+        "exam": "2024-07",
+        "count": 1
+      },
+      {
+        "exam": "2024-12",
+        "count": 1
+      }
+    ],
+    "last_appeared": 2024,
+    "gap_years": 1,
+    "recent_hits": 12,
+    "star": 3
+  },
+  {
+    "number": 193,
+    "pattern": "～まいか",
+    "search": "まいか",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 194,
+    "pattern": "～まじき",
+    "search": "まじき",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 195,
+    "pattern": "～までだ",
+    "search": "までだ",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 196,
+    "pattern": "～までのことだ",
+    "search": "までのことだ",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 197,
+    "pattern": "～までもない",
+    "search": "までもない",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 198,
+    "pattern": "～までもなく",
+    "search": "までもなく",
+    "total_hits": 1,
+    "occurrences": [
+      {
+        "exam": "2021-07",
+        "count": 1
+      }
+    ],
+    "last_appeared": 2021,
+    "gap_years": 4,
+    "recent_hits": 1,
+    "star": 1
+  },
+  {
+    "number": 199,
+    "pattern": "～まみれ",
+    "search": "まみれ",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 200,
+    "pattern": "～めく",
+    "search": "めく",
+    "total_hits": 1,
+    "occurrences": [
+      {
+        "exam": "2012-12",
+        "count": 1
+      }
+    ],
+    "last_appeared": 2012,
+    "gap_years": 13,
+    "recent_hits": 0,
+    "star": 1
+  },
+  {
+    "number": 202,
+    "pattern": "～もさることながら",
+    "search": "もさることながら",
+    "total_hits": 2,
+    "occurrences": [
+      {
+        "exam": "2012-12",
+        "count": 1
+      },
+      {
+        "exam": "2014-12",
+        "count": 1
+      }
+    ],
+    "last_appeared": 2014,
+    "gap_years": 11,
+    "recent_hits": 0,
+    "star": 1
+  },
+  {
+    "number": 204,
+    "pattern": "～も～なら、～も～",
+    "search": "も～なら、～も～",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 205,
+    "pattern": "～ものの",
+    "search": "ものの",
+    "total_hits": 5,
+    "occurrences": [
+      {
+        "exam": "2012-12",
+        "count": 2
+      },
+      {
+        "exam": "2021-07",
+        "count": 3
+      }
+    ],
+    "last_appeared": 2021,
+    "gap_years": 4,
+    "recent_hits": 3,
+    "star": 3
+  },
+  {
+    "number": 206,
+    "pattern": "～ものを",
+    "search": "ものを",
+    "total_hits": 52,
+    "occurrences": [
+      {
+        "exam": "2010-12",
+        "count": 7
+      },
+      {
+        "exam": "2012-12",
+        "count": 2
+      },
+      {
+        "exam": "2014-12",
+        "count": 4
+      },
+      {
+        "exam": "2021-07",
+        "count": 22
+      },
+      {
+        "exam": "2023-07",
+        "count": 5
+      },
+      {
+        "exam": "2024-07",
+        "count": 6
+      },
+      {
+        "exam": "2024-12",
+        "count": 6
+      }
+    ],
+    "last_appeared": 2024,
+    "gap_years": 1,
+    "recent_hits": 39,
+    "star": 3
+  },
+  {
+    "number": 207,
+    "pattern": "～も～ば、～も～",
+    "search": "も～ば、～も～",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 209,
+    "pattern": "～やいなや",
+    "search": "やいなや",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 210,
+    "pattern": "～ゆえに（ゆえの）",
+    "search": "ゆえに",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 211,
+    "pattern": "～ようが",
+    "search": "ようが",
+    "total_hits": 6,
+    "occurrences": [
+      {
+        "exam": "2012-12",
+        "count": 2
+      },
+      {
+        "exam": "2014-12",
+        "count": 4
+      }
+    ],
+    "last_appeared": 2014,
+    "gap_years": 11,
+    "recent_hits": 0,
+    "star": 2
+  },
+  {
+    "number": 212,
+    "pattern": "～ようが～まいが",
+    "search": "ようが～まいが",
+    "total_hits": 1,
+    "occurrences": [
+      {
+        "exam": "2014-12",
+        "count": 1
+      }
+    ],
+    "last_appeared": 2014,
+    "gap_years": 11,
+    "recent_hits": 0,
+    "star": 1
+  },
+  {
+    "number": 213,
+    "pattern": "～ようと",
+    "search": "ようと",
+    "total_hits": 10,
+    "occurrences": [
+      {
+        "exam": "2012-07",
+        "count": 1
+      },
+      {
+        "exam": "2012-12",
+        "count": 1
+      },
+      {
+        "exam": "2014-12",
+        "count": 6
+      },
+      {
+        "exam": "2021-07",
+        "count": 2
+      }
+    ],
+    "last_appeared": 2021,
+    "gap_years": 4,
+    "recent_hits": 2,
+    "star": 3
+  },
+  {
+    "number": 214,
+    "pattern": "～ようと～まいと",
+    "search": "ようと～まいと",
+    "total_hits": 1,
+    "occurrences": [
+      {
+        "exam": "2014-12",
+        "count": 1
+      }
+    ],
+    "last_appeared": 2014,
+    "gap_years": 11,
+    "recent_hits": 0,
+    "star": 1
+  },
+  {
+    "number": 215,
+    "pattern": "～よりほかはない",
+    "search": "よりほかはない",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 216,
+    "pattern": "～わりに",
+    "search": "わりに",
+    "total_hits": 1,
+    "occurrences": [
+      {
+        "exam": "2021-07",
+        "count": 1
+      }
+    ],
+    "last_appeared": 2021,
+    "gap_years": 4,
+    "recent_hits": 1,
+    "star": 1
+  },
+  {
+    "number": 217,
+    "pattern": "～をおいて～ない",
+    "search": "をおいて～ない",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 218,
+    "pattern": "～を限りに",
+    "search": "を限りに",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 219,
+    "pattern": "～を皮切りに",
+    "search": "を皮切りに",
+    "total_hits": 1,
+    "occurrences": [
+      {
+        "exam": "2021-07",
+        "count": 1
+      }
+    ],
+    "last_appeared": 2021,
+    "gap_years": 4,
+    "recent_hits": 1,
+    "star": 1
+  },
+  {
+    "number": 220,
+    "pattern": "～を皮切りとして",
+    "search": "を皮切りとして",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 221,
+    "pattern": "～を皮切りにして",
+    "search": "を皮切りにして",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 222,
+    "pattern": "～を禁じ得ない",
+    "search": "を禁じ得ない",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 223,
+    "pattern": "～をめぐって",
+    "search": "をめぐって",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 224,
+    "pattern": "～をめぐる",
+    "search": "をめぐる",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 225,
+    "pattern": "～をもって",
+    "search": "をもって",
+    "total_hits": 2,
+    "occurrences": [
+      {
+        "exam": "2014-12",
+        "count": 2
+      }
+    ],
+    "last_appeared": 2014,
+    "gap_years": 11,
+    "recent_hits": 0,
+    "star": 1
+  },
+  {
+    "number": 226,
+    "pattern": "～をものともせずに",
+    "search": "をものともせずに",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 227,
+    "pattern": "～を余儀なくさせる",
+    "search": "を余儀なくさせる",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 228,
+    "pattern": "～を余儀なくされる",
+    "search": "を余儀なくされる",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 229,
+    "pattern": "～をよそに",
+    "search": "をよそに",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 230,
+    "pattern": "～んがために（ための）",
+    "search": "んがために",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  },
+  {
+    "number": 231,
+    "pattern": "～んばかりに（んばかりの）",
+    "search": "んばかりに",
+    "total_hits": 0,
+    "occurrences": [],
+    "last_appeared": 0,
+    "gap_years": 99,
+    "recent_hits": 0,
+    "star": 0
+  }
+]

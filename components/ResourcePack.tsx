@@ -16,48 +16,48 @@ const ASSETS = [
     icon: FileText,
     num: "18",
     unit: "套",
-    label: "完整真题文本",
-    desc: "1992–2025 年，题目 + 听力原文 + 答案。AI 语法查询的例句来源。",
+    label: "完整真题",
+    desc: "1992–2025 年真题原文 + 听力文本 + 答案解析",
     color: "#C75B3B",
   },
   {
     icon: BookText,
     num: "231",
     unit: "条",
-    label: "N1 语法库",
-    desc: "含义、接续规则、近义对比，是语法查询工具的知识底座。",
+    label: "语法点总结",
+    desc: "按考频排序，不是按五十音。含义、接续、易混淆对比",
     color: "#4A7C59",
-  },
-  {
-    icon: ScrollText,
-    num: "699",
-    unit: "条",
-    label: "惯用语大全",
-    desc: "带中文释义和例句，N1 惯用表达基本覆盖。",
-    color: "#C75B3B",
-  },
-  {
-    icon: Library,
-    num: "~6000",
-    unit: "词",
-    label: "词汇表 Excel",
-    desc: "N1–N5 分级，可筛选，标注了真题出现记录。",
-    color: "#4A7C59",
-  },
-  {
-    icon: Headphones,
-    num: "6",
-    unit: "类",
-    label: "听力场景速查",
-    desc: "车站、医院、餐厅等场景分类词汇，考前速查用。",
-    color: "#C75B3B",
   },
   {
     icon: BarChart3,
     num: "3",
     unit: "份",
-    label: "量化分析报告",
-    desc: "高频考点 + 押题预测 + 词汇表，N1/N2 双版本。",
+    label: "高频考点分析",
+    desc: "哪些语法最爱考、哪些题型最容易错、考前冲刺清单",
+    color: "#C75B3B",
+  },
+  {
+    icon: ScrollText,
+    num: "699",
+    unit: "条",
+    label: "惯用语库",
+    desc: "带中文释义和真题例句，N1 惯用表达基本覆盖",
+    color: "#4A7C59",
+  },
+  {
+    icon: Library,
+    num: "~6000",
+    unit: "词",
+    label: "词汇表",
+    desc: "N1–N5 分级，标注真题出现记录，可按考频筛选",
+    color: "#C75B3B",
+  },
+  {
+    icon: Headphones,
+    num: "6",
+    unit: "类",
+    label: "听力场景词汇",
+    desc: "车站、医院、餐厅等场景分类，考前速查",
     color: "#4A7C59",
   },
 ];
@@ -72,10 +72,11 @@ export function ResourcePack() {
             Resource Pack
           </span>
           <h2 className="font-bebas text-5xl md:text-6xl text-[#2D2420] mb-4">
-            附带的资料包
+            我们做了一件很费时间的事
           </h2>
-          <p className="text-[#6B5E55] max-w-md mx-auto text-sm leading-relaxed">
-            购买后一并获取。共 176 份文件，以下是主要内容。
+          <p className="text-[#6B5E55] max-w-2xl mx-auto text-sm leading-relaxed">
+            把历年真题全部拆解，按语法点、题型、考频分类整理。<br />
+            不是简单的 PDF 合集，而是真正能用来备考的资料库。
           </p>
         </div>
 

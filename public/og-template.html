@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1200, height=630">
+  <title>OG Image Template</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1200px;
+      height: 630px;
+      background: linear-gradient(135deg, #FAF6F0 0%, #FFF8F0 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .container {
+      text-align: center;
+      z-index: 2;
+      padding: 60px;
+    }
+    .logo {
+      font-size: 72px;
+      font-weight: 900;
+      color: #2D2420;
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+    }
+    .tagline {
+      font-size: 42px;
+      color: #C75B3B;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+    .description {
+      font-size: 28px;
+      color: #6B5E55;
+      line-height: 1.6;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .stats {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      margin-top: 50px;
+    }
+    .stat {
+      text-align: center;
+    }
+    .stat-number {
+      font-size: 64px;
+      font-weight: 900;
+      color: #C75B3B;
+      font-family: 'Bebas Neue', sans-serif;
+    }
+    .stat-label {
+      font-size: 20px;
+      color: #6B5E55;
+      margin-top: 8px;
+    }
+    .decoration {
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(199, 91, 59, 0.1) 0%, transparent 70%);
+    }
+    .decoration-1 { top: -200px; left: -200px; }
+    .decoration-2 { bottom: -200px; right: -200px; }
+  </style>
+</head>
+<body>
+  <div class="decoration decoration-1"></div>
+  <div class="decoration decoration-2"></div>
+
+  <div class="container">
+    <div class="logo">合格道 Gokaku</div>
+    <div class="tagline">最懂真题的 AI JLPT N1 备考工具</div>
+    <div class="description">
+      基于 30 套真题数据<br>
+      AI 帮你查语法、查词汇、分析错题
+    </div>
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-number">30</div>
+        <div class="stat-label">套完整真题</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">210</div>
+        <div class="stat-label">条语法全解</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">1500+</div>
+        <div class="stat-label">词汇考频</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

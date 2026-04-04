@@ -67,7 +67,7 @@ export function Navbar({ activeLevel, onLevelChange }: NavbarProps) {
               className="flex items-center gap-2 bg-[#C75B3B] hover:bg-[#A84A2F] text-white px-5 py-2 rounded-xl text-sm font-semibold transition-all duration-200 shadow-[0_2px_12px_rgba(199,91,59,0.25)] hover:shadow-[0_4px_16px_rgba(199,91,59,0.35)] cursor-pointer"
             >
               <ShoppingBag className="w-4 h-4" />
-              <span>¥39 早鸟价</span>
+              <span>获取资料</span>
             </a>
           </div>
 
@@ -114,7 +114,7 @@ export function Navbar({ activeLevel, onLevelChange }: NavbarProps) {
               className="w-full flex items-center justify-center gap-2 bg-[#C75B3B] hover:bg-[#A84A2F] text-white px-5 py-3 rounded-xl text-sm font-semibold transition-all cursor-pointer"
             >
               <ShoppingBag className="w-4 h-4" />
-              <span>¥39 早鸟价</span>
+              <span>获取资料</span>
             </a>
           </div>
         )}

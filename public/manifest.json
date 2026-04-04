@@ -1,12 +1,15 @@
 {
   "name": "合格道 Gokaku",
   "short_name": "合格道",
-  "description": "JLPT N1/N2 AI 备考工具 · 语法查询 · 错题分析",
+  "description": "JLPT N1/N2 AI 备考工具 · 语法查询 · 词汇查询 · 错题分析",
   "start_url": "/tool",
   "display": "standalone",
   "background_color": "#FAF6F0",
   "theme_color": "#C75B3B",
   "orientation": "portrait",
+  "categories": ["education", "productivity"],
+  "lang": "zh-CN",
+  "scope": "/",
   "icons": [
     {
       "src": "/icons/icon-192.png",
@@ -30,10 +33,24 @@
       "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
     },
     {
+      "name": "词汇查询",
+      "short_name": "词汇",
+      "description": "查询词汇考频和用法",
+      "url": "/tool?tab=vocab",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
       "name": "错题分析",
       "short_name": "错题",
       "description": "拍照或粘贴错题，AI 帮你分析",
       "url": "/tool?tab=analyze",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "每日一练",
+      "short_name": "练习",
+      "description": "每日随机题目练习",
+      "url": "/practice",
       "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
     }
   ]

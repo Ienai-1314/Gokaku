@@ -67,9 +67,9 @@ export function ToolShowcase() {
           <h2 className="font-bebas text-5xl md:text-6xl text-[#2D2420] mb-4">
             两个工具，解决两个核心痛点
           </h2>
-          <p className="text-[#6B5E55] max-w-lg mx-auto text-sm leading-relaxed">
-            不是让你多背一本书——是让你<span className="text-[#2D2420] font-semibold">搞懂做错的题</span>、
-            <span className="text-[#2D2420] font-semibold">查清搞混的语法</span>。每个功能免费试用 3 次，无需注册。
+          <p className="text-[#6B5E55] max-w-2xl mx-auto text-sm leading-relaxed">
+            不是让你多背一本书，而是帮你搞懂做错的题、查清搞混的语法。<br />
+            每个功能免费试用 3 次，无需注册。
           </p>
         </div>
 
@@ -91,10 +91,10 @@ export function ToolShowcase() {
               </div>
               <div>
                 <h3 className="font-bold text-[#2D2420] text-lg leading-snug">
-                  搜了半天，还是不懂这条语法<span className="text-[#C75B3B]">在考试里怎么用</span>
+                  不只是查语法，还告诉你真题怎么考
                 </h3>
                 <p className="text-sm text-[#6B5E55] mt-1">
-                  输入任意语法，立刻得到真题例句 + 易混淆对比 + 接续规则。不是教科书解释，是考试视角。
+                  每个语法点都标注了在哪套真题出现过、考频多高、常见陷阱是什么。比语法酷多了"真题视角"。
                 </p>
               </div>
             </div>
@@ -133,10 +133,10 @@ export function ToolShowcase() {
               </div>
               <div>
                 <h3 className="font-bold text-[#2D2420] text-lg leading-snug">
-                  做错了，看懂了解析——<span className="text-[#C75B3B]">但不知道为什么会选错</span>
+                  不只是对答案，还告诉你为什么错
                 </h3>
                 <p className="text-sm text-[#6B5E55] mt-1">
-                  粘贴或拍照上传题目，AI 拆解干扰选项的逻辑陷阱，指出你的思维误区，下次不再犯同类错误。
+                  AI 分析你的错误模式（是语法没记住，还是混淆了相似语法）。自动记录你的薄弱点，越用越懂你。
                 </p>
               </div>
             </div>

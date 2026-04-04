@@ -1,10 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Brain, Sparkles, ShoppingBag, Zap } from "lucide-react";
+import { Brain, Sparkles, Zap } from "lucide-react";
 import Link from "next/link";
-
-const XIAOHONGSHU_SHOP_URL = "https://www.xiaohongshu.com/";
+import { MiniBlessing } from "./MiniBlessing";
 
 interface HeroProps {
   activeLevel: "N1" | "N2";
@@ -27,6 +26,9 @@ export function Hero({ activeLevel }: HeroProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-4xl mx-auto">
 
+          {/* 迷你祈福 */}
+          <MiniBlessing />
+
           {/* Badge */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -38,7 +40,7 @@ export function Hero({ activeLevel }: HeroProps) {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#C75B3B] opacity-75" />
               <span className="relative inline-flex rounded-full h-2 w-2 bg-[#C75B3B]" />
             </span>
-            <span className="text-sm font-semibold tracking-wide">距 2026 年 7 月考试还有 3 个月</span>
+            <span className="text-sm font-semibold tracking-wide">2026 年 7 月 JLPT，一起加油吧 💪</span>
           </motion.div>
 
           {/* 主标题 */}
@@ -48,12 +50,11 @@ export function Hero({ activeLevel }: HeroProps) {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="mb-6"
           >
-            <h1 className="font-bebas text-7xl md:text-9xl lg:text-[10rem] text-[#2D2420] leading-none tracking-wide">
-              GOKAKU
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#2D2420] leading-tight">
+              备考不用那么累
             </h1>
-            <div className="font-noto-jp text-xl md:text-2xl text-[#2D2420] mt-3 leading-snug font-bold">
-              做错了题，看懂了解析——
-              <span className="text-[#C75B3B]">下次还是会错</span>
+            <div className="font-noto-jp text-lg md:text-xl text-[#6B5E55] mt-4 leading-relaxed">
+              让真题告诉你该复习什么，做错题越多越懂你的弱点
             </div>
           </motion.div>
 
@@ -64,10 +65,7 @@ export function Hero({ activeLevel }: HeroProps) {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-base md:text-lg text-[#6B5E55] mb-10 max-w-xl mx-auto leading-relaxed font-noto-jp"
           >
-            语法随时可查，错题拍照就分析。<br />
-            <span className="text-[#2D2420] font-semibold">两个 AI 工具</span>背后，是{" "}
-            <span className="text-[#2D2420] font-semibold">231 条语法库</span>与{" "}
-            <span className="text-[#2D2420] font-semibold">176 份 {activeLevel} 备考资料</span>的支撑。
+            我们把历年真题扒了一遍，帮你找出高频考点和薄弱环节
           </motion.p>
 
           {/* CTA 按钮 */}
@@ -75,24 +73,20 @@ export function Hero({ activeLevel }: HeroProps) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12"
+            className="flex flex-col items-center justify-center gap-4 mb-6"
           >
             <Link
               href="/tool"
               className="w-full sm:w-auto bg-[#C75B3B] hover:bg-[#A84A2F] text-white px-8 py-4 rounded-2xl font-semibold text-base transition-all duration-200 shadow-[0_4px_20px_rgba(199,91,59,0.25)] hover:shadow-[0_6px_24px_rgba(199,91,59,0.35)] flex items-center justify-center gap-2"
             >
               <Brain className="w-4 h-4" />
-              免费体验 AI 工具
+              查语法 · 查词汇 · 分析错题
             </Link>
-            <a
-              href={XIAOHONGSHU_SHOP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full sm:w-auto bg-white hover:bg-[#FAF6F0] text-[#2D2420] border border-[#E8E0D5] hover:border-[#C75B3B]/30 px-8 py-4 rounded-2xl font-semibold text-base transition-all duration-200 flex items-center justify-center gap-2"
-            >
-              <ShoppingBag className="w-4 h-4" />
-              早鸟价 ¥39 购买资料
-            </a>
+
+            {/* 功能说明 */}
+            <p className="text-sm text-[#6B5E55] text-center max-w-md">
+              遇到不会的语法、纠结的词汇、分不清的用法，直接问 AI，用真题例子带你搞懂
+            </p>
           </motion.div>
 
           {/* 免费说明标签 */}
@@ -103,8 +97,8 @@ export function Hero({ activeLevel }: HeroProps) {
             className="flex flex-wrap justify-center gap-3 mb-16"
           >
             {[
-              { icon: Sparkles, text: "每个功能免费试用 3 次，无需注册" },
-              { icon: Zap, text: "语法查询 + 错题分析，两大 AI 工具" },
+              { icon: Sparkles, text: "每个功能免费试用 3 次，每日一练不限次" },
+              { icon: Zap, text: "基于 30 套真题数据，1500+ 语法词汇" },
             ].map((item, i) => (
               <div key={i} className="flex items-center gap-1.5 text-xs text-[#6B5E55]">
                 <item.icon className="w-3.5 h-3.5 text-[#C75B3B]" />

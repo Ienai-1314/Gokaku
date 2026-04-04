@@ -5,7 +5,6 @@ import {
   Check,
   Shield,
   Mail,
-  Zap,
   FileText,
   Sparkles,
   BookText,
@@ -16,204 +15,186 @@ import {
   Package,
   Headphones,
   Brain,
+  Zap,
 } from "lucide-react";
 
-// TODO: 替换为你的小红书店铺/笔记链接
 const XIAOHONGSHU_SHOP_URL = "https://www.xiaohongshu.com/";
 
-interface PricingProps {}
+const PLANS = [
+  {
+    id: "resource",
+    name: "资料包",
+    price: 29,
+    tag: null,
+    desc: "买断，永久有效",
+    highlight: false,
+    items: [
+      "N1 真题频率分析报告（18套完整真题统计）",
+      "2026年7月参考押题预测单",
+      "高频词汇量化库",
+      "176份备考资料（语法/听力/词汇/真题）",
+      "N1/N2 双版本通用",
+    ],
+  },
+  {
+    id: "bundle",
+    name: "资料包 + AI工具",
+    price: 39,
+    tag: "最多人选",
+    desc: "单买合计¥48，组合省¥9",
+    highlight: true,
+    items: [
+      "包含资料包全部内容",
+      "AI 语法查询无限使用（至7月考试）",
+      "AI 错题分析无限使用（至7月考试）",
+      "拍照识题功能",
+      "薄弱点报告自动生成",
+    ],
+  },
+  {
+    id: "tool",
+    name: "AI工具",
+    price: 19,
+    tag: null,
+    desc: "用到2026年7月考试结束",
+    highlight: false,
+    items: [
+      "AI 语法查询无限使用",
+      "AI 错题分析无限使用",
+      "拍照识题功能",
+      "薄弱点报告自动生成",
+    ],
+  },
+];
 
-export function Pricing({}: PricingProps) {
-  const deliverables = [
-    {
-      icon: Brain,
-      title: "AI 工具无限使用（考季最核心权益）",
-      desc: "语法查询：输入任意语法，返回真题例句+易混淆对比+接续规则。错题分析：粘贴/拍照题目，AI 拆解陷阱逻辑。购买后无限使用，直至 2026 年 7 月考试结束。",
-    },
-    {
-      icon: FileText,
-      title: "N1 真题频率分析报告",
-      desc: "基于18套完整真题（含题目+听力+解析）逐项统计：语法TOP30（出现次数+轮空年数+例句）、近义辨析15组、读解高频主题+听力场景词量化排序。",
-    },
-    {
-      icon: Sparkles,
-      title: "2026年7月参考押题预测单",
-      desc: "结合轮空周期和出现频率给出高/中参考概率语法点（仅供参考，不代表必然出现）、考前1晚重点复习20条、常见陷阱点TOP20。",
-    },
-    {
-      icon: BookText,
-      title: "高频词汇量化库 + 全料资料包",
-      desc: "200核心名词+100惯用语+听力场景速查表，另含语法大全/近6000词Excel/699惯用语/1992-2025真题库等176份文件。",
-    },
-  ];
+const trustModules = [
+  {
+    icon: Shield,
+    title: "退款政策",
+    desc: "支付后12小时内无条件退款。数字商品一经领取网盘链接后不再退款。",
+  },
+  {
+    icon: Mail,
+    title: "发货方式",
+    desc: "支付成功后，在领取页输入订单信息获取网盘链接。支持百度/阿里/夸克网盘。",
+  },
+  {
+    icon: RefreshCw,
+    title: "更新说明",
+    desc: "押题预测持续更新至2026年7月考前。词汇库、语法库随资料完善不定期增补。",
+  },
+  {
+    icon: Smartphone,
+    title: "设备支持",
+    desc: "手机/平板/电脑全平台可用。兼容微信内置浏览器、Edge、Chrome、Safari。",
+  },
+  {
+    icon: Headphones,
+    title: "售后保障",
+    desc: "链接失效联系客服补发。资料打开有问题提供二次下载。",
+  },
+  {
+    icon: Package,
+    title: "产品说明",
+    desc: "资料包含3份真题频率分析报告及176份备考资料。押题内容为参考性预测，不构成考试结果保证。",
+  },
+];
 
-  const guarantees = [
-    "AI 工具用到考试结束",
-    "一次购买，考季内永久使用",
-    "押题参考持续更新至考前",
-    "N1/N2 双版本通用",
-  ];
-
-  const trustModules = [
-    {
-      icon: Package,
-      title: "产品和权益",
-      desc: "主权益：3份基于18套完整真题的频率分析报告。赠权益：20+份语法/听力/词汇/惯用句/真题原始资料（txt/pdf/excel）。押题内容为参考性预测，不构成考试结果保证。",
-    },
-    {
-      icon: Smartphone,
-      title: "设备与支持",
-      desc: "手机 / 平板 / 电脑全平台可阅读 PDF。兼容微信内置浏览器、Edge、Chrome、Safari。",
-    },
-    {
-      icon: Mail,
-      title: "发货与激活",
-      desc: "支付成功后，可通过领取页获取网盘下载链接。支持百度网盘 / 阿里云盘 / 夸克网盘备用。",
-    },
-    {
-      icon: RefreshCw,
-      title: "更新说明",
-      desc: "押题预测等时效性量化内容持续更新至 2026 年 7 月考前。词汇库、语法库等随资料完善不定期增补。",
-    },
-    {
-      icon: Shield,
-      title: "退款政策",
-      desc: "支持支付后12小时内的无条件退款。数字商品一经领取网盘链接后不再退款，12小时内未领取可退款。",
-    },
-    {
-      icon: Headphones,
-      title: "售后保障",
-      desc: "链接失效？联系客服微信 / 邮箱补发。资料打开有问题？提供网盘二次下载。",
-    },
-  ];
-
+export function Pricing() {
   return (
-    <section className="py-16 md:py-24 relative overflow-hidden bg-[#FAF6F0]" id="pricing">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
+    <section className="py-16 md:py-24 bg-[#FAF6F0]" id="pricing">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        {/* Header */}
         <div className="text-center mb-12">
           <span className="inline-block text-xs font-semibold tracking-widest text-[#C75B3B] uppercase mb-3">
             Pricing
           </span>
           <h2 className="font-bebas text-5xl md:text-6xl text-[#2D2420] mb-3">
-            ¥39 能买到什么？
+            按需选择，不强制打包
           </h2>
-          <p className="text-[#6B5E55] max-w-lg mx-auto text-sm leading-relaxed">
-            不是经验帖，是<b>基于18套完整真题的频率统计结论</b>。一次买断，整整1套N1备考资产库：
+          <p className="text-[#6B5E55] max-w-md mx-auto text-sm leading-relaxed">
+            只要工具就买工具，只要资料就买资料，都要就选组合
           </p>
         </div>
 
-        {/* Value Prop Grid */}
-        <div className="grid md:grid-cols-3 gap-4 mb-12 max-w-5xl mx-auto">
-          {[
-            { num: "01", title: "做错了题怎么办？", answer: "粘贴或拍照上传题目，AI 拆解干扰选项的逻辑陷阱，找出你的思维盲区，下次不再犯同类错误。购买后无限使用。" },
-            { num: "02", title: "语法搞混怎么查？", answer: "输入任意语法，立刻返回真题例句、接续规则、近义辨析。不是教科书解释，是 18 套真题视角的考试用法。" },
-            { num: "03", title: "备考重点怎么定？", answer: "18套完整真题逐项统计频率+轮空周期，告诉你哪些语法今年参考概率最高，考前1晚重点复习20条。" },
-          ].map((item, idx) => (
-            <div key={idx} className="bg-white rounded-2xl p-6 border border-[#E8E0D5] shadow-sm">
-              <div className="text-[#C75B3B] font-bebas text-3xl mb-2">{item.num}</div>
-              <h3 className="font-semibold text-[#2D2420] mb-2">{item.title}</h3>
-              <p className="text-sm text-[#6B5E55] leading-relaxed">{item.answer}</p>
-            </div>
+        {/* Pricing Cards */}
+        <div className="grid md:grid-cols-3 gap-4 mb-14">
+          {PLANS.map((plan, i) => (
+            <motion.div
+              key={plan.id}
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.3, delay: i * 0.08 }}
+              className={`relative rounded-3xl border overflow-hidden flex flex-col ${
+                plan.highlight
+                  ? "border-[#C75B3B] shadow-[0_8px_40px_rgba(199,91,59,0.15)]"
+                  : "border-[#E8E0D5] shadow-sm"
+              } bg-white`}
+            >
+              {plan.tag && (
+                <div className="absolute top-0 left-0 right-0 bg-[#C75B3B] text-white text-xs font-semibold text-center py-1.5 tracking-wide">
+                  {plan.tag}
+                </div>
+              )}
+
+              <div className={`px-6 py-6 ${plan.tag ? "pt-10" : ""} border-b border-[#E8E0D5]`}>
+                <p className="text-sm font-semibold text-[#6B5E55] mb-2">{plan.name}</p>
+                <div className="flex items-baseline gap-1 mb-1">
+                  <span className="font-bebas text-5xl text-[#2D2420]">¥{plan.price}</span>
+                </div>
+                <p className="text-xs text-[#6B5E55]">{plan.desc}</p>
+              </div>
+
+              <div className="px-6 py-5 flex-1">
+                <ul className="space-y-2.5">
+                  {plan.items.map((item, j) => (
+                    <li key={j} className="flex items-start gap-2">
+                      <div className={`w-4 h-4 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 ${
+                        plan.highlight
+                          ? "bg-[#C75B3B]/10 border border-[#C75B3B]/25"
+                          : "bg-[#4A7C59]/10 border border-[#4A7C59]/25"
+                      }`}>
+                        <Check className={`w-2.5 h-2.5 ${plan.highlight ? "text-[#C75B3B]" : "text-[#4A7C59]"}`} />
+                      </div>
+                      <span className="text-xs text-[#6B5E55] leading-relaxed">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="px-6 pb-6">
+                <a
+                  href={XIAOHONGSHU_SHOP_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`w-full flex items-center justify-center gap-2 py-3 rounded-2xl text-sm font-semibold transition-all ${
+                    plan.highlight
+                      ? "bg-[#C75B3B] hover:bg-[#A84A2F] text-white shadow-[0_4px_16px_rgba(199,91,59,0.25)]"
+                      : "bg-[#FAF6F0] hover:bg-[#F0E8E0] text-[#2D2420] border border-[#E8E0D5]"
+                  }`}
+                >
+                  <ShoppingBag className="w-4 h-4" />
+                  购买 ¥{plan.price}
+                </a>
+              </div>
+            </motion.div>
           ))}
         </div>
 
-        {/* Pricing Card */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="max-w-md mx-auto"
-        >
-          <div className="bg-white rounded-3xl overflow-hidden shadow-[0_8px_40px_rgba(45,36,32,0.1)] border border-[#E8E0D5]">
-            {/* Header */}
-            <div className="px-8 py-8 text-center border-b border-[#E8E0D5] bg-[#FDF8F3]">
-              <div className="inline-flex items-center gap-2 border border-[#F0A500]/40 bg-[#F0A500]/10 text-[#C75B3B] px-3 py-1 rounded-full text-xs font-semibold mb-5">
-                <Zap className="w-3 h-3" />
-                <span>早鸟价 · 5月1日起恢复¥49</span>
-              </div>
-              <div className="flex items-baseline justify-center gap-3">
-                <span className="font-bebas text-7xl text-[#2D2420]">¥39</span>
-                <div className="flex flex-col items-start">
-                  <span className="text-[#6B5E55] line-through text-lg">¥99</span>
-                  <span className="text-[#6B5E55] text-xs">买断制 · 考季内有效</span>
-                </div>
-              </div>
-              <p className="text-xs text-[#C75B3B] mt-2">5月1日后恢复¥49，现在是最低价</p>
-            </div>
-
-            {/* Deliverables */}
-            <div className="px-8 py-6">
-              <div className="space-y-4 mb-8">
-                {deliverables.map((d, index) => (
-                  <div key={index} className="flex gap-3">
-                    <div className="w-8 h-8 rounded-lg bg-[#C75B3B]/8 border border-[#C75B3B]/15 flex items-center justify-center flex-shrink-0">
-                      <d.icon className="w-4 h-4 text-[#C75B3B]" />
-                    </div>
-                    <div>
-                      <div className="text-sm font-semibold text-[#2D2420]">{d.title}</div>
-                      <div className="text-xs text-[#6B5E55] leading-relaxed mt-0.5">{d.desc}</div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              {/* Guarantees */}
-              <ul className="grid grid-cols-2 gap-3 mb-8">
-                {guarantees.map((feature, index) => (
-                  <li key={index} className="flex items-center gap-2">
-                    <div className="w-4 h-4 rounded-full bg-[#4A7C59]/10 border border-[#4A7C59]/25 flex items-center justify-center flex-shrink-0">
-                      <Check className="w-2.5 h-2.5 text-[#4A7C59]" />
-                    </div>
-                    <span className="text-[#6B5E55] text-xs">{feature}</span>
-                  </li>
-                ))}
-              </ul>
-
-              {/* CTA Button */}
-              <a
-                href={XIAOHONGSHU_SHOP_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full bg-[#C75B3B] hover:bg-[#A84A2F] text-white py-4 rounded-2xl font-semibold text-base transition-all duration-200 shadow-[0_4px_20px_rgba(199,91,59,0.25)] hover:shadow-[0_6px_24px_rgba(199,91,59,0.35)] flex items-center justify-center gap-2 cursor-pointer"
-              >
-                <ShoppingBag className="w-4 h-4" />
-                <span>立即购买 ¥39</span>
-              </a>
-
-              {/* Payment methods & channels */}
-              <div className="mt-4 flex flex-col items-center gap-2">
-                <div className="flex items-center gap-3">
-                  <span className="px-2 py-1 rounded bg-[#1677FF]/10 text-[#1677FF] text-xs font-medium">
-                    支付宝
-                  </span>
-                  <span className="px-2 py-1 rounded bg-[#07C160]/10 text-[#07C160] text-xs font-medium">
-                    微信支付
-                  </span>
-                </div>
-                <p className="text-[10px] text-[#6B5E55]/70 text-center">
-                  可在小红书 / 微信公众号 / 闲鱼购买，资料通用
-                </p>
-              </div>
-
-              {/* Secondary link */}
-              <div className="mt-4 text-center">
-                <a
-                  href="/download"
-                  className="inline-flex items-center gap-1 text-xs text-[#C75B3B] hover:underline"
-                >
-                  <Download className="w-3 h-3" />
-                  已购买？点击领取下载链接
-                </a>
-              </div>
-            </div>
-          </div>
-        </motion.div>
+        {/* Already purchased */}
+        <div className="text-center mb-14">
+          <a href="/download" className="inline-flex items-center gap-1.5 text-sm text-[#C75B3B] hover:underline">
+            <Download className="w-3.5 h-3.5" />
+            已购买？点击领取下载链接
+          </a>
+        </div>
 
         {/* Trust Modules */}
-        <div className="mt-14 max-w-5xl mx-auto">
+        <div>
           <h3 className="font-bebas text-2xl text-[#2D2420] text-center mb-6 tracking-wide">
-            购买无忧 · 六大保障
+            购买须知
           </h3>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {trustModules.map((m, idx) => (
@@ -231,23 +212,23 @@ export function Pricing({}: PricingProps) {
         </div>
 
         {/* FAQ */}
-        <div className="mt-14 max-w-xl mx-auto">
+        <div className="mt-12 max-w-xl mx-auto">
           <h3 className="font-bebas text-2xl text-[#2D2420] text-center mb-6 tracking-wide">
             常见问题
           </h3>
           <div className="space-y-3">
             {[
               {
-                q: "在小红书购买后，怎么拿到资料？",
-                a: "购买成功后，你可以点击本页面的「已购买，点击领取」进入下载页，输入订单信息即可获取网盘链接。我也会在店铺自动发货消息里发送领取方式。",
+                q: "为什么不免费？",
+                a: "资料整理和服务器都要成本，我们也要恰饭。但保证物有所值，不割韭菜。",
               },
               {
-                q: "资料会更新吗？",
-                a: "会！购买后可持续获得更新，包括每次考试前的量化押题预测更新，直到 2026 年 7 月考前最后一天。",
+                q: "和市面上的 ¥19.9 真题书有什么区别？",
+                a: "真题书只是把题目印出来，我们是按语法点、考频重新整理过的，更适合备考。而且有 AI 工具帮你分析错题。",
               },
               {
-                q: "买了可以分享给别人吗？",
-                a: "仅供个人学习使用。你的资料会带有专属水印，感谢支持我们把真题量化分析继续做下去。",
+                q: "购买后怎么拿到资料？",
+                a: "支付成功后，点击「已购买，点击领取」进入下载页，输入订单信息即可获取网盘链接。",
               },
             ].map((faq, index) => (
               <details
@@ -256,11 +237,9 @@ export function Pricing({}: PricingProps) {
               >
                 <summary className="px-5 py-4 cursor-pointer flex items-center justify-between text-[#2D2420] text-sm font-medium hover:text-[#C75B3B] transition-colors list-none">
                   {faq.q}
-                  <span className="text-[#6B5E55] group-open:text-[#C75B3B] transition-colors ml-4 flex-shrink-0">
-                    <svg className="w-4 h-4 group-open:rotate-180 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </span>
+                  <svg className="w-4 h-4 text-[#6B5E55] group-open:rotate-180 transition-transform duration-200 flex-shrink-0 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
                 </summary>
                 <div className="px-5 pb-4 text-[#6B5E55] text-sm leading-relaxed border-t border-[#E8E0D5] pt-3">
                   {faq.a}
@@ -269,6 +248,7 @@ export function Pricing({}: PricingProps) {
             ))}
           </div>
         </div>
+
       </div>
     </section>
   );

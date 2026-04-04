@@ -2,11 +2,13 @@ import { NextRequest, NextResponse } from "next/server";
 import { readFileSync } from "fs";
 import path from "path";
 import { checkRateLimit } from "@/lib/ratelimit";
+import { sanitizeInput, createSafeErrorResponse, checkRequestRate, detectPromptInjection } from "@/lib/security";
 
 const DEEPSEEK_API_URL = "https://api.deepseek.com/v1/chat/completions";
 
 // 语法库缓存（进程内复用，避免每次读文件）
 let grammarCache: GrammarEntry[] | null = null;
+let grammarSourceCache: GrammarSourceEntry[] | null = null;
 
 interface GrammarEntry {
   number: number;
@@ -14,6 +16,17 @@ interface GrammarEntry {
   meaning: string;
   examples: string[];
   raw?: string;
+}
+
+interface GrammarSourceEntry {
+  number: number;
+  pattern: string;
+  total_hits: number;
+  star: number;
+  occurrences: Array<{
+    exam: string;
+    count: number;
+  }>;
 }
 
 function loadGrammar(): GrammarEntry[] {
@@ -35,41 +48,95 @@ function loadGrammar(): GrammarEntry[] {
   return [];
 }
 
-function searchGrammar(query: string): GrammarEntry[] {
+function loadGrammarSource(): Record<number, GrammarSourceEntry> {
+  if (grammarSourceCache) {
+    return grammarSourceCache.reduce((acc, item) => {
+      acc[item.number] = item;
+      return acc;
+    }, {} as Record<number, GrammarSourceEntry>);
+  }
+
+  const candidates = [
+    path.join(process.cwd(), "lib/data/grammar_with_source.json"),
+    path.join(process.env.DATA_DIR ?? "d:/量化n1/reports_comprehensive", "grammar_with_source.json"),
+  ];
+
+  for (const filePath of candidates) {
+    try {
+      const raw = readFileSync(filePath, "utf-8");
+      grammarSourceCache = JSON.parse(raw);
+      return grammarSourceCache!.reduce((acc, item) => {
+        acc[item.number] = item;
+        return acc;
+      }, {} as Record<number, GrammarSourceEntry>);
+    } catch {
+      // 尝试下一个路径
+    }
+  }
+  return {};
+}
+
+function searchGrammar(query: string): Array<GrammarEntry & { source?: GrammarSourceEntry }> {
   const grammar = loadGrammar();
+  const sourceMap = loadGrammarSource();
   const q = query.toLowerCase();
+
   return grammar
     .filter(
       (g) =>
         g.pattern?.toLowerCase().includes(q) ||
         g.meaning?.toLowerCase().includes(q)
     )
-    .slice(0, 3);
+    .slice(0, 3)
+    .map(g => ({
+      ...g,
+      source: sourceMap[g.number]
+    }));
 }
 
 export async function POST(req: NextRequest) {
-  const allowed = await checkRateLimit(req, "query");
-  if (!allowed) {
-    return NextResponse.json({ error: "今日使用次数已达上限，购买后解锁无限使用" }, { status: 429 });
-  }
-
-  const { query } = await req.json();
-
-  if (!query?.trim()) {
-    return NextResponse.json({ error: "请输入要查询的语法" }, { status: 400 });
-  }
-
-  const apiKey = process.env.DEEPSEEK_API_KEY;
-  if (!apiKey) {
-    return NextResponse.json({ error: "服务暂时不可用" }, { status: 503 });
-  }
-
-  // 从本地语法库检索相关条目
-  const matches = searchGrammar(query);
-
-  const prompt = buildQueryPrompt(query, matches);
-
   try {
+    const ip = req.headers.get("x-forwarded-for")?.split(",")[0].trim() ||
+               req.headers.get("x-real-ip") ||
+               "unknown";
+
+    // 请求频率限制：每分钟最多10次
+    if (!checkRequestRate(`query:${ip}`, 10, 60000)) {
+      return NextResponse.json({ error: "请求过于频繁，请稍后再试" }, { status: 429 });
+    }
+
+    const allowed = await checkRateLimit(req, "query");
+    if (!allowed) {
+      return NextResponse.json({ error: "今日使用次数已达上限，购买后解锁无限使用" }, { status: 429 });
+    }
+
+    const { query } = await req.json();
+
+    // 输入验证和清洗
+    if (!query?.trim()) {
+      return NextResponse.json({ error: "请输入要查询的语法" }, { status: 400 });
+    }
+
+    // Prompt 注入攻击检测
+    const injectionCheck = detectPromptInjection(query);
+    if (!injectionCheck.safe) {
+      return NextResponse.json({
+        error: injectionCheck.reason || "输入内容不符合规范"
+      }, { status: 400 });
+    }
+
+    const sanitizedQuery = sanitizeInput(query, 200);
+
+    const apiKey = process.env.DEEPSEEK_API_KEY;
+    if (!apiKey) {
+      return NextResponse.json({ error: "服务暂时不可用" }, { status: 503 });
+    }
+
+    // 从本地语法库检索相关条目
+    const matches = searchGrammar(sanitizedQuery);
+
+    const prompt = buildQueryPrompt(sanitizedQuery, matches);
+
     const response = await fetch(DEEPSEEK_API_URL, {
       method: "POST",
       headers: {
@@ -94,19 +161,33 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ result: content, matchedGrammar: matches });
   } catch (err) {
     console.error("[query] error:", err);
-    return NextResponse.json({ error: "查询失败，请稍后重试" }, { status: 500 });
+    const safeError = createSafeErrorResponse(err);
+    return NextResponse.json(safeError, { status: 500 });
   }
 }
 
-function buildQueryPrompt(query: string, matches: GrammarEntry[]): string {
+function buildQueryPrompt(query: string, matches: Array<GrammarEntry & { source?: GrammarSourceEntry }>): string {
   let context = "";
   if (matches.length > 0) {
     context = "\n\n【来自N1真题语法库的相关条目】\n";
     context += matches
-      .map(
-        (m) =>
-          `▸ ${m.pattern}\n  含义：${m.meaning}\n  例句：${(m.examples ?? []).slice(0, 2).join("；")}`
-      )
+      .map((m) => {
+        let entry = `▸ ${m.pattern}\n  含义：${m.meaning}\n  例句：${(m.examples ?? []).slice(0, 2).join("；")}`;
+
+        // 添加真题出处信息
+        if (m.source) {
+          const { total_hits, star, occurrences } = m.source;
+          const starDisplay = "★".repeat(star) + "☆".repeat(3 - star);
+          entry += `\n  真题考频：${starDisplay} 共出现${total_hits}次`;
+
+          if (occurrences && occurrences.length > 0) {
+            const exams = occurrences.map(o => o.exam).slice(0, 5).join(", ");
+            entry += `\n  出现场次：${exams}${occurrences.length > 5 ? " 等" : ""}`;
+          }
+        }
+
+        return entry;
+      })
       .join("\n\n");
   }
 

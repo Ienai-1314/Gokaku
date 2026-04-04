@@ -18,11 +18,11 @@ export default function Home() {
       <Navbar activeLevel={activeLevel} onLevelChange={setActiveLevel} />
       <main className="flex-1">
         <Hero activeLevel={activeLevel} />
-        <BlessingWidget />
         <ToolShowcase />
         <ResourcePack />
         <ContentPreview activeLevel={activeLevel} />
         <Pricing />
+        <BlessingWidget />
       </main>
       <Footer />
     </div>
