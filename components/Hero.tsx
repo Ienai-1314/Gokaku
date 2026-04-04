@@ -15,10 +15,10 @@ export function Hero({ activeLevel }: HeroProps) {
       {/* 背景水印 */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <div
-          className="absolute -top-10 -right-20 font-bebas text-[28rem] md:text-[38rem] text-[#E8E0D5]/40 leading-none select-none pointer-events-none"
+          className="absolute -top-10 -right-20 font-bebas text-[28rem] md:text-[38rem] text-[#E8E0D5]/30 leading-none select-none pointer-events-none"
           style={{ transform: "rotate(-12deg)" }}
         >
-          合格
+          GOKAKU
         </div>
         <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-[#C75B3B]/8 rounded-full blur-[120px]" />
       </div>
@@ -50,23 +50,14 @@ export function Hero({ activeLevel }: HeroProps) {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="mb-6"
           >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#2D2420] leading-tight">
-              备考不用那么累
+            <h1 className="font-bebas text-7xl md:text-8xl lg:text-9xl font-bold text-[#2D2420] leading-tight tracking-wider">
+              GOKAKU
             </h1>
             <div className="font-noto-jp text-lg md:text-xl text-[#6B5E55] mt-4 leading-relaxed">
-              让真题告诉你该复习什么，做错题越多越懂你的弱点
+              我们用 AI 把历年真题扒了一遍<br />
+              做最贴近真题的，最好用的备考学习工具
             </div>
           </motion.div>
-
-          {/* 副标题 */}
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-base md:text-lg text-[#6B5E55] mb-10 max-w-xl mx-auto leading-relaxed font-noto-jp"
-          >
-            我们把历年真题扒了一遍，帮你找出高频考点和薄弱环节
-          </motion.p>
 
           {/* CTA 按钮 */}
           <motion.div
@@ -85,7 +76,7 @@ export function Hero({ activeLevel }: HeroProps) {
 
             {/* 功能说明 */}
             <p className="text-sm text-[#6B5E55] text-center max-w-md">
-              遇到不会的语法、纠结的词汇、分不清的用法，直接问 AI，用真题例子带你搞懂
+              不会的语法、纠结的词汇、分不清的用法，直接问 AI
             </p>
           </motion.div>
 
