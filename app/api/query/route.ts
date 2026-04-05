@@ -3,6 +3,7 @@ import { readFileSync } from "fs";
 import path from "path";
 import { checkRateLimit } from "@/lib/ratelimit";
 import { sanitizeInput, hashIP, createSafeErrorResponse, checkRequestRate, detectPromptInjection } from "@/lib/security";
+import { getAccountIdFromRequest } from "@/lib/account";
 
 const DEEPSEEK_API_URL = "https://api.deepseek.com/v1/chat/completions";
 
@@ -114,7 +115,7 @@ function searchGrammar(query: string): Array<GrammarEntry & { source?: GrammarSo
 
 export async function POST(req: NextRequest) {
   try {
-    const userId = getUserId(req);
+    const accountId = await getAccountIdFromRequest(req);
     const ip = getIp(req);
 
     // 请求频率限制：每分钟最多10次

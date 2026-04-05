@@ -3,6 +3,7 @@ import { readFileSync } from "fs";
 import path from "path";
 import { checkRateLimit } from "@/lib/ratelimit";
 import { sanitizeInput, createSafeErrorResponse, checkRequestRate, detectPromptInjection } from "@/lib/security";
+import { getAccountIdFromRequest } from "@/lib/account";
 
 const DEEPSEEK_API_URL = "https://api.deepseek.com/v1/chat/completions";
 
@@ -56,6 +57,7 @@ function searchVocab(query: string): VocabEntry[] {
 
 export async function POST(req: NextRequest) {
   try {
+    const accountId = await getAccountIdFromRequest(req);
     const ip = req.headers.get("x-forwarded-for")?.split(",")[0].trim() ||
                req.headers.get("x-real-ip") ||
                "unknown";

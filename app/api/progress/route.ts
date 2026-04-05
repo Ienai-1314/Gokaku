@@ -1,14 +1,13 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getDb } from '@/lib/cloudbase';
-import { getClientIdentifier } from '@/lib/security';
+import { getAccountIdFromRequest } from '@/lib/account';
 
 export const dynamic = 'force-dynamic';
 
 // 获取学习进度统计
 export async function GET(req: NextRequest) {
   try {
-    const { deviceId, ip } = getClientIdentifier(req);
-    const userId = deviceId || ip;
+    const accountId = await getAccountIdFromRequest(req);
     const db = getDb();
 
     // 并行查询多个数据
@@ -17,20 +16,20 @@ export async function GET(req: NextRequest) {
       collectionsResult,
       weaknessResult,
       wrongQuestionsResult,
-      userResult
+      accountResult
     ] = await Promise.all([
-      db.collection('query_history').where({ user_id: userId }).get(),
-      db.collection('collections').where({ user_id: userId }).get(),
-      db.collection('grammar_weakness').where({ user_id: userId }).get(),
-      db.collection('wrong_questions').where({ user_id: userId }).get(),
-      db.collection('users').where({ device_id: userId }).limit(1).get()
+      db.collection('query_history').where({ account_id: accountId }).get(),
+      db.collection('collections').where({ account_id: accountId }).get(),
+      db.collection('grammar_weakness').where({ account_id: accountId }).get(),
+      db.collection('wrong_questions').where({ account_id: accountId }).get(),
+      db.collection('accounts').where({ account_id: accountId }).limit(1).get()
     ]);
 
     const history = historyResult.data || [];
     const collections = collectionsResult.data || [];
     const weakness = weaknessResult.data || [];
     const wrongQuestions = wrongQuestionsResult.data || [];
-    const user = userResult.data?.[0] || null;
+    const account = accountResult.data?.[0] || null;
 
     // 统计数据
     const stats = {
@@ -50,8 +49,9 @@ export async function GET(req: NextRequest) {
       weaknessCount: weakness.length,
 
       // 额度统计
-      quotaUsed: user ? (100 - (user.quota || 0)) : 0,
-      quotaRemaining: user?.quota || 0,
+      dailyLimit: account?.daily_limit || 100,
+      isPremium: account?.is_premium || false,
+      expiresAt: account?.expires_at || null,
 
       // 学习天数（基于最早的历史记录）
       studyDays: history.length > 0

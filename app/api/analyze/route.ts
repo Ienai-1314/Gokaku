@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { checkRateLimit } from "@/lib/ratelimit";
 import { getDb } from "@/lib/cloudbase";
 import { sanitizeInput, hashIP, createSafeErrorResponse, checkRequestRate, detectPromptInjection } from "@/lib/security";
+import { getAccountIdFromRequest } from "@/lib/account";
 
 function getIp(req: NextRequest) {
   return (
@@ -11,18 +12,8 @@ function getIp(req: NextRequest) {
   );
 }
 
-function getUserId(req: NextRequest): string {
-  // 优先使用设备ID，其次使用IP（向后兼容）
-  const deviceId = req.headers.get("x-device-id");
-  if (deviceId) return deviceId;
-
-  // 降级到IP识别
-  const ip = getIp(req);
-  return hashIP(ip);
-}
-
 async function saveToWrongBook(
-  userId: string,
+  accountId: string,
   data: {
     question: string;
     userAnswer?: string;
@@ -34,7 +25,8 @@ async function saveToWrongBook(
   try {
     const db = getDb();
     await db.collection("wrong_questions").add({
-      user_id: userId,
+      user_id: accountId,
+      account_id: accountId,
       question: data.question,
       userAnswer: data.userAnswer || "",
       correctAnswer: data.correctAnswer || "",
@@ -44,37 +36,37 @@ async function saveToWrongBook(
     });
 
     // 检查是否达到100道错题，自动延长会员
-    await checkAndRewardMembership(userId);
+    await checkAndRewardMembership(accountId);
   } catch (err) {
     console.error("保存错题失败:", err);
   }
 }
 
-async function checkAndRewardMembership(userId: string) {
+async function checkAndRewardMembership(accountId: string) {
   try {
     const db = getDb();
 
     // 查询用户错题总数
     const { data: wrongQuestions } = await db
       .collection("wrong_questions")
-      .where({ user_id: userId })
+      .where({ account_id: accountId })
       .get();
 
     const totalErrors = wrongQuestions?.length || 0;
 
     // 每100道题延长1个月会员
     if (totalErrors > 0 && totalErrors % 100 === 0) {
-      // 查询用户信息
-      const { data: users } = await db
-        .collection("users")
-        .where({ device_id: userId })
+      // 查询账号信息
+      const { data: accounts } = await db
+        .collection("accounts")
+        .where({ account_id: accountId })
         .limit(1)
         .get();
 
-      if (users && users.length > 0) {
-        const user = users[0];
-        const currentExpiry = user.membership_expiry
-          ? new Date(user.membership_expiry)
+      if (accounts && accounts.length > 0) {
+        const account = accounts[0];
+        const currentExpiry = account.membership_expiry
+          ? new Date(account.membership_expiry)
           : new Date();
 
         // 如果已过期，从当前时间开始计算
@@ -85,15 +77,15 @@ async function checkAndRewardMembership(userId: string) {
         newExpiry.setMonth(newExpiry.getMonth() + 1);
 
         await db
-          .collection("users")
-          .doc(user._id as string)
+          .collection("accounts")
+          .doc(account._id as string)
           .update({
             membership_expiry: newExpiry.toISOString(),
             last_reward_at: new Date().toISOString(),
-            total_rewards: (user.total_rewards || 0) + 1
+            total_rewards: (account.total_rewards || 0) + 1
           });
 
-        console.log(`用户 ${userId} 完成 ${totalErrors} 道错题，会员延长至 ${newExpiry.toISOString()}`);
+        console.log(`账号 ${accountId} 完成 ${totalErrors} 道错题，会员延长至 ${newExpiry.toISOString()}`);
       }
     }
   } catch (err) {
@@ -101,12 +93,12 @@ async function checkAndRewardMembership(userId: string) {
   }
 }
 
-async function recordWeakness(userId: string, grammarPattern: string) {
+async function recordWeakness(accountId: string, grammarPattern: string) {
   try {
     const db = getDb();
     const { data } = await db
       .collection("grammar_weakness")
-      .where({ user_id: userId, grammar_id: grammarPattern })
+      .where({ account_id: accountId, grammar_id: grammarPattern })
       .get();
     if (data && data.length > 0) {
       await db
@@ -115,7 +107,8 @@ async function recordWeakness(userId: string, grammarPattern: string) {
         .update({ error_count: db.command.inc(1), last_seen: new Date().toISOString() });
     } else {
       await db.collection("grammar_weakness").add({
-        user_id: userId,
+        user_id: accountId,
+        account_id: accountId,
         grammar_id: grammarPattern,
         error_count: 1,
         last_seen: new Date().toISOString(),
@@ -130,7 +123,7 @@ const DEEPSEEK_API_URL = "https://api.deepseek.com/v1/chat/completions";
 
 export async function POST(req: NextRequest) {
   try {
-    const userId = getUserId(req);
+    const accountId = await getAccountIdFromRequest(req);
     const ip = getIp(req);
 
     // 请求频率限制：每分钟最多10次
@@ -212,7 +205,7 @@ export async function POST(req: NextRequest) {
     const errorPatterns = extractErrorPatterns(content);
 
     // 异步保存到错题本（不阻塞响应）
-    saveToWrongBook(userId, {
+    saveToWrongBook(accountId, {
       question: sanitizedQuestion,
       userAnswer: sanitizedUserAnswer,
       correctAnswer: sanitizedCorrectAnswer,
@@ -222,7 +215,7 @@ export async function POST(req: NextRequest) {
 
     // 异步提取语法点并记录薄弱点（不阻塞响应）
     extractGrammarPattern(content).then((pattern) => {
-      if (pattern) recordWeakness(userId, pattern);
+      if (pattern) recordWeakness(accountId, pattern);
     });
 
     return NextResponse.json({ result: content, errorPatterns });
