@@ -11,7 +11,9 @@ import {
   ArrowLeft,
   Zap,
   BookMarked,
-  AlertCircle
+  AlertCircle,
+  User,
+  Clock
 } from 'lucide-react';
 import Link from 'next/link';
 import { apiFetch } from '@/lib/api-client';
@@ -31,6 +33,10 @@ interface ProgressStats {
   studyDays: number;
   grammarMastery: number;
   vocabMastery: number;
+  accountId?: string;
+  accountType?: 'free' | 'redeem';
+  expiresAt?: string;
+  dailyQuota?: number;
 }
 
 export default function DashboardPage() {
@@ -85,6 +91,60 @@ export default function DashboardPage() {
       </header>
 
       <main className="max-w-4xl mx-auto px-4 py-6 space-y-6">
+        {/* 账号信息 */}
+        <div className="bg-gradient-to-r from-[#D4772C] to-[#E89A5C] rounded-2xl p-6 text-white">
+          <div className="flex items-start justify-between">
+            <div className="flex-1">
+              <div className="flex items-center gap-2 mb-2">
+                <User className="w-5 h-5" />
+                <h2 className="text-lg font-bold">我的账号</h2>
+              </div>
+
+              <div className="space-y-2 mt-4">
+                <div className="flex items-center gap-2">
+                  <span className="text-sm opacity-90">账号ID:</span>
+                  <span className="font-mono text-sm font-semibold">
+                    {stats.accountId || '未绑定'}
+                  </span>
+                </div>
+
+                {stats.accountType === 'redeem' && stats.expiresAt && (
+                  <div className="flex items-center gap-2">
+                    <Clock className="w-4 h-4 opacity-90" />
+                    <span className="text-sm">
+                      会员有效期至: {new Date(stats.expiresAt).toLocaleDateString('zh-CN')}
+                    </span>
+                  </div>
+                )}
+
+                {stats.accountType === 'redeem' && stats.dailyQuota && (
+                  <div className="flex items-center gap-2">
+                    <Zap className="w-4 h-4 opacity-90" />
+                    <span className="text-sm">
+                      每日额度: {stats.dailyQuota} 次
+                    </span>
+                  </div>
+                )}
+
+                {stats.accountType === 'free' && (
+                  <div className="text-sm opacity-90">
+                    免费用户 · 每日 3 次查询额度
+                  </div>
+                )}
+              </div>
+            </div>
+
+            {stats.accountType === 'free' && (
+              <Link
+                href="/redeem"
+                className="bg-white text-[#D4772C] px-4 py-2 rounded-lg text-sm font-medium hover:bg-white/90 transition-colors"
+              >
+                兑换会员
+              </Link>
+            )}
+          </div>
+        </div>
+
         {/* 学习概览 */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
           <StatCard

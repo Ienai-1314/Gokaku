@@ -33,6 +33,12 @@ export async function GET(req: NextRequest) {
 
     // 统计数据
     const stats = {
+      // 账号信息
+      accountId: accountId,
+      accountType: account ? 'redeem' : 'free',
+      expiresAt: account?.expires_at || null,
+      dailyQuota: account?.daily_limit || 100,
+
       // 查询统计
       totalQueries: history.length,
       grammarQueries: history.filter((h: any) => h.type === 'grammar').length,
@@ -48,10 +54,9 @@ export async function GET(req: NextRequest) {
       totalErrors: wrongQuestions.length,
       weaknessCount: weakness.length,
 
-      // 额度统计
-      dailyLimit: account?.daily_limit || 100,
-      isPremium: account?.is_premium || false,
-      expiresAt: account?.expires_at || null,
+      // 额度统计（保留兼容性）
+      quotaUsed: 0,
+      quotaRemaining: account ? account.daily_limit : 0,
 
       // 学习天数（基于最早的历史记录）
       studyDays: history.length > 0

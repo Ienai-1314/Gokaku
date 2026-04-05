@@ -31,13 +31,13 @@ export default function RedeemPage() {
       if (res.ok) {
         setMessage({
           type: 'success',
-          text: `兑换成功！已为您解锁 ${data.quota} 次查询额度`
+          text: data.message || '兑换成功！已开通会员账号'
         });
         setCode('');
 
-        // 3秒后跳转到工具页面
+        // 3秒后跳转到个人中心
         setTimeout(() => {
-          router.push('/tool');
+          router.push('/dashboard');
         }, 3000);
       } else {
         setMessage({ type: 'error', text: data.error || '兑换失败' });
@@ -63,7 +63,7 @@ export default function RedeemPage() {
               输入兑换码
             </h1>
             <p className="text-[#6B5E54] text-sm">
-              购买后获得的兑换码，可解锁100次查询额度
+              兑换后获得会员账号，每天100次查询额度
             </p>
           </div>
 
@@ -89,7 +89,7 @@ export default function RedeemPage() {
             }`}>
               <p className="text-sm font-medium">{message.text}</p>
               {message.type === 'success' && (
-                <p className="text-xs mt-1 opacity-75">即将跳转到工具页面...</p>
+                <p className="text-xs mt-1 opacity-75">即将跳转到个人中心...</p>
               )}
             </div>
           )}
@@ -109,10 +109,10 @@ export default function RedeemPage() {
               💡 兑换说明
             </p>
             <ul className="text-xs text-[#6B5E54] space-y-2">
-              <li>• 每个兑换码可解锁100次查询额度</li>
-              <li>• 额度永久有效，不会过期</li>
-              <li>• 兑换码仅限使用一次</li>
-              <li>• 如有问题请联系客服</li>
+              <li>• 兑换码即为您的会员账号ID</li>
+              <li>• 会员每天100次查询额度，有效期至12月</li>
+              <li>• 可在最多3台设备上使用</li>
+              <li>• 换设备时输入兑换码即可同步数据</li>
             </ul>
           </div>
 
