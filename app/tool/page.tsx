@@ -124,6 +124,7 @@ function ToolPageInner() {
   const [showPaywall, setShowPaywall] = useState(false);
 
   const queryCounter = useLocalCount("gk_query_count");
+  const vocabCounter = useLocalCount("gk_vocab_count");
   const analyzeCounter = useLocalCount("gk_analyze_count");
 
   const [menuOpen, setMenuOpen] = useState(false);
@@ -205,13 +206,13 @@ function ToolPageInner() {
   async function handleVocabQuery() {
     const text = vocabInput.trim();
     if (!text) return;
-    const count = queryCounter.get();
+    const count = vocabCounter.get();
     if (count >= FREE_LIMIT) { setShowPaywall(true); return; }
     setVocabLoading(true);
     setError("");
     setVocabResult("");
     setMatchedVocab([]);
-    queryCounter.inc();
+    vocabCounter.inc();
     try {
       const res = await apiFetch("/api/vocab", {
         method: "POST",
