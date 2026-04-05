@@ -2,10 +2,7 @@
 
 import { useState } from "react";
 import { cn } from "@/lib/utils";
-import { GraduationCap, Menu, X, ShoppingBag } from "lucide-react";
-
-// TODO: 替换为你的小红书店铺/笔记链接
-const XIAOHONGSHU_SHOP_URL = "https://www.xiaohongshu.com/";
+import { GraduationCap, Menu, X, User } from "lucide-react";
 
 interface NavbarProps {
   activeLevel: "N1" | "N2";
@@ -61,13 +58,11 @@ export function Navbar({ activeLevel, onLevelChange }: NavbarProps) {
           {/* CTA Button */}
           <div className="hidden md:flex items-center gap-4">
             <a
-              href={XIAOHONGSHU_SHOP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/dashboard"
               className="flex items-center gap-2 bg-[#C75B3B] hover:bg-[#A84A2F] text-white px-5 py-2 rounded-xl text-sm font-semibold transition-all duration-200 shadow-[0_2px_12px_rgba(199,91,59,0.25)] hover:shadow-[0_4px_16px_rgba(199,91,59,0.35)] cursor-pointer"
             >
-              <ShoppingBag className="w-4 h-4" />
-              <span>获取资料</span>
+              <User className="w-4 h-4" />
+              <span>用户界面</span>
             </a>
           </div>
 
@@ -108,13 +103,11 @@ export function Navbar({ activeLevel, onLevelChange }: NavbarProps) {
               </button>
             </div>
             <a
-              href={XIAOHONGSHU_SHOP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/dashboard"
               className="w-full flex items-center justify-center gap-2 bg-[#C75B3B] hover:bg-[#A84A2F] text-white px-5 py-3 rounded-xl text-sm font-semibold transition-all cursor-pointer"
             >
-              <ShoppingBag className="w-4 h-4" />
-              <span>获取资料</span>
+              <User className="w-4 h-4" />
+              <span>用户界面</span>
             </a>
           </div>
         )}
