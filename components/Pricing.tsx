@@ -22,50 +22,49 @@ const XIAOHONGSHU_SHOP_URL = "https://www.xiaohongshu.com/";
 
 const PLANS = [
   {
-    id: "resource",
-    name: "资料包",
-    price: 29,
+    id: "free",
+    name: "免费试用",
+    price: 0,
     tag: null,
-    desc: "买断，永久有效",
+    desc: "每天3次AI查询",
     highlight: false,
     items: [
-      "23条核心语法完整解析（占真题70%）",
-      "60个最易错词汇精讲",
-      "易错语法对比分析",
-      "2026年7月押题预测",
-      "真题频率分析报告",
+      "每天3次免费AI查询",
+      "基础语法/词汇统计",
+      "真题难度分布查看",
+      "体验核心功能",
     ],
   },
   {
     id: "bundle",
-    name: "资料包 + AI工具",
-    price: 39,
-    tag: "推荐主包",
-    desc: "100次AI查询 + 全部资料",
+    name: "考季通票",
+    price: 49,
+    originalPrice: 99,
+    tag: "早鸟5折",
+    desc: "无限查询 + 全部资料（到7月考试）",
     highlight: true,
     items: [
-      "包含资料包全部内容",
-      "AI 语法查询 100次",
-      "AI 词汇查询 100次",
-      "AI 错题分析 100次",
-      "拍照识题功能",
-      "薄弱点报告自动生成",
-      "后续开发内容永久免费",
+      "无限次AI查询（到2026年7月考试）",
+      "23条核心语法完整解析",
+      "60个最易错词汇精讲",
+      "易错语法对比分析",
+      "2026年7月押题预测",
+      "错题档案永久保存",
+      "后续更新免费",
     ],
   },
   {
-    id: "tool",
-    name: "AI工具",
+    id: "resource",
+    name: "资料包",
     price: 19,
     tag: null,
-    desc: "100次查询额度",
+    desc: "4份PDF资料",
     highlight: false,
     items: [
-      "AI 语法查询 100次",
-      "AI 词汇查询 100次",
-      "AI 错题分析 100次",
-      "拍照识题功能",
-      "薄弱点报告自动生成",
+      "23条核心语法完整解析",
+      "60个最易错词汇精讲",
+      "易错语法对比分析",
+      "2026年7月押题预测",
     ],
   },
 ];
@@ -79,12 +78,12 @@ const trustModules = [
   {
     icon: Mail,
     title: "发货方式",
-    desc: "支付成功后，在领取页输入订单信息获取网盘链接和兑换码。支持百度/阿里/夸克网盘。",
+    desc: "支付成功后，在领取页输入订单信息获取兑换码。资料包用户同时获得网盘链接（支持百度/阿里/夸克网盘）。",
   },
   {
     icon: RefreshCw,
     title: "更新说明",
-    desc: "押题预测持续更新至2026年7月考前。购买¥39主包用户，后续开发内容（完整词库、新功能）永久免费。",
+    desc: "考季通票持续更新至2026年7月考试结束。后续开发内容（完整词库、新功能）永久免费。",
   },
   {
     icon: Smartphone,
@@ -93,13 +92,13 @@ const trustModules = [
   },
   {
     icon: Headphones,
-    title: "开业促销",
-    desc: "🎉 购买后分享到小红书送3个月会员！用完100次AI查询可联系客服退¥9工具费（限时活动）。",
+    title: "早鸟优惠",
+    desc: "🎉 前200名享5折优惠 ¥49（原价¥99）！购买后分享到小红书送1个月延期。7月考试通过返现¥20。",
   },
   {
     icon: Package,
     title: "产品说明",
-    desc: "资料包含23条核心语法+60个易错词汇+押题预测。押题内容为参考性预测，不构成考试结果保证。",
+    desc: "资料包含23条核心语法+60个易错词汇+押题预测。考季通票包含无限次AI查询+全部资料。押题内容为参考性预测，不构成考试结果保证。",
   },
 ];
 
@@ -114,10 +113,10 @@ export function Pricing() {
             Pricing
           </span>
           <h2 className="font-bebas text-5xl md:text-6xl text-[#2D2420] mb-3">
-            按需选择，不强制打包
+            先免费试用，再决定购买
           </h2>
           <p className="text-[#6B5E55] max-w-md mx-auto text-sm leading-relaxed">
-            只要工具就买工具，只要资料就买资料，都要就选组合
+            每天3次免费查询，体验核心功能 · 早鸟价限前200名
           </p>
         </div>
 
@@ -145,7 +144,12 @@ export function Pricing() {
               <div className={`px-6 py-6 ${plan.tag ? "pt-10" : ""} border-b border-[#E8E0D5]`}>
                 <p className="text-sm font-semibold text-[#6B5E55] mb-2">{plan.name}</p>
                 <div className="flex items-baseline gap-1 mb-1">
-                  <span className="font-bebas text-5xl text-[#2D2420]">¥{plan.price}</span>
+                  {plan.originalPrice && (
+                    <span className="font-bebas text-2xl text-[#6B5E55] line-through mr-2">¥{plan.originalPrice}</span>
+                  )}
+                  <span className="font-bebas text-5xl text-[#2D2420]">
+                    {plan.price === 0 ? "免费" : `¥${plan.price}`}
+                  </span>
                 </div>
                 <p className="text-xs text-[#6B5E55]">{plan.desc}</p>
               </div>
@@ -168,19 +172,29 @@ export function Pricing() {
               </div>
 
               <div className="px-6 pb-6">
-                <a
-                  href={XIAOHONGSHU_SHOP_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`w-full flex items-center justify-center gap-2 py-3 rounded-2xl text-sm font-semibold transition-all ${
-                    plan.highlight
-                      ? "bg-[#C75B3B] hover:bg-[#A84A2F] text-white shadow-[0_4px_16px_rgba(199,91,59,0.25)]"
-                      : "bg-[#FAF6F0] hover:bg-[#F0E8E0] text-[#2D2420] border border-[#E8E0D5]"
-                  }`}
-                >
-                  <ShoppingBag className="w-4 h-4" />
-                  购买 ¥{plan.price}
-                </a>
+                {plan.price === 0 ? (
+                  <a
+                    href="/tool"
+                    className="w-full flex items-center justify-center gap-2 py-3 rounded-2xl text-sm font-semibold transition-all bg-[#4A7C59] hover:bg-[#3D6849] text-white"
+                  >
+                    <Zap className="w-4 h-4" />
+                    立即试用
+                  </a>
+                ) : (
+                  <a
+                    href={XIAOHONGSHU_SHOP_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`w-full flex items-center justify-center gap-2 py-3 rounded-2xl text-sm font-semibold transition-all ${
+                      plan.highlight
+                        ? "bg-[#C75B3B] hover:bg-[#A84A2F] text-white shadow-[0_4px_16px_rgba(199,91,59,0.25)]"
+                        : "bg-[#FAF6F0] hover:bg-[#F0E8E0] text-[#2D2420] border border-[#E8E0D5]"
+                    }`}
+                  >
+                    <ShoppingBag className="w-4 h-4" />
+                    购买 ¥{plan.price}
+                  </a>
+                )}
               </div>
             </motion.div>
           ))}
@@ -222,16 +236,16 @@ export function Pricing() {
           <div className="space-y-3">
             {[
               {
-                q: "为什么不免费？",
-                a: "资料整理和AI服务器都要成本，我们也要恰饭。但保证物有所值，不割韭菜。",
+                q: "免费版和付费版有什么区别？",
+                a: "免费版每天3次AI查询，适合轻度使用。付费版无限次查询+全部资料，适合认真备考的同学。",
               },
               {
-                q: "100次AI查询够用吗？",
-                a: "对于大部分考生够用。如果真的用完了，可以联系客服退¥9工具费（开业促销活动）。购买后分享到小红书还能送3个月会员！",
+                q: "¥49能用多久？",
+                a: "考季通票有效期到2026年7月考试结束，约3个月。相当于¥16/月，比一杯奶茶还便宜。",
               },
               {
-                q: "购买¥39主包有什么额外福利？",
-                a: "后续开发的所有内容（完整词库、新功能）永久免费。我们会持续更新到2026年7月考试，买一次享受所有更新。",
+                q: "早鸟价什么时候结束？",
+                a: "前200名享受¥49早鸟价（原价¥99），售完即恢复原价。建议尽早购买锁定优惠。",
               },
               {
                 q: "购买后怎么拿到资料？",
