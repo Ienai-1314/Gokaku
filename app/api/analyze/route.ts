@@ -42,8 +42,62 @@ async function saveToWrongBook(
       errorPatterns: data.errorPatterns,
       createdAt: new Date().toISOString(),
     });
+
+    // 检查是否达到100道错题，自动延长会员
+    await checkAndRewardMembership(userId);
   } catch (err) {
     console.error("保存错题失败:", err);
+  }
+}
+
+async function checkAndRewardMembership(userId: string) {
+  try {
+    const db = getDb();
+
+    // 查询用户错题总数
+    const { data: wrongQuestions } = await db
+      .collection("wrong_questions")
+      .where({ user_id: userId })
+      .get();
+
+    const totalErrors = wrongQuestions?.length || 0;
+
+    // 每100道题延长1个月会员
+    if (totalErrors > 0 && totalErrors % 100 === 0) {
+      // 查询用户信息
+      const { data: users } = await db
+        .collection("users")
+        .where({ device_id: userId })
+        .limit(1)
+        .get();
+
+      if (users && users.length > 0) {
+        const user = users[0];
+        const currentExpiry = user.membership_expiry
+          ? new Date(user.membership_expiry)
+          : new Date();
+
+        // 如果已过期，从当前时间开始计算
+        const baseDate = currentExpiry > new Date() ? currentExpiry : new Date();
+
+        // 延长1个月
+        const newExpiry = new Date(baseDate);
+        newExpiry.setMonth(newExpiry.getMonth() + 1);
+
+        await db
+          .collection("users")
+          .doc(user._id as string)
+          .update({
+            membership_expiry: newExpiry.toISOString(),
+            last_reward_at: new Date().toISOString(),
+            total_rewards: (user.total_rewards || 0) + 1
+          });
+
+        console.log(`用户 ${userId} 完成 ${totalErrors} 道错题，会员延长至 ${newExpiry.toISOString()}`);
+      }
+    }
+  } catch (err) {
+    console.error("检查返现失败:", err);
   }
 }
 

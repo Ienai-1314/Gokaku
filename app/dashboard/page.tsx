@@ -192,6 +192,36 @@ export default function DashboardPage() {
           </div>
         )}
 
+        {/* 返现进度 */}
+        {stats.quotaRemaining > 0 && (
+          <div className="bg-white rounded-2xl border border-[#E8E0D5] p-6">
+            <h2 className="text-lg font-bold text-[#2D2420] mb-4 flex items-center gap-2">
+              <Award className="w-5 h-5 text-[#D4772C]" />
+              返现进度
+            </h2>
+
+            <div className="space-y-3">
+              <div className="flex items-center justify-between">
+                <span className="text-sm text-[#6B5E54]">已完成错题分析</span>
+                <span className="text-lg font-bold text-[#D4772C]">{stats.totalErrors} / 100</span>
+              </div>
+
+              <div className="h-2 bg-[#E8E0D5] rounded-full overflow-hidden">
+                <motion.div
+                  initial={{ width: 0 }}
+                  animate={{ width: `${Math.min((stats.totalErrors / 100) * 100, 100)}%` }}
+                  transition={{ duration: 1, ease: 'easeOut' }}
+                  className="h-full bg-gradient-to-r from-[#D4772C] to-[#E89A5C]"
+                />
+              </div>
+
+              <p className="text-xs text-[#6B5E54]">
+                💡 每完成 100 道错题分析，自动延长会员 1 个月
+              </p>
+            </div>
+          </div>
+        )}
+
         {/* 成就徽章 */}
         <div className="bg-white rounded-2xl border border-[#E8E0D5] p-6">
           <h2 className="text-lg font-bold text-[#2D2420] mb-4 flex items-center gap-2">
