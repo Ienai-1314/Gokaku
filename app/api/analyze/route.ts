@@ -11,8 +11,18 @@ function getIp(req: NextRequest) {
   );
 }
 
+function getUserId(req: NextRequest): string {
+  // 优先使用设备ID，其次使用IP（向后兼容）
+  const deviceId = req.headers.get("x-device-id");
+  if (deviceId) return deviceId;
+
+  // 降级到IP识别
+  const ip = getIp(req);
+  return hashIP(ip);
+}
+
 async function saveToWrongBook(
-  ip: string,
+  userId: string,
   data: {
     question: string;
     userAnswer?: string;
@@ -23,9 +33,8 @@ async function saveToWrongBook(
 ) {
   try {
     const db = getDb();
-    const hashedIP = hashIP(ip);
     await db.collection("wrong_questions").add({
-      user_id: hashedIP,
+      user_id: userId,
       question: data.question,
       userAnswer: data.userAnswer || "",
       correctAnswer: data.correctAnswer || "",
@@ -38,13 +47,12 @@ async function saveToWrongBook(
   }
 }
 
-async function recordWeakness(ip: string, grammarPattern: string) {
+async function recordWeakness(userId: string, grammarPattern: string) {
   try {
     const db = getDb();
-    const hashedIP = hashIP(ip); // IP脱敏
     const { data } = await db
       .collection("grammar_weakness")
-      .where({ user_id: hashedIP, grammar_id: grammarPattern })
+      .where({ user_id: userId, grammar_id: grammarPattern })
       .get();
     if (data && data.length > 0) {
       await db
@@ -53,7 +61,7 @@ async function recordWeakness(ip: string, grammarPattern: string) {
         .update({ error_count: db.command.inc(1), last_seen: new Date().toISOString() });
     } else {
       await db.collection("grammar_weakness").add({
-        user_id: hashedIP,
+        user_id: userId,
         grammar_id: grammarPattern,
         error_count: 1,
         last_seen: new Date().toISOString(),
@@ -68,6 +76,7 @@ const DEEPSEEK_API_URL = "https://api.deepseek.com/v1/chat/completions";
 
 export async function POST(req: NextRequest) {
   try {
+    const userId = getUserId(req);
     const ip = getIp(req);
 
     // 请求频率限制：每分钟最多10次
@@ -149,7 +158,7 @@ export async function POST(req: NextRequest) {
     const errorPatterns = extractErrorPatterns(content);
 
     // 异步保存到错题本（不阻塞响应）
-    saveToWrongBook(ip, {
+    saveToWrongBook(userId, {
       question: sanitizedQuestion,
       userAnswer: sanitizedUserAnswer,
       correctAnswer: sanitizedCorrectAnswer,
@@ -159,7 +168,7 @@ export async function POST(req: NextRequest) {
 
     // 异步提取语法点并记录薄弱点（不阻塞响应）
     extractGrammarPattern(content).then((pattern) => {
-      if (pattern) recordWeakness(ip, pattern);
+      if (pattern) recordWeakness(userId, pattern);
     });
 
     return NextResponse.json({ result: content, errorPatterns });
