@@ -1,0 +1,19 @@
+{
+  "envId": "gokaku-9gh6qk4adbceb865",
+  "framework": {
+    "name": "gokaku",
+    "plugins": {
+      "node": {
+        "use": "@cloudbase/framework-plugin-node",
+        "inputs": {
+          "name": "gokaku-web",
+          "path": "/gokaku-web",
+          "entry": "server.js",
+          "buildCommand": "npm run build",
+          "runtime": "Nodejs18.15",
+          "installCommand": "npm install --production"
+        }
+      }
+    }
+  }
+}
