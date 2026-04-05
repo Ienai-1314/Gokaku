@@ -67,11 +67,11 @@ export function Hero({ activeLevel }: HeroProps) {
             className="flex flex-col items-center justify-center gap-4 mb-6"
           >
             <Link
-              href="/tool"
-              className="w-full sm:w-auto bg-[#C75B3B] hover:bg-[#A84A2F] text-white px-8 py-4 rounded-2xl font-semibold text-base transition-all duration-200 shadow-[0_4px_20px_rgba(199,91,59,0.25)] hover:shadow-[0_6px_24px_rgba(199,91,59,0.35)] flex items-center justify-center gap-2"
+              href="/tool?focus=true"
+              className="w-full sm:w-auto bg-[#C75B3B] hover:bg-[#A84A2F] text-white px-10 py-5 rounded-2xl font-semibold text-lg transition-all duration-200 shadow-[0_4px_20px_rgba(199,91,59,0.25)] hover:shadow-[0_6px_24px_rgba(199,91,59,0.35)] flex items-center justify-center gap-3"
             >
-              <Brain className="w-4 h-4" />
-              查语法 · 查词汇 · 分析错题
+              <Sparkles className="w-5 h-5" />
+              试试查询一个语法点
             </Link>
 
             {/* 功能说明 */}
@@ -88,7 +88,7 @@ export function Hero({ activeLevel }: HeroProps) {
             className="flex flex-wrap justify-center gap-3 mb-16"
           >
             {[
-              { icon: Sparkles, text: "每个功能免费试用 3 次，每日一练不限次" },
+              { icon: Sparkles, text: "语法、词汇、错题分析各 3 次免费" },
               { icon: Zap, text: "基于 30 套真题数据，1500+ 语法词汇" },
             ].map((item, i) => (
               <div key={i} className="flex items-center gap-1.5 text-xs text-[#6B5E55]">

@@ -65,7 +65,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "请求过于频繁，请稍后再试" }, { status: 429 });
     }
 
-    const allowed = await checkRateLimit(req, "query");
+    const allowed = await checkRateLimit(req, "vocab");
     if (!allowed) {
       return NextResponse.json({ error: "今日使用次数已达上限，购买后解锁无限使用" }, { status: 429 });
     }

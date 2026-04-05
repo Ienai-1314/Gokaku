@@ -84,11 +84,22 @@ function ToolPageInner() {
     }).catch(() => {});
   }, []);
 
+  // 自动聚焦输入框（从首页跳转过来）
+  useEffect(() => {
+    const shouldFocus = searchParams.get("focus");
+    if (shouldFocus === "true" && queryInputRef.current) {
+      setTimeout(() => {
+        queryInputRef.current?.focus();
+      }, 100);
+    }
+  }, [searchParams]);
+
   // 语法查询
   const [queryInput, setQueryInput] = useState("");
   const [queryResult, setQueryResult] = useState("");
   const [matchedGrammar, setMatchedGrammar] = useState<any[]>([]);
   const [queryLoading, setQueryLoading] = useState(false);
+  const queryInputRef = useRef<HTMLInputElement>(null);
 
   // 词汇查询
   const [vocabInput, setVocabInput] = useState("");
@@ -471,6 +482,7 @@ function ToolPageInner() {
 
                 <div className="flex gap-3">
                   <input
+                    ref={queryInputRef}
                     type="text"
                     value={queryInput}
                     onChange={(e) => setQueryInput(e.target.value)}
