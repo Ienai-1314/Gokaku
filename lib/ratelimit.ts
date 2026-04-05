@@ -1,6 +1,6 @@
 import { NextRequest } from "next/server";
 import { getDb } from "./cloudbase";
-import { getAccountId } from "./account";
+import { getAccountIdFromRequest } from "./account";
 
 const DAILY_LIMIT = 3;
 
@@ -24,36 +24,12 @@ function hashIP(ip: string): string {
 }
 
 /**
- * 获取用户账号ID（新版本）
- * 优先使用设备ID查询账号系统，降级到IP哈希
- */
-async function getUserAccountId(req: NextRequest): Promise<string> {
-  const deviceId = req.headers.get("x-device-id");
-
-  if (deviceId) {
-    try {
-      // 使用新的账号系统查询
-      const accountId = await getAccountId(deviceId);
-      return accountId;
-    } catch (error) {
-      console.error('[getUserAccountId] 查询账号失败:', error);
-      // 降级到设备ID
-      return deviceId;
-    }
-  }
-
-  // 没有设备ID，降级到IP哈希（向后兼容）
-  const ip = getIp(req);
-  return hashIP(ip);
-}
-
-/**
  * 检查并递增用户限流计数
  * 优先级：兑换码额度 > 每日免费额度 > 邀请奖励池
  * @returns true = 放行，false = 已超限
  */
 export async function checkRateLimit(req: NextRequest, route: string): Promise<boolean> {
-  const accountId = await getUserAccountId(req);
+  const accountId = await getAccountIdFromRequest(req);
   const today = new Date().toISOString().slice(0, 10);
   const key = `${accountId}:${route}:${today}`;
 
