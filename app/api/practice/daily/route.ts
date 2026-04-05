@@ -90,9 +90,11 @@ function generateDailyQuestion(date: string) {
     },
   ];
 
-  // 基于日期生成索引
+  // 基于日期生成索引（确保有效）
   const dateNum = parseInt(date.replace(/-/g, ""));
-  const index = dateNum % questions.length;
+  const index = Math.abs(dateNum) % questions.length;
+
+  console.log(`[每日一练] 日期: ${date}, 索引: ${index}, 题目ID: ${questions[index].id}`);
 
   return questions[index];
 }
