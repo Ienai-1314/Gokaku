@@ -3,6 +3,28 @@
  * 用于输入验证、清洗和防护
  */
 
+import { NextRequest } from 'next/server';
+
+/**
+ * 获取客户端标识符（设备ID或IP）
+ */
+export function getClientIdentifier(req: NextRequest): { deviceId?: string; ip: string } {
+  const deviceId = req.headers.get('x-device-id') || undefined;
+  const ip = req.headers.get('x-forwarded-for')?.split(',')[0] ||
+             req.headers.get('x-real-ip') ||
+             'unknown';
+  return { deviceId, ip };
+}
+
+/**
+ * 获取客户端IP地址
+ */
+export function getClientIP(req: NextRequest): string {
+  return req.headers.get('x-forwarded-for')?.split(',')[0] ||
+         req.headers.get('x-real-ip') ||
+         'unknown';
+}
+
 /**
  * 清洗用户输入，防止XSS攻击
  */

@@ -1,39 +1,36 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getDb } from '@/lib/cloudbase';
+import { getClientIdentifier } from '@/lib/security';
 
 export const dynamic = 'force-dynamic';
-
-function getClientIP(req: NextRequest): string {
-  return (
-    req.headers.get('x-forwarded-for')?.split(',')[0] ||
-    req.headers.get('x-real-ip') ||
-    'unknown'
-  );
-}
 
 // 获取学习进度统计
 export async function GET(req: NextRequest) {
   try {
-    const ip = getClientIP(req);
+    const { deviceId, ip } = getClientIdentifier(req);
+    const userId = deviceId || ip;
     const db = getDb();
 
     // 并行查询多个数据
     const [
       historyResult,
       collectionsResult,
-      errorsResult,
-      quotaResult
+      weaknessResult,
+      wrongQuestionsResult,
+      userResult
     ] = await Promise.all([
-      db.collection('query_history').where({ ip }).get(),
-      db.collection('collections').where({ ip }).get(),
-      db.collection('grammar_weakness').where({ ip }).get(),
-      db.collection('user_quota').where({ ip }).get()
+      db.collection('query_history').where({ user_id: userId }).get(),
+      db.collection('collections').where({ user_id: userId }).get(),
+      db.collection('grammar_weakness').where({ user_id: userId }).get(),
+      db.collection('wrong_questions').where({ user_id: userId }).get(),
+      db.collection('users').where({ device_id: userId }).limit(1).get()
     ]);
 
     const history = historyResult.data || [];
     const collections = collectionsResult.data || [];
-    const errors = errorsResult.data || [];
-    const quota = quotaResult.data?.[0] || null;
+    const weakness = weaknessResult.data || [];
+    const wrongQuestions = wrongQuestionsResult.data || [];
+    const user = userResult.data?.[0] || null;
 
     // 统计数据
     const stats = {
@@ -49,16 +46,18 @@ export async function GET(req: NextRequest) {
       vocabCollections: collections.filter((c: any) => c.type === 'vocab').length,
 
       // 错题统计
-      totalErrors: errors.reduce((sum: number, e: any) => sum + (e.error_count || 0), 0),
-      weaknessCount: errors.length,
+      totalErrors: wrongQuestions.length,
+      weaknessCount: weakness.length,
 
       // 额度统计
-      quotaUsed: quota?.used || 0,
-      quotaRemaining: quota?.remaining || 0,
+      quotaUsed: user ? (100 - (user.quota || 0)) : 0,
+      quotaRemaining: user?.quota || 0,
 
       // 学习天数（基于最早的历史记录）
       studyDays: history.length > 0
-        ? Math.ceil((Date.now() - new Date(history[history.length - 1].createdAt).getTime()) / (1000 * 60 * 60 * 24)) + 1
+        ? Math.ceil((Date.now() - new Date(history.sort((a: any, b: any) =>
+            new Date(a.createdAt).getTime() - new Date(b.createdAt).getTime()
+          )[0].createdAt).getTime()) / (1000 * 60 * 60 * 24)) + 1
         : 0,
 
       // 掌握度估算（基于查询和收藏）
