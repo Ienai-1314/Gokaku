@@ -35,7 +35,6 @@ import { apiFetch } from "@/lib/api-client";
 
 type Tab = "query" | "vocab" | "analyze";
 const SHOP_URL = "https://www.xiaohongshu.com/";
-const FREE_LIMIT = 3;
 
 // 语法快捷示例
 const QUICK_EXAMPLES = ["なり", "ところを", "に至って", "をものともせず", "ならいざ知らず"];
@@ -45,20 +44,6 @@ const UPDATES = [
   { date: "2026-04-02", text: "语法查询结果真题例句高亮显示" },
   { date: "2026-04-01", text: "AI 工具正式上线" },
 ];
-
-
-function useLocalCount(key: string) {
-  const get = () => {
-    if (typeof window === "undefined") return 0;
-    return parseInt(localStorage.getItem(key) ?? "0", 10);
-  };
-  const inc = () => {
-    const n = get() + 1;
-    localStorage.setItem(key, String(n));
-    return n;
-  };
-  return { get, inc };
-}
 
 export default function ToolPage() {
   return (
@@ -123,12 +108,12 @@ function ToolPageInner() {
   const [error, setError] = useState("");
   const [showPaywall, setShowPaywall] = useState(false);
 
-  const queryCounter = useLocalCount("gk_query_count");
-  const vocabCounter = useLocalCount("gk_vocab_count");
-  const analyzeCounter = useLocalCount("gk_analyze_count");
-
   const [menuOpen, setMenuOpen] = useState(false);
-  const [usage, setUsage] = useState<{ used: number; limit: number } | null>(null);
+  const [usage, setUsage] = useState<{
+    query: { used: number; limit: number };
+    vocab: { used: number; limit: number };
+    analyze: { used: number; limit: number };
+  } | null>(null);
   const [quota, setQuota] = useState<{ remaining: number; hasQuota: boolean } | null>(null);
   const [showUpdates, setShowUpdates] = useState(false);
 
@@ -155,11 +140,19 @@ function ToolPageInner() {
     setShowVoiceInput(false);
   };
 
+  // 刷新额度
+  const refreshUsage = async () => {
+    try {
+      const res = await apiFetch("/api/usage");
+      const data = await res.json();
+      setUsage(data);
+    } catch (err) {
+      console.error("刷新额度失败:", err);
+    }
+  };
+
   useEffect(() => {
-    apiFetch("/api/usage")
-      .then((r) => r.json())
-      .then(setUsage)
-      .catch(() => {});
+    refreshUsage();
     apiFetch("/api/quota")
       .then((r) => r.json())
       .then(setQuota)
@@ -169,15 +162,19 @@ function ToolPageInner() {
   async function handleQuery(q?: string) {
     const text = (q ?? queryInput).trim();
     if (!text) return;
-    if (!q) {} // triggered by button/enter, not chip
-    const count = queryCounter.get();
-    if (count >= FREE_LIMIT) { setShowPaywall(true); return; }
+
+    // 检查额度
+    if (usage && usage.query.used >= usage.query.limit && !quota?.hasQuota) {
+      setShowPaywall(true);
+      return;
+    }
+
     setQueryLoading(true);
     setError("");
     setQueryResult("");
     setMatchedGrammar([]);
     if (q) setQueryInput(q);
-    queryCounter.inc();
+
     try {
       const res = await apiFetch("/api/query", {
         method: "POST",
@@ -185,10 +182,17 @@ function ToolPageInner() {
         body: JSON.stringify({ query: text }),
       });
       const data = await res.json();
-      if (res.status === 429) { setShowPaywall(true); return; }
+      if (res.status === 429) {
+        setShowPaywall(true);
+        await refreshUsage();
+        return;
+      }
       if (data.error) throw new Error(data.error);
       setQueryResult(data.result);
       setMatchedGrammar(data.matchedGrammar || []);
+
+      // 刷新额度
+      await refreshUsage();
 
       // 保存查询历史
       apiFetch("/api/history", {
@@ -206,13 +210,18 @@ function ToolPageInner() {
   async function handleVocabQuery() {
     const text = vocabInput.trim();
     if (!text) return;
-    const count = vocabCounter.get();
-    if (count >= FREE_LIMIT) { setShowPaywall(true); return; }
+
+    // 检查额度
+    if (usage && usage.vocab.used >= usage.vocab.limit && !quota?.hasQuota) {
+      setShowPaywall(true);
+      return;
+    }
+
     setVocabLoading(true);
     setError("");
     setVocabResult("");
     setMatchedVocab([]);
-    vocabCounter.inc();
+
     try {
       const res = await apiFetch("/api/vocab", {
         method: "POST",
@@ -220,10 +229,17 @@ function ToolPageInner() {
         body: JSON.stringify({ query: text }),
       });
       const data = await res.json();
-      if (res.status === 429) { setShowPaywall(true); return; }
+      if (res.status === 429) {
+        setShowPaywall(true);
+        await refreshUsage();
+        return;
+      }
       if (data.error) throw new Error(data.error);
       setVocabResult(data.result);
       setMatchedVocab(data.matchedVocab || []);
+
+      // 刷新额度
+      await refreshUsage();
 
       // 保存查询历史
       apiFetch("/api/history", {
@@ -240,13 +256,18 @@ function ToolPageInner() {
 
   async function handleAnalyze() {
     if (!questionInput.trim()) return;
-    const count = analyzeCounter.get();
-    if (count >= FREE_LIMIT) { setShowPaywall(true); return; }
+
+    // 检查额度
+    if (usage && usage.analyze.used >= usage.analyze.limit && !quota?.hasQuota) {
+      setShowPaywall(true);
+      return;
+    }
+
     setAnalyzeLoading(true);
     setError("");
     setAnalyzeResult("");
     setErrorPatterns([]);
-    analyzeCounter.inc();
+
     try {
       const res = await apiFetch("/api/analyze", {
         method: "POST",
@@ -258,10 +279,17 @@ function ToolPageInner() {
         }),
       });
       const data = await res.json();
-      if (res.status === 429) { setShowPaywall(true); return; }
+      if (res.status === 429) {
+        setShowPaywall(true);
+        await refreshUsage();
+        return;
+      }
       if (data.error) throw new Error(data.error);
       setAnalyzeResult(data.result);
       setErrorPatterns(data.errorPatterns || []);
+
+      // 刷新额度
+      await refreshUsage();
     } catch (e: any) {
       setError(e.message ?? "分析失败，请稍后重试");
     } finally {
@@ -320,7 +348,7 @@ function ToolPageInner() {
                         <span className="text-xs font-semibold text-[#2D2420]">今日免费额度</span>
                         {usage ? (
                           <span className="text-xs text-[#6B5E55]">
-                            {usage.used} / {usage.limit}
+                            {usage.query.used + usage.vocab.used + usage.analyze.used} / {usage.query.limit + usage.vocab.limit + usage.analyze.limit}
                           </span>
                         ) : (
                           <span className="text-xs text-[#6B5E55]/40">加载中...</span>
@@ -330,19 +358,31 @@ function ToolPageInner() {
                         {usage && (
                           <motion.div
                             initial={{ width: 0 }}
-                            animate={{ width: `${Math.min((usage.used / usage.limit) * 100, 100)}%` }}
+                            animate={{
+                              width: `${Math.min(
+                                ((usage.query.used + usage.vocab.used + usage.analyze.used) /
+                                 (usage.query.limit + usage.vocab.limit + usage.analyze.limit)) * 100,
+                                100
+                              )}%`
+                            }}
                             transition={{ duration: 0.5, ease: "easeOut" }}
                             className={`h-full rounded-full ${
-                              usage.used >= usage.limit
+                              (usage.query.used + usage.vocab.used + usage.analyze.used) >=
+                              (usage.query.limit + usage.vocab.limit + usage.analyze.limit)
                                 ? "bg-[#C75B3B]"
-                                : usage.used >= usage.limit * 0.7
+                                : (usage.query.used + usage.vocab.used + usage.analyze.used) >=
+                                  (usage.query.limit + usage.vocab.limit + usage.analyze.limit) * 0.7
                                 ? "bg-[#E8892B]"
                                 : "bg-[#4A7C59]"
                             }`}
                           />
                         )}
                       </div>
-                      {usage && usage.used >= usage.limit && !quota?.hasQuota && (
+                      {usage &&
+                       (usage.query.used >= usage.query.limit &&
+                        usage.vocab.used >= usage.vocab.limit &&
+                        usage.analyze.used >= usage.analyze.limit) &&
+                       !quota?.hasQuota && (
                         <p className="text-xs text-[#C75B3B] mt-1">免费额度已用完</p>
                       )}
                     </div>
@@ -437,7 +477,16 @@ function ToolPageInner() {
         <div className="mb-6">
           <h1 className="font-bebas text-4xl text-[#2D2420]">AI 备考工具</h1>
           <p className="text-sm text-[#6B5E55] mt-1">
-            语法查询、词汇查询和错题分析 · 每位用户每个功能免费试用 {FREE_LIMIT} 次
+            {usage ? (
+              <>
+                语法查询 {usage.query.used}/{usage.query.limit} ·
+                词汇查询 {usage.vocab.used}/{usage.vocab.limit} ·
+                错题分析 {usage.analyze.used}/{usage.analyze.limit}
+                {quota?.hasQuota && " · 会员无限使用"}
+              </>
+            ) : (
+              "语法查询、词汇查询和错题分析 · 每位用户每个功能免费试用 3 次"
+            )}
           </p>
         </div>
 

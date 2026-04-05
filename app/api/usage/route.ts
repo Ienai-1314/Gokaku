@@ -28,21 +28,26 @@ export async function GET(req: NextRequest) {
     const db = getDb();
     // 查询三个路由的今日用量（独立计数）
     const routes = ["query", "vocab", "analyze"];
-    let total = 0;
+    const usage: Record<string, { used: number; limit: number }> = {};
+
     for (const route of routes) {
       const key = `${userId}:${route}:${today}`;
       const { data } = await db.collection("rate_limits").where({ key }).get();
-      if (data && data.length > 0) {
-        total += data[0].count ?? 0;
-      }
+      const used = (data && data.length > 0) ? (data[0].count ?? 0) : 0;
+      usage[route] = { used, limit: DAILY_LIMIT };
     }
 
     return NextResponse.json({
-      used: total,
-      limit: DAILY_LIMIT * routes.length, // 9 次/天总量（3+3+3）
+      query: usage.query,
+      vocab: usage.vocab,
+      analyze: usage.analyze,
       resetAt: today + "T23:59:59Z",
     });
   } catch {
-    return NextResponse.json({ used: 0, limit: 9 });
+    return NextResponse.json({
+      query: { used: 0, limit: DAILY_LIMIT },
+      vocab: { used: 0, limit: DAILY_LIMIT },
+      analyze: { used: 0, limit: DAILY_LIMIT },
+    });
   }
 }
