@@ -445,7 +445,17 @@ function ToolPageInner() {
           {(["query", "vocab", "analyze"] as Tab[]).map((t) => (
             <button
               key={t}
-              onClick={() => { setTab(t); setError(""); }}
+              onClick={() => {
+                setTab(t);
+                setError("");
+                // 切换Tab时清空所有结果
+                setQueryResult("");
+                setMatchedGrammar([]);
+                setVocabResult("");
+                setMatchedVocab([]);
+                setAnalyzeResult("");
+                setErrorPatterns([]);
+              }}
               className={`flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold transition-all ${
                 tab === t
                   ? "bg-[#C75B3B] text-white shadow-sm"
