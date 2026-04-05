@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Copy, Check, Share2, GraduationCap, Users } from "lucide-react";
 import Link from "next/link";
+import { apiFetch } from "@/lib/api-client";
 
 const BASE_URL = "https://gokaku.app";
 
@@ -15,7 +16,7 @@ export default function InvitePage() {
   const [copiedLink, setCopiedLink] = useState(false);
 
   useEffect(() => {
-    fetch("/api/invite")
+    apiFetch("/api/invite")
       .then((r) => r.json())
       .then((d) => {
         setCode(d.code ?? null);

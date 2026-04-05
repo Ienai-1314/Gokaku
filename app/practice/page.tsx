@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { GraduationCap, RefreshCw, CheckCircle, XCircle, Loader2, BookOpen, TrendingUp } from "lucide-react";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
+import { apiFetch } from "@/lib/api-client";
 
 interface DailyQuestion {
   id: string;
@@ -31,7 +32,7 @@ export default function PracticePage() {
 
   async function loadDailyQuestion() {
     try {
-      const res = await fetch("/api/practice/daily");
+      const res = await apiFetch("/api/practice/daily");
       const data = await res.json();
 
       if (data.question) {
@@ -47,7 +48,7 @@ export default function PracticePage() {
 
   async function loadStreak() {
     try {
-      const res = await fetch("/api/practice/streak");
+      const res = await apiFetch("/api/practice/streak");
       const data = await res.json();
       if (data.streak !== undefined) {
         setStreak(data.streak);
@@ -64,7 +65,7 @@ export default function PracticePage() {
 
     // 提交答案并更新连续天数
     try {
-      await fetch("/api/practice/submit", {
+      await apiFetch("/api/practice/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

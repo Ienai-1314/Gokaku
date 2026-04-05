@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { GraduationCap, TrendingUp, AlertTriangle, CheckCircle, ArrowLeft } from "lucide-react";
 import Link from "next/link";
+import { apiFetch } from "@/lib/api-client";
 
 interface Weakness {
   grammar_id: string;
@@ -22,7 +23,7 @@ export default function ReportPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("/api/report")
+    apiFetch("/api/report")
       .then((r) => r.json())
       .then((d) => setWeaknesses(d.weaknesses ?? []))
       .catch(() => {})

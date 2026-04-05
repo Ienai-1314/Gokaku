@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import { apiFetch } from "@/lib/api-client";
 
 export function BlessingWidget() {
   const [today, setToday] = useState<number | null>(null);
@@ -13,7 +14,7 @@ export function BlessingWidget() {
   const [showEffect, setShowEffect] = useState(false);
 
   useEffect(() => {
-    fetch("/api/blessing")
+    apiFetch("/api/blessing")
       .then((r) => r.json())
       .then((d) => {
         setToday(d.today ?? 0);
@@ -32,7 +33,7 @@ export function BlessingWidget() {
     setTimeout(() => setShowEffect(false), 2500);
 
     try {
-      const res = await fetch("/api/blessing", { method: "POST" });
+      const res = await apiFetch("/api/blessing", { method: "POST" });
       const d = await res.json();
       if (d.success) {
         setToday(d.today);

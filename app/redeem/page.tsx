@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
+import { apiFetch } from '@/lib/api-client';
 
 export default function RedeemPage() {
   const router = useRouter();
@@ -19,7 +20,7 @@ export default function RedeemPage() {
     setMessage(null);
 
     try {
-      const res = await fetch('/api/redeem', {
+      const res = await apiFetch('/api/redeem', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ code: code.trim().toUpperCase() })

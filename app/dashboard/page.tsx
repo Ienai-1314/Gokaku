@@ -14,6 +14,7 @@ import {
   AlertCircle
 } from 'lucide-react';
 import Link from 'next/link';
+import { apiFetch } from '@/lib/api-client';
 
 interface ProgressStats {
   totalQueries: number;
@@ -42,7 +43,7 @@ export default function DashboardPage() {
 
   async function loadProgress() {
     try {
-      const res = await fetch('/api/progress');
+      const res = await apiFetch('/api/progress');
       const data = await res.json();
       setStats(data);
     } catch (error) {

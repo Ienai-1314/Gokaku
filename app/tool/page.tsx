@@ -31,6 +31,7 @@ import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import JapaneseKeyboard from "@/components/JapaneseKeyboard";
 import VoiceInput from "@/components/VoiceInput";
+import { apiFetch } from "@/lib/api-client";
 
 type Tab = "query" | "vocab" | "analyze";
 const SHOP_URL = "https://www.xiaohongshu.com/";
@@ -76,7 +77,7 @@ function ToolPageInner() {
   useEffect(() => {
     const ref = searchParams.get("ref");
     if (!ref) return;
-    fetch("/api/invite", {
+    apiFetch("/api/invite", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ code: ref }),
@@ -143,11 +144,11 @@ function ToolPageInner() {
   };
 
   useEffect(() => {
-    fetch("/api/usage")
+    apiFetch("/api/usage")
       .then((r) => r.json())
       .then(setUsage)
       .catch(() => {});
-    fetch("/api/quota")
+    apiFetch("/api/quota")
       .then((r) => r.json())
       .then(setQuota)
       .catch(() => {});
@@ -166,7 +167,7 @@ function ToolPageInner() {
     if (q) setQueryInput(q);
     queryCounter.inc();
     try {
-      const res = await fetch("/api/query", {
+      const res = await apiFetch("/api/query", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ query: text }),
@@ -178,7 +179,7 @@ function ToolPageInner() {
       setMatchedGrammar(data.matchedGrammar || []);
 
       // 保存查询历史
-      fetch("/api/history", {
+      apiFetch("/api/history", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ type: "grammar", query: text, result: data.result })
@@ -201,7 +202,7 @@ function ToolPageInner() {
     setMatchedVocab([]);
     queryCounter.inc();
     try {
-      const res = await fetch("/api/vocab", {
+      const res = await apiFetch("/api/vocab", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ query: text }),
@@ -213,7 +214,7 @@ function ToolPageInner() {
       setMatchedVocab(data.matchedVocab || []);
 
       // 保存查询历史
-      fetch("/api/history", {
+      apiFetch("/api/history", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ type: "vocab", query: text, result: data.result })
@@ -235,7 +236,7 @@ function ToolPageInner() {
     setErrorPatterns([]);
     analyzeCounter.inc();
     try {
-      const res = await fetch("/api/analyze", {
+      const res = await apiFetch("/api/analyze", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -923,7 +924,7 @@ function ResultBox({ content }: { content: string }) {
 
   const handleCollect = async () => {
     try {
-      await fetch("/api/collection", {
+      await apiFetch("/api/collection", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

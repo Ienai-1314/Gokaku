@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { GraduationCap, BookOpen, Trash2, Filter, Download, AlertCircle, Loader2 } from "lucide-react";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
+import { apiFetch } from "@/lib/api-client";
 
 interface WrongQuestion {
   _id: string;
@@ -28,7 +29,7 @@ export default function WrongBookPage() {
 
   async function loadWrongQuestions() {
     try {
-      const res = await fetch("/api/collection?type=wrong_question");
+      const res = await apiFetch("/api/collection?type=wrong_question");
       const data = await res.json();
       if (data.items) {
         setQuestions(data.items);
@@ -44,7 +45,7 @@ export default function WrongBookPage() {
     if (!confirm("确定要删除这道错题吗？")) return;
 
     try {
-      const res = await fetch("/api/collection", {
+      const res = await apiFetch("/api/collection", {
         method: "DELETE",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ id, type: "wrong_question" }),

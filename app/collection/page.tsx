@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { BookMarked, Trash2, Search, Filter, ArrowLeft, Star, Calendar } from 'lucide-react';
 import Link from 'next/link';
 import ReactMarkdown from 'react-markdown';
+import { apiFetch } from '@/lib/api-client';
 
 type CollectionType = 'grammar' | 'vocab' | 'error';
 
@@ -27,7 +28,7 @@ export default function CollectionPage() {
 
   async function loadCollections() {
     try {
-      const res = await fetch('/api/collection');
+      const res = await apiFetch('/api/collection');
       const data = await res.json();
       setCollections(data.collections || []);
     } catch (error) {
@@ -41,7 +42,7 @@ export default function CollectionPage() {
     if (!confirm('确定要删除这条收藏吗？')) return;
 
     try {
-      await fetch('/api/collection', {
+      await apiFetch('/api/collection', {
         method: 'DELETE',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ id })
