@@ -29,8 +29,18 @@ function getClientIP(req: NextRequest): string {
   );
 }
 
+// 获取用户ID（优先设备ID，降级到IP）
+function getUserId(req: NextRequest): string {
+  const deviceId = req.headers.get('x-device-id');
+  if (deviceId) return deviceId;
+
+  const ip = getClientIP(req);
+  return hashIP(ip);
+}
+
 export async function POST(req: NextRequest) {
   try {
+    const userId = getUserId(req);
     const clientIP = getClientIP(req);
 
     // 请求频率限制：每分钟最多5次（防止暴力破解）
@@ -71,10 +81,9 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // 4. 检查该IP是否已有额度记录
+    // 4. 检查该用户是否已有额度记录
     const quotaCollection = db.collection('user_quota');
-    const hashedIP = hashIP(clientIP); // IP脱敏
-    const existingQuota = await quotaCollection.where({ ip: hashedIP }).get();
+    const existingQuota = await quotaCollection.where({ user_id: userId }).get();
 
     const quotaToAdd = 100;
     const now = new Date().toISOString();
@@ -91,7 +100,7 @@ export async function POST(req: NextRequest) {
     } else {
       // 新用户，创建记录
       await quotaCollection.add({
-        ip: hashedIP,
+        user_id: userId,
         remaining: quotaToAdd,
         total: quotaToAdd,
         used: 0,
@@ -104,7 +113,7 @@ export async function POST(req: NextRequest) {
     // 5. 标记兑换码为已使用
     redeemCode.status = 'used';
     redeemCode.usedAt = now;
-    redeemCode.usedBy = hashedIP; // 存储脱敏后的IP
+    redeemCode.usedBy = userId; // 存储用户ID（设备ID或哈希IP）
     codesData[codeIndex] = redeemCode;
 
     // 6. 写回文件
@@ -113,7 +122,7 @@ export async function POST(req: NextRequest) {
     // 7. 记录兑换日志到 CloudBase
     await db.collection('redeem_logs').add({
       code: normalizedCode,
-      ip: hashedIP,
+      user_id: userId,
       redeemedAt: now,
       quotaAdded: quotaToAdd
     });

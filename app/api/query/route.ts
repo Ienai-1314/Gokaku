@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { readFileSync } from "fs";
 import path from "path";
 import { checkRateLimit } from "@/lib/ratelimit";
-import { sanitizeInput, createSafeErrorResponse, checkRequestRate, detectPromptInjection } from "@/lib/security";
+import { sanitizeInput, hashIP, createSafeErrorResponse, checkRequestRate, detectPromptInjection } from "@/lib/security";
 
 const DEEPSEEK_API_URL = "https://api.deepseek.com/v1/chat/completions";
 
@@ -27,6 +27,24 @@ interface GrammarSourceEntry {
     exam: string;
     count: number;
   }>;
+}
+
+function getIp(req: NextRequest) {
+  return (
+    req.headers.get("x-forwarded-for")?.split(",")[0].trim() ||
+    req.headers.get("x-real-ip") ||
+    "unknown"
+  );
+}
+
+function getUserId(req: NextRequest): string {
+  // 优先使用设备ID，其次使用IP（向后兼容）
+  const deviceId = req.headers.get("x-device-id");
+  if (deviceId) return deviceId;
+
+  // 降级到IP识别
+  const ip = getIp(req);
+  return hashIP(ip);
 }
 
 function loadGrammar(): GrammarEntry[] {
@@ -96,9 +114,8 @@ function searchGrammar(query: string): Array<GrammarEntry & { source?: GrammarSo
 
 export async function POST(req: NextRequest) {
   try {
-    const ip = req.headers.get("x-forwarded-for")?.split(",")[0].trim() ||
-               req.headers.get("x-real-ip") ||
-               "unknown";
+    const userId = getUserId(req);
+    const ip = getIp(req);
 
     // 请求频率限制：每分钟最多10次
     if (!checkRequestRate(`query:${ip}`, 10, 60000)) {

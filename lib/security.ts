@@ -50,28 +50,19 @@ export function validateRedeemCode(code: string): boolean {
 }
 
 /**
- * IP地址脱敏
+ * IP地址哈希（用于用户识别）
  */
 export function hashIP(ip: string): string {
   if (!ip || typeof ip !== 'string') return 'unknown';
 
-  // IPv4: 只保留前两段
-  if (ip.includes('.')) {
-    const parts = ip.split('.');
-    if (parts.length === 4) {
-      return `${parts[0]}.${parts[1]}.xxx.xxx`;
-    }
+  // 简单哈希算法
+  let hash = 0;
+  for (let i = 0; i < ip.length; i++) {
+    const char = ip.charCodeAt(i);
+    hash = ((hash << 5) - hash) + char;
+    hash = hash & hash;
   }
-
-  // IPv6: 只保留前两段
-  if (ip.includes(':')) {
-    const parts = ip.split(':');
-    if (parts.length >= 2) {
-      return `${parts[0]}:${parts[1]}:xxxx:xxxx`;
-    }
-  }
-
-  return 'unknown';
+  return `ip_${Math.abs(hash).toString(36)}`;
 }
 
 /**
