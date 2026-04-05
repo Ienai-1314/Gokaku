@@ -1,7 +1,7 @@
 import { NextRequest } from "next/server";
 import { getDb } from "./cloudbase";
 
-const DAILY_LIMIT = 20;
+const DAILY_LIMIT = 3;
 
 function getIp(req: NextRequest): string {
   return (
