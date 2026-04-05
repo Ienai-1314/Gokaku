@@ -12,7 +12,6 @@ import {
   ChevronDown,
   ChevronUp,
   Lock,
-  Camera,
   X,
   Copy,
   Check,
@@ -42,7 +41,6 @@ const QUICK_EXAMPLES = ["なり", "ところを", "に至って", "をものと�
 
 // 最近更新日志
 const UPDATES = [
-  { date: "2026-04-03", text: "新增拍照识别题目功能" },
   { date: "2026-04-02", text: "语法查询结果真题例句高亮显示" },
   { date: "2026-04-01", text: "AI 工具正式上线" },
 ];
@@ -104,11 +102,6 @@ function ToolPageInner() {
   const [analyzeResult, setAnalyzeResult] = useState("");
   const [errorPatterns, setErrorPatterns] = useState<string[]>([]);
   const [analyzeLoading, setAnalyzeLoading] = useState(false);
-
-  // OCR
-  const [ocrLoading, setOcrLoading] = useState(false);
-  const [imagePreview, setImagePreview] = useState<string | null>(null);
-  const fileInputRef = useRef<HTMLInputElement>(null);
 
   // 移动端辅助输入
   const [showKeyboard, setShowKeyboard] = useState(false);
@@ -263,41 +256,6 @@ function ToolPageInner() {
     }
   }
 
-  const handleImageSelect = useCallback(async (file: File) => {
-    if (file.size > 8 * 1024 * 1024) {
-      setError("图片太大，请使用 8MB 以内的图片");
-      return;
-    }
-    const reader = new FileReader();
-    reader.onload = async (e) => {
-      const dataUrl = e.target?.result as string;
-      setImagePreview(dataUrl);
-      setOcrLoading(true);
-      setError("");
-      try {
-        // 提取 base64 数据部分
-        const base64 = dataUrl.split(",")[1];
-        const mimeType = file.type || "image/jpeg";
-        const res = await fetch("/api/ocr", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ imageBase64: base64, mimeType }),
-        });
-        const data = await res.json();
-        if (data.error) {
-          setError(data.error);
-        } else if (data.text) {
-          setQuestionInput(data.text);
-          setImagePreview(null); // 识别成功后清除预览
-        }
-      } catch {
-        setError("识别失败，请手动粘贴题目");
-      } finally {
-        setOcrLoading(false);
-      }
-    };
-    reader.readAsDataURL(file);
-  }, []);
 
   return (
     <div className="min-h-screen bg-[#FAF6F0] flex flex-col">
@@ -743,57 +701,14 @@ function ToolPageInner() {
             <motion.div key="analyze" initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }} transition={{ duration: 0.15 }}>
               <div className="bg-white rounded-2xl border border-[#E8E0D5] p-6 shadow-sm">
                 <p className="text-sm text-[#6B5E55] mb-4">
-                  粘贴或拍照上传做错的题目，AI 帮你找出陷阱，理解考点
+                  粘贴做错的题目，AI 帮你找出陷阱，理解考点
                 </p>
 
                 <div className="space-y-3">
                   <div>
                     <div className="flex items-center justify-between mb-1.5">
                       <label className="text-xs font-semibold text-[#2D2420]">题目内容 *</label>
-                      {/* 拍照/上传按钮 */}
-                      <button
-                        onClick={() => fileInputRef.current?.click()}
-                        disabled={ocrLoading}
-                        className="flex items-center gap-1.5 text-xs text-[#C75B3B] bg-[#C75B3B]/8 hover:bg-[#C75B3B]/15 border border-[#C75B3B]/20 px-3 py-1.5 rounded-lg transition-colors disabled:opacity-50"
-                      >
-                        {ocrLoading ? (
-                          <><Loader2 className="w-3 h-3 animate-spin" />识别中...</>
-                        ) : (
-                          <><Camera className="w-3 h-3" />拍照识别</>
-                        )}
-                      </button>
-                      <input
-                        ref={fileInputRef}
-                        type="file"
-                        accept="image/*"
-                        capture="environment"
-                        className="hidden"
-                        onChange={(e) => {
-                          const f = e.target.files?.[0];
-                          if (f) handleImageSelect(f);
-                          e.target.value = "";
-                        }}
-                      />
-                    </div>
-
-                    {/* 图片预览 */}
-                    {imagePreview && (
-                      <div className="relative mb-2 inline-block">
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img src={imagePreview} alt="题目图片" className="max-h-32 rounded-xl border border-[#E8E0D5] object-contain" />
-                        <button
-                          onClick={() => setImagePreview(null)}
-                          className="absolute -top-2 -right-2 w-5 h-5 bg-[#6B5E55] text-white rounded-full flex items-center justify-center hover:bg-[#2D2420] transition-colors"
-                        >
-                          <X className="w-3 h-3" />
-                        </button>
-                        {ocrLoading && (
-                          <div className="absolute inset-0 bg-white/70 rounded-xl flex items-center justify-center">
-                            <Loader2 className="w-5 h-5 text-[#C75B3B] animate-spin" />
-                          </div>
-                        )}
                       </div>
-                    )}
 
                     <div className="relative">
                       <textarea
