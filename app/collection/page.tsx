@@ -140,8 +140,8 @@ export default function CollectionPage() {
                   exit={{ opacity: 0, x: -100 }}
                   className="bg-white rounded-xl border border-[#E8E0D5] hover:shadow-md transition-shadow"
                 >
-                  <div className="p-4">
-                    <div className="flex items-start justify-between mb-3">
+                  <div className="p-3">
+                    <div className="flex items-start justify-between mb-2">
                       <div className="flex items-center gap-2">
                         <span className={`px-2 py-0.5 rounded text-xs font-medium ${
                           item.type === 'grammar' ? 'bg-blue-50 text-blue-700' :
@@ -202,6 +202,44 @@ function CollectionContent({ type, content }: { type: CollectionType; content: a
     return cleaned;
   };
 
+  // 从语法内容中提取语法点名称
+  const extractGrammarPoint = (content: any): string => {
+    // 优先使用 query 或 pattern
+    if (content.query) return content.query;
+    if (content.pattern) return content.pattern;
+
+    // 从 result 中提取第一行作为语法点
+    const resultText = String(content.result || '');
+    const lines = resultText.split('\n').filter(line => line.trim());
+    if (lines.length > 0) {
+      // 移除 markdown 标记,取第一行
+      const firstLine = lines[0].replace(/[*#]/g, '').trim();
+      // 如果第一行太长,可能不是语法点名称,尝试查找语法模式
+      if (firstLine.length < 30) {
+        return firstLine;
+      }
+    }
+
+    return '语法点';
+  };
+
+  // 从词汇内容中提取读音
+  const extractReading = (content: any): string => {
+    if (content.matchedVocab && content.matchedVocab.length > 0) {
+      return content.matchedVocab[0].reading || '';
+    }
+    return '';
+  };
+
+  // 提取考频等级文本
+  const getFrequencyLevel = (star: number): string => {
+    if (star >= 5) return 'N5';
+    if (star >= 4) return 'N4';
+    if (star >= 3) return 'N3';
+    if (star >= 2) return 'N2';
+    return 'N1';
+  };
+
   if (type === 'grammar' || type === 'vocab') {
     // 解析 markdown 内容，提取含义和例句
     const resultText = String(content.result || '');
@@ -225,78 +263,77 @@ function CollectionContent({ type, content }: { type: CollectionType; content: a
       (line.includes('例') || line.match(/^\d+\./) || line.startsWith('-'))
     ).slice(0, 2);
 
+    // 获取语法点或词汇
+    const grammarPoint = type === 'grammar' ? extractGrammarPoint(content) : (content.word || '');
+    const reading = type === 'vocab' ? extractReading(content) : '';
+    const star = content.star || (content.matchedVocab && content.matchedVocab.length > 0 ? content.matchedVocab[0].star : 0);
+    const level = getFrequencyLevel(star);
+
     return (
       <div
-        className="space-y-3 cursor-pointer"
+        className="cursor-pointer"
         onClick={() => setIsExpanded(!isExpanded)}
       >
         {/* 预览模式 - 紧凑显示 */}
-        <div className="space-y-2">
-          {/* 标题和简短释义 */}
-          <div className="flex items-start justify-between gap-3">
-            <div className="flex-1">
-              {/* 语法模式/词汇 */}
-              {(content.query || content.pattern || content.word) && (
-                <h3 className="text-lg font-bold text-[#2D2420] mb-1">
-                  {content.query || content.pattern || content.word}
-                </h3>
-              )}
-
-              {/* 词汇读音 */}
-              {type === 'vocab' && content.matchedVocab && content.matchedVocab.length > 0 && (
-                <p className="text-sm text-[#6B5E54] mb-1">
-                  {content.matchedVocab[0].reading || ''}
-                </p>
-              )}
-
-              {/* 简短释义 */}
-              {shortMeaning && (
-                <p className="text-[15px] text-[#2D2420] leading-relaxed">
-                  {shortMeaning}
-                </p>
+        {!isExpanded && (
+          <div className="space-y-2">
+            {/* 语法点/词汇 + 读音 */}
+            <div className="flex items-baseline gap-2">
+              <h3 className="text-xl font-bold text-[#2D2420]">
+                {grammarPoint}
+              </h3>
+              {reading && (
+                <span className="text-base text-[#6B5E54]">
+                  【{reading}】
+                </span>
               )}
             </div>
 
-            {/* 考频星级 */}
-            {(content.star || (content.matchedVocab && content.matchedVocab.length > 0)) && (
-              <div className="flex items-center gap-0.5 flex-shrink-0">
-                {Array.from({ length: 3 }).map((_, i) => (
+            {/* 释义 */}
+            {shortMeaning && (
+              <p className="text-[15px] text-[#2D2420] leading-relaxed">
+                {shortMeaning}
+              </p>
+            )}
+
+            {/* 考频星级 + 等级 */}
+            <div className="flex items-center gap-2">
+              <div className="flex items-center gap-0.5">
+                {Array.from({ length: 5 }).map((_, i) => (
                   <Star
                     key={i}
-                    className={`w-4 h-4 ${
-                      i < (content.star || content.matchedVocab[0].star)
+                    className={`w-3.5 h-3.5 ${
+                      i < star
                         ? 'fill-[#D4772C] text-[#D4772C]'
                         : 'text-[#E8E0D5]'
                     }`}
                   />
                 ))}
               </div>
-            )}
-          </div>
+              <span className="text-sm font-medium text-[#6B5E54]">{level}</span>
+            </div>
 
-          {/* 展开提示 */}
-          <div className="flex items-center justify-center pt-1">
-            <motion.div
-              animate={{ rotate: isExpanded ? 180 : 0 }}
-              transition={{ duration: 0.2 }}
-              className="text-[#D4772C]"
-            >
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
-            </motion.div>
+            {/* 展开提示 */}
+            <div className="flex items-center justify-center pt-1 border-t border-[#E8E0D5] mt-2">
+              <div className="text-xs text-[#6B5E54] flex items-center gap-1">
+                展开
+                <svg className="w-3 h-3 text-[#D4772C]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+            </div>
           </div>
-        </div>
+        )}
 
         {/* 完整内容（展开时显示） */}
-        <AnimatePresence>
-          {isExpanded && (
+        {isExpanded && (
+          <AnimatePresence>
             <motion.div
               initial={{ height: 0, opacity: 0 }}
               animate={{ height: 'auto', opacity: 1 }}
               exit={{ height: 0, opacity: 0 }}
               transition={{ duration: 0.3 }}
-              className="overflow-hidden space-y-4 pt-3 border-t border-[#E8E0D5]"
+              className="overflow-hidden space-y-4 pt-3 border-t border-[#E8E0D5] mt-3"
               onClick={(e) => e.stopPropagation()}
             >
               {/* 词汇考频详细数据 */}
@@ -412,30 +449,120 @@ function CollectionContent({ type, content }: { type: CollectionType; content: a
                 </div>
               </div>
             </motion.div>
-          )}
-        </AnimatePresence>
+          </AnimatePresence>
+        )}
+
+        {/* 展开时显示收起按钮 */}
+        {isExpanded && (
+          <div className="flex items-center justify-center pt-2 border-t border-[#E8E0D5] mt-3">
+            <div className="text-xs text-[#6B5E54] flex items-center gap-1">
+              收起
+              <motion.svg
+                animate={{ rotate: 180 }}
+                className="w-3 h-3 text-[#D4772C]"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </motion.svg>
+            </div>
+          </div>
+        )}
       </div>
     );
   }
 
   if (type === 'error') {
+    // 提取题目前50字
+    const questionPreview = content.question && content.question.length > 50
+      ? content.question.substring(0, 50) + '...'
+      : content.question;
+
     return (
-      <div className="space-y-3">
-        <div className="bg-[#FAF6F0] rounded-lg p-3">
-          <p className="text-sm text-[#6B5E54] mb-1 font-medium">题目</p>
-          <p className="text-[15px] text-[#2D2420] leading-relaxed">{content.question}</p>
-        </div>
-        <div className="flex items-center gap-3 text-sm">
-          <div className="flex items-center gap-2 bg-red-50 px-3 py-2 rounded-lg">
-            <span className="text-[#6B5E54]">你的答案:</span>
-            <span className="font-semibold text-red-600">{content.userAnswer}</span>
+      <div
+        className="cursor-pointer"
+        onClick={() => setIsExpanded(!isExpanded)}
+      >
+        {/* 预览模式 - 紧凑显示 */}
+        {!isExpanded && (
+          <div className="space-y-2">
+            {/* 题目预览 */}
+            <p className="text-[15px] text-[#2D2420] leading-relaxed">
+              {questionPreview}
+            </p>
+
+            {/* 答案对比 */}
+            <div className="flex items-center gap-2 text-sm">
+              <div className="flex items-center gap-1.5">
+                <span className="text-[#6B5E54]">你的答案:</span>
+                <span className="font-semibold text-red-600">{content.userAnswer}</span>
+                <span className="text-red-600">❌</span>
+              </div>
+              <span className="text-[#6B5E54]">→</span>
+              <div className="flex items-center gap-1.5">
+                <span className="text-[#6B5E54]">正确答案:</span>
+                <span className="font-semibold text-green-600">{content.correctAnswer}</span>
+              </div>
+            </div>
+
+            {/* 展开提示 */}
+            <div className="flex items-center justify-center pt-1 border-t border-[#E8E0D5] mt-2">
+              <div className="text-xs text-[#6B5E54] flex items-center gap-1">
+                展开
+                <svg className="w-3 h-3 text-[#D4772C]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+            </div>
           </div>
-          <span className="text-[#6B5E54]">→</span>
-          <div className="flex items-center gap-2 bg-green-50 px-3 py-2 rounded-lg">
-            <span className="text-[#6B5E54]">正确答案:</span>
-            <span className="font-semibold text-green-600">{content.correctAnswer}</span>
-          </div>
-        </div>
+        )}
+
+        {/* 完整内容（展开时显示） */}
+        {isExpanded && (
+          <AnimatePresence>
+            <motion.div
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: 'auto', opacity: 1 }}
+              exit={{ height: 0, opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              className="overflow-hidden space-y-3"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <div className="bg-[#FAF6F0] rounded-lg p-3">
+                <p className="text-sm text-[#6B5E54] mb-1 font-medium">题目</p>
+                <p className="text-[15px] text-[#2D2420] leading-relaxed">{content.question}</p>
+              </div>
+              <div className="flex items-center gap-3 text-sm">
+                <div className="flex items-center gap-2 bg-red-50 px-3 py-2 rounded-lg">
+                  <span className="text-[#6B5E54]">你的答案:</span>
+                  <span className="font-semibold text-red-600">{content.userAnswer}</span>
+                </div>
+                <span className="text-[#6B5E54]">→</span>
+                <div className="flex items-center gap-2 bg-green-50 px-3 py-2 rounded-lg">
+                  <span className="text-[#6B5E54]">正确答案:</span>
+                  <span className="font-semibold text-green-600">{content.correctAnswer}</span>
+                </div>
+              </div>
+
+              {/* 收起按钮 */}
+              <div className="flex items-center justify-center pt-2 border-t border-[#E8E0D5]">
+                <div className="text-xs text-[#6B5E54] flex items-center gap-1">
+                  收起
+                  <motion.svg
+                    animate={{ rotate: 180 }}
+                    className="w-3 h-3 text-[#D4772C]"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </motion.svg>
+                </div>
+              </div>
+            </motion.div>
+          </AnimatePresence>
+        )}
       </div>
     );
   }
