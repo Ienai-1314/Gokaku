@@ -83,6 +83,7 @@ function ToolPageInner() {
   // 语法查询
   const [queryInput, setQueryInput] = useState("");
   const [queryResult, setQueryResult] = useState("");
+  const [actualQuery, setActualQuery] = useState(""); // 保存实际查询的文本
   const [matchedGrammar, setMatchedGrammar] = useState<any[]>([]);
   const [queryLoading, setQueryLoading] = useState(false);
   const queryInputRef = useRef<HTMLInputElement>(null);
@@ -90,6 +91,7 @@ function ToolPageInner() {
   // 词汇查询
   const [vocabInput, setVocabInput] = useState("");
   const [vocabResult, setVocabResult] = useState("");
+  const [actualVocabQuery, setActualVocabQuery] = useState(""); // 保存实际查询的词汇
   const [matchedVocab, setMatchedVocab] = useState<any[]>([]);
   const [vocabLoading, setVocabLoading] = useState(false);
   const [vocabCollected, setVocabCollected] = useState(false);
@@ -99,6 +101,7 @@ function ToolPageInner() {
   const [userAnswerInput, setUserAnswerInput] = useState("");
   const [correctAnswerInput, setCorrectAnswerInput] = useState("");
   const [analyzeResult, setAnalyzeResult] = useState("");
+  const [actualQuestion, setActualQuestion] = useState(""); // 保存实际的题目
   const [errorPatterns, setErrorPatterns] = useState<string[]>([]);
   const [analyzeLoading, setAnalyzeLoading] = useState(false);
 
@@ -176,6 +179,7 @@ function ToolPageInner() {
     setQueryResult("");
     setMatchedGrammar([]);
     if (q) setQueryInput(q);
+    setActualQuery(text); // 保存实际查询的文本
 
     try {
       const res = await apiFetch("/api/query", {
@@ -235,6 +239,7 @@ function ToolPageInner() {
     setVocabResult("");
     setMatchedVocab([]);
     setVocabCollected(false);
+    setActualVocabQuery(text); // 保存实际查询的词汇
 
     try {
       const requestBody = { query: text };
@@ -288,6 +293,7 @@ function ToolPageInner() {
     setError("");
     setAnalyzeResult("");
     setErrorPatterns([]);
+    setActualQuestion(questionInput); // 保存实际的题目
 
     try {
       const res = await apiFetch("/api/analyze", {
@@ -656,7 +662,7 @@ function ToolPageInner() {
                     ))}
                   </div>
                 )}
-                {queryResult && <ResultBox content={queryResult} query={queryInput} onWordClick={handleWordClick} />}
+                {queryResult && <ResultBox content={queryResult} query={actualQuery} onWordClick={handleWordClick} />}
               </div>
             </motion.div>
           )}
@@ -794,7 +800,7 @@ function ToolPageInner() {
                               body: JSON.stringify({
                                 type: "vocab",
                                 content: {
-                                  query: vocabInput,
+                                  query: actualVocabQuery,
                                   result: vocabResult,
                                   matchedVocab: matchedVocab
                                 }
@@ -981,7 +987,7 @@ function ToolPageInner() {
                     ))}
                   </div>
                 )}
-                {analyzeResult && <ResultBox content={analyzeResult} query={questionInput} onWordClick={handleWordClick} />}
+                {analyzeResult && <ResultBox content={analyzeResult} query={actualQuestion} onWordClick={handleWordClick} />}
               </div>
             </motion.div>
           )}
