@@ -1,16 +1,16 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Copy, Check, Share2, GraduationCap, Users } from "lucide-react";
+import { Copy, Check, Share2, GraduationCap, Users, Gift } from "lucide-react";
 import Link from "next/link";
 import { apiFetch } from "@/lib/api-client";
 
-const BASE_URL = "https://gokaku.app";
+const BASE_URL = "https://gokaku.cn";
 
 export default function InvitePage() {
   const [code, setCode] = useState<string | null>(null);
-  const [redeemedCount, setRedeemedCount] = useState(0);
-  const [bonusRemaining, setBonusRemaining] = useState(0);
+  const [inviteCount, setInviteCount] = useState(0);
+  const [inviteRewards, setInviteRewards] = useState(0);
   const [loading, setLoading] = useState(true);
   const [copiedCode, setCopiedCode] = useState(false);
   const [copiedLink, setCopiedLink] = useState(false);
@@ -19,15 +19,15 @@ export default function InvitePage() {
     apiFetch("/api/invite")
       .then((r) => r.json())
       .then((d) => {
-        setCode(d.code ?? null);
-        setRedeemedCount(d.redeemed_count ?? 0);
-        setBonusRemaining(d.bonus_remaining ?? 0);
+        setCode(d.invite_code ?? null);
+        setInviteCount(d.invite_count ?? 0);
+        setInviteRewards(d.invite_rewards ?? 0);
       })
       .catch(() => {})
       .finally(() => setLoading(false));
   }, []);
 
-  const shareLink = code ? `${BASE_URL}/tool?ref=${code}` : "";
+  const shareLink = code ? `${BASE_URL}/?invite=${code}` : "";
 
   async function copyCode() {
     if (!code) return;
@@ -46,7 +46,7 @@ export default function InvitePage() {
     if (typeof navigator !== "undefined" && "share" in navigator) {
       (navigator as any).share({
         title: "合格道 Gokaku · N1 备考 AI 工具",
-        text: `我在用 Gokaku 备考 N1，用我的邀请码 ${code} 可以多获得 3 次免费额度。`,
+        text: `我在用 Gokaku 备考 N1，用我的邀请码 ${code} 注册可以获得额外奖励！`,
         url: shareLink,
       }).catch(() => {});
     } else {
@@ -69,9 +69,9 @@ export default function InvitePage() {
 
       <main className="flex-1 max-w-2xl mx-auto w-full px-4 py-10">
         <div className="mb-8">
-          <h1 className="font-bebas text-4xl text-[#2D2420]">分享给备考朋友</h1>
+          <h1 className="font-bebas text-4xl text-[#2D2420]">邀请好友获得奖励</h1>
           <p className="text-sm text-[#6B5E55] mt-1">
-            朋友用你的链接访问工具，双方各得额外免费额度。
+            邀请好友兑换码，您的会员时长延长1个月
           </p>
         </div>
 
@@ -86,7 +86,7 @@ export default function InvitePage() {
               <p className="text-xs font-semibold text-[#6B5E55] mb-3 uppercase tracking-wide">你的专属邀请码</p>
               <div className="flex items-center gap-3">
                 <div className="flex-1 bg-[#FAF6F0] rounded-xl px-5 py-3 border border-[#E8E0D5]">
-                  <span className="font-bebas text-3xl tracking-[0.2em] text-[#C75B3B]">
+                  <span className="font-bebas text-2xl tracking-[0.15em] text-[#C75B3B]">
                     {code ?? "——"}
                   </span>
                 </div>
@@ -102,7 +102,7 @@ export default function InvitePage() {
 
             {/* 分享链接 */}
             <div className="bg-white rounded-2xl border border-[#E8E0D5] p-6">
-              <p className="text-xs font-semibold text-[#6B5E55] mb-3 uppercase tracking-wide">专属链接</p>
+              <p className="text-xs font-semibold text-[#6B5E55] mb-3 uppercase tracking-wide">专属邀请链接</p>
               <div className="flex items-center gap-3">
                 <div className="flex-1 bg-[#FAF6F0] rounded-xl px-4 py-3 border border-[#E8E0D5] overflow-hidden">
                   <p className="text-sm text-[#2D2420] truncate">{shareLink || "加载中…"}</p>
@@ -126,26 +126,37 @@ export default function InvitePage() {
 
             {/* 奖励说明 */}
             <div className="bg-white rounded-2xl border border-[#E8E0D5] p-6">
-              <p className="text-xs font-semibold text-[#6B5E55] mb-4 uppercase tracking-wide">奖励规则</p>
+              <p className="text-xs font-semibold text-[#6B5E55] mb-4 uppercase tracking-wide flex items-center gap-2">
+                <Gift className="w-4 h-4" />
+                奖励规则
+              </p>
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
                   <div className="w-6 h-6 rounded-full bg-[#C75B3B]/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <span className="text-xs font-bold text-[#C75B3B]">你</span>
+                    <span className="text-xs font-bold text-[#C75B3B]">1</span>
                   </div>
                   <p className="text-sm text-[#6B5E55]">
-                    每有一位朋友通过你的链接访问工具，你获得 <span className="text-[#2D2420] font-semibold">+5 次</span>额度
+                    分享您的专属邀请链接给好友
+                  </p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-6 h-6 rounded-full bg-[#C75B3B]/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <span className="text-xs font-bold text-[#C75B3B]">2</span>
+                  </div>
+                  <p className="text-sm text-[#6B5E55]">
+                    好友通过链接访问并兑换码
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-6 h-6 rounded-full bg-[#4A7C59]/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <Users className="w-3 h-3 text-[#4A7C59]" />
+                    <Gift className="w-3 h-3 text-[#4A7C59]" />
                   </div>
                   <p className="text-sm text-[#6B5E55]">
-                    朋友访问时自动获得 <span className="text-[#2D2420] font-semibold">+3 次</span>额外免费额度
+                    您的会员时长自动延长 <span className="text-[#2D2420] font-semibold">1个月</span>
                   </p>
                 </div>
-                <p className="text-xs text-[#6B5E55]/60 pt-1 border-t border-[#E8E0D5]">
-                  每位朋友只计一次 · 奖励额度不过期 · 叠加在每日免费额度之上
+                <p className="text-xs text-[#6B5E55]/60 pt-2 border-t border-[#E8E0D5]">
+                  每位好友只计一次 · 奖励自动发放 · 可无限邀请
                 </p>
               </div>
             </div>
@@ -153,12 +164,12 @@ export default function InvitePage() {
             {/* 我的数据 */}
             <div className="grid grid-cols-2 gap-3">
               <div className="bg-white rounded-2xl border border-[#E8E0D5] p-5 text-center">
-                <div className="font-bebas text-4xl text-[#C75B3B]">{redeemedCount}</div>
+                <div className="font-bebas text-4xl text-[#C75B3B]">{inviteCount}</div>
                 <p className="text-xs text-[#6B5E55] mt-1">成功邀请人数</p>
               </div>
               <div className="bg-white rounded-2xl border border-[#E8E0D5] p-5 text-center">
-                <div className="font-bebas text-4xl text-[#4A7C59]">{bonusRemaining}</div>
-                <p className="text-xs text-[#6B5E55] mt-1">剩余奖励额度</p>
+                <div className="font-bebas text-4xl text-[#4A7C59]">{inviteRewards}</div>
+                <p className="text-xs text-[#6B5E55] mt-1">获得奖励月数</p>
               </div>
             </div>
           </div>
@@ -166,7 +177,7 @@ export default function InvitePage() {
       </main>
 
       <footer className="border-t border-[#E8E0D5] py-6 text-center text-xs text-[#6B5E55]">
-        <Link href="/tool" className="hover:text-[#C75B3B] transition-colors">← 返回工具</Link>
+        <Link href="/dashboard" className="hover:text-[#C75B3B] transition-colors">← 返回个人中心</Link>
       </footer>
     </div>
   );

@@ -2,35 +2,10 @@ import { NextRequest, NextResponse } from "next/server";
 import {
   getDeviceIdFromRequest,
   getAccountId,
-  getOrCreateInviteCode,
-  getInviteStats,
   recordInvitation,
   getAccount
 } from "@/lib/account";
-
-/**
- * GET /api/invite
- * 获取当前账号的邀请码和统计信息
- */
-export async function GET(req: NextRequest) {
-  try {
-    const deviceId = getDeviceIdFromRequest(req);
-    const accountId = await getAccountId(deviceId);
-
-    // 获取邀请统计
-    const stats = await getInviteStats(accountId);
-
-    return NextResponse.json({
-      invite_code: stats.invite_code,
-      invite_count: stats.invite_count,
-      invite_rewards: stats.invite_rewards,
-      invite_link: `https://gokaku.cn/?invite=${stats.invite_code}`
-    });
-  } catch (err) {
-    console.error("[invite GET] error:", err);
-    return NextResponse.json({ error: "获取邀请信息失败" }, { status: 500 });
-  }
-}
+import { getDb } from "@/lib/cloudbase";
 
 /**
  * POST /api/invite/track
@@ -49,7 +24,8 @@ export async function POST(req: NextRequest) {
     const normalizedCode = invite_code.trim().toUpperCase();
 
     // 1. 查找邀请码对应的账号
-    const { data: accounts } = await (await import("@/lib/cloudbase")).getDb()
+    const db = getDb();
+    const { data: accounts } = await db
       .collection("accounts")
       .where({ invite_code: normalizedCode })
       .get();
@@ -82,7 +58,7 @@ export async function POST(req: NextRequest) {
       message: "邀请关系已记录，兑换码后双方获得奖励"
     });
   } catch (err) {
-    console.error("[invite POST] error:", err);
+    console.error("[invite/track POST] error:", err);
     return NextResponse.json({ error: "记录邀请失败" }, { status: 500 });
   }
 }

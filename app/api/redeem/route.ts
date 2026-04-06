@@ -177,6 +177,15 @@ export async function POST(req: NextRequest) {
       // 日志记录失败不影响兑换流程
     }
 
+    // 11. 发放邀请奖励（如果有邀请关系）
+    try {
+      const { grantInviteReward } = await import('@/lib/account');
+      await grantInviteReward(normalizedCode);
+    } catch (error) {
+      console.error('发放邀请奖励失败:', error);
+      // 奖励发放失败不影响兑换流程
+    }
+
     return NextResponse.json({
       success: true,
       quota: 100,

@@ -16,13 +16,15 @@ export async function GET(req: NextRequest) {
       collectionsResult,
       weaknessResult,
       wrongQuestionsResult,
-      accountResult
+      accountResult,
+      cashbackResult
     ] = await Promise.all([
       db.collection('query_history').where({ account_id: accountId }).get(),
       db.collection('collections').where({ account_id: accountId }).get(),
       db.collection('grammar_weakness').where({ account_id: accountId }).get(),
       db.collection('wrong_questions').where({ account_id: accountId }).get(),
-      db.collection('accounts').where({ account_id: accountId }).limit(1).get()
+      db.collection('accounts').where({ account_id: accountId }).limit(1).get(),
+      db.collection('cashback_history').where({ account_id: accountId }).orderBy('created_at', 'desc').get()
     ]);
 
     const history = historyResult.data || [];
@@ -30,13 +32,27 @@ export async function GET(req: NextRequest) {
     const weakness = weaknessResult.data || [];
     const wrongQuestions = wrongQuestionsResult.data || [];
     const account = accountResult.data?.[0] || null;
+    const cashbackHistory = cashbackResult.data || [];
+
+    // 计算返现进度
+    const totalRewards = account?.total_rewards || 0;
+    const currentProgress = wrongQuestions.length % 100;
+    const nextMilestone = Math.floor(wrongQuestions.length / 100) * 100 + 100;
+    const remainingForNext = nextMilestone - wrongQuestions.length;
+
+    // 邀请统计
+    const inviteStats = account ? {
+      invite_code: account.invite_code || '',
+      invite_count: account.invite_count || 0,
+      invite_rewards: account.invite_rewards || 0
+    } : null;
 
     // 统计数据
     const stats = {
       // 账号信息
       accountId: accountId,
       accountType: account ? 'redeem' : 'free',
-      expiresAt: account?.expires_at || null,
+      expiresAt: account?.membership_expiry || null,
       dailyQuota: account?.daily_limit || 100,
 
       // 查询统计
@@ -53,6 +69,24 @@ export async function GET(req: NextRequest) {
       // 错题统计
       totalErrors: wrongQuestions.length,
       weaknessCount: weakness.length,
+
+      // 返现进度
+      cashback: {
+        totalRewards: totalRewards,
+        currentProgress: currentProgress,
+        nextMilestone: nextMilestone,
+        remainingForNext: remainingForNext,
+        progressPercentage: Math.round((currentProgress / 100) * 100),
+        history: cashbackHistory.slice(0, 5).map((record: any) => ({
+          milestone: record.milestone,
+          rewardValue: record.reward_value,
+          newExpiry: record.new_expiry,
+          createdAt: record.created_at
+        }))
+      },
+
+      // 邀请统计
+      invite: inviteStats,
 
       // 额度统计（保留兼容性）
       quotaUsed: 0,

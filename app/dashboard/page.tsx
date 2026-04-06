@@ -13,7 +13,9 @@ import {
   BookMarked,
   AlertCircle,
   User,
-  Clock
+  Clock,
+  Users,
+  Gift
 } from 'lucide-react';
 import Link from 'next/link';
 import { apiFetch } from '@/lib/api-client';
@@ -37,6 +39,24 @@ interface ProgressStats {
   accountType?: 'free' | 'redeem';
   expiresAt?: string;
   dailyQuota?: number;
+  cashback?: {
+    totalRewards: number;
+    currentProgress: number;
+    nextMilestone: number;
+    remainingForNext: number;
+    progressPercentage: number;
+    history: Array<{
+      milestone: number;
+      rewardValue: number;
+      newExpiry: string;
+      createdAt: string;
+    }>;
+  };
+  invite?: {
+    invite_code: string;
+    invite_count: number;
+    invite_rewards: number;
+  };
 }
 
 export default function DashboardPage() {
@@ -252,30 +272,104 @@ export default function DashboardPage() {
           </div>
         )}
 
+        {/* 邀请奖励 */}
+        {stats.accountType === 'redeem' && stats.invite && (
+          <div className="bg-gradient-to-r from-[#4A7C59]/10 to-[#5A8C69]/10 rounded-2xl border border-[#4A7C59]/20 p-6">
+            <h2 className="text-lg font-bold text-[#2D2420] mb-4 flex items-center gap-2">
+              <Users className="w-5 h-5 text-[#4A7C59]" />
+              邀请奖励
+            </h2>
+
+            <div className="grid grid-cols-2 gap-3 mb-4">
+              <div className="bg-white rounded-lg p-4 text-center">
+                <div className="text-3xl font-bold text-[#4A7C59]">{stats.invite.invite_count}</div>
+                <div className="text-xs text-[#6B5E54] mt-1">成功邀请人数</div>
+              </div>
+              <div className="bg-white rounded-lg p-4 text-center">
+                <div className="text-3xl font-bold text-[#D4772C]">{stats.invite.invite_rewards}</div>
+                <div className="text-xs text-[#6B5E54] mt-1">获得奖励月数</div>
+              </div>
+            </div>
+
+            <Link
+              href="/invite"
+              className="w-full flex items-center justify-center gap-2 py-3 bg-gradient-to-r from-[#4A7C59] to-[#5A8C69] text-white rounded-xl text-sm font-semibold hover:shadow-lg transition-all"
+            >
+              <Gift className="w-4 h-4" />
+              查看我的邀请码
+            </Link>
+
+            <p className="text-xs text-[#6B5E54] mt-3 text-center">
+              邀请好友兑换码，您的会员时长延长1个月
+            </p>
+          </div>
+        )}
+
         {/* 返现进度 */}
-        {stats.quotaRemaining > 0 && (
+        {stats.accountType === 'redeem' && stats.cashback && (
           <div className="bg-white rounded-2xl border border-[#E8E0D5] p-6">
             <h2 className="text-lg font-bold text-[#2D2420] mb-4 flex items-center gap-2">
               <Award className="w-5 h-5 text-[#D4772C]" />
               返现进度
             </h2>
 
-            <div className="space-y-3">
-              <div className="flex items-center justify-between">
-                <span className="text-sm text-[#6B5E54]">已完成错题分析</span>
-                <span className="text-lg font-bold text-[#D4772C]">{stats.totalErrors} / 100</span>
+            <div className="space-y-4">
+              {/* 当前进度 */}
+              <div className="space-y-3">
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-[#6B5E54]">当前进度</span>
+                  <span className="text-lg font-bold text-[#D4772C]">
+                    {stats.cashback.currentProgress} / 100
+                  </span>
+                </div>
+
+                <div className="h-3 bg-[#E8E0D5] rounded-full overflow-hidden">
+                  <motion.div
+                    initial={{ width: 0 }}
+                    animate={{ width: `${stats.cashback.progressPercentage}%` }}
+                    transition={{ duration: 1, ease: 'easeOut' }}
+                    className="h-full bg-gradient-to-r from-[#D4772C] to-[#E89A5C]"
+                  />
+                </div>
+
+                <div className="flex items-center justify-between text-xs text-[#6B5E54]">
+                  <span>还需 {stats.cashback.remainingForNext} 道题</span>
+                  <span>下次返现: {stats.cashback.nextMilestone} 道</span>
+                </div>
               </div>
 
-              <div className="h-2 bg-[#E8E0D5] rounded-full overflow-hidden">
-                <motion.div
-                  initial={{ width: 0 }}
-                  animate={{ width: `${Math.min((stats.totalErrors / 100) * 100, 100)}%` }}
-                  transition={{ duration: 1, ease: 'easeOut' }}
-                  className="h-full bg-gradient-to-r from-[#D4772C] to-[#E89A5C]"
-                />
+              {/* 返现统计 */}
+              <div className="grid grid-cols-2 gap-3">
+                <div className="bg-gradient-to-br from-[#D4772C]/10 to-[#E89A5C]/10 rounded-lg p-3">
+                  <div className="text-2xl font-bold text-[#D4772C]">{stats.cashback.totalRewards}</div>
+                  <div className="text-xs text-[#6B5E54] mt-1">已获得返现</div>
+                </div>
+                <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg p-3">
+                  <div className="text-2xl font-bold text-blue-600">{stats.totalErrors}</div>
+                  <div className="text-xs text-[#6B5E54] mt-1">累计错题</div>
+                </div>
               </div>
 
-              <p className="text-xs text-[#6B5E54]">
+              {/* 返现历史 */}
+              {stats.cashback.history.length > 0 && (
+                <div className="border-t border-[#E8E0D5] pt-3">
+                  <div className="text-xs font-medium text-[#6B5E54] mb-2">返现记录</div>
+                  <div className="space-y-2">
+                    {stats.cashback.history.map((record, index) => (
+                      <div key={index} className="flex items-center justify-between text-xs">
+                        <span className="text-[#6B5E54]">
+                          {new Date(record.createdAt).toLocaleDateString('zh-CN')}
+                        </span>
+                        <span className="text-[#2D2420] font-medium">
+                          {record.milestone} 道题 → 延长 {record.rewardValue} 个月
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              <p className="text-xs text-[#6B5E54] bg-[#FAF6F0] rounded-lg p-2">
                 💡 每完成 100 道错题分析，自动延长会员 1 个月
               </p>
             </div>
