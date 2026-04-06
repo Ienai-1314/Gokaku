@@ -21,6 +21,12 @@ export default function FuriganaText({ text, onWordClick, className = '' }: Furi
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
+    // 暂时禁用振假名功能，直接显示原文
+    // TODO: 需要将kuromoji词典文件部署到Vercel
+    setLoading(false);
+    setTokens([]);
+    return;
+
     async function tokenize() {
       try {
         setLoading(true);
