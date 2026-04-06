@@ -5,6 +5,10 @@ import { checkRateLimit } from "@/lib/ratelimit";
 import { sanitizeInput, createSafeErrorResponse, checkRequestRate, detectPromptInjection } from "@/lib/security";
 import { getAccountIdFromRequest } from "@/lib/account";
 
+// 禁用 Next.js 路由缓存
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 const DEEPSEEK_API_URL = "https://api.deepseek.com/v1/chat/completions";
 
 let vocabCache: VocabEntry[] | null = null;

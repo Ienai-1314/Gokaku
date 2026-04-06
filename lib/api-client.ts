@@ -19,6 +19,7 @@ export async function apiFetch(url: string, options?: RequestInit): Promise<Resp
   return fetch(url, {
     ...options,
     headers,
+    cache: 'no-store', // 禁用缓存，确保每次都是新请求
   });
 }
 

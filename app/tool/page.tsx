@@ -92,6 +92,7 @@ function ToolPageInner() {
   const [vocabResult, setVocabResult] = useState("");
   const [matchedVocab, setMatchedVocab] = useState<any[]>([]);
   const [vocabLoading, setVocabLoading] = useState(false);
+  const [vocabCollected, setVocabCollected] = useState(false);
 
   // 错题分析
   const [questionInput, setQuestionInput] = useState("");
@@ -232,6 +233,7 @@ function ToolPageInner() {
     setError("");
     setVocabResult("");
     setMatchedVocab([]);
+    setVocabCollected(false);
 
     try {
       const res = await apiFetch("/api/vocab", {
@@ -753,30 +755,74 @@ function ToolPageInner() {
                 )}
 
                 {vocabResult && (
-                  <div className="mt-4 bg-gradient-to-br from-white to-[#FFF8F0] rounded-2xl border-2 border-[#C75B3B]/20 p-6 shadow-sm prose prose-sm max-w-none">
-                    <ReactMarkdown
-                      components={{
-                        h3: ({ children }) => (
-                          <h3 className="text-lg font-bold text-[#2D2420] mt-4 mb-2 first:mt-0 flex items-center gap-2">
-                            {children}
-                          </h3>
-                        ),
-                        strong: ({ children }) => (
-                          <strong className="text-[#C75B3B] font-bold">{children}</strong>
-                        ),
-                        p: ({ children }) => (
-                          <p className="text-sm text-[#2D2420] leading-relaxed mb-3">{children}</p>
-                        ),
-                        ul: ({ children }) => (
-                          <ul className="space-y-1.5 mb-3">{children}</ul>
-                        ),
-                        li: ({ children }) => (
-                          <li className="text-sm text-[#2D2420] leading-relaxed ml-4">{children}</li>
-                        ),
-                      }}
-                    >
-                      {vocabResult}
-                    </ReactMarkdown>
+                  <div className="mt-4 bg-gradient-to-br from-white to-[#FFF8F0] rounded-2xl border-2 border-[#C75B3B]/20 overflow-hidden shadow-sm">
+                    {/* 标题栏 - 添加收藏按钮 */}
+                    <div className="flex items-center justify-between px-4 py-3 bg-[#FAF6F0] border-b border-[#C75B3B]/10">
+                      <span className="text-sm font-semibold text-[#2D2420]">AI 分析结果</span>
+                      <button
+                        onClick={async () => {
+                          try {
+                            await apiFetch("/api/collection", {
+                              method: "POST",
+                              headers: { "Content-Type": "application/json" },
+                              body: JSON.stringify({
+                                type: "vocab",
+                                content: {
+                                  query: vocabInput,
+                                  result: vocabResult,
+                                  matchedVocab: matchedVocab
+                                }
+                              })
+                            });
+                            setVocabCollected(true);
+                            setTimeout(() => setVocabCollected(false), 2000);
+                          } catch (error) {
+                            alert("收藏失败");
+                          }
+                        }}
+                        className="flex items-center gap-1.5 text-xs text-[#6B5E55] hover:text-[#D4772C] transition-colors px-2 py-1 rounded-lg hover:bg-white"
+                        title="收藏"
+                      >
+                        {vocabCollected ? (
+                          <>
+                            <Check className="w-3.5 h-3.5 text-[#4A7C59]" />
+                            <span className="text-[#4A7C59]">已收藏</span>
+                          </>
+                        ) : (
+                          <>
+                            <BookMarked className="w-3.5 h-3.5" />
+                            收藏
+                          </>
+                        )}
+                      </button>
+                    </div>
+
+                    {/* 内容区域 */}
+                    <div className="p-6 prose prose-sm max-w-none">
+                      <ReactMarkdown
+                        components={{
+                          h3: ({ children }) => (
+                            <h3 className="text-lg font-bold text-[#2D2420] mt-4 mb-2 first:mt-0 flex items-center gap-2">
+                              {children}
+                            </h3>
+                          ),
+                          strong: ({ children }) => (
+                            <strong className="text-[#C75B3B] font-bold">{children}</strong>
+                          ),
+                          p: ({ children }) => (
+                            <p className="text-sm text-[#2D2420] leading-relaxed mb-3">{children}</p>
+                          ),
+                          ul: ({ children }) => (
+                            <ul className="space-y-1.5 mb-3">{children}</ul>
+                          ),
+                          li: ({ children }) => (
+                            <li className="text-sm text-[#2D2420] leading-relaxed ml-4">{children}</li>
+                          ),
+                        }}
+                      >
+                        {vocabResult}
+                      </ReactMarkdown>
+                    </div>
                   </div>
                 )}
               </div>

@@ -174,55 +174,209 @@ export default function CollectionPage() {
 }
 
 function CollectionContent({ type, content }: { type: CollectionType; content: any }) {
+  const [isExpanded, setIsExpanded] = useState(false);
+
   if (type === 'grammar' || type === 'vocab') {
+    // 解析 markdown 内容，提取含义和例句
+    const resultText = String(content.result || '');
+    const lines = resultText.split('\n').filter(line => line.trim());
+
+    // 提取含义部分（通常在开头）
+    const meaningLines = lines.filter(line =>
+      !line.includes('例句') &&
+      !line.includes('**例') &&
+      !line.match(/^\d+\./) &&
+      !line.startsWith('-') &&
+      line.trim().length > 0
+    ).slice(0, 3);
+
+    // 提取例句（查找包含日文的行）
+    const exampleLines = lines.filter(line =>
+      /[\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FAF]/.test(line) &&
+      (line.includes('例') || line.match(/^\d+\./) || line.startsWith('-'))
+    ).slice(0, 2);
+
+    const shouldShowExpandButton = resultText.length > 300;
+
     return (
-      <div>
-        {content.pattern && (
-          <h3 className="text-lg font-bold text-[#2D2420] mb-2">{content.pattern}</h3>
-        )}
-        {content.word && (
-          <h3 className="text-lg font-bold text-[#2D2420] mb-2">{content.word}</h3>
-        )}
-        {content.star && (
-          <div className="flex items-center gap-2 mb-2">
-            <span className="text-sm text-[#6B5E54]">考频:</span>
-            <div className="flex">
-              {Array.from({ length: 3 }).map((_, i) => (
-                <Star
-                  key={i}
-                  className={`w-4 h-4 ${i < content.star ? 'fill-[#D4772C] text-[#D4772C]' : 'text-[#E8E0D5]'}`}
-                />
+      <div className="space-y-4">
+        {/* 标题区域 */}
+        <div className="border-l-4 border-[#D4772C] pl-4">
+          {content.query && (
+            <h3 className="text-xl font-bold text-[#2D2420] mb-1">{content.query}</h3>
+          )}
+          {content.pattern && (
+            <h3 className="text-xl font-bold text-[#2D2420] mb-1">{content.pattern}</h3>
+          )}
+          {content.word && (
+            <h3 className="text-xl font-bold text-[#2D2420] mb-1">{content.word}</h3>
+          )}
+
+          {/* 词汇考频数据 */}
+          {content.matchedVocab && content.matchedVocab.length > 0 && (
+            <div className="mt-3 space-y-2">
+              {content.matchedVocab.map((v: any, idx: number) => (
+                <div key={idx} className="bg-gradient-to-br from-[#FFF8F0] to-[#FFF0E5] border border-[#C75B3B]/20 rounded-lg p-3">
+                  <div className="flex items-center justify-between mb-1">
+                    <span className="text-base font-bold text-[#2D2420]">{v.word}</span>
+                    <div className="flex items-center gap-0.5">
+                      {Array.from({ length: 3 }).map((_, i) => (
+                        <Star
+                          key={i}
+                          className={`w-4 h-4 ${i < v.star ? 'fill-[#D4772C] text-[#D4772C]' : 'text-[#E8E0D5]'}`}
+                        />
+                      ))}
+                    </div>
+                  </div>
+                  <div className="text-xs text-[#6B5E54]">
+                    真题出现 <span className="font-semibold text-[#C75B3B]">{v.total_hits}</span> 次
+                    {v.last_appeared && <span className="ml-2">· 最近: {v.last_appeared}</span>}
+                  </div>
+                </div>
               ))}
+            </div>
+          )}
+
+          {/* 考频星级 */}
+          {content.star && (
+            <div className="flex items-center gap-2 mt-2">
+              <span className="text-xs font-medium text-[#6B5E54]">真题考频</span>
+              <div className="flex gap-0.5">
+                {Array.from({ length: 3 }).map((_, i) => (
+                  <Star
+                    key={i}
+                    className={`w-4 h-4 ${i < content.star ? 'fill-[#D4772C] text-[#D4772C]' : 'text-[#E8E0D5]'}`}
+                  />
+                ))}
+              </div>
+              <span className="text-xs text-[#6B5E54]">
+                ({content.star === 3 ? '高频' : content.star === 2 ? '中频' : '低频'})
+              </span>
+            </div>
+          )}
+        </div>
+
+        {/* 含义区域 */}
+        {meaningLines.length > 0 && (
+          <div className="bg-[#FAF6F0] rounded-lg p-4">
+            <h4 className="text-sm font-semibold text-[#D4772C] mb-2 flex items-center gap-2">
+              <span className="w-1 h-4 bg-[#D4772C] rounded"></span>
+              含义解释
+            </h4>
+            <div className="prose prose-sm max-w-none text-[#2D2420]">
+              <ReactMarkdown
+                components={{
+                  strong: ({ children }) => <strong className="text-[#D4772C] font-semibold">{children}</strong>,
+                  p: ({ children }) => <p className="mb-2 leading-relaxed text-[15px]">{children}</p>,
+                  ul: ({ children }) => <ul className="list-disc list-inside space-y-1 ml-2">{children}</ul>,
+                  li: ({ children }) => <li className="text-[15px] leading-relaxed">{children}</li>
+                }}
+              >
+                {meaningLines.join('\n\n')}
+              </ReactMarkdown>
             </div>
           </div>
         )}
-        {content.result && (
-          <div className="prose prose-sm max-w-none text-[#2D2420]">
-            <ReactMarkdown
-              components={{
-                strong: ({ children }) => <strong className="text-[#D4772C] font-semibold">{children}</strong>,
-                p: ({ children }) => <p className="mb-2 leading-relaxed">{children}</p>,
-                ul: ({ children }) => <ul className="list-disc list-inside space-y-1">{children}</ul>,
-                li: ({ children }) => <li className="text-sm">{children}</li>
-              }}
-            >
-              {String(content.result).slice(0, 200) + '...'}
-            </ReactMarkdown>
+
+        {/* 例句区域 */}
+        {exampleLines.length > 0 && (
+          <div className="space-y-3">
+            <h4 className="text-sm font-semibold text-[#D4772C] flex items-center gap-2">
+              <span className="w-1 h-4 bg-[#D4772C] rounded"></span>
+              例句示范
+            </h4>
+            {exampleLines.map((example, idx) => (
+              <div key={idx} className="bg-white border border-[#E8E0D5] rounded-lg p-3 hover:border-[#D4772C] transition-colors">
+                <div className="flex items-start gap-2">
+                  <span className="flex-shrink-0 w-6 h-6 bg-[#D4772C] text-white rounded-full flex items-center justify-center text-xs font-medium">
+                    {idx + 1}
+                  </span>
+                  <div className="flex-1 prose prose-sm max-w-none">
+                    <ReactMarkdown
+                      components={{
+                        strong: ({ children }) => <strong className="text-[#D4772C] font-semibold">{children}</strong>,
+                        p: ({ children }) => <p className="text-[15px] leading-relaxed text-[#2D2420]">{children}</p>,
+                      }}
+                    >
+                      {example.replace(/^[-\d.]\s*/, '')}
+                    </ReactMarkdown>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         )}
+
+        {/* 展开/收起按钮 */}
+        {shouldShowExpandButton && (
+          <div className="pt-2 border-t border-[#E8E0D5]">
+            <button
+              onClick={() => setIsExpanded(!isExpanded)}
+              className="text-sm text-[#D4772C] hover:text-[#C75B3B] font-medium flex items-center gap-1 mx-auto"
+            >
+              {isExpanded ? '收起详情' : '查看完整内容'}
+              <motion.span
+                animate={{ rotate: isExpanded ? 180 : 0 }}
+                transition={{ duration: 0.2 }}
+              >
+                ▼
+              </motion.span>
+            </button>
+          </div>
+        )}
+
+        {/* 完整内容（展开时显示） */}
+        <AnimatePresence>
+          {isExpanded && (
+            <motion.div
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: 'auto', opacity: 1 }}
+              exit={{ height: 0, opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              className="overflow-hidden"
+            >
+              <div className="bg-[#FAF6F0] rounded-lg p-4 border border-[#E8E0D5]">
+                <h4 className="text-sm font-semibold text-[#D4772C] mb-3">完整解析</h4>
+                <div className="prose prose-sm max-w-none text-[#2D2420]">
+                  <ReactMarkdown
+                    components={{
+                      strong: ({ children }) => <strong className="text-[#D4772C] font-semibold">{children}</strong>,
+                      p: ({ children }) => <p className="mb-3 leading-relaxed text-[15px]">{children}</p>,
+                      ul: ({ children }) => <ul className="list-disc list-inside space-y-2 ml-2">{children}</ul>,
+                      li: ({ children }) => <li className="text-[15px] leading-relaxed">{children}</li>,
+                      h3: ({ children }) => <h3 className="text-base font-bold text-[#2D2420] mt-4 mb-2">{children}</h3>,
+                      h4: ({ children }) => <h4 className="text-sm font-semibold text-[#6B5E54] mt-3 mb-2">{children}</h4>,
+                    }}
+                  >
+                    {resultText}
+                  </ReactMarkdown>
+                </div>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     );
   }
 
   if (type === 'error') {
     return (
-      <div>
-        <p className="text-sm text-[#6B5E54] mb-2">题目: {content.question?.slice(0, 100)}...</p>
-        <p className="text-sm">
-          <span className="text-red-600">你的答案: {content.userAnswer}</span>
-          {' → '}
-          <span className="text-green-600">正确答案: {content.correctAnswer}</span>
-        </p>
+      <div className="space-y-3">
+        <div className="bg-[#FAF6F0] rounded-lg p-3">
+          <p className="text-sm text-[#6B5E54] mb-1 font-medium">题目</p>
+          <p className="text-[15px] text-[#2D2420] leading-relaxed">{content.question}</p>
+        </div>
+        <div className="flex items-center gap-3 text-sm">
+          <div className="flex items-center gap-2 bg-red-50 px-3 py-2 rounded-lg">
+            <span className="text-[#6B5E54]">你的答案:</span>
+            <span className="font-semibold text-red-600">{content.userAnswer}</span>
+          </div>
+          <span className="text-[#6B5E54]">→</span>
+          <div className="flex items-center gap-2 bg-green-50 px-3 py-2 rounded-lg">
+            <span className="text-[#6B5E54]">正确答案:</span>
+            <span className="font-semibold text-green-600">{content.correctAnswer}</span>
+          </div>
+        </div>
       </div>
     );
   }

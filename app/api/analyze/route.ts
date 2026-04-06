@@ -4,6 +4,10 @@ import { getDb } from "@/lib/cloudbase";
 import { sanitizeInput, hashIP, createSafeErrorResponse, checkRequestRate, detectPromptInjection } from "@/lib/security";
 import { getAccountIdFromRequest } from "@/lib/account";
 
+// 禁用 Next.js 路由缓存
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 function getIp(req: NextRequest) {
   return (
     req.headers.get("x-forwarded-for")?.split(",")[0].trim() ||
