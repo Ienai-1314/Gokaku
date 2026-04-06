@@ -549,6 +549,7 @@ function ToolPageInner() {
                     onKeyDown={(e) => e.key === "Enter" && handleQuery()}
                     onFocus={() => setActiveInputField("query")}
                     placeholder="输入语法，按 Enter 查询..."
+                    autoComplete="off"
                     className="flex-1 px-4 py-3 bg-[#FAF6F0] border border-[#E8E0D5] rounded-xl text-sm text-[#2D2420] placeholder:text-[#6B5E55]/50 focus:outline-none focus:ring-2 focus:ring-[#C75B3B]/30"
                   />
                   <button
@@ -645,6 +646,7 @@ function ToolPageInner() {
                     onKeyDown={(e) => e.key === "Enter" && handleVocabQuery()}
                     onFocus={() => setActiveInputField("vocab")}
                     placeholder="输入词汇..."
+                    autoComplete="off"
                     className="flex-1 px-4 py-2.5 border border-[#E8E0D5] rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-[#C75B3B]/20 focus:border-[#C75B3B]/40"
                   />
                   <button
@@ -790,6 +792,7 @@ function ToolPageInner() {
                         onFocus={() => setActiveInputField("question")}
                         placeholder="粘贴完整题目，包括选项（如果有的话）..."
                         rows={4}
+                        autoComplete="off"
                         className="w-full px-4 py-3 bg-[#FAF6F0] border border-[#E8E0D5] rounded-xl text-sm text-[#2D2420] placeholder:text-[#6B5E55]/50 focus:outline-none focus:ring-2 focus:ring-[#C75B3B]/30 resize-none"
                       />
                       {questionInput && (
@@ -845,6 +848,7 @@ function ToolPageInner() {
                         value={userAnswerInput}
                         onChange={(e) => setUserAnswerInput(e.target.value)}
                         placeholder="例如：①或 A"
+                        autoComplete="off"
                         className="w-full px-4 py-2.5 bg-[#FAF6F0] border border-[#E8E0D5] rounded-xl text-sm text-[#2D2420] placeholder:text-[#6B5E55]/50 focus:outline-none focus:ring-2 focus:ring-[#C75B3B]/30"
                       />
                     </div>
@@ -855,6 +859,7 @@ function ToolPageInner() {
                         value={correctAnswerInput}
                         onChange={(e) => setCorrectAnswerInput(e.target.value)}
                         placeholder="例如：③或 C"
+                        autoComplete="off"
                         className="w-full px-4 py-2.5 bg-[#FAF6F0] border border-[#E8E0D5] rounded-xl text-sm text-[#2D2420] placeholder:text-[#6B5E55]/50 focus:outline-none focus:ring-2 focus:ring-[#C75B3B]/30"
                       />
                     </div>
