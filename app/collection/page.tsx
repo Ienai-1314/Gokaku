@@ -204,19 +204,30 @@ function CollectionContent({ type, content }: { type: CollectionType; content: a
 
   // 从语法内容中提取语法点名称
   const extractGrammarPoint = (content: any): string => {
-    // 优先使用 query 或 pattern
-    if (content.query) return content.query;
+    // 优先使用 query（用户输入的查询词）
+    if (content.query && content.query.trim()) {
+      return content.query.trim();
+    }
+
+    // 其次使用 pattern
     if (content.pattern) return content.pattern;
 
-    // 从 result 中提取第一行作为语法点
+    // 最后从 result 中智能提取
     const resultText = String(content.result || '');
     const lines = resultText.split('\n').filter(line => line.trim());
-    if (lines.length > 0) {
-      // 移除 markdown 标记,取第一行
-      const firstLine = lines[0].replace(/[*#]/g, '').trim();
-      // 如果第一行太长,可能不是语法点名称,尝试查找语法模式
-      if (firstLine.length < 30) {
-        return firstLine;
+
+    // 跳过常见的section标题
+    const skipTitles = ['错误模式', '读音', '含义与用法', '含义', '用法', '例句', '真题例句', '注意事项'];
+
+    for (const line of lines) {
+      const cleaned = line.replace(/[*#]/g, '').trim();
+
+      // 跳过section标题
+      if (skipTitles.includes(cleaned)) continue;
+
+      // 找到第一个看起来像语法点的行（包含日文且长度合适）
+      if (/[\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FAF]/.test(cleaned) && cleaned.length < 30) {
+        return cleaned;
       }
     }
 
@@ -264,7 +275,7 @@ function CollectionContent({ type, content }: { type: CollectionType; content: a
     ).slice(0, 2);
 
     // 获取语法点或词汇
-    const grammarPoint = type === 'grammar' ? extractGrammarPoint(content) : (content.word || '');
+    const grammarPoint = type === 'grammar' ? extractGrammarPoint(content) : (content.query || content.word || '');
     const reading = type === 'vocab' ? extractReading(content) : '';
     const star = content.star || (content.matchedVocab && content.matchedVocab.length > 0 ? content.matchedVocab[0].star : 0);
     const level = getFrequencyLevel(star);

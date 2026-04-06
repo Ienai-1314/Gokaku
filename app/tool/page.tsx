@@ -647,7 +647,7 @@ function ToolPageInner() {
                     ))}
                   </div>
                 )}
-                {queryResult && <ResultBox content={queryResult} onWordClick={handleWordClick} />}
+                {queryResult && <ResultBox content={queryResult} query={queryInput} onWordClick={handleWordClick} />}
               </div>
             </motion.div>
           )}
@@ -1053,7 +1053,7 @@ function ErrorBanner({ message }: { message: string }) {
 // ── ResultBox：分节渲染，真题例句高亮，一键复制 ──────────────────────────────
 const EXAMPLE_SECTION_KEYS = ["真题例句", "真題例句", "例句"];
 
-function ResultBox({ content, onWordClick }: { content: string; onWordClick?: (word: string) => void }) {
+function ResultBox({ content, query, onWordClick }: { content: string; query?: string; onWordClick?: (word: string) => void }) {
   const [expanded, setExpanded] = useState(true);
   const [copied, setCopied] = useState(false);
   const [collected, setCollected] = useState(false);
@@ -1071,7 +1071,10 @@ function ResultBox({ content, onWordClick }: { content: string; onWordClick?: (w
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           type: "grammar",
-          content: { result: content }
+          content: {
+            query: query || '',
+            result: content
+          }
         })
       });
       setCollected(true);
