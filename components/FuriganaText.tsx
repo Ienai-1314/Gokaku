@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState } from 'react';
 
 interface Token {
   surface_form: string;
@@ -15,68 +15,33 @@ interface FuriganaTextProps {
   className?: string;
 }
 
-// 全局缓存 tokenizer 实例
-let tokenizerCache: any = null;
-let tokenizerPromise: Promise<any> | null = null;
+// 全局缓存：文本 -> tokens
+const tokenCache = new Map<string, Token[]>();
 
-// 初始化 kuromoji tokenizer（从 CDN 加载词典）
-async function getTokenizer() {
-  if (tokenizerCache) {
-    return tokenizerCache;
+// 调用后端 API 获取振假名
+async function fetchFurigana(text: string): Promise<Token[]> {
+  // 检查缓存
+  if (tokenCache.has(text)) {
+    return tokenCache.get(text)!;
   }
 
-  if (tokenizerPromise) {
-    return tokenizerPromise;
-  }
-
-  tokenizerPromise = new Promise((resolve, reject) => {
-    // 动态加载 kuromoji 浏览器版本
-    if (typeof window === 'undefined') {
-      reject(new Error('Kuromoji only works in browser'));
-      return;
-    }
-
-    // 检查是否已加载
-    if ((window as any).kuromoji) {
-      const kuromoji = (window as any).kuromoji;
-      // 使用 jsDelivr CDN 托管的词典文件
-      kuromoji.builder({ dicPath: 'https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/dict/' })
-        .build((err: any, tokenizer: any) => {
-          if (err) {
-            tokenizerPromise = null;
-            reject(err);
-          } else {
-            tokenizerCache = tokenizer;
-            resolve(tokenizer);
-          }
-        });
-    } else {
-      // 动态加载 kuromoji 脚本
-      const script = document.createElement('script');
-      script.src = 'https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/build/kuromoji.js';
-      script.async = true;
-      script.onload = () => {
-        const kuromoji = (window as any).kuromoji;
-        kuromoji.builder({ dicPath: 'https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/dict/' })
-          .build((err: any, tokenizer: any) => {
-            if (err) {
-              tokenizerPromise = null;
-              reject(err);
-            } else {
-              tokenizerCache = tokenizer;
-              resolve(tokenizer);
-            }
-          });
-      };
-      script.onerror = () => {
-        tokenizerPromise = null;
-        reject(new Error('Failed to load kuromoji script'));
-      };
-      document.head.appendChild(script);
-    }
+  const response = await fetch('/api/furigana', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ text })
   });
 
-  return tokenizerPromise;
+  if (!response.ok) {
+    throw new Error(`API error: ${response.status}`);
+  }
+
+  const data = await response.json();
+  const tokens = data.tokens || [];
+
+  // 缓存结果
+  tokenCache.set(text, tokens);
+
+  return tokens;
 }
 
 export default function FuriganaText({ text, onWordClick, className = '' }: FuriganaTextProps) {
@@ -85,34 +50,16 @@ export default function FuriganaText({ text, onWordClick, className = '' }: Furi
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    // 暂时禁用振假名功能
-    setLoading(false);
-    setTokens([]);
-    return;
-
-    // 以下代码暂时不执行
     async function tokenize() {
       try {
         setLoading(true);
         setError(null);
 
-        // 获取 tokenizer（首次会从 CDN 加载）
-        const tokenizer = await getTokenizer();
-
-        // 分词
-        const result = tokenizer.tokenize(text);
-
-        // 格式化结果
-        const formattedTokens = result.map((token: any) => ({
-          surface_form: token.surface_form,
-          reading: token.reading || token.surface_form,
-          pos: token.pos,
-          basic_form: token.basic_form
-        }));
-
-        setTokens(formattedTokens);
+        // 调用后端 API
+        const result = await fetchFurigana(text);
+        setTokens(result);
       } catch (err: any) {
-        console.error('Tokenization error:', err);
+        console.error('Furigana error:', err);
         setError(err.message);
         // 失败时显示原文
         setTokens([]);
