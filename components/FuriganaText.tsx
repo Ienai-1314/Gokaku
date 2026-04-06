@@ -146,7 +146,7 @@ export default function FuriganaText({ text, onWordClick, className = '' }: Furi
               onClick={() => isClickable && onWordClick(token.surface_form)}
             >
               {token.surface_form}
-              <rt className="text-[0.5em] text-[#6B5E55]/70">{token.reading}</rt>
+              <rt className="text-[0.45em] leading-none">{token.reading}</rt>
             </ruby>
           );
         }
