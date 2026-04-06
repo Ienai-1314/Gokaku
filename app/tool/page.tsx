@@ -987,7 +987,7 @@ function ToolPageInner() {
                     ))}
                   </div>
                 )}
-                {analyzeResult && <ResultBox content={analyzeResult} query={actualQuestion} onWordClick={handleWordClick} />}
+                {analyzeResult && <ResultBox content={analyzeResult} query={actualQuestion} type="error" onWordClick={handleWordClick} />}
               </div>
             </motion.div>
           )}
@@ -1083,7 +1083,7 @@ function ErrorBanner({ message }: { message: string }) {
 // ── ResultBox：分节渲染，真题例句高亮，一键复制 ──────────────────────────────
 const EXAMPLE_SECTION_KEYS = ["真题例句", "真題例句", "例句"];
 
-function ResultBox({ content, query, onWordClick }: { content: string; query?: string; onWordClick?: (word: string) => void }) {
+function ResultBox({ content, query, type = "grammar", onWordClick }: { content: string; query?: string; type?: "grammar" | "error"; onWordClick?: (word: string) => void }) {
   const [expanded, setExpanded] = useState(true);
   const [copied, setCopied] = useState(false);
   const [collected, setCollected] = useState(false);
@@ -1103,8 +1103,11 @@ function ResultBox({ content, query, onWordClick }: { content: string; query?: s
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          type: "grammar",
-          content: {
+          type: type,
+          content: type === "error" ? {
+            question: savedQuery,
+            result: content
+          } : {
             query: savedQuery,
             result: content
           }
