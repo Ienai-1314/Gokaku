@@ -75,6 +75,7 @@ export async function getAccountIdFromRequest(req: NextRequest): Promise<string>
 /**
  * 获取账号ID
  * 优先级：兑换码账号 > 设备ID临时账号
+ * 如果是首次访问，自动创建免费账号
  */
 export async function getAccountId(deviceId: string): Promise<string> {
   if (!deviceId) {
@@ -95,8 +96,21 @@ export async function getAccountId(deviceId: string): Promise<string> {
       return data[0].account_id;
     }
 
-    // 2. 设备未绑定，返回临时账号ID（设备ID本身）
-    return deviceId;
+    // 2. 设备未绑定，检查是否已有临时账号
+    const accountId = deviceId;
+    const { data: accountData } = await db.collection('accounts')
+      .where({ account_id: accountId })
+      .limit(1)
+      .get();
+
+    if (!accountData || accountData.length === 0) {
+      // 3. 首次访问，自动创建免费账号
+      console.log(`[getAccountId] 首次访问，创建免费账号: ${accountId}`);
+      await createFreeAccount(deviceId);
+    }
+
+    // 返回临时账号ID（设备ID本身）
+    return accountId;
   } catch (error) {
     console.error('[getAccountId] 查询失败:', error);
     // 出错时降级到设备ID
