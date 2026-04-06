@@ -592,8 +592,11 @@ function ToolPageInner() {
                     disabled={queryLoading || !queryInput.trim()}
                     className="px-5 py-3 bg-[#C75B3B] hover:bg-[#A84A2F] disabled:opacity-50 text-white rounded-xl text-sm font-semibold transition-all flex items-center gap-2"
                   >
-                    {queryLoading ? <Loader2 className="w-4 h-4 animate-spin" /> : <Search className="w-4 h-4" />}
-                    查询
+                    {queryLoading ? (
+                      <><Loader2 className="w-4 h-4 animate-spin" />AI 分析中...</>
+                    ) : (
+                      <><Search className="w-4 h-4" />查询</>
+                    )}
                   </button>
                 </div>
 
@@ -689,8 +692,11 @@ function ToolPageInner() {
                     disabled={vocabLoading || !vocabInput.trim()}
                     className="px-6 py-2.5 bg-[#C75B3B] text-white rounded-xl text-sm font-semibold hover:bg-[#B54A2A] transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
                   >
-                    {vocabLoading ? <Loader2 className="w-4 h-4 animate-spin" /> : <Search className="w-4 h-4" />}
-                    查询
+                    {vocabLoading ? (
+                      <><Loader2 className="w-4 h-4 animate-spin" />AI 分析中...</>
+                    ) : (
+                      <><Search className="w-4 h-4" />查询</>
+                    )}
                   </button>
                 </div>
 

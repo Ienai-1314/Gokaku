@@ -216,17 +216,23 @@ function CollectionContent({ type, content }: { type: CollectionType; content: a
     const resultText = String(content.result || '');
     const lines = resultText.split('\n').filter(line => line.trim());
 
-    // 跳过常见的section标题
-    const skipTitles = ['错误模式', '读音', '含义与用法', '含义', '用法', '例句', '真题例句', '注意事项'];
+    // 跳过常见的section标题和markdown标记
+    const skipTitles = ['错误模式', '读音', '含义与用法', '含义', '用法', '例句', '真题例句', '注意事项', '正确用法', '语法解析'];
 
     for (const line of lines) {
-      const cleaned = line.replace(/[*#]/g, '').trim();
+      const cleaned = line.replace(/[*#`]/g, '').trim();
+
+      // 跳过空行
+      if (!cleaned) continue;
 
       // 跳过section标题
-      if (skipTitles.includes(cleaned)) continue;
+      if (skipTitles.some(title => cleaned === title || cleaned.startsWith(title + '：'))) continue;
 
-      // 找到第一个看起来像语法点的行（包含日文且长度合适）
-      if (/[\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FAF]/.test(cleaned) && cleaned.length < 30) {
+      // 跳过纯中文说明行（通常是解释文字）
+      if (/^[\u4E00-\u9FA5，。、！？：；""''（）【】《》\s]+$/.test(cleaned)) continue;
+
+      // 找到第一个包含日文的行（语法点通常包含假名或汉字+假名）
+      if (/[\u3040-\u309F\u30A0-\u30FF]/.test(cleaned) && cleaned.length < 50) {
         return cleaned;
       }
     }
