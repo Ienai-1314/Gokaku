@@ -1148,11 +1148,14 @@ function ExampleLine({ line, onWordClick }: { line: string; onWordClick?: (word:
   if (!trimmed) return null;
   const isJapanese = /[\u3040-\u30FF\u4E00-\u9FFF]/.test(trimmed);
   if (isJapanese && !trimmed.startsWith("（") && !trimmed.startsWith("(")) {
-    // 日语句子：加红色左边框
-    // TODO: 振假名功能暂时禁用，等待kuromoji词典部署到Vercel
+    // 日语句子：加红色左边框，显示振假名
     return (
       <div className="pl-3 border-l-2 border-[#C75B3B]/50">
-        <RichLine line={trimmed} className="text-sm text-[#2D2420] font-medium leading-relaxed" />
+        <FuriganaText
+          text={trimmed}
+          onWordClick={onWordClick}
+          className="text-sm text-[#2D2420] font-medium leading-relaxed"
+        />
       </div>
     );
   }
