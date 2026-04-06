@@ -85,6 +85,12 @@ export default function FuriganaText({ text, onWordClick, className = '' }: Furi
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
+    // 暂时禁用振假名功能
+    setLoading(false);
+    setTokens([]);
+    return;
+
+    // 以下代码暂时不执行
     async function tokenize() {
       try {
         setLoading(true);
