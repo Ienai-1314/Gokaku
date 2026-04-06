@@ -65,31 +65,61 @@ async function checkAndRewardMembership(accountId: string) {
 
       if (accounts && accounts.length > 0) {
         const account = accounts[0];
-        const currentExpiry = account.membership_expiry
-          ? new Date(account.membership_expiry)
-          : new Date();
 
-        // 如果已过期，从当前时间开始计算
-        const baseDate = currentExpiry > new Date() ? currentExpiry : new Date();
+        // 检查是否已经为这个里程碑发放过返现
+        const rewardTimes = Math.floor(totalErrors / 100);
+        const existingRewards = account.total_rewards || 0;
 
-        // 延长1个月
-        const newExpiry = new Date(baseDate);
-        newExpiry.setMonth(newExpiry.getMonth() + 1);
+        if (rewardTimes > existingRewards) {
+          const currentExpiry = account.membership_expiry
+            ? new Date(account.membership_expiry)
+            : new Date();
 
-        await db
-          .collection("accounts")
-          .doc(account._id as string)
-          .update({
-            membership_expiry: newExpiry.toISOString(),
-            last_reward_at: new Date().toISOString(),
-            total_rewards: (account.total_rewards || 0) + 1
-          });
+          // 如果已过期，从当前时间开始计算
+          const baseDate = currentExpiry > new Date() ? currentExpiry : new Date();
 
-        console.log(`账号 ${accountId} 完成 ${totalErrors} 道错题，会员延长至 ${newExpiry.toISOString()}`);
+          // 延长1个月
+          const newExpiry = new Date(baseDate);
+          newExpiry.setMonth(newExpiry.getMonth() + 1);
+
+          const now = new Date().toISOString();
+
+          // 创建返现历史记录
+          const cashbackRecord = {
+            account_id: accountId,
+            milestone: totalErrors,
+            reward_type: 'membership_extension',
+            reward_value: 1, // 1个月
+            old_expiry: account.membership_expiry || null,
+            new_expiry: newExpiry.toISOString(),
+            created_at: now
+          };
+
+          // 使用事务保证原子性
+          try {
+            // 添加返现历史记录
+            await db.collection("cashback_history").add(cashbackRecord);
+
+            // 更新账号信息
+            await db
+              .collection("accounts")
+              .doc(account._id as string)
+              .update({
+                membership_expiry: newExpiry.toISOString(),
+                last_reward_at: now,
+                total_rewards: rewardTimes
+              });
+
+            console.log(`[返现] 账号 ${accountId} 完成 ${totalErrors} 道错题，会员延长至 ${newExpiry.toISOString()}`);
+          } catch (updateErr) {
+            console.error("[返现] 更新失败:", updateErr);
+            throw updateErr;
+          }
+        }
       }
     }
   } catch (err) {
-    console.error("检查返现失败:", err);
+    console.error("[返现] 检查失败:", err);
   }
 }
 

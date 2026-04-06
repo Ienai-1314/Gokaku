@@ -1,0 +1,217 @@
+{
+  "system": {
+    "name": "Gokaku Auto-Dev System",
+    "version": "1.0.0",
+    "description": "多 Agent 协作系统，用于自动化开发 Gokaku JLPT 备考应用",
+    "created": "2026-04-06"
+  },
+  "agents": {
+    "orchestrator": {
+      "name": "Orchestrator",
+      "role": "总调度",
+      "model": "claude-sonnet-4-6",
+      "enabled": true,
+      "priority": 1,
+      "capabilities": [
+        "task_routing",
+        "progress_monitoring",
+        "report_generation",
+        "dependency_management"
+      ],
+      "tools": [
+        "Agent",
+        "TodoWrite",
+        "AskUserQuestion"
+      ]
+    },
+    "feature_developer": {
+      "name": "Feature Developer",
+      "role": "功能开发",
+      "model": "claude-sonnet-4-6",
+      "enabled": true,
+      "priority": 2,
+      "capabilities": [
+        "frontend_development",
+        "backend_api",
+        "database_design",
+        "unit_testing"
+      ],
+      "tools": [
+        "Read",
+        "Write",
+        "Edit",
+        "Glob",
+        "Grep",
+        "Bash"
+      ],
+      "skills": [
+        "react_best_practices",
+        "nextjs_patterns",
+        "typescript_strict",
+        "api_design"
+      ]
+    },
+    "bug_fixer": {
+      "name": "Bug Fixer",
+      "role": "Bug 修复",
+      "model": "claude-sonnet-4-6",
+      "enabled": true,
+      "priority": 1,
+      "capabilities": [
+        "systematic_debugging",
+        "root_cause_analysis",
+        "regression_testing",
+        "hotfix_deployment"
+      ],
+      "tools": [
+        "Read",
+        "Edit",
+        "Bash",
+        "Grep",
+        "WebSearch"
+      ],
+      "skills": [
+        "debugging_methodology",
+        "error_handling",
+        "logging_best_practices"
+      ]
+    },
+    "tester": {
+      "name": "Tester",
+      "role": "测试工程师",
+      "model": "claude-sonnet-4-6",
+      "enabled": true,
+      "priority": 2,
+      "capabilities": [
+        "automated_testing",
+        "manual_testing",
+        "production_verification",
+        "performance_testing"
+      ],
+      "tools": [
+        "Bash",
+        "Read",
+        "WebFetch"
+      ],
+      "skills": [
+        "testing_strategy",
+        "test_coverage",
+        "qa_checklist"
+      ]
+    },
+    "architect": {
+      "name": "Architect",
+      "role": "架构师",
+      "model": "claude-opus-4-6",
+      "enabled": true,
+      "priority": 1,
+      "capabilities": [
+        "technical_decision",
+        "architecture_design",
+        "code_review",
+        "performance_optimization"
+      ],
+      "tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "WebSearch",
+        "Agent"
+      ],
+      "skills": [
+        "architecture_patterns",
+        "scalability_design",
+        "security_best_practices"
+      ]
+    },
+    "devops": {
+      "name": "DevOps",
+      "role": "部署运维",
+      "model": "claude-sonnet-4-6",
+      "enabled": true,
+      "priority": 2,
+      "capabilities": [
+        "build_automation",
+        "git_operations",
+        "deployment_monitoring",
+        "ci_cd_pipeline"
+      ],
+      "tools": [
+        "Bash",
+        "Read",
+        "WebFetch"
+      ],
+      "skills": [
+        "git_workflow",
+        "build_optimization",
+        "deployment_checklist"
+      ]
+    }
+  },
+  "task_routing": {
+    "keywords": {
+      "feature": ["feature_developer"],
+      "bug": ["bug_fixer"],
+      "test": ["tester"],
+      "deploy": ["devops"],
+      "architecture": ["architect"],
+      "design": ["architect"],
+      "optimize": ["architect"],
+      "fix": ["bug_fixer"],
+      "implement": ["feature_developer"],
+      "create": ["feature_developer"]
+    },
+    "priority_rules": {
+      "production_error": {
+        "priority": "critical",
+        "agents": ["bug_fixer", "devops"],
+        "notify_user": true
+      },
+      "new_feature": {
+        "priority": "high",
+        "agents": ["architect", "feature_developer", "tester"],
+        "notify_user": false
+      },
+      "optimization": {
+        "priority": "medium",
+        "agents": ["architect", "feature_developer"],
+        "notify_user": false
+      }
+    }
+  },
+  "workflow": {
+    "feature_development": [
+      "architect",
+      "feature_developer",
+      "tester",
+      "devops"
+    ],
+    "bug_fix": [
+      "bug_fixer",
+      "tester",
+      "devops"
+    ],
+    "hotfix": [
+      "bug_fixer",
+      "devops"
+    ]
+  },
+  "monitoring": {
+    "health_check": {
+      "enabled": true,
+      "schedule": "0 9 * * *",
+      "agent": "tester"
+    },
+    "weekly_report": {
+      "enabled": true,
+      "schedule": "0 18 * * 5",
+      "agent": "orchestrator"
+    }
+  },
+  "approval_required": [
+    "database_migration",
+    "architecture_change",
+    "production_deployment",
+    "dependency_update"
+  ]
+}
