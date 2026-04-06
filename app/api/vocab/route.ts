@@ -47,16 +47,22 @@ function loadVocab(): VocabEntry[] {
 function searchVocab(query: string): VocabEntry[] {
   const vocab = loadVocab();
   const q = query.trim();
+  console.log('[searchVocab] 搜索词汇:', q);
 
   // 精确匹配优先
   const exactMatch = vocab.filter(v => v.word === q);
-  if (exactMatch.length > 0) return exactMatch.slice(0, 5);
+  if (exactMatch.length > 0) {
+    console.log('[searchVocab] 精确匹配结果:', exactMatch.map(m => m.word));
+    return exactMatch.slice(0, 5);
+  }
 
   // 包含匹配
-  return vocab
+  const results = vocab
     .filter(v => v.word.includes(q))
     .sort((a, b) => b.total_hits - a.total_hits)
     .slice(0, 5);
+  console.log('[searchVocab] 包含匹配结果:', results.map(m => m.word));
+  return results;
 }
 
 export async function POST(req: NextRequest) {
@@ -77,6 +83,7 @@ export async function POST(req: NextRequest) {
     }
 
     const { query } = await req.json();
+    console.log('[vocab API] 接收到查询请求:', { query, timestamp: new Date().toISOString() });
 
     // 输入验证和清洗
     if (!query?.trim()) {
@@ -92,6 +99,7 @@ export async function POST(req: NextRequest) {
     }
 
     const sanitizedQuery = sanitizeInput(query, 100);
+    console.log('[vocab API] 清洗后的查询:', sanitizedQuery);
 
     const apiKey = process.env.DEEPSEEK_API_KEY;
     if (!apiKey) {
@@ -100,8 +108,10 @@ export async function POST(req: NextRequest) {
 
     // 从本地词汇库检索
     const matches = searchVocab(sanitizedQuery);
+    console.log('[vocab API] 词汇库匹配结果:', matches.map(m => m.word));
 
     const prompt = buildVocabPrompt(sanitizedQuery, matches);
+    console.log('[vocab API] 构建的 Prompt 开头:', prompt.substring(0, 200));
 
     const response = await fetch(DEEPSEEK_API_URL, {
       method: "POST",
@@ -156,29 +166,30 @@ function buildVocabPrompt(query: string, matches: VocabEntry[]): string {
 请用中文按照以下格式回答（严格使用markdown格式）：
 
 ### 📖 读音
-かっとう
+[用平假名标注「${query}」的读音]
 
 ### 💡 核心含义
-**纠葛、矛盾**（多指内心或人际关系的冲突）
+**[用中文解释「${query}」的核心含义]**
 
 ### 🎯 真题考频
 ${matches.length > 0 && matches[0].star >= 2 ? '⭐⭐⭐ **高频词！近10年N1真题多次出现，务必掌握**' : matches.length > 0 ? '⭐ 真题出现过，建议掌握' : '📚 了解即可'}
 
 ### 📝 用法说明
-- 常见搭配：「〜が生じる」「〜を抱える」「心の葛藤」
-- 使用场景：描述内心矛盾、人际冲突、理想与现实的纠结
-- 注意：属于书面语，日常会话较少使用
+- 常见搭配：[列出「${query}」的常见搭配]
+- 使用场景：[说明「${query}」的使用场景]
+- 注意：[特别注意事项]
 
 ### ✍️ 真题例句
-1. 進学か就職か、彼は深刻な葛藤を抱えている。
-   （是升学还是就业，他内心充满矛盾。）
+1. [包含「${query}」的日语例句]
+   （[中文翻译]）
 
-2. 家族との葛藤をテーマにした小説を読んだ。
-   （读了一本以家庭矛盾为主题的小说。）
+2. [包含「${query}」的日语例句]
+   （[中文翻译]）
 
 要求：
+- 必须针对「${query}」这个词汇进行解释，不要解释其他词汇
 - **用加粗标注关键词汇和重点信息**
-- 例句中的关键词用**加粗**
+- 例句中必须包含「${query}」这个词
 - 简洁实用，每部分2-3行即可
 - emoji 让内容更易读`;
 }

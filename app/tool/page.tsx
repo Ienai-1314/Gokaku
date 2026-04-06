@@ -221,6 +221,7 @@ function ToolPageInner() {
 
   async function handleVocabQuery(customQuery?: string) {
     const text = (customQuery || vocabInput).trim();
+    console.log('[handleVocabQuery] 开始查询:', { customQuery, vocabInput, text });
     if (!text) return;
 
     // 检查额度
@@ -236,12 +237,19 @@ function ToolPageInner() {
     setVocabCollected(false);
 
     try {
+      const requestBody = { query: text };
+      console.log('[handleVocabQuery] 发送请求:', requestBody);
       const res = await apiFetch("/api/vocab", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ query: text }),
+        body: JSON.stringify(requestBody),
       });
       const data = await res.json();
+      console.log('[handleVocabQuery] 收到响应:', {
+        status: res.status,
+        resultPreview: data.result?.substring(0, 100),
+        matchedVocab: data.matchedVocab?.map((v: any) => v.word)
+      });
       if (res.status === 429) {
         setShowPaywall(true);
         await refreshUsage();
