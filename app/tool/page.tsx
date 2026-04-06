@@ -28,6 +28,7 @@ import {
   Mic,
 } from "lucide-react";
 import Link from "next/link";
+import FuriganaText from "@/components/FuriganaText";
 import { useSearchParams } from "next/navigation";
 import JapaneseKeyboard from "@/components/JapaneseKeyboard";
 import VoiceInput from "@/components/VoiceInput";
@@ -207,8 +208,18 @@ function ToolPageInner() {
     }
   }
 
-  async function handleVocabQuery() {
-    const text = vocabInput.trim();
+  // 处理点击单词查询
+  function handleWordClick(word: string) {
+    setTab("vocab");
+    setVocabInput(word);
+    // 延迟执行查询，确保tab切换完成
+    setTimeout(() => {
+      handleVocabQuery(word);
+    }, 100);
+  }
+
+  async function handleVocabQuery(customQuery?: string) {
+    const text = (customQuery || vocabInput).trim();
     if (!text) return;
 
     // 检查额度
@@ -626,7 +637,7 @@ function ToolPageInner() {
                     ))}
                   </div>
                 )}
-                {queryResult && <ResultBox content={queryResult} />}
+                {queryResult && <ResultBox content={queryResult} onWordClick={handleWordClick} />}
               </div>
             </motion.div>
           )}
@@ -664,7 +675,7 @@ function ToolPageInner() {
                     <Mic className="w-4 h-4 text-[#6B5E55]" />
                   </button>
                   <button
-                    onClick={handleVocabQuery}
+                    onClick={() => handleVocabQuery()}
                     disabled={vocabLoading || !vocabInput.trim()}
                     className="px-6 py-2.5 bg-[#C75B3B] text-white rounded-xl text-sm font-semibold hover:bg-[#B54A2A] transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
                   >
@@ -892,7 +903,7 @@ function ToolPageInner() {
                     ))}
                   </div>
                 )}
-                {analyzeResult && <ResultBox content={analyzeResult} />}
+                {analyzeResult && <ResultBox content={analyzeResult} onWordClick={handleWordClick} />}
               </div>
             </motion.div>
           )}
@@ -988,7 +999,7 @@ function ErrorBanner({ message }: { message: string }) {
 // ── ResultBox：分节渲染，真题例句高亮，一键复制 ──────────────────────────────
 const EXAMPLE_SECTION_KEYS = ["真题例句", "真題例句", "例句"];
 
-function ResultBox({ content }: { content: string }) {
+function ResultBox({ content, onWordClick }: { content: string; onWordClick?: (word: string) => void }) {
   const [expanded, setExpanded] = useState(true);
   const [copied, setCopied] = useState(false);
   const [collected, setCollected] = useState(false);
@@ -1050,7 +1061,7 @@ function ResultBox({ content }: { content: string }) {
       {expanded && (
         <div className="divide-y divide-[#E8E0D5]/60">
           {sections.map((section, idx) => (
-            <Section key={idx} section={section} />
+            <Section key={idx} section={section} onWordClick={onWordClick} />
           ))}
         </div>
       )}
@@ -1090,7 +1101,7 @@ function parseContent(content: string): ContentSection[] {
   return sections;
 }
 
-function Section({ section }: { section: ContentSection }) {
+function Section({ section, onWordClick }: { section: ContentSection; onWordClick?: (word: string) => void }) {
   if (section.isExample) {
     // 真题例句区块：暖色高亮背景
     return (
@@ -1105,7 +1116,7 @@ function Section({ section }: { section: ContentSection }) {
           {section.lines
             .filter((l) => l.trim())
             .map((line, i) => (
-              <ExampleLine key={i} line={line} />
+              <ExampleLine key={i} line={line} onWordClick={onWordClick} />
             ))}
         </div>
       </div>
@@ -1132,15 +1143,19 @@ function Section({ section }: { section: ContentSection }) {
 }
 
 // 带日语文字检测的例句行
-function ExampleLine({ line }: { line: string }) {
+function ExampleLine({ line, onWordClick }: { line: string; onWordClick?: (word: string) => void }) {
   const trimmed = line.trim();
   if (!trimmed) return null;
   const isJapanese = /[\u3040-\u30FF\u4E00-\u9FFF]/.test(trimmed);
   if (isJapanese && !trimmed.startsWith("（") && !trimmed.startsWith("(")) {
-    // 日语句子：加红色左边框
+    // 日语句子：加红色左边框，使用FuriganaText显示振假名
     return (
       <div className="pl-3 border-l-2 border-[#C75B3B]/50">
-        <RichLine line={trimmed} className="text-sm text-[#2D2420] font-medium leading-relaxed" />
+        <FuriganaText
+          text={trimmed}
+          onWordClick={onWordClick}
+          className="text-sm text-[#2D2420] font-medium leading-relaxed"
+        />
       </div>
     );
   }
