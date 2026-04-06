@@ -981,7 +981,7 @@ function ToolPageInner() {
                     ))}
                   </div>
                 )}
-                {analyzeResult && <ResultBox content={analyzeResult} onWordClick={handleWordClick} />}
+                {analyzeResult && <ResultBox content={analyzeResult} query={questionInput} onWordClick={handleWordClick} />}
               </div>
             </motion.div>
           )}
@@ -1082,6 +1082,9 @@ function ResultBox({ content, query, onWordClick }: { content: string; query?: s
   const [copied, setCopied] = useState(false);
   const [collected, setCollected] = useState(false);
 
+  // 保存查询词，防止用户清空输入框后收藏时丢失
+  const [savedQuery] = useState(query || '');
+
   const handleCopy = async () => {
     await navigator.clipboard.writeText(content);
     setCopied(true);
@@ -1096,7 +1099,7 @@ function ResultBox({ content, query, onWordClick }: { content: string; query?: s
         body: JSON.stringify({
           type: "grammar",
           content: {
-            query: query || '',
+            query: savedQuery,
             result: content
           }
         })

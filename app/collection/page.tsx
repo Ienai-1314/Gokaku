@@ -183,7 +183,7 @@ function CollectionContent({ type, content }: { type: CollectionType; content: a
 
   if (type === 'grammar' || type === 'vocab') {
     // 直接使用用户查询的原词作为标题
-    const title = content.query || '未知';
+    const title = content.query?.trim() || '查询记录';
     const resultText = String(content.result || '');
 
     return (
