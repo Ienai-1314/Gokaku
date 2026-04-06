@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 
 interface Order {
@@ -42,10 +42,10 @@ export default function AdminPage() {
   }
 
   // 页面加载时获取数据
-  useState(() => {
+  useEffect(() => {
     fetchStats()
     fetchRecentOrders()
-  })
+  }, [])
 
   // 分配兑换码
   const handleAllocate = async () => {
