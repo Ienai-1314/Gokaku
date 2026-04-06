@@ -138,31 +138,36 @@ export default function CollectionPage() {
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, x: -100 }}
-                  className="bg-white rounded-xl border border-[#E8E0D5] p-4 hover:shadow-md transition-shadow"
+                  className="bg-white rounded-xl border border-[#E8E0D5] hover:shadow-md transition-shadow"
                 >
-                  <div className="flex items-start justify-between mb-3">
-                    <div className="flex items-center gap-2">
-                      <span className={`px-2 py-0.5 rounded text-xs font-medium ${
-                        item.type === 'grammar' ? 'bg-blue-50 text-blue-700' :
-                        item.type === 'vocab' ? 'bg-green-50 text-green-700' :
-                        'bg-orange-50 text-orange-700'
-                      }`}>
-                        {typeLabels[item.type]}
-                      </span>
-                      <span className="text-xs text-[#6B5E54] flex items-center gap-1">
-                        <Calendar className="w-3 h-3" />
-                        {new Date(item.createdAt).toLocaleDateString('zh-CN')}
-                      </span>
+                  <div className="p-4">
+                    <div className="flex items-start justify-between mb-3">
+                      <div className="flex items-center gap-2">
+                        <span className={`px-2 py-0.5 rounded text-xs font-medium ${
+                          item.type === 'grammar' ? 'bg-blue-50 text-blue-700' :
+                          item.type === 'vocab' ? 'bg-green-50 text-green-700' :
+                          'bg-orange-50 text-orange-700'
+                        }`}>
+                          {typeLabels[item.type]}
+                        </span>
+                        <span className="text-xs text-[#6B5E54] flex items-center gap-1">
+                          <Calendar className="w-3 h-3" />
+                          {new Date(item.createdAt).toLocaleDateString('zh-CN')}
+                        </span>
+                      </div>
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          handleDelete(item._id);
+                        }}
+                        className="text-[#C75B3B] hover:bg-red-50 p-1.5 rounded-lg transition-colors"
+                      >
+                        <Trash2 className="w-4 h-4" />
+                      </button>
                     </div>
-                    <button
-                      onClick={() => handleDelete(item._id)}
-                      className="text-[#C75B3B] hover:bg-red-50 p-1.5 rounded-lg transition-colors"
-                    >
-                      <Trash2 className="w-4 h-4" />
-                    </button>
-                  </div>
 
-                  <CollectionContent type={item.type} content={item.content} />
+                    <CollectionContent type={item.type} content={item.content} />
+                  </div>
                 </motion.div>
               ))}
             </AnimatePresence>
@@ -176,10 +181,34 @@ export default function CollectionPage() {
 function CollectionContent({ type, content }: { type: CollectionType; content: any }) {
   const [isExpanded, setIsExpanded] = useState(false);
 
+  // 提取简短释义的辅助函数
+  const extractShortMeaning = (text: string): string => {
+    if (!text) return '';
+
+    // 移除 markdown 标记
+    let cleaned = text.replace(/[*#]/g, '').trim();
+
+    // 查找第一个句号、问号或换行符
+    const firstBreak = cleaned.search(/[。？\n]/);
+    if (firstBreak > 0) {
+      cleaned = cleaned.substring(0, firstBreak);
+    }
+
+    // 截取前50个字符
+    if (cleaned.length > 50) {
+      return cleaned.substring(0, 50) + '...';
+    }
+
+    return cleaned;
+  };
+
   if (type === 'grammar' || type === 'vocab') {
     // 解析 markdown 内容，提取含义和例句
     const resultText = String(content.result || '');
     const lines = resultText.split('\n').filter(line => line.trim());
+
+    // 提取简短释义
+    const shortMeaning = extractShortMeaning(resultText);
 
     // 提取含义部分（通常在开头）
     const meaningLines = lines.filter(line =>
@@ -196,134 +225,68 @@ function CollectionContent({ type, content }: { type: CollectionType; content: a
       (line.includes('例') || line.match(/^\d+\./) || line.startsWith('-'))
     ).slice(0, 2);
 
-    const shouldShowExpandButton = resultText.length > 300;
-
     return (
-      <div className="space-y-4">
-        {/* 标题区域 */}
-        <div className="border-l-4 border-[#D4772C] pl-4">
-          {content.query && (
-            <h3 className="text-xl font-bold text-[#2D2420] mb-1">{content.query}</h3>
-          )}
-          {content.pattern && (
-            <h3 className="text-xl font-bold text-[#2D2420] mb-1">{content.pattern}</h3>
-          )}
-          {content.word && (
-            <h3 className="text-xl font-bold text-[#2D2420] mb-1">{content.word}</h3>
-          )}
+      <div
+        className="space-y-3 cursor-pointer"
+        onClick={() => setIsExpanded(!isExpanded)}
+      >
+        {/* 预览模式 - 紧凑显示 */}
+        <div className="space-y-2">
+          {/* 标题和简短释义 */}
+          <div className="flex items-start justify-between gap-3">
+            <div className="flex-1">
+              {/* 语法模式/词汇 */}
+              {(content.query || content.pattern || content.word) && (
+                <h3 className="text-lg font-bold text-[#2D2420] mb-1">
+                  {content.query || content.pattern || content.word}
+                </h3>
+              )}
 
-          {/* 词汇考频数据 */}
-          {content.matchedVocab && content.matchedVocab.length > 0 && (
-            <div className="mt-3 space-y-2">
-              {content.matchedVocab.map((v: any, idx: number) => (
-                <div key={idx} className="bg-gradient-to-br from-[#FFF8F0] to-[#FFF0E5] border border-[#C75B3B]/20 rounded-lg p-3">
-                  <div className="flex items-center justify-between mb-1">
-                    <span className="text-base font-bold text-[#2D2420]">{v.word}</span>
-                    <div className="flex items-center gap-0.5">
-                      {Array.from({ length: 3 }).map((_, i) => (
-                        <Star
-                          key={i}
-                          className={`w-4 h-4 ${i < v.star ? 'fill-[#D4772C] text-[#D4772C]' : 'text-[#E8E0D5]'}`}
-                        />
-                      ))}
-                    </div>
-                  </div>
-                  <div className="text-xs text-[#6B5E54]">
-                    真题出现 <span className="font-semibold text-[#C75B3B]">{v.total_hits}</span> 次
-                    {v.last_appeared && <span className="ml-2">· 最近: {v.last_appeared}</span>}
-                  </div>
-                </div>
-              ))}
+              {/* 词汇读音 */}
+              {type === 'vocab' && content.matchedVocab && content.matchedVocab.length > 0 && (
+                <p className="text-sm text-[#6B5E54] mb-1">
+                  {content.matchedVocab[0].reading || ''}
+                </p>
+              )}
+
+              {/* 简短释义 */}
+              {shortMeaning && (
+                <p className="text-[15px] text-[#2D2420] leading-relaxed">
+                  {shortMeaning}
+                </p>
+              )}
             </div>
-          )}
 
-          {/* 考频星级 */}
-          {content.star && (
-            <div className="flex items-center gap-2 mt-2">
-              <span className="text-xs font-medium text-[#6B5E54]">真题考频</span>
-              <div className="flex gap-0.5">
+            {/* 考频星级 */}
+            {(content.star || (content.matchedVocab && content.matchedVocab.length > 0)) && (
+              <div className="flex items-center gap-0.5 flex-shrink-0">
                 {Array.from({ length: 3 }).map((_, i) => (
                   <Star
                     key={i}
-                    className={`w-4 h-4 ${i < content.star ? 'fill-[#D4772C] text-[#D4772C]' : 'text-[#E8E0D5]'}`}
+                    className={`w-4 h-4 ${
+                      i < (content.star || content.matchedVocab[0].star)
+                        ? 'fill-[#D4772C] text-[#D4772C]'
+                        : 'text-[#E8E0D5]'
+                    }`}
                   />
                 ))}
               </div>
-              <span className="text-xs text-[#6B5E54]">
-                ({content.star === 3 ? '高频' : content.star === 2 ? '中频' : '低频'})
-              </span>
-            </div>
-          )}
-        </div>
-
-        {/* 含义区域 */}
-        {meaningLines.length > 0 && (
-          <div className="bg-[#FAF6F0] rounded-lg p-4">
-            <h4 className="text-sm font-semibold text-[#D4772C] mb-2 flex items-center gap-2">
-              <span className="w-1 h-4 bg-[#D4772C] rounded"></span>
-              含义解释
-            </h4>
-            <div className="prose prose-sm max-w-none text-[#2D2420]">
-              <ReactMarkdown
-                components={{
-                  strong: ({ children }) => <strong className="text-[#D4772C] font-semibold">{children}</strong>,
-                  p: ({ children }) => <p className="mb-2 leading-relaxed text-[15px]">{children}</p>,
-                  ul: ({ children }) => <ul className="list-disc list-inside space-y-1 ml-2">{children}</ul>,
-                  li: ({ children }) => <li className="text-[15px] leading-relaxed">{children}</li>
-                }}
-              >
-                {meaningLines.join('\n\n')}
-              </ReactMarkdown>
-            </div>
+            )}
           </div>
-        )}
 
-        {/* 例句区域 */}
-        {exampleLines.length > 0 && (
-          <div className="space-y-3">
-            <h4 className="text-sm font-semibold text-[#D4772C] flex items-center gap-2">
-              <span className="w-1 h-4 bg-[#D4772C] rounded"></span>
-              例句示范
-            </h4>
-            {exampleLines.map((example, idx) => (
-              <div key={idx} className="bg-white border border-[#E8E0D5] rounded-lg p-3 hover:border-[#D4772C] transition-colors">
-                <div className="flex items-start gap-2">
-                  <span className="flex-shrink-0 w-6 h-6 bg-[#D4772C] text-white rounded-full flex items-center justify-center text-xs font-medium">
-                    {idx + 1}
-                  </span>
-                  <div className="flex-1 prose prose-sm max-w-none">
-                    <ReactMarkdown
-                      components={{
-                        strong: ({ children }) => <strong className="text-[#D4772C] font-semibold">{children}</strong>,
-                        p: ({ children }) => <p className="text-[15px] leading-relaxed text-[#2D2420]">{children}</p>,
-                      }}
-                    >
-                      {example.replace(/^[-\d.]\s*/, '')}
-                    </ReactMarkdown>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        )}
-
-        {/* 展开/收起按钮 */}
-        {shouldShowExpandButton && (
-          <div className="pt-2 border-t border-[#E8E0D5]">
-            <button
-              onClick={() => setIsExpanded(!isExpanded)}
-              className="text-sm text-[#D4772C] hover:text-[#C75B3B] font-medium flex items-center gap-1 mx-auto"
+          {/* 展开提示 */}
+          <div className="flex items-center justify-center pt-1">
+            <motion.div
+              animate={{ rotate: isExpanded ? 180 : 0 }}
+              transition={{ duration: 0.2 }}
+              className="text-[#D4772C]"
             >
-              {isExpanded ? '收起详情' : '查看完整内容'}
-              <motion.span
-                animate={{ rotate: isExpanded ? 180 : 0 }}
-                transition={{ duration: 0.2 }}
-              >
-                ▼
-              </motion.span>
-            </button>
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </motion.div>
           </div>
-        )}
+        </div>
 
         {/* 完整内容（展开时显示） */}
         <AnimatePresence>
@@ -333,8 +296,104 @@ function CollectionContent({ type, content }: { type: CollectionType; content: a
               animate={{ height: 'auto', opacity: 1 }}
               exit={{ height: 0, opacity: 0 }}
               transition={{ duration: 0.3 }}
-              className="overflow-hidden"
+              className="overflow-hidden space-y-4 pt-3 border-t border-[#E8E0D5]"
+              onClick={(e) => e.stopPropagation()}
             >
+              {/* 词汇考频详细数据 */}
+              {content.matchedVocab && content.matchedVocab.length > 0 && (
+                <div className="space-y-2">
+                  {content.matchedVocab.map((v: any, idx: number) => (
+                    <div key={idx} className="bg-gradient-to-br from-[#FFF8F0] to-[#FFF0E5] border border-[#C75B3B]/20 rounded-lg p-3">
+                      <div className="flex items-center justify-between mb-1">
+                        <span className="text-base font-bold text-[#2D2420]">{v.word}</span>
+                        <div className="flex items-center gap-0.5">
+                          {Array.from({ length: 3 }).map((_, i) => (
+                            <Star
+                              key={i}
+                              className={`w-4 h-4 ${i < v.star ? 'fill-[#D4772C] text-[#D4772C]' : 'text-[#E8E0D5]'}`}
+                            />
+                          ))}
+                        </div>
+                      </div>
+                      <div className="text-xs text-[#6B5E54]">
+                        真题出现 <span className="font-semibold text-[#C75B3B]">{v.total_hits}</span> 次
+                        {v.last_appeared && <span className="ml-2">· 最近: {v.last_appeared}</span>}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+
+              {/* 考频星级详情 */}
+              {content.star && (
+                <div className="flex items-center gap-2">
+                  <span className="text-xs font-medium text-[#6B5E54]">真题考频</span>
+                  <div className="flex gap-0.5">
+                    {Array.from({ length: 3 }).map((_, i) => (
+                      <Star
+                        key={i}
+                        className={`w-4 h-4 ${i < content.star ? 'fill-[#D4772C] text-[#D4772C]' : 'text-[#E8E0D5]'}`}
+                      />
+                    ))}
+                  </div>
+                  <span className="text-xs text-[#6B5E54]">
+                    ({content.star === 3 ? '高频' : content.star === 2 ? '中频' : '低频'})
+                  </span>
+                </div>
+              )}
+
+              {/* 含义区域 */}
+              {meaningLines.length > 0 && (
+                <div className="bg-[#FAF6F0] rounded-lg p-4">
+                  <h4 className="text-sm font-semibold text-[#D4772C] mb-2 flex items-center gap-2">
+                    <span className="w-1 h-4 bg-[#D4772C] rounded"></span>
+                    含义解释
+                  </h4>
+                  <div className="prose prose-sm max-w-none text-[#2D2420]">
+                    <ReactMarkdown
+                      components={{
+                        strong: ({ children }) => <strong className="text-[#D4772C] font-semibold">{children}</strong>,
+                        p: ({ children }) => <p className="mb-2 leading-relaxed text-[15px]">{children}</p>,
+                        ul: ({ children }) => <ul className="list-disc list-inside space-y-1 ml-2">{children}</ul>,
+                        li: ({ children }) => <li className="text-[15px] leading-relaxed">{children}</li>
+                      }}
+                    >
+                      {meaningLines.join('\n\n')}
+                    </ReactMarkdown>
+                  </div>
+                </div>
+              )}
+
+              {/* 例句区域 */}
+              {exampleLines.length > 0 && (
+                <div className="space-y-3">
+                  <h4 className="text-sm font-semibold text-[#D4772C] flex items-center gap-2">
+                    <span className="w-1 h-4 bg-[#D4772C] rounded"></span>
+                    例句示范
+                  </h4>
+                  {exampleLines.map((example, idx) => (
+                    <div key={idx} className="bg-white border border-[#E8E0D5] rounded-lg p-3 hover:border-[#D4772C] transition-colors">
+                      <div className="flex items-start gap-2">
+                        <span className="flex-shrink-0 w-6 h-6 bg-[#D4772C] text-white rounded-full flex items-center justify-center text-xs font-medium">
+                          {idx + 1}
+                        </span>
+                        <div className="flex-1 prose prose-sm max-w-none">
+                          <ReactMarkdown
+                            components={{
+                              strong: ({ children }) => <strong className="text-[#D4772C] font-semibold">{children}</strong>,
+                              p: ({ children }) => <p className="text-[15px] leading-relaxed text-[#2D2420]">{children}</p>,
+                            }}
+                          >
+                            {example.replace(/^[-\d.]\s*/, '')}
+                          </ReactMarkdown>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+
+              {/* 完整解析 */}
               <div className="bg-[#FAF6F0] rounded-lg p-4 border border-[#E8E0D5]">
                 <h4 className="text-sm font-semibold text-[#D4772C] mb-3">完整解析</h4>
                 <div className="prose prose-sm max-w-none text-[#2D2420]">
