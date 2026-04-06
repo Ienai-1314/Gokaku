@@ -280,8 +280,8 @@ function CollectionContent({ type, content }: { type: CollectionType; content: a
       (line.includes('例') || line.match(/^\d+\./) || line.startsWith('-'))
     ).slice(0, 2);
 
-    // 获取语法点或词汇
-    const grammarPoint = type === 'grammar' ? extractGrammarPoint(content) : (content.query || content.word || '');
+    // 获取标题：优先使用用户输入的查询词
+    const title = content.query || content.word || extractGrammarPoint(content);
     const reading = type === 'vocab' ? extractReading(content) : '';
     const star = content.star || (content.matchedVocab && content.matchedVocab.length > 0 ? content.matchedVocab[0].star : 0);
     const level = getFrequencyLevel(star);
@@ -297,7 +297,7 @@ function CollectionContent({ type, content }: { type: CollectionType; content: a
             {/* 语法点/词汇 + 读音 */}
             <div className="flex items-baseline gap-2">
               <h3 className="text-xl font-bold text-[#2D2420]">
-                {grammarPoint}
+                {title}
               </h3>
               {reading && (
                 <span className="text-base text-[#6B5E54]">
@@ -491,11 +491,6 @@ function CollectionContent({ type, content }: { type: CollectionType; content: a
   }
 
   if (type === 'error') {
-    // 提取题目前50字
-    const questionPreview = content.question && content.question.length > 50
-      ? content.question.substring(0, 50) + '...'
-      : content.question;
-
     return (
       <div
         className="cursor-pointer"
@@ -504,9 +499,9 @@ function CollectionContent({ type, content }: { type: CollectionType; content: a
         {/* 预览模式 - 紧凑显示 */}
         {!isExpanded && (
           <div className="space-y-2">
-            {/* 题目预览 */}
+            {/* 完整题目 */}
             <p className="text-[15px] text-[#2D2420] leading-relaxed">
-              {questionPreview}
+              {content.question}
             </p>
 
             {/* 答案对比 */}
