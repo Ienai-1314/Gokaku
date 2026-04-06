@@ -590,12 +590,18 @@ function ToolPageInner() {
                   <button
                     onClick={() => handleQuery()}
                     disabled={queryLoading || !queryInput.trim()}
-                    className="px-5 py-3 bg-[#C75B3B] hover:bg-[#A84A2F] disabled:opacity-50 text-white rounded-xl text-sm font-semibold transition-all flex items-center gap-2"
+                    className="px-5 py-3 bg-[#C75B3B] hover:bg-[#A84A2F] disabled:opacity-50 text-white rounded-xl text-sm font-semibold transition-all flex items-center gap-2 whitespace-nowrap"
                   >
                     {queryLoading ? (
-                      <><Loader2 className="w-4 h-4 animate-spin" />AI 分析中...</>
+                      <>
+                        <Loader2 className="w-4 h-4 animate-spin" />
+                        <span>AI 分析中...</span>
+                      </>
                     ) : (
-                      <><Search className="w-4 h-4" />查询</>
+                      <>
+                        <Search className="w-4 h-4" />
+                        <span>查询</span>
+                      </>
                     )}
                   </button>
                 </div>
@@ -690,12 +696,18 @@ function ToolPageInner() {
                   <button
                     onClick={() => handleVocabQuery()}
                     disabled={vocabLoading || !vocabInput.trim()}
-                    className="px-6 py-2.5 bg-[#C75B3B] text-white rounded-xl text-sm font-semibold hover:bg-[#B54A2A] transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
+                    className="px-6 py-2.5 bg-[#C75B3B] text-white rounded-xl text-sm font-semibold hover:bg-[#B54A2A] transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2 whitespace-nowrap"
                   >
                     {vocabLoading ? (
-                      <><Loader2 className="w-4 h-4 animate-spin" />AI 分析中...</>
+                      <>
+                        <Loader2 className="w-4 h-4 animate-spin" />
+                        <span>AI 分析中...</span>
+                      </>
                     ) : (
-                      <><Search className="w-4 h-4" />查询</>
+                      <>
+                        <Search className="w-4 h-4" />
+                        <span>查询</span>
+                      </>
                     )}
                   </button>
                 </div>
@@ -943,9 +955,15 @@ function ToolPageInner() {
                   className="mt-4 w-full py-3 bg-[#C75B3B] hover:bg-[#A84A2F] disabled:opacity-50 text-white rounded-xl text-sm font-semibold transition-all flex items-center justify-center gap-2"
                 >
                   {analyzeLoading ? (
-                    <><Loader2 className="w-4 h-4 animate-spin" />分析中，请稍候...</>
+                    <>
+                      <Loader2 className="w-4 h-4 animate-spin" />
+                      <span>分析中，请稍候...</span>
+                    </>
                   ) : (
-                    <><Sparkles className="w-4 h-4" />分析这道题</>
+                    <>
+                      <Sparkles className="w-4 h-4" />
+                      <span>分析这道题</span>
+                    </>
                   )}
                 </button>
 

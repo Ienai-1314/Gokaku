@@ -281,7 +281,18 @@ function CollectionContent({ type, content }: { type: CollectionType; content: a
     ).slice(0, 2);
 
     // 获取标题：优先使用用户输入的查询词
-    const title = content.query || content.word || extractGrammarPoint(content);
+    let title = '';
+    if (type === 'vocab') {
+      // 词汇：优先使用 matchedVocab 中的 word，其次是 query
+      title = (content.matchedVocab && content.matchedVocab.length > 0 && content.matchedVocab[0].word)
+        || content.query
+        || content.word
+        || '词汇';
+    } else {
+      // 语法：优先使用 query，其次智能提取
+      title = content.query || extractGrammarPoint(content);
+    }
+
     const reading = type === 'vocab' ? extractReading(content) : '';
     const star = content.star || (content.matchedVocab && content.matchedVocab.length > 0 ? content.matchedVocab[0].star : 0);
     const level = getFrequencyLevel(star);

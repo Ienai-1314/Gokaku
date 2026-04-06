@@ -21,9 +21,6 @@ export default function AdminPage() {
 
   // 获取统计信息
   const fetchStats = async () => {
-    // 只在客户端执行
-    if (typeof window === 'undefined') return
-
     try {
       const res = await fetch('/api/admin/stats')
       const data = await res.json()
@@ -35,9 +32,6 @@ export default function AdminPage() {
 
   // 获取最近订单
   const fetchRecentOrders = async () => {
-    // 只在客户端执行
-    if (typeof window === 'undefined') return
-
     try {
       const res = await fetch('/api/admin/orders')
       const data = await res.json()
