@@ -182,20 +182,40 @@ function ToolPageInner() {
     setActualQuery(text); // 保存实际查询的文本
 
     try {
-      const res = await apiFetch("/api/query", {
+      const res = await apiFetch("/api/query/stream", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ query: text }),
       });
-      const data = await res.json();
+
       if (res.status === 429) {
+        const data = await res.json();
+        setError(data.error || "今日使用次数已达上限");
         setShowPaywall(true);
         await refreshUsage();
         return;
       }
-      if (data.error) throw new Error(data.error);
-      setQueryResult(data.result);
-      setMatchedGrammar(data.matchedGrammar || []);
+
+      if (!res.ok) {
+        const data = await res.json();
+        throw new Error(data.error || "查询失败");
+      }
+
+      // 流式读取响应
+      const reader = res.body?.getReader();
+      const decoder = new TextDecoder();
+      let fullText = "";
+
+      if (reader) {
+        while (true) {
+          const { done, value } = await reader.read();
+          if (done) break;
+
+          const chunk = decoder.decode(value, { stream: true });
+          fullText += chunk;
+          setQueryResult(fullText);
+        }
+      }
 
       // 刷新额度
       await refreshUsage();
@@ -204,7 +224,7 @@ function ToolPageInner() {
       apiFetch("/api/history", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ type: "grammar", query: text, result: data.result })
+        body: JSON.stringify({ type: "grammar", query: text, result: fullText })
       }).catch(() => {});
     } catch (e: any) {
       setError(e.message ?? "查询失败，请稍后重试");
@@ -296,7 +316,7 @@ function ToolPageInner() {
     setActualQuestion(questionInput); // 保存实际的题目
 
     try {
-      const res = await apiFetch("/api/analyze", {
+      const res = await apiFetch("/api/analyze/stream", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -305,15 +325,35 @@ function ToolPageInner() {
           correctAnswer: correctAnswerInput,
         }),
       });
-      const data = await res.json();
+
       if (res.status === 429) {
+        const data = await res.json();
+        setError(data.error || "今日使用次数已达上限");
         setShowPaywall(true);
         await refreshUsage();
         return;
       }
-      if (data.error) throw new Error(data.error);
-      setAnalyzeResult(data.result);
-      setErrorPatterns(data.errorPatterns || []);
+
+      if (!res.ok) {
+        const data = await res.json();
+        throw new Error(data.error || "分析失败");
+      }
+
+      // 流式读取响应
+      const reader = res.body?.getReader();
+      const decoder = new TextDecoder();
+      let fullText = "";
+
+      if (reader) {
+        while (true) {
+          const { done, value } = await reader.read();
+          if (done) break;
+
+          const chunk = decoder.decode(value, { stream: true });
+          fullText += chunk;
+          setAnalyzeResult(fullText);
+        }
+      }
 
       // 刷新额度
       await refreshUsage();

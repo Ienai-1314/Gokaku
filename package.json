@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "@cloudbase/node-sdk": "^3.18.1",
+    "@google/generative-ai": "^0.24.1",
     "@lemonsqueezy/lemonsqueezy.js": "^3.0.0",
+    "ai": "^6.0.153",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "dotenv": "^17.4.0",
