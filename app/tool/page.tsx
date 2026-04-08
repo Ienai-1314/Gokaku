@@ -29,6 +29,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import FuriganaText from "@/components/FuriganaText";
+import ImageUpload from "@/components/ImageUpload";
 import { useSearchParams } from "next/navigation";
 import JapaneseKeyboard from "@/components/JapaneseKeyboard";
 import VoiceInput from "@/components/VoiceInput";
@@ -951,6 +952,17 @@ function ToolPageInner() {
                         <Mic className="w-3.5 h-3.5" />
                         语音输入
                       </button>
+                    </div>
+
+                    {/* 图片上传 */}
+                    <div className="mt-3">
+                      <ImageUpload
+                        type="question"
+                        buttonText="📷 拍照识别题目"
+                        onTextExtracted={(text) => {
+                          setQuestionInput(text);
+                        }}
+                      />
                     </div>
 
                     {/* 日语键盘 */}
