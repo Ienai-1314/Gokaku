@@ -191,23 +191,13 @@ function CollectionContent({ type, content }: { type: CollectionType; content: a
         className="cursor-pointer"
         onClick={() => setIsExpanded(!isExpanded)}
       >
-        {/* 预览模式 - 只显示查询词 */}
+        {/* 预览模式 - 只显示查询词，不显示其他内容 */}
         {!isExpanded && (
-          <div className="space-y-3">
-            {/* 查询词 */}
+          <div>
+            {/* 只显示查询词 */}
             <h3 className="text-2xl font-bold text-[#2D2420]">
               {title}
             </h3>
-
-            {/* 展开提示 */}
-            <div className="flex items-center justify-center pt-2 border-t border-[#E8E0D5]">
-              <div className="text-xs text-[#6B5E54] flex items-center gap-1">
-                点击查看详情
-                <svg className="w-3 h-3 text-[#D4772C]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </div>
-            </div>
           </div>
         )}
 
@@ -278,23 +268,6 @@ function CollectionContent({ type, content }: { type: CollectionType; content: a
           </AnimatePresence>
         )}
 
-        {/* 展开时显示收起按钮 */}
-        {isExpanded && (
-          <div className="flex items-center justify-center pt-2 border-t border-[#E8E0D5] mt-3">
-            <div className="text-xs text-[#6B5E54] flex items-center gap-1">
-              收起
-              <motion.svg
-                animate={{ rotate: 180 }}
-                className="w-3 h-3 text-[#D4772C]"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </motion.svg>
-            </div>
-          </div>
-        )}
       </div>
     );
   }
