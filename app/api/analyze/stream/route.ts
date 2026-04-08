@@ -3,6 +3,7 @@ import { checkRateLimit } from "@/lib/ratelimit";
 import { getDb } from "@/lib/cloudbase";
 import { sanitizeInput, checkRequestRate, detectPromptInjection } from "@/lib/security";
 import { getAccountIdFromRequest } from "@/lib/account";
+import queryCache from "@/lib/query-cache";
 
 // 禁用 Next.js 路由缓存
 export const dynamic = 'force-dynamic';
@@ -121,6 +122,45 @@ export async function POST(req: NextRequest) {
     const sanitizedUserAnswer = userAnswer ? sanitizeInput(userAnswer, 200) : '';
     const sanitizedCorrectAnswer = correctAnswer ? sanitizeInput(correctAnswer, 200) : '';
 
+    // 生成缓存键（基于题目内容）
+    const cacheKey = `${sanitizedQuestion}|${sanitizedUserAnswer}|${sanitizedCorrectAnswer}`;
+
+    // 检查缓存
+    const cached = queryCache.get(cacheKey, 'analyze');
+    if (cached) {
+      // 返回缓存的结果（模拟流式输出）
+      const encoder = new TextEncoder();
+      const stream = new ReadableStream({
+        start(controller) {
+          const chunkSize = 10;
+          let index = 0;
+          const text = cached.result;
+
+          const sendChunk = () => {
+            if (index < text.length) {
+              const chunk = text.slice(index, index + chunkSize);
+              controller.enqueue(encoder.encode(chunk));
+              index += chunkSize;
+              setTimeout(sendChunk, 10);
+            } else {
+              controller.close();
+            }
+          };
+
+          sendChunk();
+        },
+      });
+
+      return new Response(stream, {
+        headers: {
+          'Content-Type': 'text/plain; charset=utf-8',
+          'Cache-Control': 'no-cache',
+          'Connection': 'keep-alive',
+          'X-Cache-Hit': 'true',
+        },
+      });
+    }
+
     const apiKey = process.env.DEEPSEEK_API_KEY;
     if (!apiKey) {
       return new Response(
@@ -195,6 +235,9 @@ export async function POST(req: NextRequest) {
 
           // 流式输出完成后，异步保存到错题本
           if (fullContent) {
+            // 保存到缓存
+            queryCache.set(cacheKey, 'analyze', fullContent);
+
             saveToWrongBook(accountId, {
               question: sanitizedQuestion,
               userAnswer: sanitizedUserAnswer,

@@ -4,6 +4,7 @@ import path from "path";
 import { checkRateLimit } from "@/lib/ratelimit";
 import { sanitizeInput, hashIP, checkRequestRate, detectPromptInjection } from "@/lib/security";
 import { getAccountIdFromRequest } from "@/lib/account";
+import queryCache from "@/lib/query-cache";
 
 // 禁用 Next.js 路由缓存
 export const dynamic = 'force-dynamic';
@@ -191,6 +192,44 @@ export async function POST(req: NextRequest) {
     }
 
     const sanitizedQuery = sanitizeInput(query, 200);
+
+    // 检查缓存
+    const cached = queryCache.get(sanitizedQuery, 'grammar');
+    if (cached) {
+      // 返回缓存的结果（模拟流式输出以保持一致的用户体验）
+      const encoder = new TextEncoder();
+      const stream = new ReadableStream({
+        start(controller) {
+          // 将缓存结果分块发送，模拟流式效果
+          const chunkSize = 10; // 每次发送10个字符
+          let index = 0;
+          const text = cached.result;
+
+          const sendChunk = () => {
+            if (index < text.length) {
+              const chunk = text.slice(index, index + chunkSize);
+              controller.enqueue(encoder.encode(chunk));
+              index += chunkSize;
+              setTimeout(sendChunk, 10); // 10ms 延迟模拟打字效果
+            } else {
+              controller.close();
+            }
+          };
+
+          sendChunk();
+        },
+      });
+
+      return new Response(stream, {
+        headers: {
+          'Content-Type': 'text/plain; charset=utf-8',
+          'Cache-Control': 'no-cache',
+          'Connection': 'keep-alive',
+          'X-Cache-Hit': 'true', // 标记缓存命中
+        },
+      });
+    }
+
     const apiKey = process.env.DEEPSEEK_API_KEY;
 
     if (!apiKey) {
@@ -227,6 +266,7 @@ export async function POST(req: NextRequest) {
     // 创建 TransformStream 来处理 SSE 数据
     const encoder = new TextEncoder();
     const decoder = new TextDecoder();
+    let fullContent = ''; // 收集完整内容用于缓存
 
     const stream = new ReadableStream({
       async start(controller) {
@@ -254,6 +294,7 @@ export async function POST(req: NextRequest) {
                   const json = JSON.parse(data);
                   const content = json.choices?.[0]?.delta?.content;
                   if (content) {
+                    fullContent += content;
                     // 发送内容块
                     controller.enqueue(encoder.encode(content));
                   }
@@ -262,6 +303,11 @@ export async function POST(req: NextRequest) {
                 }
               }
             }
+          }
+
+          // 流式输出完成后，保存到缓存
+          if (fullContent) {
+            queryCache.set(sanitizedQuery, 'grammar', fullContent, matches);
           }
         } catch (error) {
           console.error('Stream error:', error);
