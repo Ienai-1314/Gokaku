@@ -4,6 +4,7 @@ import { getDb } from "@/lib/cloudbase";
 import { sanitizeInput, checkRequestRate, detectPromptInjection } from "@/lib/security";
 import { getAccountIdFromRequest } from "@/lib/account";
 import queryCache from "@/lib/query-cache";
+import { classifyError, updateUserProfile } from "@/lib/error-classification";
 
 // 禁用 Next.js 路由缓存
 export const dynamic = 'force-dynamic';
@@ -238,13 +239,26 @@ export async function POST(req: NextRequest) {
             // 保存到缓存
             queryCache.set(cacheKey, 'analyze', fullContent);
 
-            saveToWrongBook(accountId, {
-              question: sanitizedQuestion,
-              userAnswer: sanitizedUserAnswer,
-              correctAnswer: sanitizedCorrectAnswer,
-              analysis: fullContent,
-              errorPatterns: extractErrorPatterns(fullContent),
-            }).catch((err) => console.error("保存错题失败:", err));
+            // 异步分类并更新用户画像
+            classifyError(
+              sanitizedQuestion,
+              sanitizedUserAnswer,
+              sanitizedCorrectAnswer,
+              fullContent
+            ).then(async (classification) => {
+              // 保存到错题本（包含分类信息）
+              await saveToWrongBook(accountId, {
+                question: sanitizedQuestion,
+                userAnswer: sanitizedUserAnswer,
+                correctAnswer: sanitizedCorrectAnswer,
+                analysis: fullContent,
+                errorPatterns: extractErrorPatterns(fullContent),
+                classification,
+              });
+
+              // 更新用户画像
+              await updateUserProfile(accountId, classification);
+            }).catch((err) => console.error("分类和保存错题失败:", err));
 
             // 异步提取语法点并记录薄弱点
             extractGrammarPattern(fullContent).then((pattern) => {
@@ -286,6 +300,7 @@ async function saveToWrongBook(
     correctAnswer?: string;
     analysis: string;
     errorPatterns: string[];
+    classification?: any;
   }
 ) {
   try {
@@ -298,6 +313,7 @@ async function saveToWrongBook(
       correctAnswer: data.correctAnswer || "",
       analysis: data.analysis,
       errorPatterns: data.errorPatterns,
+      classification: data.classification || null,
       createdAt: new Date().toISOString(),
     });
 

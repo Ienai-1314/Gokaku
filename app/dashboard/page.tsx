@@ -59,12 +59,32 @@ interface ProgressStats {
   };
 }
 
+interface LearningProfile {
+  weakAreas: Array<{
+    knowledgeType: string;
+    specificPoint: string;
+    errorCount: number;
+    lastError: string;
+  }>;
+  errorPatterns: {
+    concept: number;
+    careless: number;
+    unfamiliar: number;
+    confusion: number;
+    complex: number;
+  };
+  recommendations: string[];
+  totalErrors: number;
+}
+
 export default function DashboardPage() {
   const [stats, setStats] = useState<ProgressStats | null>(null);
+  const [profile, setProfile] = useState<LearningProfile | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     loadProgress();
+    loadLearningProfile();
   }, []);
 
   async function loadProgress() {
@@ -76,6 +96,16 @@ export default function DashboardPage() {
       console.error('Load progress error:', error);
     } finally {
       setLoading(false);
+    }
+  }
+
+  async function loadLearningProfile() {
+    try {
+      const res = await apiFetch('/api/profile/learning');
+      const data = await res.json();
+      setProfile(data);
+    } catch (error) {
+      console.error('Load learning profile error:', error);
     }
   }
 
@@ -250,6 +280,76 @@ export default function DashboardPage() {
             </div>
           </div>
         </div>
+
+        {/* 学习画像 */}
+        {profile && profile.totalErrors > 0 && (
+          <div className="bg-white rounded-2xl border border-[#E8E0D5] p-6">
+            <h2 className="text-lg font-bold text-[#2D2420] mb-4 flex items-center gap-2">
+              <Target className="w-5 h-5 text-[#D4772C]" />
+              学习画像
+            </h2>
+
+            {/* 薄弱点 Top 3 */}
+            {profile.weakAreas.length > 0 && (
+              <div className="mb-6">
+                <h3 className="text-sm font-semibold text-[#6B5E54] mb-3">薄弱知识点</h3>
+                <div className="space-y-2">
+                  {profile.weakAreas.slice(0, 3).map((area, idx) => (
+                    <div key={idx} className="flex items-center justify-between p-3 bg-[#FAF6F0] rounded-lg">
+                      <div className="flex items-center gap-3">
+                        <div className="w-8 h-8 rounded-full bg-[#D4772C] text-white flex items-center justify-center text-sm font-bold">
+                          {idx + 1}
+                        </div>
+                        <div>
+                          <div className="text-sm font-medium text-[#2D2420]">{area.specificPoint}</div>
+                          <div className="text-xs text-[#6B5E54]">
+                            {area.knowledgeType === 'grammar' ? '语法' :
+                             area.knowledgeType === 'vocab' ? '词汇' :
+                             area.knowledgeType === 'kanji' ? '汉字' :
+                             area.knowledgeType === 'reading' ? '阅读' : '听力'}
+                          </div>
+                        </div>
+                      </div>
+                      <div className="text-right">
+                        <div className="text-lg font-bold text-[#C75B3B]">{area.errorCount}</div>
+                        <div className="text-xs text-[#6B5E54]">次错误</div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* 错误模式分析 */}
+            <div className="mb-6">
+              <h3 className="text-sm font-semibold text-[#6B5E54] mb-3">错误模式分析</h3>
+              <div className="grid grid-cols-2 gap-2">
+                <ErrorPatternBadge label="概念理解" count={profile.errorPatterns.concept} />
+                <ErrorPatternBadge label="粗心大意" count={profile.errorPatterns.careless} />
+                <ErrorPatternBadge label="不熟悉" count={profile.errorPatterns.unfamiliar} />
+                <ErrorPatternBadge label="知识混淆" count={profile.errorPatterns.confusion} />
+                <ErrorPatternBadge label="复杂题目" count={profile.errorPatterns.complex} />
+              </div>
+            </div>
+
+            {/* 学习建议 */}
+            {profile.recommendations.length > 0 && (
+              <div className="p-4 bg-gradient-to-r from-[#D4772C]/10 to-[#E89A5C]/10 rounded-lg">
+                <h3 className="text-sm font-semibold text-[#2D2420] mb-2 flex items-center gap-2">
+                  💡 学习建议
+                </h3>
+                <ul className="space-y-2">
+                  {profile.recommendations.map((rec, idx) => (
+                    <li key={idx} className="text-sm text-[#6B5E54] flex items-start gap-2">
+                      <span className="text-[#D4772C] mt-0.5">•</span>
+                      <span>{rec}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+        )}
 
         {/* 额度使用 */}
         {stats.quotaRemaining > 0 && (
@@ -507,6 +607,15 @@ function Badge({ emoji, label, unlocked, desc }: {
       <div className="text-2xl mb-1">{emoji}</div>
       <div className="text-xs font-medium text-[#2D2420]">{label}</div>
       <div className="text-xs text-[#6B5E54] mt-0.5">{desc}</div>
+    </div>
+  );
+}
+
+function ErrorPatternBadge({ label, count }: { label: string; count: number }) {
+  return (
+    <div className="p-3 bg-[#FAF6F0] rounded-lg text-center">
+      <div className="text-xl font-bold text-[#D4772C]">{count}</div>
+      <div className="text-xs text-[#6B5E54] mt-1">{label}</div>
     </div>
   );
 }
