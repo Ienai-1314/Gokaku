@@ -9,7 +9,8 @@
     "lint": "next lint",
     "seed-test": "tsx scripts/seed-test-data.ts",
     "init-exam": "tsx scripts/init-exam-collections.ts",
-    "import-exam": "tsx scripts/import-exam-questions.ts"
+    "import-exam": "tsx scripts/import-exam-questions.ts",
+    "migrate-codes": "tsx scripts/migrate-codes-to-db.ts"
   },
   "dependencies": {
     "@cloudbase/node-sdk": "^3.18.1",
