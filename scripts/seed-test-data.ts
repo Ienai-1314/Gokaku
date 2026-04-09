@@ -3,10 +3,11 @@
  * 用于生成个性化练习功能所需的测试数据
  */
 
+import 'dotenv/config';
 import { getDb } from '../lib/cloudbase';
 
 // 测试用户 ID（请替换为你的实际账号 ID）
-const TEST_ACCOUNT_ID = 'test_user_001';
+const TEST_ACCOUNT_ID = 'device-1775493097380-96rfyhdju';
 
 // 示例错题数据
 const sampleWrongQuestions = [

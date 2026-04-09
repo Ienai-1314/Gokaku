@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "seed-test": "tsx scripts/seed-test-data.ts"
+    "seed-test": "tsx scripts/seed-test-data.ts",
+    "init-exam": "tsx scripts/init-exam-collections.ts",
+    "import-exam": "tsx scripts/import-exam-questions.ts"
   },
   "dependencies": {
     "@cloudbase/node-sdk": "^3.18.1",
@@ -37,6 +39,7 @@
     "eslint-config-next": "^14.2.0",
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.0",
+    "tsx": "^4.21.0",
     "typescript": "^5.4.0"
   }
 }
