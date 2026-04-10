@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Brain, Sparkles, Zap } from "lucide-react";
+import { Brain, Sparkles, Zap, FileText, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { MiniBlessing } from "./MiniBlessing";
 
@@ -12,7 +12,6 @@ interface HeroProps {
 export function Hero({ activeLevel }: HeroProps) {
   return (
     <section className="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden bg-[#FAF6F0]">
-      {/* 背景水印 */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <div
           className="absolute -top-10 -right-20 font-bebas text-[28rem] md:text-[38rem] text-[#E8E0D5]/30 leading-none select-none pointer-events-none"
@@ -25,11 +24,8 @@ export function Hero({ activeLevel }: HeroProps) {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-4xl mx-auto">
-
-          {/* 迷你祈福 */}
           <MiniBlessing />
 
-          {/* Badge */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -43,7 +39,6 @@ export function Hero({ activeLevel }: HeroProps) {
             <span className="text-sm font-semibold tracking-wide">2026 年 7 月 JLPT，一起加油吧 💪</span>
           </motion.div>
 
-          {/* 主标题 */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -54,33 +49,42 @@ export function Hero({ activeLevel }: HeroProps) {
               GOKAKU
             </h1>
             <div className="font-noto-jp text-lg md:text-xl text-[#6B5E55] mt-4 leading-relaxed">
-              我们用 AI 把历年真题扒了一遍<br />
-              做最贴近真题的，最好用的备考学习工具
+              快速打开查询功能，直接开始刷真题。<br />
+              把最常用的工具放在最前面，而不是藏在数据看板后面。
             </div>
           </motion.div>
 
-          {/* CTA 按钮 */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="flex flex-col items-center justify-center gap-4 mb-6"
+            className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6"
           >
             <Link
               href="/tool?focus=true"
               className="w-full sm:w-auto bg-[#C75B3B] hover:bg-[#A84A2F] text-white px-10 py-5 rounded-2xl font-semibold text-lg transition-all duration-200 shadow-[0_4px_20px_rgba(199,91,59,0.25)] hover:shadow-[0_6px_24px_rgba(199,91,59,0.35)] flex items-center justify-center gap-3"
             >
               <Sparkles className="w-5 h-5" />
-              试试查询一个语法点
+              立即查询语法 / 词汇
+              <ArrowRight className="w-5 h-5" />
             </Link>
 
-            {/* 功能说明 */}
-            <p className="text-sm text-[#6B5E55] text-center max-w-md">
-              不会的语法、纠结的词汇、分不清的用法，直接问 AI
-            </p>
+            <Link
+              href="/exam"
+              className="w-full sm:w-auto bg-white hover:bg-[#F3ECE4] text-[#2D2420] border-2 border-[#E8E0D5] px-10 py-5 rounded-2xl font-semibold text-lg transition-all duration-200 flex items-center justify-center gap-3"
+            >
+              <FileText className="w-5 h-5" />
+              直接开始刷真题
+              <ArrowRight className="w-5 h-5" />
+            </Link>
           </motion.div>
 
-          {/* 免费说明标签 */}
+          <p className="text-sm text-[#6B5E55] text-center max-w-lg mx-auto mb-10">
+            如果你把网站添加到手机桌面，打开后第一眼就能进入最常用的两个功能：
+            <span className="text-[#C75B3B] font-semibold">AI 查询</span> 和
+            <span className="text-[#C75B3B] font-semibold">真题刷题</span>。
+          </p>
+
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -89,7 +93,8 @@ export function Hero({ activeLevel }: HeroProps) {
           >
             {[
               { icon: Sparkles, text: "语法、词汇、错题分析各 3 次免费" },
-              { icon: Zap, text: "基于 30 套真题数据，1500+ 语法词汇" },
+              { icon: Zap, text: "基于真题数据，优先服务词汇和语法备考" },
+              { icon: Brain, text: "支持快捷方式直达最常用入口" },
             ].map((item, i) => (
               <div key={i} className="flex items-center gap-1.5 text-xs text-[#6B5E55]">
                 <item.icon className="w-3.5 h-3.5 text-[#C75B3B]" />
@@ -98,7 +103,6 @@ export function Hero({ activeLevel }: HeroProps) {
             ))}
           </motion.div>
 
-          {/* 数据统计 */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
