@@ -1,0 +1,509 @@
+[
+    {
+        "type": "text",
+        "text": "2025年12月N1真题参考答案",
+        "text_level": 1,
+        "bbox": [
+            376,
+            90,
+            621,
+            106
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "言語知識（文字·語彙·文法）·諫解·聽解",
+        "text_level": 1,
+        "bbox": [
+            319,
+            118,
+            680,
+            133
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "文字·語彙·文法",
+        "bbox": [
+            146,
+            152,
+            295,
+            169
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "問題1",
+        "bbox": [
+            146,
+            188,
+            201,
+            203
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/2c493a3ab88be5563cd83a744e1fe749f6e7b806fe6a52cbce44f5d16d19e06b.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>(1)</td><td>(2)</td><td>(3)</td><td>(4)</td><td>(5)</td><td>(6)</td></tr><tr><td>1</td><td>4</td><td>4</td><td>2</td><td>3</td><td>2</td></tr></table>",
+        "bbox": [
+            148,
+            215,
+            432,
+            289
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "問題2",
+        "bbox": [
+            146,
+            293,
+            201,
+            309
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/c751a039e9eef7fcd9e2e1b00a976135e804e05cc053873426cbc40c658210b0.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>(7)</td><td>(8)</td><td>(9)</td><td>(10)</td><td>(11)</td><td>(12)</td><td>(13)</td></tr><tr><td>2</td><td>3</td><td>2</td><td>3</td><td>1</td><td>4</td><td>4</td></tr></table>",
+        "bbox": [
+            148,
+            321,
+            505,
+            395
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "問題3",
+        "bbox": [
+            146,
+            401,
+            201,
+            416
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/3ebc093505c9ca971d8a7b36343ba28853e2c19a49fa94543e8964811667b9d6.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>(14)</td><td>(15)</td><td>(16)</td><td>(17)</td><td>(18)</td><td>(19)</td></tr><tr><td>1</td><td>3</td><td>1</td><td>2</td><td>2</td><td>1</td></tr></table>",
+        "bbox": [
+            148,
+            428,
+            462,
+            502
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "問題4",
+        "bbox": [
+            146,
+            507,
+            201,
+            522
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/a83450a0a4dda30621773bbb2533cfdaa921de252dc45b3c872141177e035c6b.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>(20)</td><td>(21)</td><td>(22)</td><td>(23)</td><td>(24)</td><td>(25)</td></tr><tr><td>3</td><td>3</td><td>4</td><td>4</td><td>2</td><td>2</td></tr></table>",
+        "bbox": [
+            148,
+            534,
+            464,
+            609
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "問題5",
+        "bbox": [
+            146,
+            614,
+            201,
+            629
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/41ad3d4c678db6b1141fbc5113c1961a03f177d86b1ca2aeec87df3e862a72b7.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>(26)</td><td>(27)</td><td>(28)</td><td>(29)</td><td>(30)</td><td>(31)</td><td>(32)</td><td>(33)</td><td>(34)</td><td>(35)</td></tr><tr><td>3</td><td>2</td><td>4</td><td>1</td><td>3</td><td>4</td><td>3</td><td>1</td><td>4</td><td>2</td></tr></table>",
+        "bbox": [
+            148,
+            641,
+            670,
+            715
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "問題6",
+        "bbox": [
+            146,
+            721,
+            201,
+            735
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/b846391c6a10604f05fe6e89eef740f92e47622fac14da68b44546b4429375e5.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>(36)</td><td>(37)</td><td>(38)</td><td>(39)</td><td>(40)</td></tr><tr><td>3</td><td>4</td><td>2</td><td>1</td><td>1</td></tr></table>",
+        "bbox": [
+            148,
+            747,
+            396,
+            821
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "問題7",
+        "bbox": [
+            146,
+            862,
+            201,
+            876
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/54dd04f405ff44d1bb61e4b4c9d044e721f8af9ab189ce084dd6731df5170f46.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>(41)</td><td>(42)</td><td>(43)</td><td>(44)</td></tr><tr><td>4</td><td>1</td><td>2</td><td>3</td></tr></table>",
+        "bbox": [
+            148,
+            83,
+            359,
+            157
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "説解",
+        "bbox": [
+            146,
+            162,
+            187,
+            176
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "問題8",
+        "bbox": [
+            146,
+            189,
+            201,
+            205
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "table",
+        "img_path": "images/3826477b90808798c64bb957f09e649d53370cbf57145f126273287df5309c68.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>(45)</td><td>(46)</td><td>(47)</td><td>(48)</td></tr><tr><td>3</td><td>1</td><td>2</td><td>4</td></tr></table>",
+        "bbox": [
+            148,
+            217,
+            359,
+            292
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "問題9",
+        "bbox": [
+            146,
+            296,
+            201,
+            311
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "table",
+        "img_path": "images/80ac54bc0b3d9435a57c9ea34aafb727fb06964d4fe58b129c18e18f346429d8.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>(49)</td><td>(50)</td><td>(51)</td><td>(52)</td><td>(53)</td><td>(54)</td><td>(55)</td><td>(56)</td></tr><tr><td>3</td><td>1</td><td>3</td><td>1</td><td>3</td><td>4</td><td>3</td><td>1</td></tr></table>",
+        "bbox": [
+            148,
+            323,
+            567,
+            397
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "問題10",
+        "bbox": [
+            146,
+            403,
+            209,
+            416
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "table",
+        "img_path": "images/6c7c03138f4a589ab560e74a1931d2b5495ea19d9e585167bb2218685a4795d6.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>(57)</td><td>(58)</td><td>(59)</td></tr><tr><td>4</td><td>3</td><td>2</td></tr></table>",
+        "bbox": [
+            148,
+            430,
+            309,
+            504
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "問題11",
+        "bbox": [
+            146,
+            508,
+            206,
+            524
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "table",
+        "img_path": "images/f88dc7168cb5e9870bf3ffa00ac1d47e12b9df0d3a45b7318a432b4f85454943.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>(60)</td><td>(61)</td></tr><tr><td>3</td><td>2</td></tr></table>",
+        "bbox": [
+            148,
+            537,
+            256,
+            611
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "問題12",
+        "bbox": [
+            146,
+            616,
+            209,
+            630
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "table",
+        "img_path": "images/4f095933a4743cc48684578737f90fe25d321d726252978ebb455148baf08542.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>(62)</td><td>(63)</td><td>(64)</td></tr><tr><td>2</td><td>4</td><td>1</td></tr></table>",
+        "bbox": [
+            148,
+            643,
+            309,
+            718
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "問題13",
+        "bbox": [
+            146,
+            722,
+            209,
+            737
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "table",
+        "img_path": "images/571495e4f3b128ae37b33c3cbdd2d037f63d99d2e3347a8e60018ed927feacd1.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>(65)</td><td>(66)</td></tr><tr><td>2</td><td>4</td></tr></table>",
+        "bbox": [
+            148,
+            749,
+            256,
+            825
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "聽解",
+        "bbox": [
+            146,
+            857,
+            187,
+            872
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "問題1",
+        "bbox": [
+            146,
+            885,
+            199,
+            899
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "table",
+        "img_path": "images/93c0d40f39d0086b72b538eb06d8e6b748fbe78ee6c86c08252076fb1627af2a.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>(1)</td><td>(2)</td><td>(3)</td><td>(4)</td><td>(5)</td></tr><tr><td>1</td><td>3</td><td>3</td><td>2</td><td>1</td></tr></table>",
+        "bbox": [
+            148,
+            83,
+            388,
+            157
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "問題2",
+        "bbox": [
+            146,
+            161,
+            200,
+            177
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "table",
+        "img_path": "images/af30b31040806656a4e4e07bfd1a4922a60612c7cbc75267ed043d5018df5a15.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>(1)</td><td>(2)</td><td>(3)</td><td>(4)</td><td>(5)</td><td>(6)</td></tr><tr><td>1</td><td>3</td><td>4</td><td>4</td><td>1</td><td>2</td></tr></table>",
+        "bbox": [
+            148,
+            189,
+            432,
+            263
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "問題3",
+        "bbox": [
+            146,
+            267,
+            200,
+            283
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "table",
+        "img_path": "images/7ed3236dca03e43774525bf352bfe1bfac45f17a9f9f152b61a7f04f4d382489.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>(1)</td><td>(2)</td><td>(3)</td><td>(4)</td><td>(5)</td></tr><tr><td>1</td><td>4</td><td>1</td><td>4</td><td>3</td></tr></table>",
+        "bbox": [
+            148,
+            296,
+            388,
+            369
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "問題4",
+        "bbox": [
+            146,
+            375,
+            200,
+            390
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "table",
+        "img_path": "images/127f7c090dbec6e5c4a97ffdfe5dcabad7679287e7d8dbc5f9064a865969216c.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>(1)</td><td>(2)</td><td>(3)</td><td>(4)</td><td>(5)</td><td>(6)</td><td>(7)</td><td>(8)</td><td>(9)</td><td>(10)</td><td>(11)</td></tr><tr><td>2</td><td>2</td><td>1</td><td>3</td><td>1</td><td>3</td><td>1</td><td>2</td><td>3</td><td>3</td><td>2</td></tr></table>",
+        "bbox": [
+            148,
+            402,
+            661,
+            476
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "問題5",
+        "bbox": [
+            146,
+            480,
+            200,
+            496
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "table",
+        "img_path": "images/2f2bcf7dcc0848baf59e39302009ccedb178b3b8eac35e7c15d27df5d8145c77.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>(1)</td><td colspan=\"2\">(2)</td></tr><tr><td>3</td><td>1</td><td>2</td></tr></table>",
+        "bbox": [
+            148,
+            503,
+            294,
+            576
+        ],
+        "page_idx": 2
+    }
+]

@@ -1,0 +1,1168 @@
+[
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "問題1．144232"
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                147,
+                86,
+                336,
+                102
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "1．この棚は頑丈（がんじょう）に作られている。"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "2．思わぬところに深刻な問題が潜んで（ひそんで）いた。"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "3．私は行政（ぎょうせい）の仕事に携わっている。"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "4．中村氏は大学時代にその卓越（たくえつ）した才能を開花させた。"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "5．最近は会社の営業成績が芳しくない（かんばしくない）。"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "6．その件は市民生活課の管轄（かんかつ）です。"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                149,
+                117,
+                732,
+                290
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "問題2．2323144"
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                147,
+                355,
+                352,
+                370
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "7．この学校では教育活動の（一環）として、生徒に学校周辺のごみ拾いをさせている。"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "8．試合の前半はAチームが一点（リード）していたが、後半に2点取られて逆転された。"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "9．二人の若手ピアニストの実力は（互角）でコンクールでどちらが優勝するか予想がつかない。"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "10．毎朝店長がアルバイトの店員にその日の仕事を（割り当てる）。"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "11．（周到な）準備をして大会本番に臨んだ。"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "12．登山の途中で雨が降ってきたので、（ひとまず）近くの山小屋で休憩し、雨が止むのを待つことにした。"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "13．嫌なことがあって気分が（むしゃくしゃ）していたが、カラオケで大声で歌ったらすっきりした。"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                147,
+                386,
+                843,
+                697
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "問題3．131221"
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                147,
+                763,
+                332,
+                778
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "14．あまり誇張して（おおげさに）話すのはよくない。"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "15．私達は密かに（こっそり）計画を進めていた。"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "16．この大会に出場するまでに多くの試練（苦難）があった。"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "17．山口さんが狼狽える（慌てる）姿を始めてみた。"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                149,
+                793,
+                675,
+                904
+            ]
+        }
+    ],
+    [
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "18．今後、同様のことが起こることは当面（しばらく）ないだろう。"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "19．衣装はいつも自前（自分で買う）です。"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                149,
+                85,
+                734,
+                135
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "問題4．334422"
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                146,
+                179,
+                336,
+                196
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "20．会社の資金をどう運用するかで、社長と会長の意見が分かれている。"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "21．工場への立ち入り検査は抜き打ちで実施された。"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "22．小林さんは風邪を引いているのか声がかすれていて、話が聞きとりにくい。"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "23．緻密な観察が新しい微生物の発見につながった。"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "24．初めて動物園で見たライオンは、体が大きくて迫力があった。"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "25．現代は情報化が進み、新しいものが次々と目まぐるしく入れ替わっていく。"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                147,
+                210,
+                826,
+                382
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "問題5．32413 43142"
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                146,
+                426,
+                428,
+                443
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "26．庭の草取りを始めたが、思っていたよりも大変で、一日では（とても）終わりそうにない。"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "27．今回のプロジェクトは、地域住民の協力（なくしては）実現しなかったであろう。"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "28．私は飛行機が苦手だ。飛行機に（乗るくらいなら）、何時間かかっても電車や車で行くほうがいい。"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "29．この仮説を正しい（とするには）まだデータ数が十分ではないため、更なる調査が必要だ。"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "30．田中選手は度重なる怪我に（悩まされながらも）、それを克服してオリンピック出場を果たした。"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "31．引越しの予定は半年後だからまだまだ先だが、早く準備を始める（に越したことはない）と思い、少しずつ片づけを進めている。"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "32．「ああ、こんなに道が渋滞していなければ、今頃とっくに遊園地に着いて（遊んでいた）のに。」"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "33．喧嘩中の父と母を仲直りさせられそうだったのに、姉が話しを蒸し返したせいで、うまくいかなくなってしまった。まったく、余計なことを（してくれたものだ）。"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                457,
+                845,
+                885
+            ]
+        }
+    ],
+    [
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "34．「家にいることが多いですね。弁護士は人と話すのが仕事（みたいなところがある）ので、休日は一人でゆっくりしたいんです。」"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "35．もう1ヶ月近く雨が降っていない。晴れの日が続くのは嬉しいが、水不足などの問題を考えると（喜んでばかりもいられない）。"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                85,
+                845,
+                180
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "問題6．34211"
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                144,
+                222,
+                315,
+                239
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "36．自分の主張を譲らない西山さん2も3西山さん1なら4課長も課長だよ。"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "37．トラブルが1起きないよう4 どんなに気をつけていても2起きる時には3起きてしまうのがトラブルだ。"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "38．俳優の村川隆が今回の作品で 4 見せた 1 自然な演技は 2 長年会社勤めをしてきた 3 彼ならではと言えるだろう。"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "39．普段は無口な息子だが、昨日は校内のマラソン大会で入賞した 2 ことが 4 よほどうれしかった1のか3家に帰ってくるなり、楽しそうに話してくれた。"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "40．将来のことを 3 よく考えたうえでの 2 決断ならば 1 応援したいが 4 そうは思えないので、考え直すように説得している。"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                253,
+                840,
+                480
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "問題7．4123"
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                144,
+                524,
+                299,
+                541
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "41．このように猫が匂いで相手を確認するのは目があまりよくないからでもあります。"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "42．猫は鼻を近づけられたと勘違いして同じ反応を示すのです。"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "43．この習性を利用すれば、初対面の猫とも仲良くできます。"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "44．そこで、まず指先を猫の鼻に近づけてみます。"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                147,
+                556,
+                833,
+                687
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "問題8．3124"
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                144,
+                732,
+                299,
+                749
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "45．不具合があったら改善して、それを繰り返さないことが大切だ"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "46．母語で区別されない音は区別できなくなること"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "47．ワサビの品種改良には長い時間がかかるから"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "48．集団全体の知的パフォーマンスの向上に貢献した人"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                147,
+                763,
+                724,
+                873
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "問題9"
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                147,
+                86,
+                203,
+                101
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "（1）31"
+                    }
+                ]
+            },
+            "bbox": [
+                157,
+                116,
+                240,
+                131
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "49．多様な食べ物が消化できるようになり、脳の発達に必要なエネルギーが得られたから"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "50．他の人々と食事を共にすることが一般化し、他社とつながる社会が生まれた"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                148,
+                833,
+                217
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "（2）24"
+                    }
+                ]
+            },
+            "bbox": [
+                157,
+                231,
+                240,
+                247
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "51．自分の適性が分からないまま、仕事を選ばなければならない"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "52．仕事や社会について学んだうえで、自分を見つめさせることが重要だ"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                149,
+                262,
+                779,
+                309
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "（3）34"
+                    }
+                ]
+            },
+            "bbox": [
+                157,
+                324,
+                240,
+                340
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "53．掃除を待つ魚の体表の明暗の変化を認識できる視力を持つ"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "54．クリーナーシュリンプが触覚を大きく振ったのを魚が見た時"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                149,
+                355,
+                705,
+                401
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "（4）31"
+                    }
+                ]
+            },
+            "bbox": [
+                157,
+                417,
+                240,
+                432
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "55．写っているのは客観的に見た自分の姿だから"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "56．日記の中の自分は今の時運とは異なり虚構だったと思い知らされるから"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                149,
+                448,
+                796,
+                495
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "問題10．432"
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                146,
+                541,
+                297,
+                556
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "57．より良く生きていくために必要だ"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "58．起こる可能性の高い重大な危険に備えるため"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "59．技術で記憶力が補える時代に、記憶力で人間の優秀さを判断するのは問題である"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                146,
+                571,
+                833,
+                671
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "問題11．32"
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                146,
+                717,
+                278,
+                733
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "60．Aは大切でないことは手を抜いたほうがいいと述べ、Bは手を抜くものと抜かないものを明確にしておけばいいと述べている"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "61．生活において何を重視するかは自分次第だ"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                747,
+                833,
+                816
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "問題12．241"
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                146,
+                863,
+                297,
+                879
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "62．商品ではなくイメージでしか違いを出せなくなったから"
+                    }
+                ]
+            },
+            "bbox": [
+                149,
+                894,
+                667,
+                910
+            ]
+        }
+    ],
+    [
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "63．社会的な問題への関心を持たせられるが、商品が実際に必要だと感じられにくい"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "64．商品が実生活において価値があることを示すべきだ"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                147,
+                85,
+                835,
+                156
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "問題13．24"
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                147,
+                200,
+                280,
+                217
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "65．4000円から30％引いた金額と送料2000円"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "66．9日後"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                149,
+                231,
+                633,
+                279
+            ]
+        }
+    ]
+]

@@ -1,0 +1,113 @@
+============================================================
+JLPT N1 批量处理脚本
+============================================================
+
+[INFO] 扫描 PDF 文件: D:/量化n1/资料/A 日语N1
+[OK] 找到 185 个 PDF 文件
+[INFO] 文件列表已保存: C:/Users/Garo/gokaku/output/batch_processed\pdf_file_list.txt
+
+============================================================
+步骤 1: 使用 MinerU API 提取 PDF
+============================================================
+
+[INFO] 处理批次 1/19 (10 个文件)
+[OK] Downloaded ZIP: C:/Users/Garo/gokaku/output/batch_processed\batch_1\0.zip
+[OK] Markdown ready: C:/Users/Garo/gokaku/output/batch_processed\batch_1\0\full.md
+[OK] Downloaded ZIP: C:/Users/Garo/gokaku/output/batch_processed\batch_1\1.zip
+[OK] Markdown ready: C:/Users/Garo/gokaku/output/batch_processed\batch_1\1\full.md
+[OK] Downloaded ZIP: C:/Users/Garo/gokaku/output/batch_processed\batch_1\2.zip
+[OK] Markdown ready: C:/Users/Garo/gokaku/output/batch_processed\batch_1\2\full.md
+[OK] Downloaded ZIP: C:/Users/Garo/gokaku/output/batch_processed\batch_1\3.zip
+[OK] Markdown ready: C:/Users/Garo/gokaku/output/batch_processed\batch_1\3\full.md
+[OK] Downloaded ZIP: C:/Users/Garo/gokaku/output/batch_processed\batch_1\4.zip
+[OK] Markdown ready: C:/Users/Garo/gokaku/output/batch_processed\batch_1\4\full.md
+[OK] Downloaded ZIP: C:/Users/Garo/gokaku/output/batch_processed\batch_1\5.zip
+[OK] Markdown ready: C:/Users/Garo/gokaku/output/batch_processed\batch_1\5\full.md
+[OK] Downloaded ZIP: C:/Users/Garo/gokaku/output/batch_processed\batch_1\6.zip
+[OK] Markdown ready: C:/Users/Garo/gokaku/output/batch_processed\batch_1\6\full.md
+[OK] Downloaded ZIP: C:/Users/Garo/gokaku/output/batch_processed\batch_1\7.zip
+[OK] Markdown ready: C:/Users/Garo/gokaku/output/batch_processed\batch_1\7\full.md
+[OK] Downloaded ZIP: C:/Users/Garo/gokaku/output/batch_processed\batch_1\8.zip
+[OK] Markdown ready: C:/Users/Garo/gokaku/output/batch_processed\batch_1\8\full.md
+[OK] Downloaded ZIP: C:/Users/Garo/gokaku/output/batch_processed\batch_1\9.zip
+[OK] Markdown ready: C:/Users/Garo/gokaku/output/batch_processed\batch_1\9\full.md
+[OK] 批次 1 完成
+[INFO] 等待 30 秒避免 API 限流...
+
+[INFO] 处理批次 2/19 (10 个文件)
+[OK] Downloaded ZIP: C:/Users/Garo/gokaku/output/batch_processed\batch_2\0.zip
+[OK] Markdown ready: C:/Users/Garo/gokaku/output/batch_processed\batch_2\0\full.md
+[OK] Downloaded ZIP: C:/Users/Garo/gokaku/output/batch_processed\batch_2\1.zip
+[OK] Markdown ready: C:/Users/Garo/gokaku/output/batch_processed\batch_2\1\full.md
+[OK] Downloaded ZIP: C:/Users/Garo/gokaku/output/batch_processed\batch_2\2.zip
+[OK] Markdown ready: C:/Users/Garo/gokaku/output/batch_processed\batch_2\2\full.md
+[OK] Downloaded ZIP: C:/Users/Garo/gokaku/output/batch_processed\batch_2\3.zip
+[OK] Markdown ready: C:/Users/Garo/gokaku/output/batch_processed\batch_2\3\full.md
+[OK] Downloaded ZIP: C:/Users/Garo/gokaku/output/batch_processed\batch_2\4.zip
+[OK] Markdown ready: C:/Users/Garo/gokaku/output/batch_processed\batch_2\4\full.md
+[OK] Downloaded ZIP: C:/Users/Garo/gokaku/output/batch_processed\batch_2\5.zip
+[OK] Markdown ready: C:/Users/Garo/gokaku/output/batch_processed\batch_2\5\full.md
+[OK] Downloaded ZIP: C:/Users/Garo/gokaku/output/batch_processed\batch_2\6.zip
+[OK] Markdown ready: C:/Users/Garo/gokaku/output/batch_processed\batch_2\6\full.md
+[OK] Downloaded ZIP: C:/Users/Garo/gokaku/output/batch_processed\batch_2\7.zip
+[OK] Markdown ready: C:/Users/Garo/gokaku/output/batch_processed\batch_2\7\full.md
+[OK] Downloaded ZIP: C:/Users/Garo/gokaku/output/batch_processed\batch_2\8.zip
+[OK] Markdown ready: C:/Users/Garo/gokaku/output/batch_processed\batch_2\8\full.md
+[OK] Downloaded ZIP: C:/Users/Garo/gokaku/output/batch_processed\batch_2\9.zip
+[OK] Markdown ready: C:/Users/Garo/gokaku/output/batch_processed\batch_2\9\full.md
+[OK] 批次 2 完成
+[INFO] 等待 30 秒避免 API 限流...
+
+[INFO] 处理批次 3/19 (10 个文件)
+[OK] Downloaded ZIP: C:/Users/Garo/gokaku/output/batch_processed\batch_3\0.zip
+[OK] Markdown ready: C:/Users/Garo/gokaku/output/batch_processed\batch_3\0\full.md
+[OK] Downloaded ZIP: C:/Users/Garo/gokaku/output/batch_processed\batch_3\1.zip
+[OK] Markdown ready: C:/Users/Garo/gokaku/output/batch_processed\batch_3\1\full.md
+[OK] Downloaded ZIP: C:/Users/Garo/gokaku/output/batch_processed\batch_3\2.zip
+[OK] Markdown ready: C:/Users/Garo/gokaku/output/batch_processed\batch_3\2\full.md
+[OK] Downloaded ZIP: C:/Users/Garo/gokaku/output/batch_processed\batch_3\3.zip
+[OK] Markdown ready: C:/Users/Garo/gokaku/output/batch_processed\batch_3\3\full.md
+[OK] Downloaded ZIP: C:/Users/Garo/gokaku/output/batch_processed\batch_3\4.zip
+[OK] Markdown ready: C:/Users/Garo/gokaku/output/batch_processed\batch_3\4\full.md
+[OK] Downloaded ZIP: C:/Users/Garo/gokaku/output/batch_processed\batch_3\5.zip
+[OK] Markdown ready: C:/Users/Garo/gokaku/output/batch_processed\batch_3\5\full.md
+[OK] Downloaded ZIP: C:/Users/Garo/gokaku/output/batch_processed\batch_3\6.zip
+[OK] Markdown ready: C:/Users/Garo/gokaku/output/batch_processed\batch_3\6\full.md
+[OK] Downloaded ZIP: C:/Users/Garo/gokaku/output/batch_processed\batch_3\7.zip
+[OK] Markdown ready: C:/Users/Garo/gokaku/output/batch_processed\batch_3\7\full.md
+[OK] Downloaded ZIP: C:/Users/Garo/gokaku/output/batch_processed\batch_3\8.zip
+[OK] Markdown ready: C:/Users/Garo/gokaku/output/batch_processed\batch_3\8\full.md
+[OK] Downloaded ZIP: C:/Users/Garo/gokaku/output/batch_processed\batch_3\9.zip
+[OK] Markdown ready: C:/Users/Garo/gokaku/output/batch_processed\batch_3\9\full.md
+[OK] 批次 3 完成
+[INFO] 等待 30 秒避免 API 限流...
+
+[INFO] 处理批次 4/19 (10 个文件)
+[OK] Downloaded ZIP: C:/Users/Garo/gokaku/output/batch_processed\batch_4\0.zip
+[OK] Markdown ready: C:/Users/Garo/gokaku/output/batch_processed\batch_4\0\full.md
+[OK] Downloaded ZIP: C:/Users/Garo/gokaku/output/batch_processed\batch_4\1.zip
+[OK] Markdown ready: C:/Users/Garo/gokaku/output/batch_processed\batch_4\1\full.md
+[OK] Downloaded ZIP: C:/Users/Garo/gokaku/output/batch_processed\batch_4\2.zip
+[OK] Markdown ready: C:/Users/Garo/gokaku/output/batch_processed\batch_4\2\full.md
+[OK] Downloaded ZIP: C:/Users/Garo/gokaku/output/batch_processed\batch_4\3.zip
+[OK] Markdown ready: C:/Users/Garo/gokaku/output/batch_processed\batch_4\3\full.md
+[OK] Downloaded ZIP: C:/Users/Garo/gokaku/output/batch_processed\batch_4\4.zip
+[OK] Markdown ready: C:/Users/Garo/gokaku/output/batch_processed\batch_4\4\full.md
+[OK] Downloaded ZIP: C:/Users/Garo/gokaku/output/batch_processed\batch_4\5.zip
+[OK] Markdown ready: C:/Users/Garo/gokaku/output/batch_processed\batch_4\5\full.md
+[OK] Downloaded ZIP: C:/Users/Garo/gokaku/output/batch_processed\batch_4\6.zip
+[OK] Markdown ready: C:/Users/Garo/gokaku/output/batch_processed\batch_4\6\full.md
+[OK] Downloaded ZIP: C:/Users/Garo/gokaku/output/batch_processed\batch_4\7.zip
+[OK] Markdown ready: C:/Users/Garo/gokaku/output/batch_processed\batch_4\7\full.md
+[OK] Downloaded ZIP: C:/Users/Garo/gokaku/output/batch_processed\batch_4\8.zip
+[OK] Markdown ready: C:/Users/Garo/gokaku/output/batch_processed\batch_4\8\full.md
+[OK] Downloaded ZIP: C:/Users/Garo/gokaku/output/batch_processed\batch_4\9.zip
+[OK] Markdown ready: C:/Users/Garo/gokaku/output/batch_processed\batch_4\9\full.md
+[OK] 批次 4 完成
+[INFO] 等待 30 秒避免 API 限流...
+
+[INFO] 处理批次 5/19 (10 个文件)
+[ERROR] 批次 5 失败: HTTPSConnectionPool(host='mineru.oss-cn-shanghai.aliyuncs.com', port=443): Max retries exceeded with url: /api-upload/extract/2026-04-10/78288d58-b579-4106-a7c0-2667b996a17d/7acacb1e-c84b-4a51-8f93-49c62c9b5811.pdf?Expires=1775906898&OSSAccessKeyId=LTAI5t8fSGMgiRhQn4mpp926&Signature=abApDjTP48YL4e%2FTDyCH%2FAQXSkk%3D (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+
+[INFO] 处理批次 6/19 (10 个文件)
+[ERROR] 批次 6 失败: HTTPSConnectionPool(host='mineru.oss-cn-shanghai.aliyuncs.com', port=443): Max retries exceeded with url: /api-upload/extract/2026-04-10/e59430be-1c13-476d-8f42-ff2cd21d80ff/e721e53e-1b78-45c7-8673-33f118a33a03.pdf?Expires=1775907209&OSSAccessKeyId=LTAI5t8fSGMgiRhQn4mpp926&Signature=t93sTwbuzExRMCtX10VxrwaUB6M%3D (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))

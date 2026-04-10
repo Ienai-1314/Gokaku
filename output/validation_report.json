@@ -1,0 +1,638 @@
+{
+  "summary": {
+    "总题目数": 49,
+    "错误题目数": 49,
+    "警告题目数": 0,
+    "正常题目数": 0,
+    "完成度": "0/49 (0%)"
+  },
+  "details": {
+    "errors": [
+      {
+        "questionNumber": 31,
+        "section": "vocabulary",
+        "issues": [
+          "答案为空"
+        ],
+        "warnings": [
+          "解析内容需要补充",
+          "知识点为空"
+        ],
+        "status": "error"
+      },
+      {
+        "questionNumber": 32,
+        "section": "vocabulary",
+        "issues": [
+          "答案为空"
+        ],
+        "warnings": [
+          "解析内容需要补充",
+          "知识点为空"
+        ],
+        "status": "error"
+      },
+      {
+        "questionNumber": 33,
+        "section": "vocabulary",
+        "issues": [
+          "答案为空"
+        ],
+        "warnings": [
+          "解析内容需要补充",
+          "知识点为空"
+        ],
+        "status": "error"
+      },
+      {
+        "questionNumber": 34,
+        "section": "vocabulary",
+        "issues": [
+          "答案为空"
+        ],
+        "warnings": [
+          "解析内容需要补充",
+          "知识点为空"
+        ],
+        "status": "error"
+      },
+      {
+        "questionNumber": 35,
+        "section": "vocabulary",
+        "issues": [
+          "问题文本有编码问题",
+          "答案为空"
+        ],
+        "warnings": [
+          "解析内容需要补充",
+          "知识点为空"
+        ],
+        "status": "error"
+      },
+      {
+        "questionNumber": 36,
+        "section": "grammar",
+        "issues": [
+          "选项1有编码问题",
+          "选项2有编码问题",
+          "选项3有编码问题",
+          "答案为空"
+        ],
+        "warnings": [
+          "解析内容需要补充",
+          "知识点为空"
+        ],
+        "status": "error"
+      },
+      {
+        "questionNumber": 37,
+        "section": "grammar",
+        "issues": [
+          "答案为空"
+        ],
+        "warnings": [
+          "解析内容需要补充",
+          "知识点为空"
+        ],
+        "status": "error"
+      },
+      {
+        "questionNumber": 38,
+        "section": "grammar",
+        "issues": [
+          "答案为空"
+        ],
+        "warnings": [
+          "解析内容需要补充",
+          "知识点为空"
+        ],
+        "status": "error"
+      },
+      {
+        "questionNumber": 39,
+        "section": "grammar",
+        "issues": [
+          "选项1有编码问题",
+          "答案为空"
+        ],
+        "warnings": [
+          "解析内容需要补充",
+          "知识点为空"
+        ],
+        "status": "error"
+      },
+      {
+        "questionNumber": 40,
+        "section": "grammar",
+        "issues": [
+          "选项3有编码问题",
+          "答案为空"
+        ],
+        "warnings": [
+          "解析内容需要补充",
+          "知识点为空"
+        ],
+        "status": "error"
+      },
+      {
+        "questionNumber": 41,
+        "section": "reading",
+        "issues": [
+          "答案为空"
+        ],
+        "warnings": [
+          "解析内容需要补充",
+          "知识点为空"
+        ],
+        "status": "error"
+      },
+      {
+        "questionNumber": 42,
+        "section": "reading",
+        "issues": [
+          "答案为空"
+        ],
+        "warnings": [
+          "解析内容需要补充",
+          "知识点为空"
+        ],
+        "status": "error"
+      },
+      {
+        "questionNumber": 43,
+        "section": "reading",
+        "issues": [
+          "答案为空"
+        ],
+        "warnings": [
+          "解析内容需要补充",
+          "知识点为空"
+        ],
+        "status": "error"
+      },
+      {
+        "questionNumber": 44,
+        "section": "reading",
+        "issues": [
+          "答案为空"
+        ],
+        "warnings": [
+          "解析内容需要补充",
+          "知识点为空"
+        ],
+        "status": "error"
+      },
+      {
+        "questionNumber": 45,
+        "section": "reading",
+        "issues": [
+          "答案为空"
+        ],
+        "warnings": [
+          "解析内容需要补充",
+          "知识点为空"
+        ],
+        "status": "error"
+      },
+      {
+        "questionNumber": 46,
+        "section": "reading",
+        "issues": [
+          "答案为空"
+        ],
+        "warnings": [
+          "解析内容需要补充",
+          "知识点为空"
+        ],
+        "status": "error"
+      },
+      {
+        "questionNumber": 47,
+        "section": "reading",
+        "issues": [
+          "答案为空"
+        ],
+        "warnings": [
+          "解析内容需要补充",
+          "知识点为空"
+        ],
+        "status": "error"
+      },
+      {
+        "questionNumber": 48,
+        "section": "reading",
+        "issues": [
+          "答案为空"
+        ],
+        "warnings": [
+          "解析内容需要补充",
+          "知识点为空"
+        ],
+        "status": "error"
+      },
+      {
+        "questionNumber": 49,
+        "section": "reading",
+        "issues": [
+          "答案为空"
+        ],
+        "warnings": [
+          "解析内容需要补充",
+          "知识点为空"
+        ],
+        "status": "error"
+      },
+      {
+        "questionNumber": 50,
+        "section": "reading",
+        "issues": [
+          "答案为空"
+        ],
+        "warnings": [
+          "解析内容需要补充",
+          "知识点为空"
+        ],
+        "status": "error"
+      },
+      {
+        "questionNumber": 51,
+        "section": "reading",
+        "issues": [
+          "答案为空"
+        ],
+        "warnings": [
+          "解析内容需要补充",
+          "知识点为空"
+        ],
+        "status": "error"
+      },
+      {
+        "questionNumber": 52,
+        "section": "reading",
+        "issues": [
+          "答案为空"
+        ],
+        "warnings": [
+          "解析内容需要补充",
+          "知识点为空"
+        ],
+        "status": "error"
+      },
+      {
+        "questionNumber": 53,
+        "section": "reading",
+        "issues": [
+          "答案为空"
+        ],
+        "warnings": [
+          "解析内容需要补充",
+          "知识点为空"
+        ],
+        "status": "error"
+      },
+      {
+        "questionNumber": 54,
+        "section": "reading",
+        "issues": [
+          "答案为空"
+        ],
+        "warnings": [
+          "解析内容需要补充",
+          "知识点为空"
+        ],
+        "status": "error"
+      },
+      {
+        "questionNumber": 55,
+        "section": "reading",
+        "issues": [
+          "答案为空"
+        ],
+        "warnings": [
+          "解析内容需要补充",
+          "知识点为空"
+        ],
+        "status": "error"
+      },
+      {
+        "questionNumber": 56,
+        "section": "reading",
+        "issues": [
+          "答案为空"
+        ],
+        "warnings": [
+          "解析内容需要补充",
+          "知识点为空"
+        ],
+        "status": "error"
+      },
+      {
+        "questionNumber": 57,
+        "section": "reading",
+        "issues": [
+          "答案为空"
+        ],
+        "warnings": [
+          "解析内容需要补充",
+          "知识点为空"
+        ],
+        "status": "error"
+      },
+      {
+        "questionNumber": 58,
+        "section": "reading",
+        "issues": [
+          "答案为空"
+        ],
+        "warnings": [
+          "解析内容需要补充",
+          "知识点为空"
+        ],
+        "status": "error"
+      },
+      {
+        "questionNumber": 59,
+        "section": "reading",
+        "issues": [
+          "答案为空"
+        ],
+        "warnings": [
+          "解析内容需要补充",
+          "知识点为空"
+        ],
+        "status": "error"
+      },
+      {
+        "questionNumber": 60,
+        "section": "reading",
+        "issues": [
+          "答案为空"
+        ],
+        "warnings": [
+          "解析内容需要补充",
+          "知识点为空"
+        ],
+        "status": "error"
+      },
+      {
+        "questionNumber": 61,
+        "section": "reading",
+        "issues": [
+          "答案为空"
+        ],
+        "warnings": [
+          "解析内容需要补充",
+          "知识点为空"
+        ],
+        "status": "error"
+      },
+      {
+        "questionNumber": 62,
+        "section": "reading",
+        "issues": [
+          "答案为空"
+        ],
+        "warnings": [
+          "解析内容需要补充",
+          "知识点为空"
+        ],
+        "status": "error"
+      },
+      {
+        "questionNumber": 63,
+        "section": "reading",
+        "issues": [
+          "答案为空"
+        ],
+        "warnings": [
+          "解析内容需要补充",
+          "知识点为空"
+        ],
+        "status": "error"
+      },
+      {
+        "questionNumber": 64,
+        "section": "reading",
+        "issues": [
+          "答案为空"
+        ],
+        "warnings": [
+          "解析内容需要补充",
+          "知识点为空"
+        ],
+        "status": "error"
+      },
+      {
+        "questionNumber": 65,
+        "section": "reading",
+        "issues": [
+          "答案为空"
+        ],
+        "warnings": [
+          "解析内容需要补充",
+          "知识点为空"
+        ],
+        "status": "error"
+      },
+      {
+        "questionNumber": 66,
+        "section": "reading",
+        "issues": [
+          "答案为空"
+        ],
+        "warnings": [
+          "解析内容需要补充",
+          "知识点为空"
+        ],
+        "status": "error"
+      },
+      {
+        "questionNumber": 1,
+        "section": "listening",
+        "issues": [
+          "答案为空"
+        ],
+        "warnings": [
+          "解析内容需要补充",
+          "知识点为空"
+        ],
+        "status": "error"
+      },
+      {
+        "questionNumber": 2,
+        "section": "listening",
+        "issues": [
+          "答案为空"
+        ],
+        "warnings": [
+          "解析内容需要补充",
+          "知识点为空"
+        ],
+        "status": "error"
+      },
+      {
+        "questionNumber": 3,
+        "section": "listening",
+        "issues": [
+          "答案为空"
+        ],
+        "warnings": [
+          "解析内容需要补充",
+          "知识点为空"
+        ],
+        "status": "error"
+      },
+      {
+        "questionNumber": 4,
+        "section": "listening",
+        "issues": [
+          "答案为空"
+        ],
+        "warnings": [
+          "解析内容需要补充",
+          "知识点为空"
+        ],
+        "status": "error"
+      },
+      {
+        "questionNumber": 5,
+        "section": "listening",
+        "issues": [
+          "答案为空"
+        ],
+        "warnings": [
+          "解析内容需要补充",
+          "知识点为空"
+        ],
+        "status": "error"
+      },
+      {
+        "questionNumber": 6,
+        "section": "listening",
+        "issues": [
+          "答案为空"
+        ],
+        "warnings": [
+          "解析内容需要补充",
+          "知识点为空"
+        ],
+        "status": "error"
+      },
+      {
+        "questionNumber": 7,
+        "section": "listening",
+        "issues": [
+          "答案为空"
+        ],
+        "warnings": [
+          "解析内容需要补充",
+          "知识点为空"
+        ],
+        "status": "error"
+      },
+      {
+        "questionNumber": 8,
+        "section": "listening",
+        "issues": [
+          "答案为空"
+        ],
+        "warnings": [
+          "解析内容需要补充",
+          "知识点为空"
+        ],
+        "status": "error"
+      },
+      {
+        "questionNumber": 9,
+        "section": "listening",
+        "issues": [
+          "答案为空"
+        ],
+        "warnings": [
+          "解析内容需要补充",
+          "知识点为空"
+        ],
+        "status": "error"
+      },
+      {
+        "questionNumber": 10,
+        "section": "listening",
+        "issues": [
+          "答案为空"
+        ],
+        "warnings": [
+          "解析内容需要补充",
+          "知识点为空"
+        ],
+        "status": "error"
+      },
+      {
+        "questionNumber": 11,
+        "section": "listening",
+        "issues": [
+          "答案为空"
+        ],
+        "warnings": [
+          "解析内容需要补充",
+          "知识点为空"
+        ],
+        "status": "error"
+      },
+      {
+        "questionNumber": 12,
+        "section": "listening",
+        "issues": [
+          "答案为空"
+        ],
+        "warnings": [
+          "解析内容需要补充",
+          "知识点为空"
+        ],
+        "status": "error"
+      },
+      {
+        "questionNumber": 13,
+        "section": "listening",
+        "issues": [
+          "答案为空"
+        ],
+        "warnings": [
+          "解析内容需要补充",
+          "知识点为空"
+        ],
+        "status": "error"
+      }
+    ],
+    "warnings": [],
+    "ok": []
+  },
+  "recommendations": [
+    "有 49 道题目存在错误，需要优先修复"
+  ],
+  "section_stats": {
+    "vocabulary": {
+      "total": 5,
+      "error": 5,
+      "warning": 0,
+      "ok": 0
+    },
+    "grammar": {
+      "total": 5,
+      "error": 5,
+      "warning": 0,
+      "ok": 0
+    },
+    "reading": {
+      "total": 26,
+      "error": 26,
+      "warning": 0,
+      "ok": 0
+    },
+    "listening": {
+      "total": 13,
+      "error": 13,
+      "warning": 0,
+      "ok": 0
+    }
+  }
+}

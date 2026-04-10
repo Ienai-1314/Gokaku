@@ -1,0 +1,26 @@
+[
+  {
+    "questionNumber": 1,
+    "section": "vocabulary",
+    "question": "この薬は副作用が少ないので安心して使える。",
+    "options": [
+      "ふくさよう",
+      "ふくさよ",
+      "ふうさよう",
+      "ふうさよ"
+    ],
+    "correctAnswer": "ふくさよう"
+  },
+  {
+    "questionNumber": 2,
+    "section": "vocabulary",
+    "question": "彼女は几帳面な性格だ。",
+    "options": [
+      "きちょうめん",
+      "きちょめん",
+      "きじょうめん",
+      "きじょめん"
+    ],
+    "correctAnswer": "きちょうめん"
+  }
+]

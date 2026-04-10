@@ -1,0 +1,459 @@
+[
+    [
+        {
+            "type": "title",
+            "bbox": [
+                0.377,
+                0.091,
+                0.622,
+                0.107
+            ],
+            "angle": 0,
+            "content": "2025年12月N1真题参考答案"
+        },
+        {
+            "type": "title",
+            "bbox": [
+                0.32,
+                0.119,
+                0.681,
+                0.135
+            ],
+            "angle": 0,
+            "content": "言語知識（文字·語彙·文法）·諫解·聽解"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.148,
+                0.154,
+                0.296,
+                0.17
+            ],
+            "angle": 0,
+            "content": "文字·語彙·文法"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.148,
+                0.189,
+                0.202,
+                0.204
+            ],
+            "angle": 0,
+            "content": "問題1"
+        },
+        {
+            "type": "table",
+            "bbox": [
+                0.149,
+                0.216,
+                0.434,
+                0.29
+            ],
+            "angle": 0,
+            "content": "<table><tr><td>(1)</td><td>(2)</td><td>(3)</td><td>(4)</td><td>(5)</td><td>(6)</td></tr><tr><td>1</td><td>4</td><td>4</td><td>2</td><td>3</td><td>2</td></tr></table>"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.148,
+                0.295,
+                0.202,
+                0.31
+            ],
+            "angle": 0,
+            "content": "問題2"
+        },
+        {
+            "type": "table",
+            "bbox": [
+                0.149,
+                0.322,
+                0.506,
+                0.396
+            ],
+            "angle": 0,
+            "content": "<table><tr><td>(7)</td><td>(8)</td><td>(9)</td><td>(10)</td><td>(11)</td><td>(12)</td><td>(13)</td></tr><tr><td>2</td><td>3</td><td>2</td><td>3</td><td>1</td><td>4</td><td>4</td></tr></table>"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.148,
+                0.402,
+                0.202,
+                0.417
+            ],
+            "angle": 0,
+            "content": "問題3"
+        },
+        {
+            "type": "table",
+            "bbox": [
+                0.149,
+                0.429,
+                0.463,
+                0.503
+            ],
+            "angle": 0,
+            "content": "<table><tr><td>(14)</td><td>(15)</td><td>(16)</td><td>(17)</td><td>(18)</td><td>(19)</td></tr><tr><td>1</td><td>3</td><td>1</td><td>2</td><td>2</td><td>1</td></tr></table>"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.148,
+                0.508,
+                0.202,
+                0.523
+            ],
+            "angle": 0,
+            "content": "問題4"
+        },
+        {
+            "type": "table",
+            "bbox": [
+                0.149,
+                0.535,
+                0.466,
+                0.61
+            ],
+            "angle": 0,
+            "content": "<table><tr><td>(20)</td><td>(21)</td><td>(22)</td><td>(23)</td><td>(24)</td><td>(25)</td></tr><tr><td>3</td><td>3</td><td>4</td><td>4</td><td>2</td><td>2</td></tr></table>"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.148,
+                0.615,
+                0.202,
+                0.63
+            ],
+            "angle": 0,
+            "content": "問題5"
+        },
+        {
+            "type": "table",
+            "bbox": [
+                0.149,
+                0.642,
+                0.671,
+                0.716
+            ],
+            "angle": 0,
+            "content": "<table><tr><td>(26)</td><td>(27)</td><td>(28)</td><td>(29)</td><td>(30)</td><td>(31)</td><td>(32)</td><td>(33)</td><td>(34)</td><td>(35)</td></tr><tr><td>3</td><td>2</td><td>4</td><td>1</td><td>3</td><td>4</td><td>3</td><td>1</td><td>4</td><td>2</td></tr></table>"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.148,
+                0.722,
+                0.202,
+                0.737
+            ],
+            "angle": 0,
+            "content": "問題6"
+        },
+        {
+            "type": "table",
+            "bbox": [
+                0.149,
+                0.748,
+                0.398,
+                0.823
+            ],
+            "angle": 0,
+            "content": "<table><tr><td>(36)</td><td>(37)</td><td>(38)</td><td>(39)</td><td>(40)</td></tr><tr><td>3</td><td>4</td><td>2</td><td>1</td><td>1</td></tr></table>"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.148,
+                0.863,
+                0.202,
+                0.878
+            ],
+            "angle": 0,
+            "content": "問題7"
+        }
+    ],
+    [
+        {
+            "type": "table",
+            "bbox": [
+                0.149,
+                0.084,
+                0.361,
+                0.158
+            ],
+            "angle": 0,
+            "content": "<table><tr><td>(41)</td><td>(42)</td><td>(43)</td><td>(44)</td></tr><tr><td>4</td><td>1</td><td>2</td><td>3</td></tr></table>"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.148,
+                0.163,
+                0.189,
+                0.178
+            ],
+            "angle": 0,
+            "content": "説解"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.148,
+                0.191,
+                0.202,
+                0.206
+            ],
+            "angle": 0,
+            "content": "問題8"
+        },
+        {
+            "type": "table",
+            "bbox": [
+                0.149,
+                0.218,
+                0.361,
+                0.293
+            ],
+            "angle": 0,
+            "content": "<table><tr><td>(45)</td><td>(46)</td><td>(47)</td><td>(48)</td></tr><tr><td>3</td><td>1</td><td>2</td><td>4</td></tr></table>"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.148,
+                0.297,
+                0.202,
+                0.312
+            ],
+            "angle": 0,
+            "content": "問題9"
+        },
+        {
+            "type": "table",
+            "bbox": [
+                0.149,
+                0.324,
+                0.568,
+                0.399
+            ],
+            "angle": 0,
+            "content": "<table><tr><td>(49)</td><td>(50)</td><td>(51)</td><td>(52)</td><td>(53)</td><td>(54)</td><td>(55)</td><td>(56)</td></tr><tr><td>3</td><td>1</td><td>3</td><td>1</td><td>3</td><td>4</td><td>3</td><td>1</td></tr></table>"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.148,
+                0.404,
+                0.21,
+                0.418
+            ],
+            "angle": 0,
+            "content": "問題10"
+        },
+        {
+            "type": "table",
+            "bbox": [
+                0.149,
+                0.431,
+                0.31,
+                0.505
+            ],
+            "angle": 0,
+            "content": "<table><tr><td>(57)</td><td>(58)</td><td>(59)</td></tr><tr><td>4</td><td>3</td><td>2</td></tr></table>"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.148,
+                0.51,
+                0.207,
+                0.525
+            ],
+            "angle": 0,
+            "content": "問題11"
+        },
+        {
+            "type": "table",
+            "bbox": [
+                0.149,
+                0.538,
+                0.258,
+                0.612
+            ],
+            "angle": 0,
+            "content": "<table><tr><td>(60)</td><td>(61)</td></tr><tr><td>3</td><td>2</td></tr></table>"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.148,
+                0.617,
+                0.21,
+                0.632
+            ],
+            "angle": 0,
+            "content": "問題12"
+        },
+        {
+            "type": "table",
+            "bbox": [
+                0.149,
+                0.644,
+                0.31,
+                0.719
+            ],
+            "angle": 0,
+            "content": "<table><tr><td>(62)</td><td>(63)</td><td>(64)</td></tr><tr><td>2</td><td>4</td><td>1</td></tr></table>"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.148,
+                0.724,
+                0.21,
+                0.738
+            ],
+            "angle": 0,
+            "content": "問題13"
+        },
+        {
+            "type": "table",
+            "bbox": [
+                0.149,
+                0.75,
+                0.258,
+                0.826
+            ],
+            "angle": 0,
+            "content": "<table><tr><td>(65)</td><td>(66)</td></tr><tr><td>2</td><td>4</td></tr></table>"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.148,
+                0.858,
+                0.189,
+                0.873
+            ],
+            "angle": 0,
+            "content": "聽解"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.148,
+                0.886,
+                0.2,
+                0.9
+            ],
+            "angle": 0,
+            "content": "問題1"
+        }
+    ],
+    [
+        {
+            "type": "table",
+            "bbox": [
+                0.149,
+                0.084,
+                0.39,
+                0.158
+            ],
+            "angle": 0,
+            "content": "<table><tr><td>(1)</td><td>(2)</td><td>(3)</td><td>(4)</td><td>(5)</td></tr><tr><td>1</td><td>3</td><td>3</td><td>2</td><td>1</td></tr></table>"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.148,
+                0.163,
+                0.202,
+                0.178
+            ],
+            "angle": 0,
+            "content": "問題2"
+        },
+        {
+            "type": "table",
+            "bbox": [
+                0.149,
+                0.19,
+                0.434,
+                0.264
+            ],
+            "angle": 0,
+            "content": "<table><tr><td>(1)</td><td>(2)</td><td>(3)</td><td>(4)</td><td>(5)</td><td>(6)</td></tr><tr><td>1</td><td>3</td><td>4</td><td>4</td><td>1</td><td>2</td></tr></table>"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.148,
+                0.269,
+                0.202,
+                0.284
+            ],
+            "angle": 0,
+            "content": "問題3"
+        },
+        {
+            "type": "table",
+            "bbox": [
+                0.149,
+                0.297,
+                0.39,
+                0.37
+            ],
+            "angle": 0,
+            "content": "<table><tr><td>(1)</td><td>(2)</td><td>(3)</td><td>(4)</td><td>(5)</td></tr><tr><td>1</td><td>4</td><td>1</td><td>4</td><td>3</td></tr></table>"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.148,
+                0.376,
+                0.202,
+                0.391
+            ],
+            "angle": 0,
+            "content": "問題4"
+        },
+        {
+            "type": "table",
+            "bbox": [
+                0.149,
+                0.403,
+                0.663,
+                0.477
+            ],
+            "angle": 0,
+            "content": "<table><tr><td>(1)</td><td>(2)</td><td>(3)</td><td>(4)</td><td>(5)</td><td>(6)</td><td>(7)</td><td>(8)</td><td>(9)</td><td>(10)</td><td>(11)</td></tr><tr><td>2</td><td>2</td><td>1</td><td>3</td><td>1</td><td>3</td><td>1</td><td>2</td><td>3</td><td>3</td><td>2</td></tr></table>"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.148,
+                0.482,
+                0.202,
+                0.497
+            ],
+            "angle": 0,
+            "content": "問題5"
+        },
+        {
+            "type": "table",
+            "bbox": [
+                0.149,
+                0.504,
+                0.295,
+                0.577
+            ],
+            "angle": 0,
+            "content": "<table><tr><td>(1)</td><td colspan=\"2\">(2)</td></tr><tr><td>3</td><td>1</td><td>2</td></tr></table>"
+        }
+    ]
+]

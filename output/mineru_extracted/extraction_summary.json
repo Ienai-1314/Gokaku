@@ -1,0 +1,47 @@
+{
+  "batch_id": "ba189154-2f55-4d54-a064-b5526a2a66cf",
+  "output_dir": "C:/Users/Garo/gokaku/output/mineru_extracted",
+  "num_files": 5,
+  "items": [
+    {
+      "data_id": "0",
+      "file_name": "D:\\量化n1\\资料\\A 日语N1\\2025年12月N1 完整原卷\\2025年12月 N1 详细答案.pdf",
+      "state": "done",
+      "zip_path": "C:/Users/Garo/gokaku/output/mineru_extracted\\0.zip",
+      "extract_dir": "C:/Users/Garo/gokaku/output/mineru_extracted\\0",
+      "md_path": "C:/Users/Garo/gokaku/output/mineru_extracted\\0\\full.md"
+    },
+    {
+      "data_id": "1",
+      "file_name": "D:\\量化n1\\资料\\A 日语N1\\2025年12月N1 完整原卷\\2025年12月N1听力原文，译文，答案.pdf",
+      "state": "done",
+      "zip_path": "C:/Users/Garo/gokaku/output/mineru_extracted\\1.zip",
+      "extract_dir": "C:/Users/Garo/gokaku/output/mineru_extracted\\1",
+      "md_path": "C:/Users/Garo/gokaku/output/mineru_extracted\\1\\full.md"
+    },
+    {
+      "data_id": "2",
+      "file_name": "D:\\量化n1\\资料\\A 日语N1\\2025年12月N1 完整原卷\\A 2025年12月N1完整原卷.pdf",
+      "state": "done",
+      "zip_path": "C:/Users/Garo/gokaku/output/mineru_extracted\\2.zip",
+      "extract_dir": "C:/Users/Garo/gokaku/output/mineru_extracted\\2",
+      "md_path": "C:/Users/Garo/gokaku/output/mineru_extracted\\2\\full.md"
+    },
+    {
+      "data_id": "3",
+      "file_name": "D:\\量化n1\\资料\\A 日语N1\\2025年12月N1 完整原卷\\B 2025年12月N1解析消除水印版.pdf",
+      "state": "done",
+      "zip_path": "C:/Users/Garo/gokaku/output/mineru_extracted\\3.zip",
+      "extract_dir": "C:/Users/Garo/gokaku/output/mineru_extracted\\3",
+      "md_path": "C:/Users/Garo/gokaku/output/mineru_extracted\\3\\full.md"
+    },
+    {
+      "data_id": "4",
+      "file_name": "D:\\量化n1\\资料\\A 日语N1\\2025年12月N1 完整原卷\\C 2025年12月N1答案.pdf",
+      "state": "done",
+      "zip_path": "C:/Users/Garo/gokaku/output/mineru_extracted\\4.zip",
+      "extract_dir": "C:/Users/Garo/gokaku/output/mineru_extracted\\4",
+      "md_path": "C:/Users/Garo/gokaku/output/mineru_extracted\\4\\full.md"
+    }
+  ]
+}

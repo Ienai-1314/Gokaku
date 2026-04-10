@@ -1,0 +1,23 @@
+{
+  "batch_id": "8440e1fc-f808-4b9d-93fc-c3ef4ac843a7",
+  "output_dir": "C:/Users/Garo/gokaku/output/test_batch",
+  "num_files": 2,
+  "items": [
+    {
+      "data_id": "0",
+      "file_name": "D:/量化n1/资料/A 日语N1\\2025年12月N1 完整原卷\\2025年12月 N1 详细答案.pdf",
+      "state": "done",
+      "zip_path": "C:/Users/Garo/gokaku/output/test_batch\\0.zip",
+      "extract_dir": "C:/Users/Garo/gokaku/output/test_batch\\0",
+      "md_path": "C:/Users/Garo/gokaku/output/test_batch\\0\\full.md"
+    },
+    {
+      "data_id": "1",
+      "file_name": "D:/量化n1/资料/A 日语N1\\2025年12月N1 完整原卷\\2025年12月N1听力原文，译文，答案.pdf",
+      "state": "done",
+      "zip_path": "C:/Users/Garo/gokaku/output/test_batch\\1.zip",
+      "extract_dir": "C:/Users/Garo/gokaku/output/test_batch\\1",
+      "md_path": "C:/Users/Garo/gokaku/output/test_batch\\1\\full.md"
+    }
+  ]
+}

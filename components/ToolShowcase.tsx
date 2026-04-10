@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Search, BookOpen, ArrowRight, Brain } from "lucide-react";
+import { Search, BookOpen, ArrowRight, Brain, FileText } from "lucide-react";
 import Link from "next/link";
 
 // ── 语法查询 mock 结果 ──────────────────────────────────────────────────────
@@ -62,19 +62,19 @@ export function ToolShowcase() {
         {/* 标题 */}
         <div className="text-center mb-14">
           <span className="inline-block text-xs font-semibold tracking-widest text-[#C75B3B] uppercase mb-3">
-            AI Tools
+            Core Features
           </span>
           <h2 className="font-bebas text-5xl md:text-6xl text-[#2D2420] mb-4">
-            两个工具，解决两个核心痛点
+            三大核心功能
           </h2>
           <p className="text-[#6B5E55] max-w-2xl mx-auto text-sm leading-relaxed">
-            不是让你多背一本书，而是帮你搞懂做错的题、查清搞混的语法。<br />
+            AI工具帮你搞懂语法和错题，真题刷题让你实战演练。<br />
             每个功能免费试用 3 次，无需注册。
           </p>
         </div>
 
-        {/* 两列卡片 */}
-        <div className="grid md:grid-cols-2 gap-8 items-start">
+        {/* 三列卡片 */}
+        <div className="grid md:grid-cols-3 gap-6 items-start mb-12">
 
           {/* ── 卡片 1：语法查询 ── */}
           <motion.div
@@ -84,34 +84,24 @@ export function ToolShowcase() {
             transition={{ duration: 0.4 }}
             className="flex flex-col gap-4"
           >
-            {/* 痛点标签 */}
             <div className="flex items-start gap-3">
               <div className="w-10 h-10 rounded-2xl bg-[#C75B3B]/10 flex items-center justify-center flex-shrink-0 mt-0.5">
                 <Search className="w-5 h-5 text-[#C75B3B]" />
               </div>
               <div>
-                <h3 className="font-bold text-[#2D2420] text-lg leading-snug">
-                  不只是查语法，还告诉你真题怎么考
-                </h3>
-                <p className="text-sm text-[#6B5E55] mt-1">
-                  每个语法点都标注了在哪套真题出现过、考频多高、常见陷阱是什么。比语法酷多了"真题视角"。
-                </p>
+                <h3 className="font-bold text-[#2D2420] text-lg leading-snug">语法查询</h3>
+                <p className="text-sm text-[#6B5E55] mt-1">告诉你真题怎么考、考频多高、常见陷阱</p>
               </div>
             </div>
-
-            {/* Mock 界面 */}
-            <div className="bg-[#FAF6F0] rounded-2xl border border-[#E8E0D5] overflow-hidden shadow-sm">
-              {/* 输入框 */}
+            <div className="bg-[#FAF6F0] rounded-2xl border border-[#E8E0D5] overflow-hidden shadow-sm flex-1">
               <div className="px-4 py-3 border-b border-[#E8E0D5] flex items-center gap-3 bg-white">
                 <div className="flex-1 bg-[#FAF6F0] rounded-xl px-4 py-2 text-sm text-[#2D2420] font-noto-jp border border-[#E8E0D5]">
                   {QUERY_MOCK.input}
                 </div>
                 <div className="px-4 py-2 bg-[#C75B3B] text-white rounded-xl text-xs font-semibold">查询</div>
               </div>
-
-              {/* 结果 */}
               <div className="divide-y divide-[#E8E0D5]/60">
-                {QUERY_MOCK.sections.map((s, i) => (
+                {QUERY_MOCK.sections.slice(0, 2).map((s, i) => (
                   <MockSection key={i} section={s} />
                 ))}
               </div>
@@ -126,41 +116,72 @@ export function ToolShowcase() {
             transition={{ duration: 0.4, delay: 0.1 }}
             className="flex flex-col gap-4"
           >
-            {/* 痛点标签 */}
             <div className="flex items-start gap-3">
               <div className="w-10 h-10 rounded-2xl bg-[#4A7C59]/10 flex items-center justify-center flex-shrink-0 mt-0.5">
                 <BookOpen className="w-5 h-5 text-[#4A7C59]" />
               </div>
               <div>
-                <h3 className="font-bold text-[#2D2420] text-lg leading-snug">
-                  不只是对答案，还告诉你为什么错
-                </h3>
-                <p className="text-sm text-[#6B5E55] mt-1">
-                  AI 分析你的错误模式（是语法没记住，还是混淆了相似语法）。自动记录你的薄弱点，越用越懂你。
-                </p>
+                <h3 className="font-bold text-[#2D2420] text-lg leading-snug">错题分析</h3>
+                <p className="text-sm text-[#6B5E55] mt-1">AI分析错误模式，记录薄弱点</p>
               </div>
             </div>
-
-            {/* Mock 界面 */}
-            <div className="bg-[#FAF6F0] rounded-2xl border border-[#E8E0D5] overflow-hidden shadow-sm">
-              {/* 题目输入 */}
+            <div className="bg-[#FAF6F0] rounded-2xl border border-[#E8E0D5] overflow-hidden shadow-sm flex-1">
               <div className="px-4 py-3 border-b border-[#E8E0D5] bg-white">
                 <p className="text-xs font-semibold text-[#6B5E55] mb-1">题目内容</p>
-                <p className="text-sm text-[#2D2420] font-noto-jp leading-relaxed">
+                <p className="text-sm text-[#2D2420] font-noto-jp leading-relaxed line-clamp-2">
                   {ANALYZE_MOCK.question}
                 </p>
-                <p className="text-xs text-[#6B5E55] mt-1 font-noto-jp">{ANALYZE_MOCK.options}</p>
                 <div className="flex gap-2 mt-2">
-                  <span className="text-xs bg-[#FAF6F0] border border-[#E8E0D5] rounded-lg px-2 py-1 text-[#6B5E55]">我的答案：③</span>
-                  <span className="text-xs bg-[#C75B3B]/8 border border-[#C75B3B]/20 rounded-lg px-2 py-1 text-[#C75B3B]">正确答案：{ANALYZE_MOCK.correct}</span>
+                  <span className="text-xs bg-[#FAF6F0] border border-[#E8E0D5] rounded-lg px-2 py-1 text-[#6B5E55]">我的：③</span>
+                  <span className="text-xs bg-[#C75B3B]/8 border border-[#C75B3B]/20 rounded-lg px-2 py-1 text-[#C75B3B]">正确：{ANALYZE_MOCK.correct}</span>
                 </div>
               </div>
-
-              {/* 结果 */}
               <div className="divide-y divide-[#E8E0D5]/60">
-                {ANALYZE_MOCK.sections.map((s, i) => (
+                {ANALYZE_MOCK.sections.slice(0, 2).map((s, i) => (
                   <MockSection key={i} section={s} />
                 ))}
+              </div>
+            </div>
+          </motion.div>
+
+          {/* ── 卡片 3：真题刷题 ── */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4, delay: 0.2 }}
+            className="flex flex-col gap-4"
+          >
+            <div className="flex items-start gap-3">
+              <div className="w-10 h-10 rounded-2xl bg-[#D4A574]/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <FileText className="w-5 h-5 text-[#D4A574]" />
+              </div>
+              <div>
+                <h3 className="font-bold text-[#2D2420] text-lg leading-snug">真题刷题</h3>
+                <p className="text-sm text-[#6B5E55] mt-1">历年完整真题，模拟考试环境</p>
+              </div>
+            </div>
+            <div className="bg-[#FAF6F0] rounded-2xl border border-[#E8E0D5] overflow-hidden shadow-sm flex-1">
+              <div className="px-4 py-3 bg-white border-b border-[#E8E0D5]">
+                <p className="text-xs font-bold text-[#D4A574] mb-2">可用试卷</p>
+                <div className="space-y-2">
+                  <div className="flex items-center justify-between p-2 bg-[#FAF6F0] rounded-lg">
+                    <span className="text-xs font-noto-jp text-[#2D2420]">2025年12月 N1</span>
+                    <span className="text-xs text-[#C75B3B]">180题</span>
+                  </div>
+                  <div className="flex items-center justify-between p-2 bg-[#FAF6F0] rounded-lg">
+                    <span className="text-xs font-noto-jp text-[#2D2420]">2025年7月 N1</span>
+                    <span className="text-xs text-[#C75B3B]">180题</span>
+                  </div>
+                </div>
+              </div>
+              <div className="px-4 py-3">
+                <p className="text-xs font-bold text-[#D4A574] mb-1">功能特色</p>
+                <ul className="text-xs text-[#6B5E55] space-y-1">
+                  <li>• 完整模拟考试环境</li>
+                  <li>• 自动计时和评分</li>
+                  <li>• 详细成绩报告</li>
+                </ul>
               </div>
             </div>
           </motion.div>
@@ -171,8 +192,8 @@ export function ToolShowcase() {
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.4, delay: 0.2 }}
-          className="mt-12 text-center"
+          transition={{ duration: 0.4, delay: 0.3 }}
+          className="flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
           <Link
             href="/tool"
@@ -182,10 +203,18 @@ export function ToolShowcase() {
             免费试用 AI 工具
             <ArrowRight className="w-4 h-4" />
           </Link>
-          <p className="text-xs text-[#6B5E55] mt-3">
-            每个功能免费 3 次 · 无需注册 · <span className="text-[#C75B3B]">购买后无限使用</span>
-          </p>
+          <Link
+            href="/exam"
+            className="inline-flex items-center gap-2 bg-[#FAF6F0] hover:bg-[#E8E0D5] text-[#2D2420] px-8 py-4 rounded-2xl font-semibold text-base transition-all border-2 border-[#E8E0D5]"
+          >
+            <FileText className="w-4 h-4" />
+            开始刷真题
+            <ArrowRight className="w-4 h-4" />
+          </Link>
         </motion.div>
+        <p className="text-xs text-[#6B5E55] mt-4 text-center">
+          每个功能免费 3 次 · 无需注册 · <span className="text-[#C75B3B]">购买后无限使用</span>
+        </p>
 
       </div>
     </section>

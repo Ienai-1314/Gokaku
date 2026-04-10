@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { cn } from "@/lib/utils";
-import { GraduationCap, Menu, X, User } from "lucide-react";
+import { GraduationCap, Menu, X, User, Search, BookOpen } from "lucide-react";
 
 interface NavbarProps {
   activeLevel: "N1" | "N2";
@@ -55,14 +55,28 @@ export function Navbar({ activeLevel, onLevelChange }: NavbarProps) {
             </div>
           </div>
 
-          {/* CTA Button */}
-          <div className="hidden md:flex items-center gap-4">
+          {/* Navigation Links */}
+          <div className="hidden md:flex items-center gap-3">
+            <a
+              href="/tool"
+              className="flex items-center gap-2 text-[#6B5E55] hover:text-[#C75B3B] px-4 py-2 rounded-xl text-sm font-semibold transition-all duration-200 cursor-pointer"
+            >
+              <Search className="w-4 h-4" />
+              <span>AI工具</span>
+            </a>
+            <a
+              href="/exam"
+              className="flex items-center gap-2 text-[#6B5E55] hover:text-[#C75B3B] px-4 py-2 rounded-xl text-sm font-semibold transition-all duration-200 cursor-pointer"
+            >
+              <BookOpen className="w-4 h-4" />
+              <span>真题刷题</span>
+            </a>
             <a
               href="/dashboard"
               className="flex items-center gap-2 bg-[#C75B3B] hover:bg-[#A84A2F] text-white px-5 py-2 rounded-xl text-sm font-semibold transition-all duration-200 shadow-[0_2px_12px_rgba(199,91,59,0.25)] hover:shadow-[0_4px_16px_rgba(199,91,59,0.35)] cursor-pointer"
             >
               <User className="w-4 h-4" />
-              <span>用户界面</span>
+              <span>我的学习</span>
             </a>
           </div>
 
@@ -77,7 +91,7 @@ export function Navbar({ activeLevel, onLevelChange }: NavbarProps) {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden py-4 border-t border-[#E8E0D5]/60">
+          <div className="md:hidden py-4 border-t border-[#E8E0D5]/60 space-y-3">
             <div className="flex gap-2 mb-4">
               <button
                 onClick={() => { onLevelChange("N1"); setMobileMenuOpen(false); }}
@@ -103,11 +117,25 @@ export function Navbar({ activeLevel, onLevelChange }: NavbarProps) {
               </button>
             </div>
             <a
+              href="/tool"
+              className="w-full flex items-center justify-center gap-2 bg-[#FAF6F0] hover:bg-[#E8E0D5] text-[#2D2420] px-5 py-3 rounded-xl text-sm font-semibold transition-all cursor-pointer border border-[#E8E0D5]"
+            >
+              <Search className="w-4 h-4" />
+              <span>AI工具</span>
+            </a>
+            <a
+              href="/exam"
+              className="w-full flex items-center justify-center gap-2 bg-[#FAF6F0] hover:bg-[#E8E0D5] text-[#2D2420] px-5 py-3 rounded-xl text-sm font-semibold transition-all cursor-pointer border border-[#E8E0D5]"
+            >
+              <BookOpen className="w-4 h-4" />
+              <span>真题刷题</span>
+            </a>
+            <a
               href="/dashboard"
               className="w-full flex items-center justify-center gap-2 bg-[#C75B3B] hover:bg-[#A84A2F] text-white px-5 py-3 rounded-xl text-sm font-semibold transition-all cursor-pointer"
             >
               <User className="w-4 h-4" />
-              <span>用户界面</span>
+              <span>我的学习</span>
             </a>
           </div>
         )}
