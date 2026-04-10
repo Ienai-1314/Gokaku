@@ -1,0 +1,46 @@
+{
+  "category": "grammar",
+  "total": 4,
+  "success": 4,
+  "failed": 0,
+  "failed_files": [],
+  "result": {
+    "batch_id": "244b7b5f-b1d5-47e0-af1d-52e11429e0ad",
+    "output_dir": "C:\\Users\\Garo\\gokaku\\output\\batch_classified_final\\grammar",
+    "num_files": 4,
+    "items": [
+      {
+        "data_id": "0",
+        "file_name": "D:\\量化n1\\资料\\311.N1真题总结资料/N1真题语法总结.pdf",
+        "state": "done",
+        "zip_path": "C:\\Users\\Garo\\gokaku\\output\\batch_classified_final\\grammar\\0.zip",
+        "extract_dir": "C:\\Users\\Garo\\gokaku\\output\\batch_classified_final\\grammar\\0",
+        "md_path": "C:\\Users\\Garo\\gokaku\\output\\batch_classified_final\\grammar\\0\\full.md"
+      },
+      {
+        "data_id": "1",
+        "file_name": "D:\\量化n1\\资料\\日语N1语法大全(1).pdf",
+        "state": "done",
+        "zip_path": "C:\\Users\\Garo\\gokaku\\output\\batch_classified_final\\grammar\\1.zip",
+        "extract_dir": "C:\\Users\\Garo\\gokaku\\output\\batch_classified_final\\grammar\\1",
+        "md_path": "C:\\Users\\Garo\\gokaku\\output\\batch_classified_final\\grammar\\1\\full.md"
+      },
+      {
+        "data_id": "2",
+        "file_name": "D:\\量化n1\\资料\\日语N1语法大全.pdf",
+        "state": "done",
+        "zip_path": "C:\\Users\\Garo\\gokaku\\output\\batch_classified_final\\grammar\\2.zip",
+        "extract_dir": "C:\\Users\\Garo\\gokaku\\output\\batch_classified_final\\grammar\\2",
+        "md_path": "C:\\Users\\Garo\\gokaku\\output\\batch_classified_final\\grammar\\2\\full.md"
+      },
+      {
+        "data_id": "3",
+        "file_name": "D:\\量化n1\\资料\\日语能力考一级231条语法详细总结（收藏打印版）.pdf",
+        "state": "done",
+        "zip_path": "C:\\Users\\Garo\\gokaku\\output\\batch_classified_final\\grammar\\3.zip",
+        "extract_dir": "C:\\Users\\Garo\\gokaku\\output\\batch_classified_final\\grammar\\3",
+        "md_path": "C:\\Users\\Garo\\gokaku\\output\\batch_classified_final\\grammar\\3\\full.md"
+      }
+    ]
+  }
+}

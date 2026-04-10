@@ -1,0 +1,38 @@
+{
+  "category": "vocabulary",
+  "total": 3,
+  "success": 3,
+  "failed": 0,
+  "failed_files": [],
+  "result": {
+    "batch_id": "832c1348-4f8f-4e6b-a3a5-cef570927484",
+    "output_dir": "C:\\Users\\Garo\\gokaku\\output\\batch_classified_final\\vocabulary",
+    "num_files": 3,
+    "items": [
+      {
+        "data_id": "0",
+        "file_name": "D:\\量化n1\\资料\\311.N1真题总结资料/N1真题副词.pdf",
+        "state": "done",
+        "zip_path": "C:\\Users\\Garo\\gokaku\\output\\batch_classified_final\\vocabulary\\0.zip",
+        "extract_dir": "C:\\Users\\Garo\\gokaku\\output\\batch_classified_final\\vocabulary\\0",
+        "md_path": "C:\\Users\\Garo\\gokaku\\output\\batch_classified_final\\vocabulary\\0\\full.md"
+      },
+      {
+        "data_id": "1",
+        "file_name": "D:\\量化n1\\资料\\311.N1真题总结资料/N1词汇合集.pdf",
+        "state": "done",
+        "zip_path": "C:\\Users\\Garo\\gokaku\\output\\batch_classified_final\\vocabulary\\1.zip",
+        "extract_dir": "C:\\Users\\Garo\\gokaku\\output\\batch_classified_final\\vocabulary\\1",
+        "md_path": "C:\\Users\\Garo\\gokaku\\output\\batch_classified_final\\vocabulary\\1\\full.md"
+      },
+      {
+        "data_id": "2",
+        "file_name": "D:\\量化n1\\资料\\日语N1、N2重点汉字词汇(名词)(付假名读音).pdf",
+        "state": "done",
+        "zip_path": "C:\\Users\\Garo\\gokaku\\output\\batch_classified_final\\vocabulary\\2.zip",
+        "extract_dir": "C:\\Users\\Garo\\gokaku\\output\\batch_classified_final\\vocabulary\\2",
+        "md_path": "C:\\Users\\Garo\\gokaku\\output\\batch_classified_final\\vocabulary\\2\\full.md"
+      }
+    ]
+  }
+}

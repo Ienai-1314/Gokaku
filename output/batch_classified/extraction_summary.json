@@ -1,0 +1,58 @@
+{
+  "exam_paper": [
+    {
+      "file": "A 2025年12月N1完整原卷.pdf",
+      "status": "failed",
+      "error": "HTTPSConnectionPool(host='mineru.openxlab.org.cn', port=443): Max retries exceeded with url: /api/v1/pdf/extract (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1018)')))"
+    },
+    {
+      "file": "N1 2025年7月完整版原卷.pdf",
+      "status": "failed",
+      "error": "HTTPSConnectionPool(host='mineru.openxlab.org.cn', port=443): Max retries exceeded with url: /api/v1/pdf/extract (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1018)')))"
+    },
+    {
+      "file": "2021年12月日语N1真题试卷（高清打印版）.pdf",
+      "status": "failed",
+      "error": "HTTPSConnectionPool(host='mineru.openxlab.org.cn', port=443): Max retries exceeded with url: /api/v1/pdf/extract (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1018)')))"
+    }
+  ],
+  "vocabulary": [
+    {
+      "file": "N1真题副词.pdf",
+      "status": "failed",
+      "error": "HTTPSConnectionPool(host='mineru.openxlab.org.cn', port=443): Max retries exceeded with url: /api/v1/pdf/extract (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1018)')))"
+    },
+    {
+      "file": "N1词汇合集.pdf",
+      "status": "failed",
+      "error": "HTTPSConnectionPool(host='mineru.openxlab.org.cn', port=443): Max retries exceeded with url: /api/v1/pdf/extract (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1018)')))"
+    },
+    {
+      "file": "日语N1、N2重点汉字词汇(名词)(付假名读音).pdf",
+      "status": "failed",
+      "error": "HTTPSConnectionPool(host='mineru.openxlab.org.cn', port=443): Max retries exceeded with url: /api/v1/pdf/extract (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1018)')))"
+    }
+  ],
+  "grammar": [
+    {
+      "file": "N1真题语法总结.pdf",
+      "status": "failed",
+      "error": "HTTPSConnectionPool(host='mineru.openxlab.org.cn', port=443): Max retries exceeded with url: /api/v1/pdf/extract (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1018)')))"
+    },
+    {
+      "file": "日语N1语法大全(1).pdf",
+      "status": "failed",
+      "error": "HTTPSConnectionPool(host='mineru.openxlab.org.cn', port=443): Max retries exceeded with url: /api/v1/pdf/extract (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1018)')))"
+    },
+    {
+      "file": "日语N1语法大全.pdf",
+      "status": "failed",
+      "error": "HTTPSConnectionPool(host='mineru.openxlab.org.cn', port=443): Max retries exceeded with url: /api/v1/pdf/extract (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1018)')))"
+    },
+    {
+      "file": "日语能力考一级231条语法详细总结（收藏打印版）.pdf",
+      "status": "failed",
+      "error": "HTTPSConnectionPool(host='mineru.openxlab.org.cn', port=443): Max retries exceeded with url: /api/v1/pdf/extract (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1018)')))"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "category": "exam_paper",
+  "total": 3,
+  "success": 3,
+  "failed": 0,
+  "failed_files": [],
+  "result": {
+    "batch_id": "b1ac7a0c-371b-45cf-be04-d3a3a6dc9754",
+    "output_dir": "C:\\Users\\Garo\\gokaku\\output\\batch_classified_final\\exam_paper",
+    "num_files": 3,
+    "items": [
+      {
+        "data_id": "0",
+        "file_name": "D:\\量化n1\\资料\\A 日语N1/2025年12月N1 完整原卷/A 2025年12月N1完整原卷.pdf",
+        "state": "done",
+        "zip_path": "C:\\Users\\Garo\\gokaku\\output\\batch_classified_final\\exam_paper\\0.zip",
+        "extract_dir": "C:\\Users\\Garo\\gokaku\\output\\batch_classified_final\\exam_paper\\0",
+        "md_path": "C:\\Users\\Garo\\gokaku\\output\\batch_classified_final\\exam_paper\\0\\full.md"
+      },
+      {
+        "data_id": "1",
+        "file_name": "D:\\量化n1\\资料\\A 日语N1/N1 2025年7月原卷+听力音频/N1 2025年7月完整版原卷.pdf",
+        "state": "done",
+        "zip_path": "C:\\Users\\Garo\\gokaku\\output\\batch_classified_final\\exam_paper\\1.zip",
+        "extract_dir": "C:\\Users\\Garo\\gokaku\\output\\batch_classified_final\\exam_paper\\1",
+        "md_path": "C:\\Users\\Garo\\gokaku\\output\\batch_classified_final\\exam_paper\\1\\full.md"
+      },
+      {
+        "data_id": "2",
+        "file_name": "D:\\量化n1\\资料\\A 日语N1/N1历年真题  有音频/日语N1真题 修正无垃圾暗码/2020年-2023年（无暗水印版，干净版）/2021.12/2021年12月日语N1真题试卷（高清打印版）.pdf",
+        "state": "done",
+        "zip_path": "C:\\Users\\Garo\\gokaku\\output\\batch_classified_final\\exam_paper\\2.zip",
+        "extract_dir": "C:\\Users\\Garo\\gokaku\\output\\batch_classified_final\\exam_paper\\2",
+        "md_path": "C:\\Users\\Garo\\gokaku\\output\\batch_classified_final\\exam_paper\\2\\full.md"
+      }
+    ]
+  }
+}
