@@ -1,11 +1,11 @@
-import { NextRequest, NextResponse } from 'next/headers';
+import { NextResponse } from 'next/server';
 import { cookies } from 'next/headers';
 
 /**
  * POST /api/admin/logout
  * 管理员登出
  */
-export async function POST(request: NextRequest) {
+export async function POST() {
   try {
     const cookieStore = await cookies();
     cookieStore.delete('admin_token');
