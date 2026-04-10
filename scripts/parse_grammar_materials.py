@@ -15,7 +15,8 @@ sys.stdout.reconfigure(encoding='utf-8')
 
 # 加载环境变量
 from dotenv import load_dotenv
-load_dotenv()
+env_path = Path(__file__).parent.parent / '.env.local'
+load_dotenv(dotenv_path=env_path)
 
 DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY")
 if not DEEPSEEK_API_KEY:

@@ -1,0 +1,778 @@
+[
+  {
+    "grammar_pattern": "に際して",
+    "meaning": "在…之际",
+    "example": "クレジットカードの申し込みに際して、本書の書類にご記入ください",
+    "translation": "在申请信用卡之际，请填写本书的文件",
+    "usage_notes": null,
+    "exam_year": "2024.7"
+  },
+  {
+    "grammar_pattern": "に先立って",
+    "meaning": "在…之前",
+    "example": "さくら駅周辺の再開発事業を行うに先立って、さくら市は関係者に対し説明会を開催する予定だ",
+    "translation": "在进行樱花站周边再开发事业之前，樱花市计划面向相关人员召开说明会",
+    "usage_notes": null,
+    "exam_year": "2022.12"
+  },
+  {
+    "grammar_pattern": "名の/v原+際は/際に",
+    "meaning": "在…时候",
+    "example": "（ホームページ）当センター相談窓にお越しになる際は、事前にご連絡を願いたい",
+    "translation": "（主页）前来本中心咨询窗口时，请事先联系",
+    "usage_notes": null,
+    "exam_year": "2024.7"
+  },
+  {
+    "grammar_pattern": "に限らず",
+    "meaning": "不仅是，不仅限于",
+    "example": "若い世代の投票率は我が国に限らず相当低い傾向にある",
+    "translation": "年轻一代的投票率不仅在我国，都处于相当低的趋势",
+    "usage_notes": null,
+    "exam_year": "2019.7"
+  },
+  {
+    "grammar_pattern": "名の/vてる+最中に",
+    "meaning": "正…时候",
+    "example": "休みの日に、外食を楽しんでいる最中に、会社から予定外の仕事の連絡が入った",
+    "translation": "休息日，正在外面吃饭享受的时候，公司来了计划外的工作联系",
+    "usage_notes": null,
+    "exam_year": null
+  },
+  {
+    "grammar_pattern": "形1/形2な+限りだ",
+    "meaning": "非常…，极了（表强烈的感情）",
+    "example": "一家揃って海外旅行に行くんだ、羨ましい限りだ。",
+    "translation": "一家人一起去海外旅行，真是羡慕极了。",
+    "usage_notes": null,
+    "exam_year": null
+  },
+  {
+    "grammar_pattern": "だけのことだ",
+    "meaning": "仅仅，只不过是",
+    "example": "森選手の予選敗退は、けがが原因だと言われているが、本人は「けがは関係ない。単に実力が足りなかっただけのことだ」とコメントしている",
+    "translation": "森选手预选赛失利，虽然被说是受伤的原因，但本人评论说“受伤没关系。只不过是实力不足而已”。",
+    "usage_notes": null,
+    "exam_year": "2024.7"
+  },
+  {
+    "grammar_pattern": "v原+見込みだ",
+    "meaning": "预计，有可能",
+    "example": "（天気予報で）明日は低気圧の発達に伴い、西日本を中心に風雨が強まる見込みだ",
+    "translation": "（天气预报）明天随着低气压的发展，预计以西日本为中心风雨将增强",
+    "usage_notes": null,
+    "exam_year": "2024.7"
+  },
+  {
+    "grammar_pattern": "名+(あって)の+名",
+    "meaning": "正因为有…才…",
+    "example": "経営者は、会社は社員あってのものだということを忘れてはならない",
+    "translation": "经营者不能忘记，公司正是因为有了员工才成其为公司",
+    "usage_notes": null,
+    "exam_year": "2023.12"
+  },
+  {
+    "grammar_pattern": "名+(たる)+名",
+    "meaning": "作为…应该…（作为某身份应该/不能…）",
+    "example": "企業の経営者たるものは、働く人たちが能力を発揮できる環境を整えるべきだ",
+    "translation": "作为企业的经营者，应该营造一个能让工作者发挥能力的环境",
+    "usage_notes": null,
+    "exam_year": null
+  },
+  {
+    "grammar_pattern": "～てこそ",
+    "meaning": "只有…才…",
+    "example": "苦労してこそ、分かることもたくさんある",
+    "translation": "只有辛苦付出，才能明白很多事情",
+    "usage_notes": null,
+    "exam_year": null
+  },
+  {
+    "grammar_pattern": "～せいか",
+    "meaning": "可能是因为…（表不确定的原因）",
+    "example": "連休中どこにも出かけず、寝てばかりいた（光…）せいか、今日は朝から体がだるい",
+    "translation": "可能是因为连休期间哪儿也没去，光睡觉了，今天从早上开始身体就乏力",
+    "usage_notes": null,
+    "exam_year": "2023.12"
+  },
+  {
+    "grammar_pattern": "vた+ことにしては",
+    "meaning": "就当…",
+    "example": "ごめん、財布落としちゃって、食事をおごる話はなかったことにしてくれない？",
+    "translation": "对不起，我把钱包弄丢了，请就当没说过我请客吃饭这回事，好吗？",
+    "usage_notes": null,
+    "exam_year": null
+  },
+  {
+    "grammar_pattern": "～としても/～とて",
+    "meaning": "作为…",
+    "example": "私個人としては、その必要性を認めておりますが、市民の皆さんが納得していないのでは意味がありません",
+    "translation": "作为我个人，虽然认可其必要性，但如果市民们不接受的话就没有意义",
+    "usage_notes": null,
+    "exam_year": "2023.12"
+  },
+  {
+    "grammar_pattern": "にかかわらず",
+    "meaning": "无论/不管…",
+    "example": "商品のお買い上げ後、理由のいかんにかかわらず、返品はお受けいたしません",
+    "translation": "购买商品后，无论理由如何，概不接受退货",
+    "usage_notes": null,
+    "exam_year": null
+  },
+  {
+    "grammar_pattern": "思いをする",
+    "meaning": "感到/感觉…",
+    "example": "先日、レストランに行った時、店員の失礼な態度に大変不快な思いをした",
+    "translation": "前几天去餐厅时，对店员失礼的态度感到非常不快",
+    "usage_notes": null,
+    "exam_year": "2023.12"
+  },
+  {
+    "grammar_pattern": "はずだった",
+    "meaning": "本来应该…（结果与推测的事实不符，带有失望、后悔、惊讶的语气）",
+    "example": "仕事では、ミスはしないはずだ。しかし、人間である以上、ミスは避けられない",
+    "translation": "工作上本来不应该出错。但是，只要是人，错误就不可避免",
+    "usage_notes": null,
+    "exam_year": "2023.12"
+  },
+  {
+    "grammar_pattern": "とは限らない",
+    "meaning": "未必…",
+    "example": "値段の高いものが、必ずしもいいものだとは限らない",
+    "translation": "价格贵的东西，未必就是好东西",
+    "usage_notes": null,
+    "exam_year": null
+  },
+  {
+    "grammar_pattern": "～限りでは",
+    "meaning": "据…（表某个限定的范围之内）",
+    "example": "学生から提出された論文の中で面白いものがあった。私が知る限りでは、そのアプローチで分析している論文はこれまでになかった",
+    "translation": "在学生提交的论文中，有一篇很有趣。据我所知，至今还没有用那种方法进行分析的论文",
+    "usage_notes": null,
+    "exam_year": "2023.12"
+  },
+  {
+    "grammar_pattern": "誇りに思う",
+    "meaning": "以…为荣",
+    "example": "努力して夢を叶えた弟のことを、兄として誇りに思う",
+    "translation": "作为哥哥，我为努力实现了梦想的弟弟感到骄傲",
+    "usage_notes": null,
+    "exam_year": "2023.7"
+  },
+  {
+    "grammar_pattern": "～しか～ない",
+    "meaning": "只…",
+    "example": "失敗は誰にも避けられないのだが、失敗からしか学べないとも言える",
+    "translation": "失败是谁都无法避免的，但也可以说只能从失败中学习",
+    "usage_notes": null,
+    "exam_year": "2023.7"
+  },
+  {
+    "grammar_pattern": "名+そのもの/形2词干+そのもの",
+    "meaning": "其本身，非常…",
+    "example": "合唱コンクールで歌った子供たちの表情は、真剣そのものだった",
+    "translation": "在合唱比赛中唱歌的孩子们的表情，非常认真",
+    "usage_notes": null,
+    "exam_year": "2023.7"
+  },
+  {
+    "grammar_pattern": "～間",
+    "meaning": "在…期间（一直）",
+    "example": "夏休みの間、ずっと実家にいた",
+    "translation": "暑假期间，一直待在老家",
+    "usage_notes": null,
+    "exam_year": null
+  },
+  {
+    "grammar_pattern": "としたら",
+    "meaning": "如果…",
+    "example": "一億の宝くじに当たったとしたら、まず何を買いますか",
+    "translation": "如果中了一亿日元的彩票，首先买什么？",
+    "usage_notes": null,
+    "exam_year": null
+  },
+  {
+    "grammar_pattern": "～ようにする",
+    "meaning": "努力/设法做…",
+    "example": "再び同じミスを犯さないようにする",
+    "translation": "努力不再犯同样的错误",
+    "usage_notes": null,
+    "exam_year": "2023.12"
+  },
+  {
+    "grammar_pattern": "～ようにしている",
+    "meaning": "坚持…（习惯）",
+    "example": "健康のために、毎朝30分ぐらい体を動かすようにしている",
+    "translation": "为了健康，坚持每天早上运动30分钟左右",
+    "usage_notes": null,
+    "exam_year": "2023.12"
+  },
+  {
+    "grammar_pattern": "んじゃないか",
+    "meaning": "会不会…（说话人委婉的判断）",
+    "example": "まだ11月の初めなのに、昨日は雪が降った。今年の冬は寒くなるんじゃないか",
+    "translation": "才11月初，昨天就下雪了。今年的冬天会不会变冷呢？",
+    "usage_notes": null,
+    "exam_year": null
+  },
+  {
+    "grammar_pattern": "〜だの〜だの",
+    "meaning": "表列举",
+    "example": "年末になると、大掃除だの、お正月の準備だの、いろいろ忙しい",
+    "translation": "一到年末，又是大扫除，又是准备过年，非常忙",
+    "usage_notes": null,
+    "exam_year": null
+  },
+  {
+    "grammar_pattern": "〜を受けて",
+    "meaning": "受到",
+    "example": "1. 今年は景気の回復傾向を受けて、大企業を中心に給与の支給額が増えてきている。2. 燃料価格の高騰を受けて、複数の航空会社が運賃を値上げした",
+    "translation": "1. 今年受到经济复苏趋势的影响，以大企业为中心，工资支付额正在增加。2. 受到燃料价格高涨的影响，多家航空公司上调了票价",
+    "usage_notes": null,
+    "exam_year": "2013.7"
+  },
+  {
+    "grammar_pattern": "〜に限って",
+    "meaning": "只限于；偏偏",
+    "example": "蚊というと血を吸うイメージがあるかもしれませんが、実は血を吸うのは雌だけです。しかも、産卵を控えた雌に限った行動なのです。例: 毎週火曜日に限って、映画は半額になる",
+    "translation": "说到蚊子，可能大家会想到吸血，但其实吸血的只有雌蚊。而且，这是仅限于即将产卵的雌蚊的行为。例：仅限于每周二，电影票半价",
+    "usage_notes": null,
+    "exam_year": "2024.7"
+  },
+  {
+    "grammar_pattern": "〜にわたって",
+    "meaning": "表范围（时间、空间）",
+    "example": "例: 一週間にわたって雨が降り続いた",
+    "translation": "例：雨持续下了一周",
+    "usage_notes": null,
+    "exam_year": "2011.12/2023.12"
+  },
+  {
+    "grammar_pattern": "〜なくはない",
+    "meaning": "不是不",
+    "example": "普段はLサイズを着るのですが、間違えてMサイズのTシャツを買ってしまった。でも、着てみたら、少しきついが、Mサイズも着られなくはなかった",
+    "translation": "平时我穿L码，但错买了M码的T恤。不过，试穿了一下，虽然有点紧，但M码也不是不能穿",
+    "usage_notes": null,
+    "exam_year": null
+  },
+  {
+    "grammar_pattern": "〜か〜ないか",
+    "meaning": "刚...的时候",
+    "example": "私が小学校に入るか入らないかのころ、父と大きな川へ釣りに行った記憶がある",
+    "translation": "我记得在我刚上小学的时候，和父亲去了一条大河钓鱼",
+    "usage_notes": null,
+    "exam_year": null
+  },
+  {
+    "grammar_pattern": "〜ようが〜まいが",
+    "meaning": "无论是...还是",
+    "example": "例: 役に立とうが立つまいが、疑問に思ったことを解明しようとするのが人間です",
+    "translation": "例：无论有用还是没用，试图解开心中疑问的正是人类",
+    "usage_notes": null,
+    "exam_year": null
+  },
+  {
+    "grammar_pattern": "〜てたまらない",
+    "meaning": "不得了",
+    "example": "絶対に勝てる相手だっただけに、大事な場面でミスをして悔しくてたまらない",
+    "translation": "正因为是绝对能赢的对手，所以在重要场合失误，后悔得不得了",
+    "usage_notes": null,
+    "exam_year": null
+  },
+  {
+    "grammar_pattern": "〜てばかりだ",
+    "meaning": "总是",
+    "example": "例: 弟は毎日ゲームをしてばかりで、勉強をしない",
+    "translation": "例：弟弟每天总是玩游戏，不学习",
+    "usage_notes": null,
+    "exam_year": null
+  },
+  {
+    "grammar_pattern": "〜そうだ",
+    "meaning": "看上去（推测）",
+    "example": "1. これだけたくさんあれば、私たち、当分お米は買わなくて済みそうだ。2. 主人公と恋人が周囲に無理やり別れさせられそうになる話なのかな",
+    "translation": "1. 有这么多的话，我们暂时好像不用买米了。2. 这故事大概是讲主人公和恋人眼看就要被周围人强行拆散吧",
+    "usage_notes": null,
+    "exam_year": null
+  },
+  {
+    "grammar_pattern": "〜たきり",
+    "meaning": "之后，再也没有",
+    "example": "例: ステーキは、半年前に食べたきりだ",
+    "translation": "例：牛排，半年前吃过一次之后就再也没吃过了",
+    "usage_notes": null,
+    "exam_year": "2023.12"
+  },
+  {
+    "grammar_pattern": "〜（よ）うとも",
+    "meaning": "即使...也",
+    "example": "1. 周囲からどんな批判を浴びようとも、自らの考えを最後まで貫く覚悟だ。2. 高校卒業後の進路について両親に反対されたが、誰に何と言われようとも、自分がこれだと思う道を信じて進むつもりだ",
+    "translation": "1. 无论受到周围怎样的批评，我都决心将自己的想法贯彻到底。2. 关于高中毕业后的出路，虽然遭到了父母的反对，但无论谁说什么，我都打算相信自己选择的道路走下去",
+    "usage_notes": "=ても",
+    "exam_year": "2014.7"
+  },
+  {
+    "grammar_pattern": "〜を最後に",
+    "meaning": "以...为最后",
+    "example": "A 聞いた？水泳の伊藤選手、明日の世界大会を最後に引退するって。B え、明日で終わり？だったら応援に行かなきゃ",
+    "translation": "A 听说了吗？游泳选手伊藤，说是明天的世界大赛之后就退役了。B 诶，明天就结束了？那必须去加油啊",
+    "usage_notes": null,
+    "exam_year": null
+  },
+  {
+    "grammar_pattern": "〜たが最後",
+    "meaning": "一旦...的话",
+    "example": "例: 顧客からの信頼は一度失ったが最後、取り戻すのは難しい",
+    "translation": "例：一旦失去了客户的信任，就很难再挽回",
+    "usage_notes": "N1 = 〜たら最後",
+    "exam_year": null
+  },
+  {
+    "grammar_pattern": "〜ものを",
+    "meaning": "然而",
+    "example": "納期の日程を設定したけれども、最終的に取りまとめるのは難しそうだ",
+    "translation": "虽然设定了交货日期，但最终要汇总起来似乎很难",
+    "usage_notes": "=けれども",
+    "exam_year": null
+  },
+  {
+    "grammar_pattern": "もの/もん",
+    "meaning": "表原因（撒娇）",
+    "example": null,
+    "translation": null,
+    "usage_notes": null,
+    "exam_year": null
+  },
+  {
+    "grammar_pattern": "あての",
+    "meaning": "因为有…才…/没有…就不能…",
+    "example": "今の安定生活は若いときの苦労あってのものだ。",
+    "translation": "因为有年轻时的辛苦努力，才能有如今安定的生活。",
+    "usage_notes": "",
+    "exam_year": ""
+  },
+  {
+    "grammar_pattern": "いかんで/いかんでは/いかんによって",
+    "meaning": "根据…/取决于…/要看…",
+    "example": "成績は伸びるかどうかは本人の今後の努力いかんだ。",
+    "translation": "成绩是否能上去要看本人今后的努力。",
+    "usage_notes": "いかんで后面可能有两种结果，但いかんでは后面只是一种结果。",
+    "exam_year": ""
+  },
+  {
+    "grammar_pattern": "いかんによらず/いかんにかかわらず",
+    "meaning": "不管…/不问…",
+    "example": "結果のいかんにかかわらず、必ず報告すること。",
+    "translation": "不管结果如何，必须报告。",
+    "usage_notes": "いかんせん无奈/かんともしがたい怎么也不好办。",
+    "exam_year": ""
+  },
+  {
+    "grammar_pattern": "动词意志形が/动词意志形と",
+    "meaning": "无论…都…/不管…都…",
+    "example": "彼が困ろうが、私は関係がない。",
+    "translation": "无论他多困惑，都与我无关。",
+    "usage_notes": "后面的情况和前面的条件无关系。",
+    "exam_year": ""
+  },
+  {
+    "grammar_pattern": "动词意志形が同一动词意志形まいが/动词意志形と同一动词意志形まいと",
+    "meaning": "是…还是…",
+    "example": "親が反対しようがしまいが、私は彼と結婚する。",
+    "translation": "不管亲人是否反对，我还是和他结婚。",
+    "usage_notes": "",
+    "exam_year": ""
+  },
+  {
+    "grammar_pattern": "动词意志形に同一动词否定形",
+    "meaning": "想要…但不能…/即使想…也不能…",
+    "example": "仕事が終わらないから、帰ろうにも帰れない。",
+    "translation": "因为工作还没有做完，即使想回也不能回。",
+    "usage_notes": "",
+    "exam_year": ""
+  },
+  {
+    "grammar_pattern": "限りだ",
+    "meaning": "…极了./…之至",
+    "example": "あんなに盛大な結婚式を挙げることができて、羨ましい限りだ。",
+    "translation": "能举行如此盛大的结婚仪式，羡慕极了。",
+    "usage_notes": "",
+    "exam_year": ""
+  },
+  {
+    "grammar_pattern": "(た)が最後",
+    "meaning": "(一旦)…之后…就…",
+    "example": "彼はスピーチを始めたが最後、長々と話が続いて終わらない。",
+    "translation": "他一旦开始演讲，就长长的话持续说个没完。",
+    "usage_notes": "",
+    "exam_year": ""
+  },
+  {
+    "grammar_pattern": "かたがた",
+    "meaning": "…(的)同时/顺便…",
+    "example": "散歩かたがた、買い物をしてきた。",
+    "translation": "散步的时候，顺便去买东西。",
+    "usage_notes": "前后两个动作的时间带是一样的，但いっぽうで前后两个时间带是不一样的。",
+    "exam_year": ""
+  },
+  {
+    "grammar_pattern": "かたわら",
+    "meaning": "从事…之余，又…/一面…一面…",
+    "example": "彼は勉学のかたわら、アルバイトをしている。",
+    "translation": "他一面努力学习，一面打工。",
+    "usage_notes": "前后两个时间带不一样。",
+    "exam_year": ""
+  },
+  {
+    "grammar_pattern": "がてら",
+    "meaning": "…(的同时)，顺便…/借…之便…",
+    "example": "遊びがてら、建設中の別荘を見に行こう。",
+    "translation": "玩的同时，顺便去别墅看看吧。",
+    "usage_notes": "前后两个动作的时间带是一样的，但いっぽうで前后两个时间带是不一样的。",
+    "exam_year": ""
+  },
+  {
+    "grammar_pattern": "が早いか",
+    "meaning": "…立即…",
+    "example": "ベルが鳴るが早いか、彼女は受話器を取った。",
+    "translation": "铃一响，她就马上去拿听筒。",
+    "usage_notes": "不适用于自然现象和自然状态的发生，也不能用于意志和推量型。",
+    "exam_year": ""
+  },
+  {
+    "grammar_pattern": "からある/(からする)/からの",
+    "meaning": "在…以上",
+    "example": "ここから東京までは、100キロからある。",
+    "translation": "从这儿到东京，有一百多公里。",
+    "usage_notes": "からある用于距离重量高度等，からする用于金额，からの用于人数。",
+    "exam_year": ""
+  },
+  {
+    "grammar_pattern": "きらいがある",
+    "meaning": "有点儿…总爱…/有…样的毛病",
+    "example": "彼は人の話を聞かないきらいがある。",
+    "translation": "他有点听不进别人的话。",
+    "usage_notes": "不能用于回数和自然现象。",
+    "exam_year": ""
+  },
+  {
+    "grammar_pattern": "極まる/極まりない/極み",
+    "meaning": "非常…/极其…",
+    "example": "彼のしたことは、卑劣(ひれつ)極まる。",
+    "translation": "他所做的事，非常卑鄙。",
+    "usage_notes": "極まる和極まりない的意思是一样的，の極み用在句尾。",
+    "exam_year": ""
+  },
+  {
+    "grammar_pattern": "あての",
+    "meaning": "因为有...才.../没有...就不能...",
+    "example": "今の安定生活的生活が辛苦労力,才能有如今安定的生活",
+    "translation": "因为有年轻时的辛苦努力,才能有如今安定的生活",
+    "usage_notes": "",
+    "exam_year": ""
+  },
+  {
+    "grammar_pattern": "いかんて/いかんによ",
+    "meaning": "根据.../取决于.../要看...",
+    "example": "成績は伸ばるかうかは本人の今後の努力いかんだ。",
+    "translation": "成绩是否能上去要看本人今后的努力",
+    "usage_notes": "いかんて后面可能有两种结果,但いかんは后面只是一种结果",
+    "exam_year": ""
+  },
+  {
+    "grammar_pattern": "いかんによらず/いかんにかかわらず",
+    "meaning": "不管.../不问...",
+    "example": "結果のいかんにかかわらず、必ず報告してください。",
+    "translation": "不管结果如何,必须报告.",
+    "usage_notes": "いかんせん无奈かんともしがたい怎么也不好办。",
+    "exam_year": ""
+  },
+  {
+    "grammar_pattern": "动词意志形が/动词意志形と",
+    "meaning": "无论...都.../不管...都...",
+    "example": "彼が困ろうが、私には関係がない。",
+    "translation": "无论他多困惑,都与我无关.",
+    "usage_notes": "后面的情况和前面的条件无关系。",
+    "exam_year": ""
+  },
+  {
+    "grammar_pattern": "动词意志形が同一动词意志形まいが/动词意志形と同一动词意志形まいと",
+    "meaning": "是...还是...",
+    "example": "親が反対しようがしまいが、私は彼と結婚いたします。",
+    "translation": "不管亲人是否反对,我还是和他结婚.",
+    "usage_notes": "",
+    "exam_year": ""
+  },
+  {
+    "grammar_pattern": "动词意志形に同一动词否定形",
+    "meaning": "想要...但不能.../即使想...也不能...",
+    "example": "仕事が終わらない、帰ろうにも帰れない。",
+    "translation": "因为工作还没有做完,即使想回也不能回.",
+    "usage_notes": "",
+    "exam_year": ""
+  },
+  {
+    "grammar_pattern": "限りだ",
+    "meaning": "...极了../之至",
+    "example": "あれほど盛大な結婚式を挙げられるなんて、羨ましい限りだ",
+    "translation": "能否举行如此盛大的结婚仪式,羡慕极了.",
+    "usage_notes": "",
+    "exam_year": ""
+  },
+  {
+    "grammar_pattern": "(た)が最後",
+    "meaning": "(一旦)...之后...就...",
+    "example": "彼はスピーチを始めたが最後、長々と話が続いて終わらない。",
+    "translation": "他一旦开始演讲,就长长的话持续说个没完.",
+    "usage_notes": "",
+    "exam_year": ""
+  },
+  {
+    "grammar_pattern": "かたがた",
+    "meaning": "...(の)同時/顺便...",
+    "example": "散歩かたがた、買物をする。",
+    "translation": "散步的时候,顺便去买东西.",
+    "usage_notes": "前后两个动作的时间带是一样的,但しにてに前后两个时间带是不一样的",
+    "exam_year": ""
+  },
+  {
+    "grammar_pattern": "かたわら",
+    "meaning": "从事...之余,又...一面...一面...",
+    "example": "彼は勉学のかたわら、アルバイトをしている。",
+    "translation": "他一面努力学习,一面打工.",
+    "usage_notes": "前后两个时间带不一样。",
+    "exam_year": ""
+  },
+  {
+    "grammar_pattern": "がてら",
+    "meaning": "...(的同时),顺便.../借...之便...",
+    "example": "遊びがてら、建設中の別荘を見に行こう。",
+    "translation": "玩的同时,顺便去别墅看看吧.",
+    "usage_notes": "前后两个动作的时间带是一样的,但しにてに前后两个时间带是不一样的",
+    "exam_year": ""
+  },
+  {
+    "grammar_pattern": "が早いか",
+    "meaning": "...立即...",
+    "example": "ベルが鳴るが早いか、彼女は受話器を取った。",
+    "translation": "铃一响,她就马上去拿听筒.",
+    "usage_notes": "不适用于自然现象和自然状态的发生,也不能用于意志和推量型。",
+    "exam_year": ""
+  },
+  {
+    "grammar_pattern": "からある/(からする)/からの",
+    "meaning": "在...以上",
+    "example": "ここから東京までは、100キロからある。",
+    "translation": "从这儿到东京,有一百多公里.",
+    "usage_notes": "からある用于距离重量高度等,からする用于金額,からの用于人数",
+    "exam_year": ""
+  },
+  {
+    "grammar_pattern": "きらいがある",
+    "meaning": "有点儿...总爱.../有...样的毛病",
+    "example": "彼は人の話を聞かないきらいがある。",
+    "translation": "他有点听不进别人的话.",
+    "usage_notes": "不能用于回数和自然现象。",
+    "exam_year": ""
+  },
+  {
+    "grammar_pattern": "極まる/極まりない/の極み",
+    "meaning": "非常.../极其...",
+    "example": "彼のしたことは、卑劣(ひれつ)極まる。",
+    "translation": "他所做的事,非常卑鄙.",
+    "usage_notes": "極まる和極まりない的意思是一样的,の極み用在句尾。",
+    "exam_year": ""
+  },
+  {
+    "grammar_pattern": "ごとき/ごとく/ごとし",
+    "meaning": "像...如...似...就象...",
+    "example": "王者のごとき振舞いに人々は反感を抱いた。",
+    "translation": "对于王者一样的举止,人人都怀有反感.",
+    "usage_notes": "ごとく饰动词相当于ように、ごとき饰名词相当于ような、ごとし是终止形",
+    "exam_year": ""
+  },
+  {
+    "grammar_pattern": "こととて",
+    "meaning": "因为...所以/由于...",
+    "example": "10年ぶりのこととて、すぐにはわからない。",
+    "translation": "因为隔了10年,所以不能够很快知道.",
+    "usage_notes": "在意思表示为即使是...,即あっても时,只能用こととて、其他",
+    "exam_year": ""
+  },
+  {
+    "grammar_pattern": "ことなく/ことなしに(は)",
+    "meaning": "没有.../不...(而)...",
+    "example": "日曜日も休むことなく働んだ。",
+    "translation": "星期天也没有休息而要工作.",
+    "usage_notes": "",
+    "exam_year": ""
+  },
+  {
+    "grammar_pattern": "～あげくに（の）",
+    "meaning": "～的结果；最后～（多用于后果不好或消极的场合）",
+    "example": "さんざん迷ったあげく、やめにした。",
+    "translation": "犹豫了一顿，最后决定作罢",
+    "usage_notes": "［动词过去形；体言の］＋ あげくに",
+    "exam_year": null
+  },
+  {
+    "grammar_pattern": "～あっての",
+    "meaning": "有了～才有～",
+    "example": "あなたあっての私です。あなたがいなければ今日の私はいない。",
+    "translation": "有了你才有我．没有你就不可能有今天的我",
+    "usage_notes": "［体言］＋ あっての",
+    "exam_year": null
+  },
+  {
+    "grammar_pattern": "～いかんだ",
+    "meaning": "取决于～；根据～而定",
+    "example": "今回のスピーチ・コンテストに入賞できるかどうかは出場前の準備いかんにかかっている。",
+    "translation": "不管成败与否，都要做起来看",
+    "usage_notes": "［体言］＋いかんだ",
+    "exam_year": null
+  },
+  {
+    "grammar_pattern": "～いかんで",
+    "meaning": "根据～而～；根据～来～",
+    "example": "情勢いかんによって、対応策を決める。",
+    "translation": "根据形势而决定对策",
+    "usage_notes": "［体言］＋いかんで（或いかんによって）",
+    "exam_year": null
+  },
+  {
+    "grammar_pattern": "～いかんにかかわらず",
+    "meaning": "不管～；不论～",
+    "example": "成否のいかんにかかわらず、やってみることだ。",
+    "translation": "不管成败与否，都要做起来看",
+    "usage_notes": "［体言の］＋いかんにかかわらず",
+    "exam_year": null
+  },
+  {
+    "grammar_pattern": "～いかんによっては",
+    "meaning": "由于～（情况）不同～；根据～如何～",
+    "example": "やり方いかんによっては結果も違ってくる。",
+    "translation": "由于做法不同．．．结果也不同．",
+    "usage_notes": "［体言］＋いかんによっては （或いかんでは）",
+    "exam_year": null
+  },
+  {
+    "grammar_pattern": "～いかんによらず",
+    "meaning": "不管～；不论～",
+    "example": "対応のいかんによらず、こちらは自分のやり方でやっていく。",
+    "translation": "不论对方如何应付，我们都要按自己的想法而定的",
+    "usage_notes": "［体言の］＋いかんによらず",
+    "exam_year": null
+  },
+  {
+    "grammar_pattern": "～以上は",
+    "meaning": "既然～（当然）就～",
+    "example": "参加する以上は優勝したい。",
+    "translation": "既然参加，当然就想得冠军",
+    "usage_notes": "［形容词连体形］ + 以上は",
+    "exam_year": null
+  },
+  {
+    "grammar_pattern": "～て（は）いられない",
+    "meaning": "不能～；哪能～",
+    "example": "急ぐので、明日まで待ってはいられません。",
+    "translation": "因为很急，所以不能等到明天．",
+    "usage_notes": "［动词连用形］＋て（は）いられない／表示动作的主体在心情上无法再保持原来的某种状态",
+    "exam_year": null
+  },
+  {
+    "grammar_pattern": "～う（よう）が",
+    "meaning": "无论～都～",
+    "example": "どんな金持ちであろうが、幸福は金で買えるものではない。",
+    "translation": "无论多么有钱，幸福是金钱买不到的",
+    "usage_notes": "［动词未然形］＋う（よう）が",
+    "exam_year": null
+  },
+  {
+    "grammar_pattern": "～う（よう）が、～まいが",
+    "meaning": "不论是～还是不～；不管是否～",
+    "example": "彼が来ようが来まいが、パーティーは時間通りにやる。",
+    "translation": "无论他是来，还是不来，聚会都会按时开始",
+    "usage_notes": "［动词未然形］＋う（よう）が，［五段动词终止形；其他动词，助词未然形］＋まいが",
+    "exam_year": null
+  },
+  {
+    "grammar_pattern": "～う（よう）と、～まいと",
+    "meaning": "不管是～还是～",
+    "example": "仕事が終ろうと終るまいと、時間になれば私は帰る。",
+    "translation": "不管工作完没完，到点我就走",
+    "usage_notes": "［动词未然形］＋う（よう）と、，［五段动词终止形；其他动词未然形］＋まいと",
+    "exam_year": null
+  },
+  {
+    "grammar_pattern": "～よ（よう）にも～ない",
+    "meaning": "想～也（不）～",
+    "example": "いまさら、あんな遠いところへはいこうにもいけない。",
+    "translation": "到现在了，那么远的地方，想去也去不成了",
+    "usage_notes": "［动词未然形］＋う（よう）にも、［同一动词可能式］＋ない",
+    "exam_year": null
+  },
+  {
+    "grammar_pattern": "～う（よう）ものなら",
+    "meaning": "如果～可～；只要～就～（表示强烈的假定条件，后果一般不好）",
+    "example": "後 1 時間到着が遅れようものなら、千載一遇のチャンスをのがすところだった。",
+    "translation": "如果再晚到 1小时，可就差点失去千载难逢的机会了",
+    "usage_notes": "［动词未然形］＋う（よう）ものなら",
+    "exam_year": null
+  },
+  {
+    "grammar_pattern": "～得（う）る",
+    "meaning": "能够～；可以～",
+    "example": "それは我々の考え得る最上の方法だった。",
+    "translation": "那是我们所能考虑到的最好的方法．",
+    "usage_notes": "［动词连用形］＋～得（う）る／［过去式读作\"得（え）た\"，否定式读作\"得（え）ない\"］",
+    "exam_year": null
+  },
+  {
+    "grammar_pattern": "～おそれがある",
+    "meaning": "有～的危险；恐怕要～；有可能～（结果多为消极）",
+    "example": "この本は学生に悪い影響を与えるおそれがある。",
+    "translation": "这本书有可能给学生不良影响",
+    "usage_notes": "［动词连体形；体言］＋おそれがある",
+    "exam_year": null
+  },
+  {
+    "grammar_pattern": "～かけだ",
+    "meaning": "表示动作刚开始，动作未完而中断，动作即将发生等",
+    "example": "もう 出勤の時間なのに まだ 御飯が食べかけだ。",
+    "translation": "已经到了上班时间，但饭还没吃完",
+    "usage_notes": "［动词连用形］＋かけだ",
+    "exam_year": null
+  },
+  {
+    "grammar_pattern": "～かけの",
+    "meaning": "表示动作刚开始，动作未完而中断，动作即将发生等",
+    "example": "読みかけの雑誌を電車の中に置き忘れてきた。",
+    "translation": "把没有读完的杂志遗忘在电车上了",
+    "usage_notes": "［动词连用形］＋かけの",
+    "exam_year": null
+  },
+  {
+    "grammar_pattern": "～がたい",
+    "meaning": "难于～；不容易～",
+    "example": "あんなに元気だった山田さんが亡くなったとは信じがたいことだ。",
+    "translation": "说那样健康的山田君去世了，这是难以相信的事",
+    "usage_notes": "［动词连用形］ + がたい",
+    "exam_year": null
+  },
+  {
+    "grammar_pattern": "～かたがた",
+    "meaning": "顺便～",
+    "example": "散歩かたがた本屋に寄る。",
+    "translation": "出去散步，顺便逛逛书店",
+    "usage_notes": "［体言］＋かたがた",
+    "exam_year": null
+  },
+  {
+    "grammar_pattern": "～かたわら",
+    "meaning": null,
+    "example": null,
+    "translation": null,
+    "usage_notes": "［动词连体形；体言の］",
+    "exam_year": null
+  }
+]
