@@ -1,0 +1,132 @@
+[
+  {
+    "questionNumber": 1,
+    "questionText": "あの画家の人生の軌跡を描いた映画を見た。",
+    "options": [
+      "させ",
+      "きせき",
+      "きせき",
+      "きのせき"
+    ],
+    "examDate": "2023-12",
+    "paperId": "2023-12-n1",
+    "section": "vocabulary"
+  },
+  {
+    "questionNumber": 2,
+    "questionText": "そこに書かれている情報には偏りがある。",
+    "options": [
+      "へだたり",
+      "かたより",
+      "あやまり",
+      "おだわり"
+    ],
+    "examDate": "2023-12",
+    "paperId": "2023-12-n1",
+    "section": "vocabulary"
+  },
+  {
+    "questionNumber": 3,
+    "questionText": "村上氏の主張にはさまざまな矛盾が含まれている。",
+    "options": [
+      "むじゅん",
+      "むじゅん",
+      "むじゅん",
+      "むじゅん"
+    ],
+    "examDate": "2023-12",
+    "paperId": "2023-12-n1",
+    "section": "vocabulary"
+  },
+  {
+    "questionNumber": 4,
+    "questionText": "事実が誇張されて伝わる。",
+    "options": [
+      "こちょう",
+      "こちょう",
+      "こちょう",
+      "こちょう"
+    ],
+    "examDate": "2023-12",
+    "paperId": "2023-12-n1",
+    "section": "vocabulary"
+  },
+  {
+    "questionNumber": 5,
+    "questionText": "この食堂は社員全員の昼食を賄っている。",
+    "options": [
+      "あまくて",
+      "になくて",
+      "あっかて",
+      "まかなって"
+    ],
+    "examDate": "2023-12",
+    "paperId": "2023-12-n1",
+    "section": "vocabulary"
+  },
+  {
+    "questionNumber": 6,
+    "questionText": "軽率な行動が批判を招いた。",
+    "options": [
+      "はいそ",
+      "はいの",
+      "まね",
+      "まねの"
+    ],
+    "examDate": "2023-12",
+    "paperId": "2023-12-n1",
+    "section": "grammar"
+  },
+  {
+    "questionNumber": 7,
+    "questionText": "そのチームは、名門チームが多数出場する中で、初出場で優勝という( )を成し遂げた。",
+    "options": [
+      "好況",
+      "喜劇",
+      "快挙",
+      "繁栄"
+    ],
+    "examDate": "2023-12",
+    "paperId": "2023-12-n1",
+    "section": "grammar"
+  },
+  {
+    "questionNumber": 8,
+    "questionText": "リーダーの無責任な発言が、混乱をさらに( )することになった。",
+    "options": [
+      "助長",
+      "抜充",
+      "主導",
+      "催促"
+    ],
+    "examDate": "2023-12",
+    "paperId": "2023-12-n1",
+    "section": "grammar"
+  },
+  {
+    "questionNumber": 9,
+    "questionText": "誰かを助けたからといって、その分の( )を求めてはいけない。",
+    "options": [
+      "仕返し",
+      "見返り",
+      "返却",
+      "返済"
+    ],
+    "examDate": "2023-12",
+    "paperId": "2023-12-n1",
+    "section": "grammar"
+  },
+  {
+    "questionNumber": 10,
+    "questionText": "学内から選ばれた学生たちによって、代表チームが( )された。",
+    "options": [
+      "集約",
+      "結合",
+      "結成",
+      "採集"
+    ],
+    "examDate": "2023-12",
+    "paperId": "2023-12-n1",
+    "section": "grammar"
+  }
+]

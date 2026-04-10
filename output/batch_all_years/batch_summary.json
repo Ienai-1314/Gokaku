@@ -1,0 +1,71 @@
+{
+  "batch_id": "f601810b-516c-4036-a454-c3ac88b2f7e5",
+  "output_dir": "C:\\Users\\Garo\\gokaku\\output\\batch_all_years",
+  "num_files": 8,
+  "items": [
+    {
+      "data_id": "0",
+      "file_name": "D:\\量化n1\\资料\\A 日语N1\\N1(202012-202507高清打印卷 含解析答案）\\N1高清打印版仅试卷（202012-202507）\\2020年12月日语N1真题试卷（高清打印版）.pdf",
+      "state": "done",
+      "zip_path": "C:\\Users\\Garo\\gokaku\\output\\batch_all_years\\0.zip",
+      "extract_dir": "C:\\Users\\Garo\\gokaku\\output\\batch_all_years\\0",
+      "md_path": "C:\\Users\\Garo\\gokaku\\output\\batch_all_years\\0\\full.md"
+    },
+    {
+      "data_id": "1",
+      "file_name": "D:\\量化n1\\资料\\A 日语N1\\N1(202012-202507高清打印卷 含解析答案）\\N1高清打印版仅试卷（202012-202507）\\2021年07月日语N1真题试卷（高清打印版）.pdf",
+      "state": "done",
+      "zip_path": "C:\\Users\\Garo\\gokaku\\output\\batch_all_years\\1.zip",
+      "extract_dir": "C:\\Users\\Garo\\gokaku\\output\\batch_all_years\\1",
+      "md_path": "C:\\Users\\Garo\\gokaku\\output\\batch_all_years\\1\\full.md"
+    },
+    {
+      "data_id": "2",
+      "file_name": "D:\\量化n1\\资料\\A 日语N1\\N1(202012-202507高清打印卷 含解析答案）\\N1高清打印版仅试卷（202012-202507）\\2022年07月日语N1真题试卷（高清打印版）.pdf",
+      "state": "done",
+      "zip_path": "C:\\Users\\Garo\\gokaku\\output\\batch_all_years\\2.zip",
+      "extract_dir": "C:\\Users\\Garo\\gokaku\\output\\batch_all_years\\2",
+      "md_path": "C:\\Users\\Garo\\gokaku\\output\\batch_all_years\\2\\full.md"
+    },
+    {
+      "data_id": "3",
+      "file_name": "D:\\量化n1\\资料\\A 日语N1\\N1(202012-202507高清打印卷 含解析答案）\\N1高清打印版仅试卷（202012-202507）\\2022年12月日语N1真题试卷（高清打印版）.pdf",
+      "state": "done",
+      "zip_path": "C:\\Users\\Garo\\gokaku\\output\\batch_all_years\\3.zip",
+      "extract_dir": "C:\\Users\\Garo\\gokaku\\output\\batch_all_years\\3",
+      "md_path": "C:\\Users\\Garo\\gokaku\\output\\batch_all_years\\3\\full.md"
+    },
+    {
+      "data_id": "4",
+      "file_name": "D:\\量化n1\\资料\\A 日语N1\\N1(202012-202507高清打印卷 含解析答案）\\N1高清打印版仅试卷（202012-202507）\\2023年07月日语N1真题试卷（高清打印版）.pdf",
+      "state": "done",
+      "zip_path": "C:\\Users\\Garo\\gokaku\\output\\batch_all_years\\4.zip",
+      "extract_dir": "C:\\Users\\Garo\\gokaku\\output\\batch_all_years\\4",
+      "md_path": "C:\\Users\\Garo\\gokaku\\output\\batch_all_years\\4\\full.md"
+    },
+    {
+      "data_id": "5",
+      "file_name": "D:\\量化n1\\资料\\A 日语N1\\N1(202012-202507高清打印卷 含解析答案）\\N1高清打印版仅试卷（202012-202507）\\2023年12月日语N1真题试卷（高清打印版）.pdf",
+      "state": "done",
+      "zip_path": "C:\\Users\\Garo\\gokaku\\output\\batch_all_years\\5.zip",
+      "extract_dir": "C:\\Users\\Garo\\gokaku\\output\\batch_all_years\\5",
+      "md_path": "C:\\Users\\Garo\\gokaku\\output\\batch_all_years\\5\\full.md"
+    },
+    {
+      "data_id": "6",
+      "file_name": "D:\\量化n1\\资料\\A 日语N1\\N1(202012-202507高清打印卷 含解析答案）\\N1高清打印版仅试卷（202012-202507）\\2024年12月日语N1真题试卷（高清打印版）.pdf",
+      "state": "done",
+      "zip_path": "C:\\Users\\Garo\\gokaku\\output\\batch_all_years\\6.zip",
+      "extract_dir": "C:\\Users\\Garo\\gokaku\\output\\batch_all_years\\6",
+      "md_path": "C:\\Users\\Garo\\gokaku\\output\\batch_all_years\\6\\full.md"
+    },
+    {
+      "data_id": "7",
+      "file_name": "D:\\量化n1\\资料\\A 日语N1\\N1 2025年7月原卷+听力音频\\N1 2025年7月完整版原卷.pdf",
+      "state": "done",
+      "zip_path": "C:\\Users\\Garo\\gokaku\\output\\batch_all_years\\7.zip",
+      "extract_dir": "C:\\Users\\Garo\\gokaku\\output\\batch_all_years\\7",
+      "md_path": "C:\\Users\\Garo\\gokaku\\output\\batch_all_years\\7\\full.md"
+    }
+  ]
+}

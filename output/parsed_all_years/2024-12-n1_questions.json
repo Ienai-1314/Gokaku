@@ -1,0 +1,171 @@
+[
+  {
+    "questionNumber": 1,
+    "questionText": "佐藤選手がゴールを決めたと、観客は絶叫した。",
+    "options": [
+      "せつきょう",
+      "さつきょう",
+      "せつきゆう",
+      "せつきゆう"
+    ],
+    "examDate": "2024-12",
+    "paperId": "2024-12-n1",
+    "section": "vocabulary"
+  },
+  {
+    "questionNumber": 2,
+    "questionText": "背後から物音が聞こえた。",
+    "options": [
+      "はいご",
+      "はいこう",
+      "せいご",
+      "せいこう"
+    ],
+    "examDate": "2024-12",
+    "paperId": "2024-12-n1",
+    "section": "vocabulary"
+  },
+  {
+    "questionNumber": 3,
+    "questionText": "将来の抱負を述べる。",
+    "options": [
+      "はらさ",
+      "ほうふ",
+      "ほうふ",
+      "ほうふ"
+    ],
+    "examDate": "2024-12",
+    "paperId": "2024-12-n1",
+    "section": "vocabulary"
+  },
+  {
+    "questionNumber": 4,
+    "questionText": "人を侮ってはいけない。",
+    "options": [
+      "からかって",
+      "ののしって",
+      "あなどって",
+      "にらんで"
+    ],
+    "examDate": "2024-12",
+    "paperId": "2024-12-n1",
+    "section": "vocabulary"
+  },
+  {
+    "questionNumber": 5,
+    "questionText": "相手がわかるように、筋道を立てて説明した。",
+    "options": [
+      "さんどう",
+      "すいどう",
+      "すじみち",
+      "すじみち"
+    ],
+    "examDate": "2024-12",
+    "paperId": "2024-12-n1",
+    "section": "vocabulary"
+  },
+  {
+    "questionNumber": 6,
+    "questionText": "その小説の主人公は、奔放な性格をしている。",
+    "options": [
+      "はんほう",
+      "はんはう",
+      "はんばう",
+      "はんぽう"
+    ],
+    "examDate": "2024-12",
+    "paperId": "2024-12-n1",
+    "section": "grammar"
+  },
+  {
+    "questionNumber": 7,
+    "questionText": "その生物は、厳しい環境に( )できる能力を持っている。",
+    "options": [
+      "適応",
+      "合致",
+      "転換",
+      "推移"
+    ],
+    "examDate": "2024-12",
+    "paperId": "2024-12-n1",
+    "section": "grammar"
+  },
+  {
+    "questionNumber": 8,
+    "questionText": "店の売上は五年で二倍に増える目標を( )、みんなで努力している。",
+    "options": [
+      "企て",
+      "掲げ",
+      "掲げ",
+      "掲げ"
+    ],
+    "examDate": "2024-12",
+    "paperId": "2024-12-n1",
+    "section": "grammar"
+  },
+  {
+    "questionNumber": 9,
+    "questionText": "新しい市長は前市長の政策を( )し、駅前の開発を進めると述べた。",
+    "options": [
+      "相続",
+      "獲得",
+      "踏襲",
+      "伝承"
+    ],
+    "examDate": "2024-12",
+    "paperId": "2024-12-n1",
+    "section": "grammar"
+  },
+  {
+    "questionNumber": 10,
+    "questionText": "台風で電車の到着が大幅に遅れたため、駅でしばらく（ ）した。",
+    "options": [
+      "息抜き",
+      "棚上げ",
+      "待ち伏せ",
+      "足止め"
+    ],
+    "examDate": "2024-12",
+    "paperId": "2024-12-n1",
+    "section": "grammar"
+  },
+  {
+    "questionNumber": 11,
+    "questionText": "今日は試合で一日中走り続けたので、疲れて( )になった。",
+    "options": [
+      "がさがさ",
+      "ぐったり",
+      "とろとろ",
+      "にやにや"
+    ],
+    "examDate": "2024-12",
+    "paperId": "2024-12-n1",
+    "section": "grammar"
+  },
+  {
+    "questionNumber": 12,
+    "questionText": "工場の誘致について、市長が丁寧に説明し、住民の不安の( )に努めた。",
+    "options": [
+      "払拭",
+      "消失",
+      "破棄",
+      "排斥"
+    ],
+    "examDate": "2024-12",
+    "paperId": "2024-12-n1",
+    "section": "grammar"
+  },
+  {
+    "questionNumber": 13,
+    "questionText": "階段でまめに足をひねってしまったので、( )隣にいた友人の腕を借りた。",
+    "options": [
+      "に",
+      "いやに",
+      "とっさに",
+      "とくに"
+    ],
+    "examDate": "2024-12",
+    "paperId": "2024-12-n1",
+    "section": "grammar"
+  }
+]
