@@ -1,0 +1,6363 @@
+[
+    {
+        "type": "text",
+        "text": "(2024- 07) ",
+        "text_level": 1,
+        "bbox": [
+            334,
+            126,
+            675,
+            189
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "N1 ",
+        "text_level": 1,
+        "bbox": [
+            394,
+            212,
+            539,
+            286
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "言語知識 (文字·語彙·文法)·説解",
+        "text_level": 1,
+        "bbox": [
+            94,
+            292,
+            865,
+            338
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "(110分)",
+        "text_level": 1,
+        "bbox": [
+            386,
+            369,
+            569,
+            414
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "注意",
+        "text_level": 1,
+        "bbox": [
+            410,
+            442,
+            546,
+            476
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. 試験が始まるまて、ご問題用細を開いはくださ。 Do not open this question. oiklet until the test begins. ",
+            "2. 2. Do not take this questionnaire booklet with you about the test. ",
+            "3. 受験番号と名言を、の欄二、受験票と同じょうに書いください。"
+        ],
+        "bbox": [
+            149,
+            486,
+            806,
+            625
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Write your examinee regis ration number and name clearly in each box below as written on your test voucher. ",
+        "bbox": [
+            198,
+            627,
+            806,
+            655
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "4. ごの問題用紙は、全部で31に一ジお願いいたします。 This question booklet has 31 pages.",
+            "5. 問題には解答番号の1、2、3…が付け到这里。解答は、解答用紙にる同じ番号のとこりマーダくてくだき。"
+        ],
+        "bbox": [
+            149,
+            664,
+            805,
+            784
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "One of the row numbers $\\boxed{1}, \\boxed{2}, \\boxed{3} \\cdots$ is given for each question. Mark your answer in the same row of the answer sheet. ",
+        "bbox": [
+            198,
+            785,
+            805,
+            813
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "受験番号 Examinee Registration Number",
+        "bbox": [
+            124,
+            848,
+            478,
+            866
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "名前 Name",
+        "bbox": [
+            124,
+            903,
+            236,
+            920
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "A ",
+        "bbox": [
+            25,
+            11,
+            78,
+            51
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "Language Knowledge (Vocabulary/Grammar) $\\cdot$ Reading ",
+        "bbox": [
+            48,
+            67,
+            584,
+            87
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "問題用紙",
+        "bbox": [
+            746,
+            49,
+            929,
+            84
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "footer",
+        "text": "Copyright ©2023 The Japan Foundation, and Japan Educational Exchanges and Services. All Rights Reserved. Any reproduction or representation by any means, in whole or in part, is strictly prohibited. ",
+        "bbox": [
+            80,
+            946,
+            873,
+            976
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "問題1 _の言葉の読み方とて最後はのを、1·2·3·4から一の選んだ。",
+        "bbox": [
+            110,
+            79,
+            806,
+            124
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "1 食品の腐败を防止する。",
+        "bbox": [
+            112,
+            168,
+            391,
+            189
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "1 无法",
+        "bbox": [
+            149,
+            200,
+            258,
+            219
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2 么法？",
+        "bbox": [
+            337,
+            200,
+            443,
+            219
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "3 乙方はい",
+        "bbox": [
+            524,
+            200,
+            650,
+            219
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "4 乙方はい",
+        "bbox": [
+            712,
+            200,
+            836,
+            219
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2 2 ",
+        "bbox": [
+            112,
+            249,
+            431,
+            269
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "1 ",
+        "bbox": [
+            149,
+            282,
+            257,
+            299
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2 个方法",
+        "bbox": [
+            339,
+            282,
+            443,
+            299
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "3 由与の",
+        "bbox": [
+            524,
+            282,
+            628,
+            299
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "4 妙为以 ",
+        "bbox": [
+            712,
+            282,
+            815,
+            299
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "3 三",
+        "bbox": [
+            112,
+            331,
+            514,
+            351
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "1 せんまく",
+        "bbox": [
+            149,
+            362,
+            272,
+            380
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2 权人未< ",
+        "bbox": [
+            339,
+            363,
+            458,
+            380
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "江n个是 ",
+        "bbox": [
+            524,
+            363,
+            645,
+            380
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "4 也人",
+        "bbox": [
+            712,
+            363,
+            833,
+            380
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "4医学の進步にと、人の寿命を。",
+        "bbox": [
+            112,
+            411,
+            574,
+            431
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "1 にわの反上方",
+        "bbox": [
+            149,
+            442,
+            310,
+            461
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2 C ② 右上角",
+        "bbox": [
+            339,
+            443,
+            480,
+            461
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "3 1.4x.2 ",
+        "bbox": [
+            524,
+            443,
+            650,
+            461
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "4 C的分类",
+        "bbox": [
+            712,
+            444,
+            855,
+            461
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "5 手紙の内容は、私をにるもんだ。",
+        "bbox": [
+            112,
+            492,
+            534,
+            512
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "1 とがわる",
+        "bbox": [
+            149,
+            523,
+            273,
+            541
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2 也为",
+        "bbox": [
+            339,
+            524,
+            433,
+            541
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "3 ",
+        "bbox": [
+            524,
+            524,
+            667,
+            542
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "4 いましろ",
+        "bbox": [
+            712,
+            524,
+            853,
+            542
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "6 警約書に署名する・き、減少緊張た。",
+        "bbox": [
+            112,
+            573,
+            534,
+            593
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "1. $4 \\downarrow   \\uparrow   \\downarrow   \\downarrow   \\downarrow   \\downarrow   \\downarrow   \\downarrow$ . ",
+        "bbox": [
+            149,
+            604,
+            315,
+            623
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2 个数之l. 右 ",
+        "bbox": [
+            339,
+            605,
+            497,
+            623
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "3. 世界《Lα",
+        "bbox": [
+            524,
+            605,
+            682,
+            623
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "4. はの和の",
+        "bbox": [
+            712,
+            605,
+            868,
+            623
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "aside_text",
+        "text": "文學·語彙 ",
+        "bbox": [
+            939,
+            133,
+            966,
+            205
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "page_number",
+        "text": "-1 ",
+        "bbox": [
+            442,
+            954,
+            547,
+            970
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "問題2 （ ）に入るのに最後ものを、1·2·3·4から一OPTIONSを。",
+        "bbox": [
+            102,
+            77,
+            855,
+            97
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "7今回の遺跡の発見は、これまての説を（ ）か与覆すものになりその。",
+        "bbox": [
+            95,
+            123,
+            855,
+            146
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "1 拓点",
+        "bbox": [
+            134,
+            158,
+            218,
+            179
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "2 根底",
+        "bbox": [
+            317,
+            158,
+            403,
+            179
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "3 原本",
+        "bbox": [
+            500,
+            156,
+            584,
+            175
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "4元祖 ",
+        "bbox": [
+            684,
+            155,
+            768,
+            173
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "1年いりはばん忙い時期なて、休日を（ ）て動いはま。",
+        "bbox": [
+            95,
+            203,
+            816,
+            225
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "1 寄付 ",
+        "bbox": [
+            134,
+            237,
+            220,
+            259
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "2 還元",
+        "bbox": [
+            317,
+            237,
+            403,
+            256
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "3進呈 ",
+        "bbox": [
+            502,
+            235,
+            586,
+            255
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "4返上",
+        "bbox": [
+            685,
+            234,
+            768,
+            253
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "9 外部からの間い合わせの電話は、用件を確認て担当者に（ ）くだき。",
+        "bbox": [
+            95,
+            282,
+            880,
+            305
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "1躁越 ",
+        "bbox": [
+            134,
+            316,
+            282,
+            337
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "2 差L替之",
+        "bbox": [
+            322,
+            317,
+            463,
+            336
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "3 引言渡",
+        "bbox": [
+            504,
+            315,
+            647,
+            334
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "4 取次い",
+        "bbox": [
+            687,
+            313,
+            831,
+            332
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "10 新的生活の期待と不安が（ ）し、気ntlが落ち着帳號。",
+        "bbox": [
+            95,
+            363,
+            779,
+            384
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "1 交錯",
+        "bbox": [
+            139,
+            397,
+            223,
+            417
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "2 混合",
+        "bbox": [
+            322,
+            395,
+            406,
+            414
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "3 連動",
+        "bbox": [
+            507,
+            395,
+            589,
+            413
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "4 反癸",
+        "bbox": [
+            687,
+            392,
+            773,
+            411
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "11 トンneh工事が始まて1年にの、地盤の弱い簡所か、工事は（）」",
+        "bbox": [
+            95,
+            441,
+            924,
+            495
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "1 雌航 ",
+        "bbox": [
+            139,
+            506,
+            226,
+            526
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "2 低迷 ",
+        "bbox": [
+            326,
+            506,
+            410,
+            524
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "3 衰退",
+        "bbox": [
+            510,
+            504,
+            591,
+            521
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "4 脱落 ",
+        "bbox": [
+            692,
+            502,
+            774,
+            521
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "12 会場は、人ケ的話声で（）と騄がしく、アナウスがよく開己えなかた。",
+        "bbox": [
+            95,
+            551,
+            927,
+            573
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "1. LdLd ",
+        "bbox": [
+            144,
+            586,
+            268,
+            606
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "2 とと",
+        "bbox": [
+            327,
+            585,
+            450,
+            604
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "3 为中方中",
+        "bbox": [
+            510,
+            583,
+            635,
+            602
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "4 4 ",
+        "bbox": [
+            695,
+            582,
+            818,
+            600
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "13登山に誘わるが、あまり験がなのて、みんなの（）になと思い、断った。",
+        "bbox": [
+            95,
+            630,
+            919,
+            684
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "1骨折 ",
+        "bbox": [
+            144,
+            695,
+            248,
+            715
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "2 足手まい",
+        "bbox": [
+            331,
+            695,
+            475,
+            714
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "3 裹目",
+        "bbox": [
+            515,
+            694,
+            594,
+            712
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "4 おはい腰",
+        "bbox": [
+            697,
+            692,
+            821,
+            709
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "aside_text",
+        "text": "文字·語彙",
+        "bbox": [
+            8,
+            131,
+            38,
+            205
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "page_number",
+        "text": "-2- ",
+        "bbox": [
+            436,
+            953,
+            542,
+            970
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "14 1 ",
+        "bbox": [
+            109,
+            143,
+            529,
+            165
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "1尺寸 ",
+        "bbox": [
+            149,
+            177,
+            243,
+            199
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "2 送",
+        "bbox": [
+            359,
+            178,
+            448,
+            197
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "3 任せの",
+        "bbox": [
+            568,
+            178,
+            678,
+            197
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "4 讀の",
+        "bbox": [
+            774,
+            178,
+            862,
+            197
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "15 その話を聞て、すがすがい気分にた。",
+        "bbox": [
+            109,
+            233,
+            647,
+            255
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "1 うの",
+        "bbox": [
+            149,
+            267,
+            312,
+            288
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "2爽和办 ",
+        "bbox": [
+            361,
+            269,
+            497,
+            287
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "3 梁以",
+        "bbox": [
+            568,
+            268,
+            680,
+            287
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "4 懷かい",
+        "bbox": [
+            774,
+            268,
+            910,
+            287
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "16 リフロームの費用を工面する必要くださいます。",
+        "bbox": [
+            109,
+            323,
+            601,
+            344
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "1 减与小 ",
+        "bbox": [
+            149,
+            357,
+            268,
+            379
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "2 計算すの",
+        "bbox": [
+            361,
+            359,
+            495,
+            376
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "3 用意する",
+        "bbox": [
+            569,
+            357,
+            702,
+            376
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "4 支手",
+        "bbox": [
+            774,
+            357,
+            885,
+            376
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "17 1 ",
+        "bbox": [
+            109,
+            412,
+            855,
+            434
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "1 雜杂 ",
+        "bbox": [
+            149,
+            447,
+            248,
+            468
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "2 变态 ",
+        "bbox": [
+            361,
+            448,
+            452,
+            467
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "3 危險な",
+        "bbox": [
+            569,
+            448,
+            682,
+            466
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "4 強引之",
+        "bbox": [
+            774,
+            448,
+            887,
+            466
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "18 男の子は父親の話をうなだて聞いてた。",
+        "bbox": [
+            109,
+            502,
+            623,
+            524
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "1 之性度",
+        "bbox": [
+            149,
+            537,
+            363,
+            556
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "2 目を閉て",
+        "bbox": [
+            569,
+            537,
+            729,
+            556
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "3 まじな表情の",
+        "bbox": [
+            154,
+            571,
+            361,
+            592
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "4 下を向いて",
+        "bbox": [
+            569,
+            571,
+            729,
+            590
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "19 恶天候による工事の遲は、担当者にとて大きな打擊だた。",
+        "bbox": [
+            109,
+            626,
+            833,
+            648
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "1 Aksdntb ",
+        "bbox": [
+            149,
+            661,
+            329,
+            681
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "2 夕予 ",
+        "bbox": [
+            364,
+            663,
+            475,
+            680
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "3 1 ",
+        "bbox": [
+            569,
+            662,
+            746,
+            680
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "4 ロ一",
+        "bbox": [
+            774,
+            662,
+            914,
+            680
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "header",
+        "text": "問題3 _の言葉に意味が最多近いもを、1·2·3·4から一�選なさ。",
+        "bbox": [
+            112,
+            80,
+            855,
+            99
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "page_number",
+        "text": "-3 ",
+        "bbox": [
+            445,
+            954,
+            549,
+            971
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "aside_text",
+        "text": "文·語彙 ",
+        "bbox": [
+            939,
+            134,
+            968,
+            205
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "問題4 次の言葉の使い方とて最後はのを、1·2·3·4から一の選なさ。",
+        "bbox": [
+            102,
+            79,
+            858,
+            97
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "20 呋潮 ",
+        "text_level": 1,
+        "bbox": [
+            105,
+            120,
+            201,
+            137
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1 本田さんはいも風潮のフィッシュに身を包,No",
+            "2 何事也经济的不效率而判断的今的社会的风潮。",
+            "3 地形の関係で、その辻は夏に雨が降りやすい風潮のは。",
+            "4京都の町を歩い、古都の風潮を樂んだ。"
+        ],
+        "bbox": [
+            139,
+            143,
+            709,
+            259
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "21 为",
+        "text_level": 1,
+        "bbox": [
+            105,
+            288,
+            242,
+            307
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1 科学技術の急速な進步は我々的生活に大きな変化をもたらた。",
+            "2. 2 ",
+            "3弟は体力をもたらたてに、每朝公園をヨングLETて。",
+            "4. 这の計画は、市が許可をもたらまて実行いたします見通んだ。"
+        ],
+        "bbox": [
+            139,
+            317,
+            769,
+            426
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "22 撤回",
+        "text_level": 1,
+        "bbox": [
+            105,
+            456,
+            203,
+            474
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1 雪が激しくなてたのて、途中登山を撤回て山小屋に尻った。",
+            "2 旅行の前日に風邪をいてweit、ほたルの予約を撤回し。",
+            "3 水野氏は今朝の記者会見了一日言を、午後に撤回了。",
+            "4 彼は医師にう進路を撤回し、音楽家を目指すとにした那う。"
+        ],
+        "bbox": [
+            141,
+            485,
+            830,
+            594
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "23 補填 ",
+        "text_level": 1,
+        "bbox": [
+            105,
+            625,
+            205,
+            643
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1 書類をとく説て、空欄に必要事項を補填てくだい。",
+            "2暑中地運動て汗をかたとは、水分を補塗るごが大切だ。",
+            "3 新規事業で生んだ赤字は、別の事業の収益を補償するとにし。",
+            "4風邪地休い的間、人なが協力て私の仕事を補填てくた。"
+        ],
+        "bbox": [
+            142,
+            653,
+            793,
+            762
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "24 COnstant ",
+        "text_level": 1,
+        "bbox": [
+            105,
+            793,
+            282,
+            810
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. 1 ",
+            "2. 2 ",
+            "3. 3 ",
+            "4 石川先生は70歳を過たうだが、ルクスローに若てい。"
+        ],
+        "bbox": [
+            142,
+            821,
+            813,
+            932
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "page_number",
+        "text": "4 ",
+        "bbox": [
+            431,
+            950,
+            536,
+            966
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "25 1 ",
+        "bbox": [
+            112,
+            79,
+            221,
+            97
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1 木村さんの一言を聞い、そのときの出来的事がすばりと脑裏によみがえてきた。",
+            "2. 息子は、sburgと統てい野球をすばりとや、勉強に專念し。",
+            "3 森さんはきらうてん人て、机の上的本はいもすばりとそのえて置かれてる。",
+            "4 友人与自分の欠点をすばりと指摘いたします。しらく落ち迅んだ。"
+        ],
+        "bbox": [
+            144,
+            104,
+            910,
+            215
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "aside_text",
+        "text": "文·韻晕",
+        "bbox": [
+            937,
+            136,
+            964,
+            208
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "page_number",
+        "text": "一5一",
+        "bbox": [
+            450,
+            954,
+            552,
+            970
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "問題5 次の文の（ ）に入るに最もよいもを、1·2·3·4から一�選んだなさ。",
+        "bbox": [
+            100,
+            82,
+            833,
+            129
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "26 机の引き出しを整理くださいます、以前使てい電卓が出きた。んだ使え（）」るが、使機会がなさそのとの处分しょうと思う。",
+        "bbox": [
+            102,
+            156,
+            855,
+            203
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "1 ",
+        "bbox": [
+            136,
+            212,
+            213,
+            231
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "2 元",
+        "bbox": [
+            305,
+            212,
+            379,
+            230
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "3 は",
+        "bbox": [
+            473,
+            212,
+            529,
+            230
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "4 ",
+        "bbox": [
+            640,
+            212,
+            695,
+            230
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "27 彼はわすか27歳（ ）市長にた。",
+        "bbox": [
+            102,
+            256,
+            502,
+            275
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "1 L ",
+        "bbox": [
+            136,
+            286,
+            233,
+            303
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "2 にあたて",
+        "bbox": [
+            305,
+            286,
+            418,
+            303
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "3 に際て",
+        "bbox": [
+            473,
+            286,
+            584,
+            303
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "4. に先立て",
+        "bbox": [
+            640,
+            286,
+            771,
+            303
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "28 （木一ム～）",
+        "bbox": [
+            105,
+            329,
+            315,
+            348
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "当Sennterの相談窓口に（ ）、事前ご連絡を願いたしま�。",
+        "bbox": [
+            149,
+            357,
+            752,
+            376
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "1 伺て以来 ",
+        "bbox": [
+            137,
+            387,
+            270,
+            404
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "2 伺之際は",
+        "bbox": [
+            473,
+            387,
+            584,
+            404
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "3 お越しになて以来",
+        "bbox": [
+            136,
+            414,
+            344,
+            432
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "4 扫越にの際は",
+        "bbox": [
+            473,
+            414,
+            660,
+            432
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "29 6歳の息子は、将来私と同じ消防士にらた言てい。実際に（ ）、そのとを言てくたはかうし。",
+        "bbox": [
+            102,
+            458,
+            858,
+            504
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "1 有的かうかに限ら",
+        "bbox": [
+            137,
+            514,
+            364,
+            532
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "2 东南の大学",
+        "bbox": [
+            473,
+            516,
+            712,
+            532
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "3 令与乾为得不也上T也",
+        "bbox": [
+            136,
+            544,
+            396,
+            560
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "4 与之为得不以加",
+        "bbox": [
+            473,
+            544,
+            734,
+            560
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "30 A大臣は、週刊誌の報道にて、「事實のはんだいかかわら）、あたかみ事實でる（ ）報道くださた这句话は遺憾 REFER」と述peak。",
+        "bbox": [
+            102,
+            588,
+            858,
+            634
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "1 末をもな<",
+        "bbox": [
+            136,
+            644,
+            267,
+            662
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "2 为4元以",
+        "bbox": [
+            305,
+            645,
+            418,
+            661
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "3 与互补",
+        "bbox": [
+            473,
+            645,
+            586,
+            661
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "4 かのごとく",
+        "bbox": [
+            640,
+            645,
+            769,
+            662
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "31 今日はさんざんな一日だた。自転車はPanckするし、財布はなくすし、しぃいには大雨に降らてすむねれになる（）。",
+        "bbox": [
+            102,
+            688,
+            858,
+            734
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "1 始末了的",
+        "bbox": [
+            136,
+            745,
+            270,
+            762
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "2 最中た",
+        "bbox": [
+            305,
+            746,
+            436,
+            762
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "3 思いだた",
+        "bbox": [
+            473,
+            746,
+            605,
+            762
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "4 限のた",
+        "bbox": [
+            640,
+            746,
+            773,
+            762
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "32 森選手の予選敗退は、けが原因だ言わるが、本人は「けがは関係ない。卍に実力が足りなかた（ ）」とメntてい。",
+        "bbox": [
+            102,
+            785,
+            858,
+            835
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "1 付出的",
+        "bbox": [
+            136,
+            846,
+            248,
+            863
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "2 maticity ",
+        "bbox": [
+            305,
+            847,
+            435,
+            863
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "3 はけのとて",
+        "bbox": [
+            473,
+            847,
+            618,
+            863
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "4. ",
+        "bbox": [
+            640,
+            847,
+            788,
+            863
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "aside_text",
+        "text": "文法",
+        "bbox": [
+            8,
+            249,
+            35,
+            296
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "page_number",
+        "text": "-6- ",
+        "bbox": [
+            430,
+            954,
+            534,
+            970
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "33 工ア汉子が故障てしまい、その1週間暑て大変だたが、今日ようやく修理てもらえた。它てう暑さに（ ）。",
+        "bbox": [
+            110,
+            83,
+            863,
+            130
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "1 恼求之加权不等式",
+        "bbox": [
+            144,
+            140,
+            332,
+            156
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "2 恼まさるこはない",
+        "bbox": [
+            480,
+            140,
+            702,
+            156
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "3 恼世办权在",
+        "bbox": [
+            142,
+            168,
+            312,
+            185
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "4 恼ませるごはない",
+        "bbox": [
+            480,
+            168,
+            685,
+            184
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "34 （天気予報）",
+        "bbox": [
+            110,
+            212,
+            285,
+            231
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "「明日は低気圧の発達に伴い、西日本を中心に風雨が（ ）。」",
+        "bbox": [
+            166,
+            241,
+            715,
+            259
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "1. 强のつつごります",
+        "bbox": [
+            144,
+            269,
+            332,
+            287
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "2 強まりつつあらてす",
+        "bbox": [
+            480,
+            269,
+            685,
+            286
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "3 強の見达不到",
+        "bbox": [
+            144,
+            298,
+            332,
+            315
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "4 強まる見达不到",
+        "bbox": [
+            480,
+            298,
+            667,
+            315
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "35 （育兒の本で）",
+        "bbox": [
+            110,
+            342,
+            285,
+            360
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "3歳前後の子供は、「なせ？」「どて？」と何estr（ ）。周圍の大人は必いにうくがらに、そのんだ質間に向き合てあけましょう。",
+        "bbox": [
+            142,
+            369,
+            865,
+            416
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "1 知りたがるものです",
+        "bbox": [
+            144,
+            426,
+            352,
+            443
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "2 知りたがるごとてす",
+        "bbox": [
+            480,
+            426,
+            685,
+            443
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "3 知りたうなのてす",
+        "bbox": [
+            144,
+            455,
+            369,
+            472
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "4 知之的义义",
+        "bbox": [
+            480,
+            455,
+            704,
+            472
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "aside_text",
+        "text": "文法",
+        "bbox": [
+            937,
+            250,
+            964,
+            296
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "page_number",
+        "text": "-7 ",
+        "bbox": [
+            445,
+            954,
+            549,
+            970
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "（問題例）",
+        "text_level": 1,
+        "bbox": [
+            109,
+            159,
+            193,
+            180
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "山田寸。",
+        "bbox": [
+            147,
+            181,
+            759,
+            212
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "1 テレビ",
+        "bbox": [
+            174,
+            219,
+            282,
+            241
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "2 見ていの",
+        "bbox": [
+            364,
+            219,
+            492,
+            241
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "3左 ",
+        "bbox": [
+            554,
+            222,
+            620,
+            241
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "4人",
+        "bbox": [
+            747,
+            221,
+            811,
+            240
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "（解答のしだた）",
+        "text_level": 1,
+        "bbox": [
+            109,
+            285,
+            258,
+            306
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "1. 正い文はうです。",
+        "bbox": [
+            122,
+            317,
+            366,
+            338
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "4. 乙方之乙 ",
+        "bbox": [
+            139,
+            378,
+            484,
+            405
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "★ ",
+        "bbox": [
+            499,
+            381,
+            611,
+            404
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "山田さ人。",
+        "bbox": [
+            754,
+            374,
+            917,
+            401
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "1 テレビ",
+        "bbox": [
+            250,
+            413,
+            356,
+            432
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "3 ",
+        "bbox": [
+            398,
+            413,
+            460,
+            432
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "2 見ていの",
+        "bbox": [
+            494,
+            413,
+            618,
+            432
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "4人",
+        "bbox": [
+            653,
+            413,
+            717,
+            432
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "2. ★ 人入的番号为解答用紙以一卡。",
+        "bbox": [
+            119,
+            493,
+            600,
+            514
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "（解答用紙）",
+        "bbox": [
+            322,
+            524,
+            428,
+            545
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "（例）",
+        "bbox": [
+            495,
+            525,
+            534,
+            545
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "$①$ ",
+        "bbox": [
+            563,
+            525,
+            603,
+            545
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "$③$ $④$ ",
+        "bbox": [
+            650,
+            525,
+            712,
+            545
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "36 息子が通ったリアノ教室の発表会で、緊張て弹けなくてまた了子がい。大人はて ★ 無理は不孕だろ。",
+        "bbox": [
+            94,
+            636,
+            922,
+            690
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "1 うのも",
+        "bbox": [
+            132,
+            701,
+            302,
+            721
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "2 線張するのだから",
+        "bbox": [
+            515,
+            701,
+            727,
+            721
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "3 大勢の前で何かをするは",
+        "bbox": [
+            132,
+            733,
+            431,
+            752
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "4 子供加",
+        "bbox": [
+            515,
+            733,
+            623,
+            752
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "37 （レビ番組のナレーニンで）",
+        "bbox": [
+            94,
+            784,
+            462,
+            804
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "「蚊い元は動物の血を吸うメ一晋江は、実は血を吸うは雌だけだそうて。しも、 专門家に詳しく聞いてみましょう。」",
+        "bbox": [
+            149,
+            815,
+            952,
+            870
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "1 雌に限ての ",
+        "bbox": [
+            132,
+            879,
+            300,
+            898
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "2 之加",
+        "bbox": [
+            324,
+            879,
+            411,
+            898
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "3 行動なの",
+        "bbox": [
+            515,
+            879,
+            663,
+            898
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "4 產卵を控え力",
+        "bbox": [
+            707,
+            879,
+            870,
+            898
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "header",
+        "text": "問題6 次の文の ★ に入る最後いもを、1·2·3·4から一OPTIONSを。",
+        "bbox": [
+            104,
+            83,
+            842,
+            104
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "aside_text",
+        "text": "文法",
+        "bbox": [
+            13,
+            223,
+            48,
+            323
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "page_number",
+        "text": "-8 ",
+        "bbox": [
+            430,
+            954,
+            536,
+            972
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "38 昨年度まは社内研修後のアングレートを記述式で行ったが、まとるのに時間がかる ★今年度は選択式で行うごにして。",
+        "bbox": [
+            105,
+            80,
+            907,
+            134
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "1 3元",
+        "bbox": [
+            139,
+            143,
+            243,
+            161
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "2 評判も上くた",
+        "bbox": [
+            502,
+            143,
+            724,
+            162
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "3 二七路之元",
+        "bbox": [
+            139,
+            173,
+            302,
+            191
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "4 受講者からの",
+        "bbox": [
+            502,
+            174,
+            663,
+            192
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "39枕を変たら、今まえようよく眠るようになった。自分に合った ★ 霍いた。",
+        "bbox": [
+            105,
+            219,
+            915,
+            271
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "1 睡眠の質が上かるなて",
+        "bbox": [
+            139,
+            282,
+            400,
+            299
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "2枕に変元のだけ",
+        "bbox": [
+            502,
+            282,
+            702,
+            300
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "3 思叨一的たかたか",
+        "bbox": [
+            139,
+            312,
+            379,
+            329
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "4 二人之二",
+        "bbox": [
+            502,
+            313,
+            640,
+            330
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "40 人工知能をはしとする ★ 企业は多い。",
+        "bbox": [
+            105,
+            359,
+            833,
+            381
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1 メリットは理解しっも",
+            "2導人に至ていない",
+            "3 先端技術を取り人員",
+            "4 投足人材の確保やコスト面のは難しぃから"
+        ],
+        "bbox": [
+            137,
+            390,
+            579,
+            499
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "page_number",
+        "text": "9 ",
+        "bbox": [
+            445,
+            951,
+            551,
+            967
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "aside_text",
+        "text": "文法",
+        "bbox": [
+            937,
+            247,
+            964,
+            292
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "以下は、医師が脑と心の健康にて書い文章oled。",
+        "bbox": [
+            112,
+            160,
+            645,
+            180
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "人は会い行う",
+        "text_level": 1,
+        "bbox": [
+            415,
+            222,
+            601,
+            242
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "人に会い行ううと、当た前は思うしう。わさわさ人は会い行う上したは、電話や手紙（もは×一）てすませるのははなく、会うごに意味が者からです。",
+        "bbox": [
+            95,
+            266,
+            924,
+            350
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "会うは、コルドーニーはとて重要です。つまり、コルドーニーはは自分の持てる情報を伝うだけになく、相手上の共感のはんだが、自分自身的規制、相手の規制にもつない场合お願いいたします。会て 41、相手も変わり、自分も変わる可能性のはんだいは上ご上ご。",
+        "bbox": [
+            95,
+            360,
+            927,
+            474
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "コミュニケーニンのははお互いにわかりよう、つまり共感がたいへ人重要です。相手の身にて何かを感じる、そのは相手の感情かもしLETい、痛みかもしLETません。ごうんだ共感こ那、人間のコミュニケーニンです。",
+        "bbox": [
+            97,
+            483,
+            927,
+            568
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "会わなくても電話や手紙（×一ル）ても、うしは共感は生まきま�が、相手の身にるとがてきか上うむさかじてしょう。はは実際に42 本当の共感は生まきを思いま�。",
+        "bbox": [
+            97,
+            576,
+            927,
+            661
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "脑にとても、刺激の度合いが違いま�。初恋之人とーテトをは了きのとを 43 胸がときてて、たいへ人緊張しだてし。初恋的人でなくても、好きな人に会えは 脑は活性化し、とき状態を維持しま�し、対反に嫌い人に会うとその負の感情が生ま�てきま�。感情の流れが生ま�、共感也発生しま�。当然、脑也喜にあみる 焓しょうし、対反に嫌悪的情が流れるともあむ。そんだけ活性化さる",
+        "bbox": [
+            95,
+            665,
+            934,
+            850
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "やはリ人には会いに行きまろょう。ときをを求て。",
+        "bbox": [
+            117,
+            857,
+            628,
+            878
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "header",
+        "text": "問題7 次の文章を読て、文章全体の趣旨を踏まえて、 41 から 44 中に",
+        "bbox": [
+            102,
+            78,
+            860,
+            101
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "header",
+        "text": "入的最も上いのを、1·2·3·4から一の選ひなさ。",
+        "bbox": [
+            169,
+            109,
+            673,
+            127
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "aside_text",
+        "text": "文法",
+        "bbox": [
+            10,
+            218,
+            48,
+            322
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "page_number",
+        "text": "- 10 - ",
+        "bbox": [
+            431,
+            952,
+            536,
+            969
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "41 ",
+        "bbox": [
+            102,
+            71,
+            142,
+            90
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "1 話たとても ",
+        "bbox": [
+            139,
+            103,
+            326,
+            123
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "2 話そうのなら",
+        "bbox": [
+            515,
+            103,
+            704,
+            123
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "3 話さ二と",
+        "bbox": [
+            137,
+            134,
+            287,
+            154
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "4 話さないかさり",
+        "bbox": [
+            515,
+            135,
+            702,
+            154
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "42 ",
+        "bbox": [
+            102,
+            183,
+            142,
+            200
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "1 会上",
+        "bbox": [
+            137,
+            215,
+            284,
+            235
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "2 会了之",
+        "bbox": [
+            327,
+            216,
+            473,
+            235
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "3会中",
+        "bbox": [
+            515,
+            216,
+            662,
+            235
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "4 会的特点",
+        "bbox": [
+            705,
+            216,
+            885,
+            236
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "43 ",
+        "bbox": [
+            102,
+            266,
+            141,
+            284
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "1 思い出たくてたまらないのです",
+        "bbox": [
+            139,
+            297,
+            495,
+            317
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "2 思い出すのはないてしうか",
+        "bbox": [
+            137,
+            328,
+            475,
+            348
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "3 思い出すかあさせ人",
+        "bbox": [
+            137,
+            360,
+            410,
+            379
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "4 思い出てくだい",
+        "bbox": [
+            136,
+            391,
+            369,
+            411
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "44 ",
+        "bbox": [
+            102,
+            441,
+            141,
+            458
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "1 いらわい▾",
+        "bbox": [
+            137,
+            473,
+            326,
+            493
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "2 い点です",
+        "bbox": [
+            514,
+            473,
+            680,
+            493
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "3 とこさ",
+        "bbox": [
+            136,
+            504,
+            263,
+            523
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "4 とていはす",
+        "bbox": [
+            514,
+            505,
+            682,
+            524
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "page_number",
+        "text": "-11- ",
+        "bbox": [
+            447,
+            953,
+            549,
+            970
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "aside_text",
+        "text": "文法",
+        "bbox": [
+            939,
+            248,
+            964,
+            294
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "問題8 次の(1)から(4)の文章を読て、後の問題に対応答えとて最後よいものを、 $1\\cdot 2\\cdot 3\\cdot 4$ から一OPTIONS prerequisite。",
+        "bbox": [
+            100,
+            82,
+            850,
+            129
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "(1) ",
+        "bbox": [
+            105,
+            164,
+            134,
+            181
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "「練習のはんだoesは成功させらた」とい場合に「すごいね」とほうらると、「私は本番に強いか、練習は它它にて、本番で勝負をかけれはい」と思てしぃいがちです。",
+        "bbox": [
+            105,
+            193,
+            895,
+            273
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "本番に強いは悪いと既是あらませんが、練習てしぃかりてきていなとを「本番になれはきとてきるだろ」と考えのは、甘い言わさるをえません。そのようなスローは、トツフクラスの結果を出すとはうていてきないでしょう。",
+        "bbox": [
+            105,
+            282,
+            895,
+            363
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "真的实力をつないは、やは練習のは常に全力投球する姿勢が必要です。",
+        "bbox": [
+            122,
+            370,
+            786,
+            392
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "45筆者的考元合的はと。",
+        "bbox": [
+            105,
+            430,
+            425,
+            449
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1 本当に实力のはんだは、練習にして,leftado は試合てきる。",
+            "2 全力練習了一次成功成功はいはは、廿考に。",
+            "3 練習にしらてきていも、試合対実力を発揮するは難い。",
+            "4 練習にご全力で取り組まなけは、試合てい結果は出せな。"
+        ],
+        "bbox": [
+            137,
+            460,
+            756,
+            568
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "aside_text",
+        "text": "说解",
+        "bbox": [
+            8,
+            349,
+            36,
+            424
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "page_number",
+        "text": "-12- ",
+        "bbox": [
+            428,
+            954,
+            534,
+            970
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "(2) ",
+        "bbox": [
+            117,
+            93,
+            144,
+            110
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "感情は、单纯な生理的不応応のとてはりません。電車のなかで足を踏むても、踏んだ相手の自分への対応に較て、怒りにんだりらneaうなかたしら。自分が痛い思いをても、とき相手の方同情しぃさをしら。人が感じる怒りは、自分が傷けらたとう実感に加て、その傷けりる舞いが不当loeるとう判断也含まていのです。它的上に感情は、じつは価值判断に基わいるの係り、すてに它には思考がるのです。",
+        "bbox": [
+            112,
+            124,
+            910,
+            293
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "（注）とに：時には",
+        "bbox": [
+            119,
+            338,
+            314,
+            357
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "感情にて、筆者はのうに述をい的か。",
+        "bbox": [
+            105,
+            397,
+            584,
+            420
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1感情は生理的な反応の思考の影響が大い。",
+            "2感情は相手の対応のはなく自分の実感て決む。",
+            "3感情は実感だけはなく価值判断も含。",
+            "4感情は思考いり先に生てるのた。"
+        ],
+        "bbox": [
+            137,
+            428,
+            600,
+            539
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "page_number",
+        "text": "-13 ",
+        "bbox": [
+            447,
+            956,
+            549,
+            972
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "aside_text",
+        "text": "說解",
+        "bbox": [
+            939,
+            351,
+            964,
+            397
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "(3) ",
+        "bbox": [
+            105,
+            84,
+            131,
+            102
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "科学家は、一般に疑り深い。原因と結果が单纯に結ばる场合はうてない、複雜な経路でなかてい的场合には、論理の道筋がらんたけない限り疑い統るのが通例電子郵件。だか、新聞のんだルリフロー等と意外な結果や思いがけない現象にて意見を聞かたと、必す「もは那が事実とは」と前置きをてから推測を述ご上に当て。上重大な結果を主張了論に対ては、上確実上強固証拝を要求するのも、その理由から電子郵件。",
+        "bbox": [
+            100,
+            111,
+            924,
+            291
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "（注）通例：乙乙は、一般的",
+        "bbox": [
+            110,
+            336,
+            391,
+            356
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "47 科学者にて、筆者はのうに述てい。",
+        "bbox": [
+            95,
+            397,
+            611,
+            419
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1 原因と結果が単純に結ばれない限り、疑い統ける。",
+            "2 原因と結果が論理のに証明くださいます。",
+            "3 原因と結果の関係が複雜くださり強固な証拝を要求いたします。",
+            "4 原因と結果の関係が意外な场合には、証拠がない限り推測を述ごい。"
+        ],
+        "bbox": [
+            127,
+            429,
+            808,
+            543
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "aside_text",
+        "text": "说解",
+        "bbox": [
+            8,
+            351,
+            31,
+            395
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "page_number",
+        "text": "-14 ",
+        "bbox": [
+            428,
+            956,
+            531,
+            971
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "(4) ",
+        "bbox": [
+            112,
+            83,
+            144,
+            105
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "かえて自立性を奪われてまう。",
+        "bbox": [
+            341,
+            161,
+            379,
+            434
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "間は孤立てしまい、そのたに生じる障害によて",
+        "bbox": [
+            394,
+            159,
+            433,
+            593
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "のはと考元。依存をなくその上努力するあまり、人",
+        "bbox": [
+            445,
+            159,
+            485,
+            601
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "之",
+        "bbox": [
+            497,
+            159,
+            537,
+            600
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "上之有立概念上日是见之不。適切以依存",
+        "bbox": [
+            549,
+            159,
+            589,
+            590
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "」、現在の心理学はそのほこ単純に自立と依存を一直線",
+        "bbox": [
+            603,
+            159,
+            642,
+            601
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "了的自立的上考之的也",
+        "bbox": [
+            655,
+            159,
+            694,
+            600
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "。 有丶自立丶以丶丶丶丶丶丶丶丶丶丶丶丶丶丶丶丶丶丶丶丶丶丶丶丶丶丶丶丶丶丶丶丶丶丶丶丶丶丶丶丶丶丶丶丶丶丶丶丶丶丶丝",
+        "bbox": [
+            707,
+            159,
+            746,
+            600
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "人間は一人には生きていけな。誰かと依存し合てい",
+        "bbox": [
+            757,
+            159,
+            796,
+            600
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "48筆者的説明によると、自立た人はとのうな人か。",
+        "bbox": [
+            119,
+            678,
+            789,
+            702
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1 自立と依存が全く違うとて認識てい人",
+            "2依存を少なくしたうに、他者と生きょうとる人",
+            "3 必要に広て依存し、自身的依存をと理解してる人",
+            "4. 孤立するとを恐い、依存をなくそのと努力てい的人"
+        ],
+        "bbox": [
+            164,
+            715,
+            853,
+            850
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "page_number",
+        "text": "-15- ",
+        "bbox": [
+            445,
+            954,
+            551,
+            972
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "aside_text",
+        "text": "証解",
+        "bbox": [
+            941,
+            351,
+            964,
+            397
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "問題9 次の(1)から(4)の文章を読て、後の問題に対照答えとて最後いものを、 $1\\cdot 2\\cdot 3\\cdot 4$ から一OPTIONSを。",
+        "bbox": [
+            102,
+            84,
+            848,
+            131
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "(1) ",
+        "bbox": [
+            105,
+            159,
+            134,
+            178
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "私は、何を表現たて漫画を描いるか？ マンガ家を目指たろから考えて",
+        "bbox": [
+            105,
+            187,
+            902,
+            237
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "（中略）",
+        "bbox": [
+            137,
+            249,
+            201,
+            268
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "古代から、似た物語はたくをんる。トマ作て大事なは、新い筋立てや工比一トを無理やりひねり出さとより、作者独自の考之方を、トマにのせて表現するとんだち。十代の私は、那う気った。しひし「自分の考」をどアやて確立すか？自分の考のつもりて、人的意見に引きらてい者かし等。",
+        "bbox": [
+            105,
+            279,
+            902,
+            391
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "它成新，使了「修業」思。每朝、新等当开，目去。紙面指。于指先触之上载了的记事中人物可起一之。后不此之问题解出？怎振舞的的？",
+        "bbox": [
+            102,
+            399,
+            902,
+            506
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "とを練り返うち、自分なりの考元方をきらと言業で表現する大切さが分かてきた。这样自分が何を表現したいのかご、おはまばながら見えてきた。",
+        "bbox": [
+            102,
+            517,
+            897,
+            568
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "突き詠ると、私は「匕ロイが何を考えてのか」を描きたたの。",
+        "bbox": [
+            119,
+            576,
+            789,
+            599
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "总之，少女漫画可以、主人公为名的少女能动的，物语是少不与感。",
+        "bbox": [
+            100,
+            607,
+            897,
+            686
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "そのたわ私的作品は、何かを決意するま上のヒロインの試行錯誤が長い。第一読者%= ある担当編集者には「理屈は」と言わし統てい。「Hロイなが泣くときに讀者が共感てくるんだ」とアドバイスされても、泣く前に考う女性を描き統けた。",
+        "bbox": [
+            100,
+            696,
+            897,
+            778
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "（注1）Drama：こては、Stト一リ一",
+        "bbox": [
+            109,
+            820,
+            462,
+            840
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "（注2）筋立：話の組み立て",
+        "bbox": [
+            109,
+            850,
+            381,
+            869
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "(注3)如法力存为当：恒人行动之法力存为当",
+        "bbox": [
+            109,
+            879,
+            519,
+            900
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "aside_text",
+        "text": "說解",
+        "bbox": [
+            8,
+            349,
+            38,
+            400
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "page_number",
+        "text": "-16- ",
+        "bbox": [
+            428,
+            956,
+            534,
+            972
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "49筆者は何のたに新聞を使て「修業」をていか。",
+        "bbox": [
+            114,
+            91,
+            739,
+            112
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1 言事の人物にて自分の考を持た。",
+            "2 記事を参考に、自分なりのスローを作り出たた",
+            "3 自分自身の考を持てうにするた",
+            "4 自分の考を言業表現にうになた"
+        ],
+        "bbox": [
+            152,
+            126,
+            752,
+            250
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "50筆者は、「修業」を練り返し後、漫画で何を表現しぃい思ったか。",
+        "bbox": [
+            114,
+            284,
+            889,
+            306
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1 ヒロインが自ら決断し人生を生態の姿",
+            "2 ヒロインが自らの人生にて懸を姿",
+            "3 ヒロインが自ら選んだ人生で成功する過程",
+            "4 ヒロインの感情や心が変化する過程"
+        ],
+        "bbox": [
+            152,
+            319,
+            640,
+            445
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "aside_text",
+        "text": "説解",
+        "bbox": [
+            942,
+            354,
+            964,
+            398
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "page_number",
+        "text": "-17 ",
+        "bbox": [
+            445,
+            956,
+            549,
+            972
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "(2) ",
+        "bbox": [
+            107,
+            87,
+            136,
+            105
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "以下は、生物の進化にて書かた文章電子郵件。",
+        "bbox": [
+            126,
+            118,
+            579,
+            143
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "世界中にごまきまな形の角を持つ力トムがいむが、その中のとかが生死残りやすいはうとはあらせん。カトムとての条件を整ったれは、角の形はとてもい。たまて突然変異ていりな角のカトムが生まえ、そには環境压力かからなかたの上、とも生死残った話です（もろん、たとえは移動が困難なほ巨大な角なか、生活的の邪魔に的形質の個体は淘汰たてし）。",
+        "bbox": [
+            100,
+            178,
+            905,
+            332
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "ごはしの形質は、進化のプロセスにおける「遊い」の部分だいえま右。とえは自動車,No、四角い車体にタイヤが四つあ、中はは工甸和ハドルが有むは基本形は、のM一カ一も変わりません。かは等以外の細か部一—HDDLトの形やシトの色や材質なは、自動車とての本質にあまり関係がなのて、車種やM一カ一上てが多樣性が的。テサインのに遊をの本。",
+        "bbox": [
+            94,
+            329,
+            900,
+            476
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "生物の场合も、デバイな遊を入る余地がなく、多の種に共通する基本形はあ ノス。生態を環境が同様、体型が似てるは当然の成行き、こは「叒 敛進化」と呼ばれていす。たと元は哺乳類%=ル力の体型が魚類と似てるの。 10. 取斬進化の結果のひとてす。",
+        "bbox": [
+            89,
+            479,
+            892,
+            590
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "（中略）",
+        "bbox": [
+            121,
+            598,
+            183,
+            615
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "突然变異は生物の多樣性を拠大しますが、環境压力にはその多樣性を絞り運動員割た上い之上的。生物の進化には、その画面のはの尺寸。",
+        "bbox": [
+            89,
+            627,
+            887,
+            686
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "（注1）効トム：昆虫の一種地、雄は角を持つ",
+            "(注2) 突然变異：親には不孕生物的特徴が子に現ると",
+            "(注3)淘汰さしの：こては、滅ひる"
+        ],
+        "bbox": [
+            92,
+            722,
+            623,
+            807
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "aside_text",
+        "text": "疏解",
+        "bbox": [
+            8,
+            326,
+            45,
+            429
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "page_number",
+        "text": "-18- ",
+        "bbox": [
+            430,
+            958,
+            534,
+            973
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "51 力卜山の例を举て筆者が言おうとては、何か。",
+        "bbox": [
+            119,
+            84,
+            722,
+            105
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1 環境にとて、個体が生き残るたに必要な基本形を変化てい。",
+            "2. 令suman形の個体が生|mão、時間がたてはみとの形に�てい。",
+            "3生存の条件に合う変化の生た個体だけが生態残るとが生態。",
+            "4生存にかわる本質の部分の変化くださいます、你怎么形の個体も生態残る。"
+        ],
+        "bbox": [
+            149,
+            114,
+            853,
+            223
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "52 生物の進化にて、筆者はのうに述をいか。",
+        "bbox": [
+            115,
+            247,
+            642,
+            268
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1 突然變異地生了多樣性は、環境次第で維持さに態縮小しりす。",
+            "2 突然変異が頻繁に起ごとて、環境の影響を受けない個体が生まう。",
+            "3 突然変異環境からの壓力も、多樣性を拠大しぃ縮小しぃりる役割のは。",
+            "4 多樣性は、環境からの壓力で絞り運動も、突然変異にわて拠大し綴ていく。"
+        ],
+        "bbox": [
+            147,
+            277,
+            897,
+            387
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "page_number",
+        "text": "- 19 - ",
+        "bbox": [
+            445,
+            954,
+            549,
+            971
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "aside_text",
+        "text": "証解",
+        "bbox": [
+            939,
+            351,
+            964,
+            398
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "(3) ",
+        "bbox": [
+            115,
+            84,
+            142,
+            102
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "不正に这对て、腹の底からあつはつ怒りが湧き上がてくるは、人間にとてとも大切なごです。这样、那能大塟能共感とて社会全体広がると、社会变革のうねりが訪れます。",
+        "bbox": [
+            110,
+            117,
+            924,
+            202
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "しかし同時に私たは、「正い怒り」の閥にても、きらと知ておがなてはなりません。「正い怒り」で胸がいばいになると、「怒てる私己が正いの」といひふうに、私を正義の側に置いしまりがちになります。すろ上、私の正義を邪魔するuveは「悪」earing、いう思考回路がきあがります。",
+        "bbox": [
+            105,
+            206,
+            922,
+            325
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "它们可以写一步進む、「惡」以為の裁きを加て社会を良く誃うたならは、こまんだて少々の「大小な悪」を行なてもかまわないはんだ、とてしまうとすらあたのです。",
+        "bbox": [
+            102,
+            329,
+            917,
+            411
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "历史的翻倒了,它的今天的日子。",
+        "bbox": [
+            105,
+            420,
+            910,
+            481
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "すなわさ、ほん这种方式の意味で「正しく怒る」は、「不正是許世ない！」とう怒りにやて動機違反らた自分の行為のひてとひてが、客観の見ては「正し」と言之のかうかを、たえさ冷静に自己点検しおら、その怒りの工neulā一を上手に正義へと結りてはいく这とははないかと私は思うのです。その法ごはこははいて、私たちは好良い社会を作ていけるのです。",
+        "bbox": [
+            94,
+            481,
+            910,
+            625
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "(注) うねり：こごは、大きな動態",
+        "bbox": [
+            102,
+            668,
+            436,
+            692
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "53 「正い怒」の異はういうご。",
+        "bbox": [
+            85,
+            726,
+            515,
+            753
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "1 不正对的怒の感情が自分制御�能なくたまうと",
+        "bbox": [
+            119,
+            760,
+            746,
+            788
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "2 不正に怒りを感激る自分の側に正義 ,(想い返てしう上",
+        "bbox": [
+            117,
+            791,
+            761,
+            818
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "3 不正大はいはなく正しいとに对ても怒りを抱いしう上",
+        "bbox": [
+            117,
+            822,
+            741,
+            848
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "4. 意力はとて不正を正すいたがcki想い返にしうと",
+        "bbox": [
+            115,
+            852,
+            781,
+            879
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "aside_text",
+        "text": "解",
+        "bbox": [
+            8,
+            351,
+            33,
+            399
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "page_number",
+        "text": "- 20 - ",
+        "bbox": [
+            428,
+            956,
+            534,
+            972
+        ],
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "54 「正しく怒る」とにて、筆者的考に合うはとか。",
+        "bbox": [
+            104,
+            84,
+            773,
+            104
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1 怒りに基了一份行為が正当かうか社会全体で考えるを",
+            "2怒か生た行が正当かを常に客視る必要か。",
+            "3怒をとのうにて正義に結つたか冷静に考るを",
+            "4一人一人が自分の怒りの行動に責任を持も、冷静ていの必要かる。"
+        ],
+        "bbox": [
+            142,
+            117,
+            882,
+            237
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "aside_text",
+        "text": "解",
+        "bbox": [
+            939,
+            349,
+            963,
+            392
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "page_number",
+        "text": "-21 ",
+        "bbox": [
+            442,
+            950,
+            546,
+            967
+        ],
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "(4) ",
+        "bbox": [
+            109,
+            80,
+            134,
+            99
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "經濟学者のケインズは、「本を説うときは好意に説まなかない」と発言た上がるが、そのは、ケインズの論敵た有的經济学者（スーダーだたと記憶てい）が、最初から悪意に基く批判的な態度でケインズの著書を説むたに、肝心の論点を一向に理解しぃさと（てきなこ）を嘆ての発言た。",
+        "bbox": [
+            105,
+            111,
+            910,
+            219
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "末，認前知的生産物の開方、出発点から歪てはうの。高名著者に人と批判の一矢を浴毎さてやろ上意気迅て的人が書い書評。等は、浅薄な揚足取に終始て的場合が実多的是、そのせいあ。恁な訢方をては、「知」血肉化説るとと到底あ之。和最初は、好意的奈訢か方得此。",
+        "bbox": [
+            105,
+            231,
+            915,
+            401
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "好意的な読み方の先には、没入て讀むと世界がある上私は考えて。好意也批判必く、た地夢中にて讀む。徹底的以讀む。恁やて讀んだもの它、無意識のうに内在化す。（中略）",
+        "bbox": [
+            105,
+            411,
+            910,
+            495
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "ただし、私は批判の証み方が不要て言てるのはな。没入しおと深く証のい言一方で、しかし、批判のに識まなけりは、証みが銳くらないと実感てい。",
+        "bbox": [
+            105,
+            502,
+            909,
+            579
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "はは、うすいは良いのが。ルスを取るにかき、物知顔て言人も。 17) 03.",
+        "bbox": [
+            105,
+            590,
+            909,
+            671
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "（注1）論敵：論爭の相手",
+            "（注2）浅薄：思虑足",
+            "（注3）足取：重要部小部分を取上批判すと",
+            "（注4）血肉化 sut: 这个分支不是、自分の母にな。",
+            "（注5）没入：热中",
+            "（注6）内在化す：こはは、身に",
+            "（注7）物知顔：はく知ていのう顔"
+        ],
+        "bbox": [
+            117,
+            715,
+            685,
+            916
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "aside_text",
+        "text": "解",
+        "bbox": [
+            11,
+            348,
+            33,
+            393
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "page_number",
+        "text": "-22- ",
+        "bbox": [
+            433,
+            950,
+            537,
+            966
+        ],
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "55筆者によると、最初か批判的に讀むご的问题点は何か。",
+        "bbox": [
+            114,
+            82,
+            749,
+            110
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1 論点だけになく、重要ない点まえ取り上て批判するようになうと",
+            "2 著者的主張が正しと分かていのに、受け人れらをなくると",
+            "3 批判するとが目的にの、著者的主張を正確に理解くださいますようお願いいたします。",
+            "4 批判するとて頭になくなり、自分の考いが持てなくなると"
+        ],
+        "bbox": [
+            144,
+            116,
+            887,
+            243
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "56 筆者的考に合うはとか。",
+        "bbox": [
+            105,
+            266,
+            460,
+            288
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1 批判的に読みが徹底のな読みも加えるとを意識するごきだ。",
+            "2 徽底的に説もごが必要だか、批判のな説みも忘てはいけな。",
+            "3 微底的に説か批判のに説かは内容にとて決定の必要た。",
+            "4 徽底的に深く誹て、意識しなても銳<批判のに誹たとがてき。"
+        ],
+        "bbox": [
+            139,
+            300,
+            868,
+            426
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "aside_text",
+        "text": "説解",
+        "bbox": [
+            939,
+            346,
+            963,
+            392
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "page_number",
+        "text": "-23 ",
+        "bbox": [
+            442,
+            948,
+            546,
+            966
+        ],
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "問題10 次の文章を読て、後の問題に対応的答えとて最後はいもを、1·2·3·4から一tem選むなさ。",
+        "bbox": [
+            100,
+            78,
+            855,
+            124
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "以下は、あの数学者が書い文章か。",
+        "bbox": [
+            131,
+            165,
+            487,
+            183
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "数学吃什么のは、解き方がわてしらたと、力はくとはな。解き方を身にしぃる前の、まだ解き方のわから間けは、力をしちうチUNS%=。解ける上うになるは同じても、そのまえのあり方で、力が身につくがうかが、きまてく。",
+        "bbox": [
+            110,
+            222,
+            878,
+            300
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "总之、おはようお願いいたします。本徳は、だけ解けない、いりいと考にてる間出于。",
+        "bbox": [
+            110,
+            307,
+            873,
+            439
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "もろん、まてく手がたないのはは、おもしろくないが、案外に、多少はわからないても、うまく頭のなかに飼ておく上、そのうちに験れてくれて、わかてきたりむ。その、だんだん減少さ、わかりかけとむの也、矛なもの。そのたには、そのを飼ておく、頭の牧場がゆたか載けはならない。本当之上ごは、数学の力いうは、いろりとわかったとをたてこ上り、わからなのを飼ておける、その牧場のゆたかたのほうにあるのがもしねい。",
+        "bbox": [
+            110,
+            450,
+            873,
+            609
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "とくに、公式くださいますようお願いいたします。那你は簡單すぎる、減少かおむいしぃうない。おはよういたしますは总承包在我的だけ。とくに、急いでおはよういたします。早く忘ります。同時おはようお願いいたします。 ouncesごular時間をかけたほうが、長態icular。",
+        "bbox": [
+            110,
+            620,
+            872,
+            696
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "（中略）",
+        "bbox": [
+            139,
+            703,
+            201,
+            722
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "ごのごは、テストでおとをるてが多いのて、わかるて、解けるてを急く傾向にあ。たかに、テストなては、時間がきらてるて、急のも多少は仕方が。ししだら、時間を制限たきに急いてきるたには、時間の制限さて。いに、時間を気にしてやておたは。テストで急くたには、テスト以外は急がなはうがいの債務。",
+        "bbox": [
+            109,
+            734,
+            872,
+            865
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "とんだり方atee、わかて、問題が解決的是icalな、いう結果は同にもしらない。しら、ゆったりやると、そのわかり方にロクが出てくのただ。てて、その結",
+        "bbox": [
+            109,
+            876,
+            870,
+            931
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "aside_text",
+        "text": "訖解",
+        "bbox": [
+            10,
+            346,
+            33,
+            394
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "page_number",
+        "text": "-24- ",
+        "bbox": [
+            433,
+            948,
+            536,
+            966
+        ],
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "果達的道筋を樂上ご上、力が ",
+        "bbox": [
+            105,
+            83,
+            552,
+            101
+        ],
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "勉強を樂むなて、と思うかもしらいが、そのは目的はかり見,Noせを、樂を気に名列は、んだて歌しうのの。",
+        "bbox": [
+            107,
+            112,
+            899,
+            161
+        ],
+        "page_idx": 25
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "(注1)手かがない：こては、てきない",
+            "(注2)才少女：二二年は、おもしろい",
+            "（注3）おはよう：こはは、早く問題を解かたる",
+            "（注4）口：深"
+        ],
+        "bbox": [
+            117,
+            208,
+            601,
+            316
+        ],
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "57 数学の問題を解くとにいて、筆者的考に合うはとか。",
+        "bbox": [
+            105,
+            356,
+            722,
+            375
+        ],
+        "page_idx": 25
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1早<解けなくても、解方身につはるとが大切地。",
+            "2 解出解出不<，问题取组之大切",
+            "3 解出的了问题的解法的方不",
+            "4 解方のわからない問題を解ご上奨に意味,Th。"
+        ],
+        "bbox": [
+            139,
+            387,
+            702,
+            494
+        ],
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "58 頭のなかに飼ておくとはういうご。",
+        "bbox": [
+            105,
+            523,
+            544,
+            542
+        ],
+        "page_idx": 25
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. かか的问题を手かにして、かか問題を考と",
+            "2. かの問題とわから問題を、頭のなかで区别ておくに",
+            "3 3 ",
+            "4. からな状態のまえ、問題を頭のなかに残ておはこ上"
+        ],
+        "bbox": [
+            141,
+            552,
+            729,
+            659
+        ],
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "59筆者によると、のうに勉強すははいか。",
+        "bbox": [
+            105,
+            689,
+            566,
+            707
+        ],
+        "page_idx": 25
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1 結果を急がて、考うとを乗む。",
+            "2 結果に達するとが得起は、となやり方でもい。",
+            "3 目的を忘れないて、あせらに勉強を樂しはばよ。",
+            "4 自分に合ったり方を探て、時間を気にせす取り組む。"
+        ],
+        "bbox": [
+            141,
+            719,
+            684,
+            826
+        ],
+        "page_idx": 25
+    },
+    {
+        "type": "aside_text",
+        "text": "説解",
+        "bbox": [
+            937,
+            351,
+            961,
+            395
+        ],
+        "page_idx": 25
+    },
+    {
+        "type": "page_number",
+        "text": "-25 ",
+        "bbox": [
+            440,
+            954,
+            546,
+            970
+        ],
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "問題11 次のAとBの文章を読て、後の問題に対する答えとて最後よいもを、",
+        "bbox": [
+            100,
+            82,
+            821,
+            101
+        ],
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "1·2·3·4から一の選なせ。",
+        "bbox": [
+            173,
+            112,
+            482,
+            129
+        ],
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "A ",
+        "text_level": 1,
+        "bbox": [
+            110,
+            148,
+            129,
+            164
+        ],
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "まじて責任感が強く、負け標準な人は「あきらてない」傾向,Noはみ。「あきらてない」とは、基本的にほもろんいごとの尺寸が、しし一方、あきらてたはうがょうにとも、実はけっうあるむの尺寸。",
+        "bbox": [
+            117,
+            181,
+            897,
+            262
+        ],
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "一所懸命に取り組ても、うまくいがな、成果が出な、充足感や満足感が得らな。そのた場合は「あきらし」とうのも、十分よ選択肢にらます。",
+        "bbox": [
+            117,
+            269,
+            897,
+            323
+        ],
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "ごはんだ場合の「あさらむ」は、「やてしぃう」いうとてす。",
+        "bbox": [
+            137,
+            330,
+            776,
+            351
+        ],
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "（中略）",
+        "bbox": [
+            149,
+            361,
+            210,
+            379
+        ],
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "やる際には、「うまくいかがた。やてよんだ」と思うのがコツでしうね。 うまくいかがたとを悔やみつやるのは、避けたいfoilです。那儿は、うまくいかがたとが尾を引いしら申請。」「うまくいかなて onward」と思う《らいが与ょうどいごししょう。そのは可以うにうにうにう上、一時には落ち迅ても、 立当直りが早くなり推薦。",
+        "bbox": [
+            117,
+            388,
+            895,
+            532
+        ],
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "B ",
+        "text_level": 1,
+        "bbox": [
+            110,
+            573,
+            129,
+            588
+        ],
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "最近は行事で倦てい人に对て「無理をないatee知らたほうがい。」とうアトバイスを目にするごさ有關。もろん体調を崩てしまうよう/sampleには途中てもやむるごきだ。しかしあきらう是我国は、やりむとはすてやり尽くしたあ上考の右きははんだちか。困難な目標はと簡單には達成]{きるいの。だから、最初から、てきなけりはあきらてむんだとう気持ちてはは、つらくたときに頑張り統をこがてきな。",
+        "bbox": [
+            117,
+            605,
+            897,
+            776
+        ],
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "はの反例：いに既自如既自如既自如既自如既自如既自如既自如既自如既自如既自如既自如既自如既自如既自如既自如既自如既自如既自如既自如既自如既自如既自如既自如既自如既自如既自如既自如既自如既自如既自如既自如既自如既自如既自如既然如此,如果只是这样,",
+        "bbox": [
+            117,
+            784,
+            897,
+            866
+        ],
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "（注）尾を引く：さと残る",
+        "bbox": [
+            119,
+            904,
+            371,
+            923
+        ],
+        "page_idx": 26
+    },
+    {
+        "type": "aside_text",
+        "text": "說解",
+        "bbox": [
+            8,
+            351,
+            36,
+            395
+        ],
+        "page_idx": 26
+    },
+    {
+        "type": "page_number",
+        "text": "-26- ",
+        "bbox": [
+            431,
+            954,
+            536,
+            971
+        ],
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "60 あきらるに上にいて、AとBは上的うに述をてるか。",
+        "bbox": [
+            100,
+            139,
+            699,
+            158
+        ],
+        "page_idx": 27
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1 A B。成果が出た可能性は低場合には、あきらたほうがいと述てい。",
+            "2 A B D. 3.5 $<  1 <  4 > ,$ 4.5, $4 - 5 = 4 - 5,$ ",
+            "3 Aは状況にとては、あきらたけほうがいことみある上述へ、Bはあきらててもいと思ったほうが、頑張り系統かる場合みある上述てての。",
+            "4 Aは努力て也結果に結ばっかいない場合は、あきらたけほうがいと述に、Bは十分にやてみるまえは、あきらたる上を考元の火さはいと述にての。"
+        ],
+        "bbox": [
+            131,
+            168,
+            905,
+            368
+        ],
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "61 AとBの認識で共通いたします。とは何か。",
+        "bbox": [
+            100,
+            395,
+            519,
+            414
+        ],
+        "page_idx": 27
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1 あきらる上にた原因を考元のをは。",
+            "2 あきらむのが早けは、早く立さ直た。",
+            "3 あきらたてとても、再挑戦するとはてきを。",
+            "4 あきらたてとを後悔てはいけない。"
+        ],
+        "bbox": [
+            131,
+            426,
+            598,
+            533
+        ],
+        "page_idx": 27
+    },
+    {
+        "type": "aside_text",
+        "text": "説解",
+        "bbox": [
+            936,
+            346,
+            959,
+            392
+        ],
+        "page_idx": 27
+    },
+    {
+        "type": "page_number",
+        "text": "-27- ",
+        "bbox": [
+            438,
+            948,
+            542,
+            966
+        ],
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "問題12 次の文章を読て、後の問題に対照答えとて最後はいもを、1·2·3·4から一tem選むなさ。",
+        "bbox": [
+            104,
+            78,
+            860,
+            124
+        ],
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "子育て（養育）にしろ、学校への教育にしろ、当事者（親·教師）が心かけ不孕はならないは、ます学子ごは親（教師）の思うとおりにら不孕いと出于。あらは、亡ちらの思うとおりにら、がえて問題だい上ご出于。",
+        "bbox": [
+            119,
+            136,
+            924,
+            218
+        ],
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "「子どみは親（教師）の思うとおりにらない」とむ意味は、甘やかて野放図にしていじょうこ上ははな。反抗は望ましぃから、大い結構だと道理。もとと、親也教師也言業で説得得起るうにる以前から、まむ子ご（生徒）たちを家庭或学校の生活の検組みに人れなけはばらな。絶対に放ておくわけにはいがいし、理屈拔きで生活的型や秩序を押しぃさをえな。その親和教師の社会的役割[e]、個人とてはうかと思ううなとも、親和教師は、一律に画一的に身につはさせうと。そは避けらな。望むと望まむろとにかわら、从ながやらなてはならな。",
+        "bbox": [
+            117,
+            223,
+            924,
+            428
+        ],
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "人間が社会的動物;oは、はいはと等を。动物が持て生まえた能自能自由に生きらるの対て、ひの子とは動物的本能を抑圧て、社会的規範を生まえてか次々及成、身につはてがねばなら。它は、ほかの動物と比較する、不自由なと見。親和教師は、はいはと宿命;o的不自由を子ともたに身につはさせなけはばなら。",
+        "bbox": [
+            117,
+            434,
+            917,
+            574
+        ],
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "（中略）",
+        "bbox": [
+            147,
+            581,
+            210,
+            600
+        ],
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "等い社会的規範は、今の社会のレル或段階が必要とて、本にごの幸福にとてあさわるかうかはわからな。まてや、生まを育てくその子必にとて、絶対の必要なのかうかはわからな。ただ、わかてるは、社会の生死てくたに今ある社会的規範或ル、考之方をひとまむ受け人れけはならないいはうとんだけ出于。て、等うひとを規制し構成てきもろもの精神的な財産は、時代と必に変わてきた上実FOUND。",
+        "bbox": [
+            112,
+            612,
+            910,
+            785
+        ],
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "だから、次の世代は、私たちと同じにはならない。たがて、子ともは親（教師）の思うとおりにはならないの。",
+        "bbox": [
+            110,
+            791,
+            909,
+            840
+        ],
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "もろん、思うとおりにしょうとするこは避けら態いても、思うとおりにら態いこと觉悟てい的をき出于。那が子とご（生徒）や、あの世代の人的部の尊敬[e]、信賴[e]。」「もらの思うとおりにたつら、かえて問題だ」也同匕",
+        "bbox": [
+            110,
+            850,
+            909,
+            935
+        ],
+        "page_idx": 28
+    },
+    {
+        "type": "aside_text",
+        "text": "説解",
+        "bbox": [
+            8,
+            346,
+            38,
+            394
+        ],
+        "page_idx": 28
+    },
+    {
+        "type": "page_number",
+        "text": "-28- ",
+        "bbox": [
+            433,
+            950,
+            539,
+            967
+        ],
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "とてが、現在の人間や社会が通過理想を実現た完璧な社会%=はすないし、私たが正い思い、子もたに押しぃてい社会規範やルルも、あくまご暫定的なのに sukない。だから、私たが予想た以上に、私たの思いおりにる子ともがててしだた、大変なとにな。",
+        "bbox": [
+            70,
+            35,
+            897,
+            149
+        ],
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "おとにと電子ごの誤差は、基本的ははいてう歡迎てい上ご例如。",
+        "bbox": [
+            90,
+            160,
+            784,
+            179
+        ],
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "（注1）野放円にし：勝手にせる",
+        "bbox": [
+            85,
+            223,
+            423,
+            248
+        ],
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "（注2）もろもの：さまさまな",
+        "bbox": [
+            85,
+            260,
+            384,
+            280
+        ],
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "62筆者にと、親和教師は子も也和生徒対て何をて。",
+        "bbox": [
+            70,
+            321,
+            734,
+            341
+        ],
+        "page_idx": 29
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1 反抗を容認しつ、不自由な社会的規範に従わせてる。",
+            "2 时代的通行的社会的規範身につはさて。",
+            "3 社会的規範を教え、社会の桿組みに適応さ消費者。",
+            "4 社会的規範を教えたうえに、自由に生きた方法を身に付けますてる。"
+        ],
+        "bbox": [
+            104,
+            353,
+            793,
+            464
+        ],
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "63 精神的怎財産は何か。",
+        "bbox": [
+            72,
+            494,
+            344,
+            514
+        ],
+        "page_idx": 29
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1 ひてが幸福になるたに守てきたuve",
+            "2 ひてが本能を抑圧さしに生きたたのもの",
+            "3 ひてが社会で生態ていたたに作らて生態の",
+            "4 たか生て生成を倒く子径は上て必要なの"
+        ],
+        "bbox": [
+            107,
+            526,
+            642,
+            638
+        ],
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "64 筆者が言いたはとは何か。",
+        "bbox": [
+            72,
+            667,
+            386,
+            687
+        ],
+        "page_idx": 29
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1 社会的規範は時代によう変化するfoilのよう、子とはおとの思うとおりにならなて当然estr。",
+            "2 社会的規範は暫定の態にごすき、子とが自身的考を方合ったもを作ていくとが望まい。",
+            "3時代の変化に適応得起うに、おとんだは子とも社会的規範の背景之称的考之方。を教えたはうがい。",
+            "4時代にと考之方は変化するののて、它合かせて次の世代が社会的規範を変のを"
+        ],
+        "bbox": [
+            107,
+            697,
+            899,
+            934
+        ],
+        "page_idx": 29
+    },
+    {
+        "type": "page_number",
+        "text": "-29- ",
+        "bbox": [
+            442,
+            948,
+            544,
+            966
+        ],
+        "page_idx": 29
+    },
+    {
+        "type": "aside_text",
+        "text": "説解",
+        "bbox": [
+            937,
+            346,
+            961,
+            392
+        ],
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "問題13 右のパターンは、不用品の買い取りいたします。会社のほ一ムパターンに載てる案内出于。下間い対応答えとて最初いもを、1·2·3·4から一ト選ごなさ。",
+        "bbox": [
+            104,
+            78,
+            863,
+            153
+        ],
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "65 マリーダンは秋川大学で本を借るたに、円書館利用カトを作うと思てる。今日は金曜日earing。明日の夜まに本を借たが、円書館利用カトは、そのように申請しおけはらないか。",
+        "bbox": [
+            95,
+            171,
+            915,
+            252
+        ],
+        "page_idx": 30
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1今日、中央圖書館文文学部圖書館9時か17時まに申請。",
+            "2 今日，中央円書館9時から17時まに申請する。文学部円書館は申請くださいます。",
+            "3 今日、中央円書館が文学部円書館で9時から17時まえの間に申請するか、明日、中央円書館で9時から17時まえの間に申請する。",
+            "4今日か明日、中央区書館が文学部区書館9時から17時まご間に申請する。"
+        ],
+        "bbox": [
+            131,
+            263,
+            905,
+            432
+        ],
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "66 力いさんは、研究のたに資料を借りた複写しぃる必要くださて、秋川大学の文学部関書館に来た。関書館利用カードは持てる。今日は、授業期間の火曜日oled。貸し出と複写は、何時ま�能か。",
+        "bbox": [
+            95,
+            461,
+            909,
+            541
+        ],
+        "page_idx": 30
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1 贷し出は18时代的15分前ま、複写は18時ま可能%=。",
+            "2贷出は21時の15分前まて、複写は21時まて可能oled。",
+            "3 贷し出は21時の15分前まて、複写は21时代的10分前まて可能oled。",
+            "4贷出は21時の30分前まて、複写は21時の10分前まて可能oled。"
+        ],
+        "bbox": [
+            131,
+            552,
+            806,
+            659
+        ],
+        "page_idx": 30
+    },
+    {
+        "type": "aside_text",
+        "text": "説解",
+        "bbox": [
+            13,
+            346,
+            38,
+            392
+        ],
+        "page_idx": 30
+    },
+    {
+        "type": "page_number",
+        "text": "- 30 - ",
+        "bbox": [
+            436,
+            948,
+            542,
+            966
+        ],
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "秋川大学 $>$ 秋川大学圖書館 $>$ 一般利用",
+        "bbox": [
+            102,
+            61,
+            445,
+            80
+        ],
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "一般の方の圖書館利用にた",
+        "text_level": 1,
+        "bbox": [
+            300,
+            95,
+            658,
+            116
+        ],
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "秋川大学の学生以外の一般の方も、研究等目的たてに、秋川ケン広に見中央区書館と文学部区書館の資料が利用くださいます。",
+        "bbox": [
+            102,
+            139,
+            858,
+            183
+        ],
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "【入館方法】",
+        "text_level": 1,
+        "bbox": [
+            105,
+            193,
+            206,
+            212
+        ],
+        "page_idx": 31
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "·円書館利用カトをお持の方は、自動入退館ケトから入退館が Kg。",
+            "·お持にない方法は、カウンターダ—日入館証を発行んだしま�。"
+        ],
+        "bbox": [
+            107,
+            217,
+            806,
+            261
+        ],
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "【圖書館利用力一卜にて】",
+        "text_level": 1,
+        "bbox": [
+            104,
+            272,
+            364,
+            292
+        ],
+        "page_idx": 31
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "·岡書館利用か一下は、岡書館資料の贷し出しの際に必要になりま�。",
+            "·發行をご希望の方は、身分証明書をお持にncy、中央圖書館、まは文学部圖書館のカウナ一にお越しくだき（文学部圖書館は平日の丶受け付けてい）",
+            "·平日の9時から17時まに申請を受け付た场合、その日のうにカ一ドをお渡しります。平日の17時以降、おは上に受け付た场合は、次の平日開館日以降にお渡しります。"
+        ],
+        "bbox": [
+            107,
+            297,
+            855,
+            435
+        ],
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "【贷出上返却】",
+        "text_level": 1,
+        "bbox": [
+            102,
+            447,
+            263,
+            466
+        ],
+        "page_idx": 31
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "·贷出L册数是5册，贷出L期间是2週間。 ",
+            "·中央国書館の贷し出受付時間は閉館30分前提て、文学部岡書館は閉館15分前提て。",
+            "·開館時の返却は、カウンタ一等受け付てい。閉館·休館時は、朴克木上に人てくさ。"
+        ],
+        "bbox": [
+            107,
+            470,
+            852,
+            586
+        ],
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "【資料の複写】",
+        "text_level": 1,
+        "bbox": [
+            102,
+            598,
+            223,
+            617
+        ],
+        "page_idx": 31
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "·館内の複写機で、円書館資料の複写が生態。",
+            "·複写機は、中央円書館は閉館10分前提て、文学部円書館は閉館時間ま利用くださいます。"
+        ],
+        "bbox": [
+            107,
+            621,
+            850,
+            688
+        ],
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "【開館時間】",
+        "text_level": 1,
+        "bbox": [
+            102,
+            701,
+            201,
+            720
+        ],
+        "page_idx": 31
+    },
+    {
+        "type": "table",
+        "img_path": "images/42cedcd0422bd147a8d50b9316a076ebb13bc9d57c784a02c72e2d71cb539fa9.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td></td><td>期間※</td><td>平日</td><td>土曜・日曜</td></tr><tr><td rowspan=\"2\">中央\n関書館</td><td>授業期間</td><td>9:00～22:00</td><td>9:00～17:00</td></tr><tr><td>夏休み・春休み期間</td><td>9:00～19:00</td><td>休館</td></tr><tr><td rowspan=\"2\">文学部\n関書館</td><td>授業期間</td><td>9:00～21:00</td><td>9:00～17:00</td></tr><tr><td>夏休み・春休み期間</td><td>9:00～18:00</td><td>休館</td></tr></table>",
+        "bbox": [
+            119,
+            726,
+            858,
+            878
+        ],
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "※各期間の具体的な日程は、開館カレncyのを覈くはい。",
+        "bbox": [
+            122,
+            879,
+            746,
+            900
+        ],
+        "page_idx": 31
+    },
+    {
+        "type": "aside_text",
+        "text": "説解",
+        "bbox": [
+            937,
+            344,
+            961,
+            391
+        ],
+        "page_idx": 31
+    },
+    {
+        "type": "page_number",
+        "text": "-31 ",
+        "bbox": [
+            442,
+            947,
+            546,
+            964
+        ],
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "(2024- 07) ",
+        "bbox": [
+            327,
+            124,
+            667,
+            162
+        ],
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "N1 ",
+        "text_level": 1,
+        "bbox": [
+            391,
+            193,
+            542,
+            262
+        ],
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "聽解",
+        "text_level": 1,
+        "bbox": [
+            411,
+            298,
+            532,
+            343
+        ],
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "(55分) ",
+        "text_level": 1,
+        "bbox": [
+            396,
+            375,
+            547,
+            419
+        ],
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "注意",
+        "text_level": 1,
+        "bbox": [
+            403,
+            448,
+            539,
+            483
+        ],
+        "page_idx": 32
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. 試験が始まうまて、ごの問題用紙を開けないてださ。 Do not open this question booklet until the test begins.",
+            "2. 2. Do not take this question booklet with you after the test. ",
+            "3. 受験番号と名前を下の欄に、受験票と同じょうに書いください。Write your examinee registration number and name clearly in each box below as written on your test voucher. ",
+            "4. 这の問題用紙は、全部で13に一晋江を求。This question booklet has 13 pages.",
+            "5. ごの問題用紙にメモをとてもかません。 You may make notes in this question booklet."
+        ],
+        "bbox": [
+            142,
+            491,
+            800,
+            812
+        ],
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "受験番号 Examinee Registration Number",
+        "bbox": [
+            117,
+            854,
+            470,
+            872
+        ],
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "名前 Name",
+        "bbox": [
+            117,
+            908,
+            231,
+            925
+        ],
+        "page_idx": 32
+    },
+    {
+        "type": "header",
+        "text": "B ",
+        "bbox": [
+            20,
+            16,
+            73,
+            55
+        ],
+        "page_idx": 32
+    },
+    {
+        "type": "header",
+        "text": "Listening ",
+        "bbox": [
+            43,
+            72,
+            146,
+            92
+        ],
+        "page_idx": 32
+    },
+    {
+        "type": "header",
+        "text": "問題用紙",
+        "bbox": [
+            739,
+            54,
+            921,
+            90
+        ],
+        "page_idx": 32
+    },
+    {
+        "type": "footer",
+        "text": "Copyright ©2023 The Japan Foundation, and Japan Educational Exchanges and Services. All Rights Reserved. Any reproduction or representation by any means, in whole or in part, is strictly prohibited. ",
+        "bbox": [
+            75,
+            951,
+            865,
+            980
+        ],
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "問題1",
+        "text_level": 1,
+        "bbox": [
+            82,
+            51,
+            243,
+            118
+        ],
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "也。 1.5000 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1",
+        "bbox": [
+            78,
+            124,
+            899,
+            181
+        ],
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "九",
+        "text_level": 1,
+        "bbox": [
+            80,
+            209,
+            117,
+            222
+        ],
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "例",
+        "text_level": 1,
+        "bbox": [
+            80,
+            223,
+            117,
+            246
+        ],
+        "page_idx": 33
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1 企画書を見せる",
+            "2 製品の説明を書き直す",
+            "3 一夕を新しくする",
+            "4 バンコンを準備する"
+        ],
+        "bbox": [
+            82,
+            250,
+            356,
+            379
+        ],
+        "page_idx": 33
+    },
+    {
+        "type": "page_number",
+        "text": "-1 ",
+        "bbox": [
+            438,
+            950,
+            542,
+            966
+        ],
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "1番",
+        "text_level": 1,
+        "bbox": [
+            70,
+            67,
+            136,
+            105
+        ],
+        "page_idx": 34
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1 夏用の商品を棚に並ご",
+            "2倉庫に日焼け止のクリ一ムを運求 ",
+            "3 バンに価引きシルをはる",
+            "4 棚の商品を片付ける"
+        ],
+        "bbox": [
+            68,
+            109,
+            478,
+            243
+        ],
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "2番",
+        "text_level": 1,
+        "bbox": [
+            70,
+            519,
+            136,
+            558
+        ],
+        "page_idx": 34
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1 1 ",
+            "2 2 ",
+            "3年代別の回答のgrafの色を変る",
+            "4年代別の回答のデーダ的位置を変る"
+        ],
+        "bbox": [
+            68,
+            561,
+            549,
+            694
+        ],
+        "page_idx": 34
+    },
+    {
+        "type": "page_number",
+        "text": "-2 ",
+        "bbox": [
+            436,
+            948,
+            542,
+            965
+        ],
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "3番",
+        "text_level": 1,
+        "bbox": [
+            99,
+            63,
+            163,
+            101
+        ],
+        "page_idx": 35
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1井上士人纳品日をかくに人する",
+            "2 職人的リストを社長に見せる",
+            "3 職人に�ルの作成を軸む",
+            "4.4 象の予約受付を中止する"
+        ],
+        "bbox": [
+            97,
+            105,
+            495,
+            236
+        ],
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "4番",
+        "text_level": 1,
+        "bbox": [
+            92,
+            507,
+            159,
+            545
+        ],
+        "page_idx": 35
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1 責任者的名前を書<",
+            "2 費用を詳く書< ",
+            "3 調理方法の説明を書<",
+            "4 第二希望の場所を書<"
+        ],
+        "bbox": [
+            90,
+            549,
+            366,
+            681
+        ],
+        "page_idx": 35
+    },
+    {
+        "type": "page_number",
+        "text": "3 ",
+        "bbox": [
+            480,
+            952,
+            500,
+            967
+        ],
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "5番",
+        "text_level": 1,
+        "bbox": [
+            75,
+            66,
+            137,
+            104
+        ],
+        "page_idx": 36
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1 海边の生き物にいの七民一",
+            "2 渔業體驗 ",
+            "3 海边の生き物の観察会",
+            "4 ヨットのうじう体験"
+        ],
+        "bbox": [
+            73,
+            105,
+            462,
+            234
+        ],
+        "page_idx": 36
+    },
+    {
+        "type": "page_number",
+        "text": "-4- ",
+        "bbox": [
+            433,
+            952,
+            536,
+            967
+        ],
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "もんだい問題2",
+        "text_level": 1,
+        "bbox": [
+            85,
+            49,
+            255,
+            118
+        ],
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "問題2は、ます質問を聞いくだ。そのと、問題用紙のせんだてしを讀てくだ。上が人言は人言は人言は人言は人言は人言は人言は人言は人言は人言は人言は人言は人言は人言は人言は人言は人言は人言は人言は人言は人言は人言は人言は人言は人言は人言は人言は人言は人言は人言は人言は人言は人言は人言は ",
+        "bbox": [
+            80,
+            124,
+            907,
+            211
+        ],
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "九例",
+        "text_level": 1,
+        "bbox": [
+            85,
+            237,
+            122,
+            275
+        ],
+        "page_idx": 37
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1 昨日は日程を渡さんだかわ",
+            "2 飲氊会の飲氊さて寢て歟てまつたか ",
+            "3 飲米会資料持てか",
+            "4 資料をなくてまったか与"
+        ],
+        "bbox": [
+            85,
+            278,
+            524,
+            409
+        ],
+        "page_idx": 37
+    },
+    {
+        "type": "page_number",
+        "text": "-5- ",
+        "bbox": [
+            440,
+            948,
+            546,
+            965
+        ],
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "1番",
+        "text_level": 1,
+        "bbox": [
+            73,
+            60,
+            139,
+            99
+        ],
+        "page_idx": 38
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1 子供の年齢や好み合う経本",
+            "2 教育效果が高い経本",
+            "3 長間読てい名作の経本",
+            "4 自分自身が面白いと感じる経本 "
+        ],
+        "bbox": [
+            70,
+            108,
+            440,
+            234
+        ],
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "2番",
+        "text_level": 1,
+        "bbox": [
+            73,
+            499,
+            139,
+            539
+        ],
+        "page_idx": 38
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1 固形タイフの商品にする",
+            "2 容量を少なくする",
+            "3 かた付きの容器にする",
+            "4味をもう減少甘くする"
+        ],
+        "bbox": [
+            73,
+            546,
+            366,
+            669
+        ],
+        "page_idx": 38
+    },
+    {
+        "type": "page_number",
+        "text": "6 ",
+        "bbox": [
+            475,
+            948,
+            494,
+            964
+        ],
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "3番",
+        "text_level": 1,
+        "bbox": [
+            85,
+            47,
+            151,
+            99
+        ],
+        "page_idx": 39
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1 PUNCONIILARSTUeK ",
+            "2 油絫の風景をえがく講座",
+            "3 色元はこて動物を元がく講座",
+            "4 はがきに季節の花をえがく講座"
+        ],
+        "bbox": [
+            85,
+            108,
+            475,
+            233
+        ],
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "4番",
+        "text_level": 1,
+        "bbox": [
+            85,
+            495,
+            151,
+            535
+        ],
+        "page_idx": 39
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1 設計変更の依賴に広たと",
+            "2 試作の部品がと",
+            "3 予定よう早く納品くださたと",
+            "4 納品んだばねが高品質だたと"
+        ],
+        "bbox": [
+            85,
+            539,
+            473,
+            669
+        ],
+        "page_idx": 39
+    },
+    {
+        "type": "page_number",
+        "text": "7 ",
+        "bbox": [
+            436,
+            946,
+            544,
+            963
+        ],
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "5番",
+        "text_level": 1,
+        "bbox": [
+            75,
+            63,
+            144,
+            101
+        ],
+        "page_idx": 40
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1夕一徳卜にし的人が動画を見たか",
+            "2 動画の再生回数",
+            "3 さまさまな国の人に見らたか",
+            "4 動画が最後まて見らたか"
+        ],
+        "bbox": [
+            73,
+            105,
+            499,
+            229
+        ],
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "6番",
+        "text_level": 1,
+        "bbox": [
+            75,
+            495,
+            139,
+            533
+        ],
+        "page_idx": 40
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1 沙イズが規格外面の魚",
+            "2 壳蔵殘るほど多く捕てしまた魚",
+            "3 一般にあまき知らていな魚",
+            "4 調理するのが面倒な魚"
+        ],
+        "bbox": [
+            73,
+            546,
+            495,
+            668
+        ],
+        "page_idx": 40
+    },
+    {
+        "type": "page_number",
+        "text": "8 ",
+        "bbox": [
+            473,
+            946,
+            492,
+            961
+        ],
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "もんだい問題3",
+        "text_level": 1,
+        "bbox": [
+            72,
+            53,
+            243,
+            118
+        ],
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "問題3は、問題用紙に何も印刷くださいますせん。その問題は、全体とてんだ内容を聞く問題です。話の前に質問は-Amません。まむ話を聞いくだき。那儿、質間とせんたくしを聞い、1か54の中か、最もよいも的一つ選てくだき。",
+        "bbox": [
+            68,
+            127,
+            865,
+            211
+        ],
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "一M",
+        "bbox": [
+            426,
+            240,
+            531,
+            256
+        ],
+        "page_idx": 41
+    },
+    {
+        "type": "page_number",
+        "text": "- 10 - ",
+        "bbox": [
+            428,
+            951,
+            532,
+            967
+        ],
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "もんばい",
+        "text_level": 1,
+        "bbox": [
+            87,
+            49,
+            208,
+            70
+        ],
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "問題4",
+        "text_level": 1,
+        "bbox": [
+            87,
+            72,
+            257,
+            114
+        ],
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "也hい 也haidaiu L 1n いhaz 壬  \n问题4は、問題用紙に何も印刷さていせん。ま紈文を聞いくだき。そから、  \n该对的返事为闻。1か3の中か、最也。",
+        "bbox": [
+            85,
+            122,
+            852,
+            177
+        ],
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "-×E-",
+        "bbox": [
+            440,
+            205,
+            546,
+            221
+        ],
+        "page_idx": 42
+    },
+    {
+        "type": "page_number",
+        "text": "-11- ",
+        "bbox": [
+            440,
+            946,
+            546,
+            963
+        ],
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "もんだい問題5",
+        "text_level": 1,
+        "bbox": [
+            70,
+            47,
+            243,
+            112
+        ],
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "問題5は、長の話を聞きま。二の問題には練習はあませ。",
+        "bbox": [
+            87,
+            121,
+            668,
+            145
+        ],
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "問題用紙に×王をとてもかません。",
+        "bbox": [
+            87,
+            152,
+            443,
+            175
+        ],
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "1番",
+        "text_level": 1,
+        "bbox": [
+            75,
+            206,
+            139,
+            244
+        ],
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "也人。 14",
+        "bbox": [
+            68,
+            246,
+            885,
+            300
+        ],
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "一毛一",
+        "bbox": [
+            426,
+            328,
+            531,
+            344
+        ],
+        "page_idx": 43
+    },
+    {
+        "type": "page_number",
+        "text": "-12- ",
+        "bbox": [
+            430,
+            945,
+            536,
+            961
+        ],
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "2番",
+        "text_level": 1,
+        "bbox": [
+            84,
+            61,
+            149,
+            97
+        ],
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "は話を聞いくさ。そのか、二の質問を聞い、那然问题用紙の1か54の",
+        "bbox": [
+            80,
+            99,
+            875,
+            153
+        ],
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "$L \\rightarrow  m$ ",
+        "text_level": 1,
+        "bbox": [
+            82,
+            181,
+            149,
+            195
+        ],
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "質問1 ",
+        "text_level": 1,
+        "bbox": [
+            82,
+            195,
+            174,
+            219
+        ],
+        "page_idx": 44
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1 講座 1番",
+            "2 講座2番",
+            "3 講座3番",
+            "4 講座4番"
+        ],
+        "bbox": [
+            82,
+            231,
+            213,
+            353
+        ],
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "长最短",
+        "text_level": 1,
+        "bbox": [
+            82,
+            381,
+            149,
+            394
+        ],
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "質問2 ",
+        "text_level": 1,
+        "bbox": [
+            82,
+            394,
+            178,
+            419
+        ],
+        "page_idx": 44
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1 講座 1番",
+            "2 講座2番",
+            "3 講座3番",
+            "4 講座4番"
+        ],
+        "bbox": [
+            82,
+            432,
+            216,
+            552
+        ],
+        "page_idx": 44
+    },
+    {
+        "type": "page_number",
+        "text": "- 13 - ",
+        "bbox": [
+            438,
+            948,
+            542,
+            964
+        ],
+        "page_idx": 44
+    }
+]

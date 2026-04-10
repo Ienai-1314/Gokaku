@@ -36,7 +36,7 @@ export async function GET(request: NextRequest) {
     const collection = db.collection('redeem_codes');
 
     // 构建查询条件
-    let query = collection;
+    let query: any = collection;
 
     if (status && status !== 'all') {
       query = query.where({ status });

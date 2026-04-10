@@ -1,0 +1,9 @@
+{
+  "total": 100,
+  "by_exam": {
+    "2025-12": 38,
+    "2024-07": 34,
+    "2021-12": 28
+  },
+  "data_file": "C:\\Users\\Garo\\gokaku\\output\\all_vocab_grammar_gokaku_filtered.json"
+}
