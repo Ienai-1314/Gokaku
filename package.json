@@ -12,7 +12,10 @@
     "import-exam": "tsx scripts/import-exam-questions.ts",
     "migrate-codes": "tsx scripts/migrate-codes-to-db.ts",
     "parse-pdf": "tsx scripts/parse-pdf-questions.ts",
-    "parse-pdf-simple": "tsx scripts/parse-pdf-simple.ts"
+    "parse-pdf-simple": "tsx scripts/parse-pdf-simple.ts",
+    "init-cache": "tsx scripts/init-cache-collections.ts",
+    "create-cache": "tsx scripts/create-cache-collections.ts",
+    "seed-grammar": "tsx scripts/seed-grammar-cache.ts"
   },
   "dependencies": {
     "@cloudbase/node-sdk": "^3.18.1",

@@ -1,0 +1,390 @@
+[
+  {
+    "pattern": "に際して",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "に先立って",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "名の/v原+際は/際に",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "に限らず",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "名の/vてる+最中に",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "形1/形2な+限りだ",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "だけのことだ",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "v原+見込みだ",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "名+(あって)の+名",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "名+(たる)+名",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "～てこそ",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "～せいか",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "vた+ことにしては",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "～としても/～とて",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "にかかわらず",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "思いをする",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "はずだった",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "とは限らない",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "～限りでは",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "誇りに思う",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "～しか～ない",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "名+そのもの/形2词干+そのもの",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "～間",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "としたら",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "～ようにする",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "～ようにしている",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "んじゃないか",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "〜だの〜だの",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "〜を受けて",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "〜に限って",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "〜にわたって",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "〜なくはない",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "〜か〜ないか",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "〜ようが〜まいが",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "〜てたまらない",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "〜てばかりだ",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "〜そうだ",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "〜たきり",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "〜（よ）うとも",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "〜を最後に",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "〜たが最後",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "〜ものを",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "もの/もん",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "あての",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "いかんで/いかんでは/いかんによって",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "いかんによらず/いかんにかかわらず",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "动词意志形が/动词意志形と",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "动词意志形が同一动词意志形まいが/动词意志形と同一动词意志形まいと",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "动词意志形に同一动词否定形",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "限りだ",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "(た)が最後",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "かたがた",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "かたわら",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "がてら",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "が早いか",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "からある/(からする)/からの",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "きらいがある",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "極まる/極まりない/極み",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "あての",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "いかんて/いかんによ",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "いかんによらず/いかんにかかわらず",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "动词意志形が/动词意志形と",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "动词意志形が同一动词意志形まいが/动词意志形と同一动词意志形まいと",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "动词意志形に同一动词否定形",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "限りだ",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "(た)が最後",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "かたがた",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "かたわら",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "がてら",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "が早いか",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "からある/(からする)/からの",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "きらいがある",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "極まる/極まりない/の極み",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "ごとき/ごとく/ごとし",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "こととて",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "ことなく/ことなしに(は)",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "～あげくに（の）",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "～あっての",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "～いかんだ",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "～いかんで",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "～いかんにかかわらず",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "～いかんによっては",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "～いかんによらず",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "～以上は",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "～て（は）いられない",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "～う（よう）が",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "～う（よう）が、～まいが",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "～う（よう）と、～まいと",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "～よ（よう）にも～ない",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "～う（よう）ものなら",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "～得（う）る",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "～おそれがある",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "～かけだ",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "～かけの",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "～がたい",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "～かたがた",
+    "error": "HTTP 429: Too Many Requests"
+  },
+  {
+    "pattern": "～かたわら",
+    "error": "HTTP 429: Too Many Requests"
+  }
+]

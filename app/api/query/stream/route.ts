@@ -5,6 +5,7 @@ import { checkRateLimit } from "@/lib/ratelimit";
 import { sanitizeInput, hashIP, checkRequestRate, detectPromptInjection } from "@/lib/security";
 import { getAccountIdFromRequest } from "@/lib/account";
 import queryCache from "@/lib/query-cache";
+import dbCache from "@/lib/db-cache";
 
 // 禁用 Next.js 路由缓存
 export const dynamic = 'force-dynamic';
@@ -151,28 +152,69 @@ function buildQueryPrompt(query: string, matches: Array<GrammarEntry & { source?
 [该语法在N1考试中的常见考法，或需要特别注意的地方]`;
 }
 
+// 流式返回缓存结果
+function streamCachedResult(text: string, source: 'memory' | 'database') {
+  const encoder = new TextEncoder();
+  const stream = new ReadableStream({
+    start(controller) {
+      // 将缓存结果分块发送，模拟流式效果
+      const chunkSize = 10; // 每次发送10个字符
+      let index = 0;
+
+      const sendChunk = () => {
+        if (index < text.length) {
+          const chunk = text.slice(index, index + chunkSize);
+          controller.enqueue(encoder.encode(chunk));
+          index += chunkSize;
+          setTimeout(sendChunk, 10); // 10ms 延迟模拟打字效果
+        } else {
+          controller.close();
+        }
+      };
+
+      sendChunk();
+    },
+  });
+
+  return new Response(stream, {
+    headers: {
+      'Content-Type': 'text/plain; charset=utf-8',
+      'Cache-Control': 'no-cache',
+      'Connection': 'keep-alive',
+      'X-Cache-Hit': 'true',
+      'X-Cache-Source': source, // 标记缓存来源
+    },
+  });
+}
+
 export async function POST(req: NextRequest) {
   try {
     const accountId = await getAccountIdFromRequest(req);
     const ip = getIp(req);
 
-    // 请求频率限制
-    if (!checkRequestRate(`query:${ip}`, 10, 60000)) {
+    // 检查是否是管理员请求（用于预填充缓存）
+    const body = await req.json();
+    const isAdminRequest = body.skipRateLimit && req.headers.get('x-admin-key') === process.env.ADMIN_SECRET_KEY;
+
+    // 请求频率限制（管理员请求跳过）
+    if (!isAdminRequest && !checkRequestRate(`query:${ip}`, 10, 60000)) {
       return new Response(
         JSON.stringify({ error: "请求过于频繁，请稍后再试" }),
         { status: 429, headers: { "Content-Type": "application/json" } }
       );
     }
 
-    const allowed = await checkRateLimit(req, "query");
-    if (!allowed) {
-      return new Response(
-        JSON.stringify({ error: "今日使用次数已达上限，购买后解锁无限使用" }),
-        { status: 429, headers: { "Content-Type": "application/json" } }
-      );
+    if (!isAdminRequest) {
+      const allowed = await checkRateLimit(req, "query");
+      if (!allowed) {
+        return new Response(
+          JSON.stringify({ error: "今日使用次数已达上限，购买后解锁无限使用" }),
+          { status: 429, headers: { "Content-Type": "application/json" } }
+        );
+      }
     }
 
-    const { query } = await req.json();
+    const { query } = body;
 
     // 输入验证
     if (!query?.trim()) {
@@ -193,41 +235,18 @@ export async function POST(req: NextRequest) {
 
     const sanitizedQuery = sanitizeInput(query, 200);
 
-    // 检查缓存
-    const cached = queryCache.get(sanitizedQuery, 'grammar');
-    if (cached) {
-      // 返回缓存的结果（模拟流式输出以保持一致的用户体验）
-      const encoder = new TextEncoder();
-      const stream = new ReadableStream({
-        start(controller) {
-          // 将缓存结果分块发送，模拟流式效果
-          const chunkSize = 10; // 每次发送10个字符
-          let index = 0;
-          const text = cached.result;
+    // 1. 先查内存缓存
+    const memoryCached = queryCache.get(sanitizedQuery, 'grammar');
+    if (memoryCached) {
+      return streamCachedResult(memoryCached.result, 'memory');
+    }
 
-          const sendChunk = () => {
-            if (index < text.length) {
-              const chunk = text.slice(index, index + chunkSize);
-              controller.enqueue(encoder.encode(chunk));
-              index += chunkSize;
-              setTimeout(sendChunk, 10); // 10ms 延迟模拟打字效果
-            } else {
-              controller.close();
-            }
-          };
-
-          sendChunk();
-        },
-      });
-
-      return new Response(stream, {
-        headers: {
-          'Content-Type': 'text/plain; charset=utf-8',
-          'Cache-Control': 'no-cache',
-          'Connection': 'keep-alive',
-          'X-Cache-Hit': 'true', // 标记缓存命中
-        },
-      });
+    // 2. 再查数据库缓存
+    const dbCached = await dbCache.get(sanitizedQuery, 'grammar');
+    if (dbCached) {
+      // 同步到内存缓存
+      queryCache.set(sanitizedQuery, 'grammar', dbCached.result, dbCached.matchedGrammar);
+      return streamCachedResult(dbCached.result, 'database');
     }
 
     const apiKey = process.env.DEEPSEEK_API_KEY;
@@ -308,6 +327,10 @@ export async function POST(req: NextRequest) {
           // 流式输出完成后，保存到缓存
           if (fullContent) {
             queryCache.set(sanitizedQuery, 'grammar', fullContent, matches);
+            // 异步保存到数据库（不阻塞响应）
+            dbCache.set(sanitizedQuery, 'grammar', fullContent, matches).catch(err => {
+              console.error('[query/stream] 保存到数据库失败:', err);
+            });
           }
         } catch (error) {
           console.error('Stream error:', error);

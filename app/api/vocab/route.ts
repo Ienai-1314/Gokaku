@@ -4,6 +4,7 @@ import path from "path";
 import { checkRateLimit } from "@/lib/ratelimit";
 import { sanitizeInput, createSafeErrorResponse, checkRequestRate, detectPromptInjection } from "@/lib/security";
 import { getAccountIdFromRequest } from "@/lib/account";
+import dbCache from "@/lib/db-cache";
 
 // 禁用 Next.js 路由缓存
 export const dynamic = 'force-dynamic';
@@ -101,6 +102,16 @@ export async function POST(req: NextRequest) {
     const sanitizedQuery = sanitizeInput(query, 100);
     console.log('[vocab API] 清洗后的查询:', sanitizedQuery);
 
+    // 1. 先查数据库缓存
+    const dbCached = await dbCache.get(sanitizedQuery, 'vocab');
+    if (dbCached) {
+      console.log('[vocab API] 数据库缓存命中');
+      return NextResponse.json({
+        result: dbCached.result,
+        matchedVocab: dbCached.matchedVocab || []
+      });
+    }
+
     const apiKey = process.env.DEEPSEEK_API_KEY;
     if (!apiKey) {
       return NextResponse.json({ error: "服务暂时不可用" }, { status: 503 });
@@ -133,6 +144,11 @@ export async function POST(req: NextRequest) {
 
     const data = await response.json();
     const content = data.choices?.[0]?.message?.content ?? "";
+
+    // 2. 保存到数据库缓存（异步，不阻塞）
+    dbCache.set(sanitizedQuery, 'vocab', content, matches).catch(err => {
+      console.error('[vocab API] 保存到数据库失败:', err);
+    });
 
     return NextResponse.json({ result: content, matchedVocab: matches });
   } catch (err) {

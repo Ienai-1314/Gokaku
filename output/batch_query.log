@@ -1,0 +1,208 @@
+📚 准备批量查询 97 个语法点
+
+[1/97] 查询: に際して
+  ❌ 失败: HTTP 429: Too Many Requests
+[2/97] 查询: に先立って
+  ❌ 失败: HTTP 429: Too Many Requests
+[3/97] 查询: 名の/v原+際は/際に
+  ❌ 失败: HTTP 429: Too Many Requests
+[4/97] 查询: に限らず
+  ❌ 失败: HTTP 429: Too Many Requests
+[5/97] 查询: 名の/vてる+最中に
+  ❌ 失败: HTTP 429: Too Many Requests
+[6/97] 查询: 形1/形2な+限りだ
+  ❌ 失败: HTTP 429: Too Many Requests
+[7/97] 查询: だけのことだ
+  ❌ 失败: HTTP 429: Too Many Requests
+[8/97] 查询: v原+見込みだ
+  ❌ 失败: HTTP 429: Too Many Requests
+[9/97] 查询: 名+(あって)の+名
+  ❌ 失败: HTTP 429: Too Many Requests
+[10/97] 查询: 名+(たる)+名
+  ❌ 失败: HTTP 429: Too Many Requests
+[11/97] 查询: ～てこそ
+  ❌ 失败: HTTP 429: Too Many Requests
+[12/97] 查询: ～せいか
+  ❌ 失败: HTTP 429: Too Many Requests
+[13/97] 查询: vた+ことにしては
+  ❌ 失败: HTTP 429: Too Many Requests
+[14/97] 查询: ～としても/～とて
+  ❌ 失败: HTTP 429: Too Many Requests
+[15/97] 查询: にかかわらず
+  ❌ 失败: HTTP 429: Too Many Requests
+[16/97] 查询: 思いをする
+  ❌ 失败: HTTP 429: Too Many Requests
+[17/97] 查询: はずだった
+  ❌ 失败: HTTP 429: Too Many Requests
+[18/97] 查询: とは限らない
+  ❌ 失败: HTTP 429: Too Many Requests
+[19/97] 查询: ～限りでは
+  ❌ 失败: HTTP 429: Too Many Requests
+[20/97] 查询: 誇りに思う
+  ❌ 失败: HTTP 429: Too Many Requests
+[21/97] 查询: ～しか～ない
+  ❌ 失败: HTTP 429: Too Many Requests
+[22/97] 查询: 名+そのもの/形2词干+そのもの
+  ❌ 失败: HTTP 429: Too Many Requests
+[23/97] 查询: ～間
+  ❌ 失败: HTTP 429: Too Many Requests
+[24/97] 查询: としたら
+  ❌ 失败: HTTP 429: Too Many Requests
+[25/97] 查询: ～ようにする
+  ❌ 失败: HTTP 429: Too Many Requests
+[26/97] 查询: ～ようにしている
+  ❌ 失败: HTTP 429: Too Many Requests
+[27/97] 查询: んじゃないか
+  ❌ 失败: HTTP 429: Too Many Requests
+[28/97] 查询: 〜だの〜だの
+  ❌ 失败: HTTP 429: Too Many Requests
+[29/97] 查询: 〜を受けて
+  ❌ 失败: HTTP 429: Too Many Requests
+[30/97] 查询: 〜に限って
+  ❌ 失败: HTTP 429: Too Many Requests
+[31/97] 查询: 〜にわたって
+  ❌ 失败: HTTP 429: Too Many Requests
+[32/97] 查询: 〜なくはない
+  ❌ 失败: HTTP 429: Too Many Requests
+[33/97] 查询: 〜か〜ないか
+  ❌ 失败: HTTP 429: Too Many Requests
+[34/97] 查询: 〜ようが〜まいが
+  ❌ 失败: HTTP 429: Too Many Requests
+[35/97] 查询: 〜てたまらない
+  ❌ 失败: HTTP 429: Too Many Requests
+[36/97] 查询: 〜てばかりだ
+  ❌ 失败: HTTP 429: Too Many Requests
+[37/97] 查询: 〜そうだ
+  ❌ 失败: HTTP 429: Too Many Requests
+[38/97] 查询: 〜たきり
+  ❌ 失败: HTTP 429: Too Many Requests
+[39/97] 查询: 〜（よ）うとも
+  ❌ 失败: HTTP 429: Too Many Requests
+[40/97] 查询: 〜を最後に
+  ❌ 失败: HTTP 429: Too Many Requests
+[41/97] 查询: 〜たが最後
+  ❌ 失败: HTTP 429: Too Many Requests
+[42/97] 查询: 〜ものを
+  ❌ 失败: HTTP 429: Too Many Requests
+[43/97] 查询: もの/もん
+  ❌ 失败: HTTP 429: Too Many Requests
+[44/97] 查询: あての
+  ❌ 失败: HTTP 429: Too Many Requests
+[45/97] 查询: いかんで/いかんでは/いかんによって
+  ❌ 失败: HTTP 429: Too Many Requests
+[46/97] 查询: いかんによらず/いかんにかかわらず
+  ❌ 失败: HTTP 429: Too Many Requests
+[47/97] 查询: 动词意志形が/动词意志形と
+  ❌ 失败: HTTP 429: Too Many Requests
+[48/97] 查询: 动词意志形が同一动词意志形まいが/动词意志形と同一动词意志形まいと
+  ❌ 失败: HTTP 429: Too Many Requests
+[49/97] 查询: 动词意志形に同一动词否定形
+  ❌ 失败: HTTP 429: Too Many Requests
+[50/97] 查询: 限りだ
+  ❌ 失败: HTTP 429: Too Many Requests
+[51/97] 查询: (た)が最後
+  ❌ 失败: HTTP 429: Too Many Requests
+[52/97] 查询: かたがた
+  ❌ 失败: HTTP 429: Too Many Requests
+[53/97] 查询: かたわら
+  ❌ 失败: HTTP 429: Too Many Requests
+[54/97] 查询: がてら
+  ❌ 失败: HTTP 429: Too Many Requests
+[55/97] 查询: が早いか
+  ❌ 失败: HTTP 429: Too Many Requests
+[56/97] 查询: からある/(からする)/からの
+  ❌ 失败: HTTP 429: Too Many Requests
+[57/97] 查询: きらいがある
+  ❌ 失败: HTTP 429: Too Many Requests
+[58/97] 查询: 極まる/極まりない/極み
+  ❌ 失败: HTTP 429: Too Many Requests
+[59/97] 查询: あての
+  ❌ 失败: HTTP 429: Too Many Requests
+[60/97] 查询: いかんて/いかんによ
+  ❌ 失败: HTTP 429: Too Many Requests
+[61/97] 查询: いかんによらず/いかんにかかわらず
+  ❌ 失败: HTTP 429: Too Many Requests
+[62/97] 查询: 动词意志形が/动词意志形と
+  ❌ 失败: HTTP 429: Too Many Requests
+[63/97] 查询: 动词意志形が同一动词意志形まいが/动词意志形と同一动词意志形まいと
+  ❌ 失败: HTTP 429: Too Many Requests
+[64/97] 查询: 动词意志形に同一动词否定形
+  ❌ 失败: HTTP 429: Too Many Requests
+[65/97] 查询: 限りだ
+  ❌ 失败: HTTP 429: Too Many Requests
+[66/97] 查询: (た)が最後
+  ❌ 失败: HTTP 429: Too Many Requests
+[67/97] 查询: かたがた
+  ❌ 失败: HTTP 429: Too Many Requests
+[68/97] 查询: かたわら
+  ❌ 失败: HTTP 429: Too Many Requests
+[69/97] 查询: がてら
+  ❌ 失败: HTTP 429: Too Many Requests
+[70/97] 查询: が早いか
+  ❌ 失败: HTTP 429: Too Many Requests
+[71/97] 查询: からある/(からする)/からの
+  ❌ 失败: HTTP 429: Too Many Requests
+[72/97] 查询: きらいがある
+  ❌ 失败: HTTP 429: Too Many Requests
+[73/97] 查询: 極まる/極まりない/の極み
+  ❌ 失败: HTTP 429: Too Many Requests
+[74/97] 查询: ごとき/ごとく/ごとし
+  ❌ 失败: HTTP 429: Too Many Requests
+[75/97] 查询: こととて
+  ❌ 失败: HTTP 429: Too Many Requests
+[76/97] 查询: ことなく/ことなしに(は)
+  ❌ 失败: HTTP 429: Too Many Requests
+[77/97] 查询: ～あげくに（の）
+  ❌ 失败: HTTP 429: Too Many Requests
+[78/97] 查询: ～あっての
+  ❌ 失败: HTTP 429: Too Many Requests
+[79/97] 查询: ～いかんだ
+  ❌ 失败: HTTP 429: Too Many Requests
+[80/97] 查询: ～いかんで
+  ❌ 失败: HTTP 429: Too Many Requests
+[81/97] 查询: ～いかんにかかわらず
+  ❌ 失败: HTTP 429: Too Many Requests
+[82/97] 查询: ～いかんによっては
+  ❌ 失败: HTTP 429: Too Many Requests
+[83/97] 查询: ～いかんによらず
+  ❌ 失败: HTTP 429: Too Many Requests
+[84/97] 查询: ～以上は
+  ❌ 失败: HTTP 429: Too Many Requests
+[85/97] 查询: ～て（は）いられない
+  ❌ 失败: HTTP 429: Too Many Requests
+[86/97] 查询: ～う（よう）が
+  ❌ 失败: HTTP 429: Too Many Requests
+[87/97] 查询: ～う（よう）が、～まいが
+  ❌ 失败: HTTP 429: Too Many Requests
+[88/97] 查询: ～う（よう）と、～まいと
+  ❌ 失败: HTTP 429: Too Many Requests
+[89/97] 查询: ～よ（よう）にも～ない
+  ❌ 失败: HTTP 429: Too Many Requests
+[90/97] 查询: ～う（よう）ものなら
+  ❌ 失败: HTTP 429: Too Many Requests
+[91/97] 查询: ～得（う）る
+  ❌ 失败: HTTP 429: Too Many Requests
+[92/97] 查询: ～おそれがある
+  ❌ 失败: HTTP 429: Too Many Requests
+[93/97] 查询: ～かけだ
+  ❌ 失败: HTTP 429: Too Many Requests
+[94/97] 查询: ～かけの
+  ❌ 失败: HTTP 429: Too Many Requests
+[95/97] 查询: ～がたい
+  ❌ 失败: HTTP 429: Too Many Requests
+[96/97] 查询: ～かたがた
+  ❌ 失败: HTTP 429: Too Many Requests
+[97/97] 查询: ～かたわら
+  ❌ 失败: HTTP 429: Too Many Requests
+
+============================================================
+📊 批量查询完成统计
+============================================================
+总计: 97 个语法点
+成功: 0 个
+失败: 97 个
+缓存命中: 0 个
+新生成: 0 个
+
+结果已保存到: C:\Users\Garo\gokaku\output\grammar_cache_results\batch_results.json
+错误日志: C:\Users\Garo\gokaku\output\grammar_cache_results\batch_errors.json
