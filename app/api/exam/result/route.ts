@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getDb } from '@/lib/cloudbase';
 
+export const dynamic = 'force-dynamic';
+
 /**
  * GET /api/exam/result?recordId=xxx
  * 获取答题记录和错题解析

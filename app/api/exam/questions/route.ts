@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getDb } from '@/lib/cloudbase';
 
+export const dynamic = 'force-dynamic';
+
 /**
  * GET /api/exam/questions?paperId=xxx
  * 获取指定试卷的题目列表

@@ -1,9 +1,11 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { CheckCircle2, XCircle, ArrowLeft, TrendingUp } from 'lucide-react';
 import SmartText from '@/components/SmartText';
+
+export const dynamic = 'force-dynamic';
 
 interface Question {
   _id: string;
@@ -41,7 +43,7 @@ interface Record {
   score: Score;
 }
 
-export default function ExamResultPage() {
+function ExamResultContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const recordId = searchParams.get('recordId');
@@ -276,5 +278,19 @@ export default function ExamResultPage() {
         )}
       </div>
     </div>
+  );
+}
+
+export default function ExamResultPage() {
+  return (
+    <Suspense
+      fallback={
+        <div className="min-h-screen bg-[#FFFEF9] flex items-center justify-center">
+          <div className="text-[#2D2D2D]">加载中...</div>
+        </div>
+      }
+    >
+      <ExamResultContent />
+    </Suspense>
   );
 }
