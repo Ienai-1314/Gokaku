@@ -1,6 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getDb } from '@/lib/cloudbase';
 
+// 强制动态渲染
+export const dynamic = 'force-dynamic';
+
 /**
  * GET /api/exam/papers
  * 获取真题试卷列表
