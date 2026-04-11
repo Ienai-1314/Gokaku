@@ -49,8 +49,8 @@ export function Hero({ activeLevel }: HeroProps) {
               GOKAKU
             </h1>
             <div className="font-noto-jp text-lg md:text-xl text-[#6B5E55] mt-4 leading-relaxed">
-              快速打开查询功能，直接开始刷真题。<br />
-              把最常用的工具放在最前面，而不是藏在数据看板后面。
+              我们用 AI 把历年真题扒了一遍<br />
+              做最贴近真题的，最好用的备考学习工具。
             </div>
           </motion.div>
 
@@ -80,9 +80,7 @@ export function Hero({ activeLevel }: HeroProps) {
           </motion.div>
 
           <p className="text-sm text-[#6B5E55] text-center max-w-lg mx-auto mb-10">
-            如果你把网站添加到手机桌面，打开后第一眼就能进入最常用的两个功能：
-            <span className="text-[#C75B3B] font-semibold">AI 查询</span> 和
-            <span className="text-[#C75B3B] font-semibold">真题刷题</span>。
+            不会的语法、纠结的词汇、分不清的用法，直接问 AI
           </p>
 
           <motion.div
